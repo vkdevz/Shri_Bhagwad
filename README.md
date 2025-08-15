@@ -43,11 +43,4 @@ A beautiful, mobile-first Progressive Web App (PWA) for reading the divine teach
 - Auto-reveal translations option
 - Haptic feedback support
 
-## Installation
 
-### Option 1: Direct Download
-1. Download all files maintaining the folder structure
-2. Open `index.html` in a web browser
-3. For full PWA features, serve from a web server
-
-### Option 2: Local Server
