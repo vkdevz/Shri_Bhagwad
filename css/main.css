@@ -1302,3 +1302,500 @@ input:focus,
     line-height: 1;
     margin-top: 2px;
 }
+/* Enhanced Responsive Design - Mobile First Approach */
+/* ================================================= */
+
+/* Updated Root Variables for Better Responsiveness */
+:root {
+  /* Enhanced Spacing System */
+  --header-height: 60px;
+  --footer-height: 70px;
+  --content-padding: 16px;
+  
+  /* Enhanced Blur Effects */
+  --backdrop-blur-light: blur(10px);
+  --backdrop-blur-medium: blur(20px);
+  --backdrop-blur-heavy: blur(30px);
+  
+  /* Container Widths */
+  --container-mobile: 100%;
+  --container-tablet: 768px;
+  --container-desktop: 1200px;
+  
+  /* Enhanced Touch Targets */
+  --touch-target-small: 40px;
+  --touch-target-medium: 44px;
+  --touch-target-large: 56px;
+}
+
+/* Global Reset & Base Styles - Enhanced */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+  height: 100%;
+}
+
+body {
+  font-family: var(--font-body);
+  font-size: var(--font-size-base);
+  line-height: 1.6;
+  color: var(--text-light);
+  background: var(--bg-gradient);
+  min-height: 100vh;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  touch-action: manipulation;
+  height: 100%;
+}
+
+/* Enhanced App Container */
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  max-width: 100vw;
+  overflow-x: hidden;
+  position: relative;
+  margin: 0 auto;
+}
+
+/* FIXED HEADER - Mobile First */
+.app-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: var(--card-bg);
+  backdrop-filter: var(--backdrop-blur-medium);
+  -webkit-backdrop-filter: var(--backdrop-blur-medium);
+  border-bottom: 1px solid rgba(255, 215, 0, 0.1);
+  z-index: 1000;
+  height: var(--header-height);
+  transition: all var(--transition-normal);
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 var(--content-padding);
+  height: 100%;
+  max-width: var(--container-mobile);
+  margin: 0 auto;
+}
+
+/* FIXED FOOTER - Mobile First */
+.bottom-nav {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  background: var(--card-bg);
+  backdrop-filter: var(--backdrop-blur-medium);
+  -webkit-backdrop-filter: var(--backdrop-blur-medium);
+  border-top: 1px solid rgba(255, 215, 0, 0.1);
+  padding: 8px 0;
+  z-index: 1000;
+  height: var(--footer-height);
+  max-width: var(--container-mobile);
+  margin: 0 auto;
+}
+
+/* Main Content with Proper Spacing for Fixed Header/Footer */
+.main-content {
+  flex: 1;
+  position: relative;
+  overflow: hidden;
+  margin-top: var(--header-height);
+  margin-bottom: var(--footer-height);
+  min-height: calc(100vh - var(--header-height) - var(--footer-height));
+}
+
+/* Enhanced Screen Transitions with Blur Effects */
+.screen {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: var(--content-padding);
+  opacity: 0;
+  transform: translateX(100%);
+  transition: all var(--transition-normal);
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.screen.active {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Enhanced Blur for Chapters and Settings Screens */
+#chapters-screen.active,
+#settings-screen.active {
+  backdrop-filter: var(--backdrop-blur-heavy);
+  -webkit-backdrop-filter: var(--backdrop-blur-heavy);
+}
+
+#chapters-screen::before,
+#settings-screen::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(10, 22, 40, 0.3);
+  z-index: -1;
+  pointer-events: none;
+}
+
+/* Enhanced Reader Screen with Blur Background */
+#reader-screen.active {
+  backdrop-filter: var(--backdrop-blur-heavy);
+  -webkit-backdrop-filter: var(--backdrop-blur-heavy);
+}
+
+#reader-screen::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(10, 22, 40, 0.4);
+  z-index: -1;
+  pointer-events: none;
+}
+
+/* Enhanced Verse Navigation - Mobile */
+.verse-navigation {
+  position: fixed;
+  bottom: calc(var(--footer-height) + 20px);
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 20px;
+  z-index: 999;
+  padding: 0 20px;
+}
+
+.verse-nav-btn {
+  width: var(--touch-target-large);
+  height: var(--touch-target-large);
+  border-radius: 50%;
+  background: var(--secondary-gold);
+  color: var(--primary-navy);
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: var(--shadow-heavy);
+  transition: all var(--transition-fast);
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.verse-nav-btn:hover {
+  transform: scale(1.1);
+  box-shadow: 0 8px 25px rgba(255, 215, 0, 0.4);
+}
+
+.verse-nav-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  transform: none;
+}
+
+/* Update existing navigation hints to work with new buttons */
+.navigation-hints {
+  display: none; /* Hide original hints, replaced by floating buttons */
+}
+
+/* Enhanced Touch Targets for Mobile */
+.back-btn,
+.icon-btn {
+  width: var(--touch-target-medium);
+  height: var(--touch-target-medium);
+  min-width: var(--touch-target-medium);
+  min-height: var(--touch-target-medium);
+}
+
+.nav-item {
+  min-height: var(--touch-target-medium);
+  padding: 8px 4px;
+}
+
+/* Enhanced Responsive Breakpoints */
+/* ================================ */
+
+/* Small Mobile Devices (320px - 480px) */
+@media (max-width: 480px) {
+  :root {
+    --content-padding: 12px;
+    --font-size-base: 14px;
+    --font-size-lg: 16px;
+    --font-size-xl: 18px;
+  }
+  
+  .verse-card {
+    padding: var(--space-lg);
+  }
+  
+  .daily-verse-card {
+    padding: var(--space-lg);
+  }
+  
+  .verse-sanskrit,
+  #current-sanskrit {
+    font-size: var(--font-size-xl);
+  }
+}
+
+/* Tablet Portrait (481px - 768px) */
+@media (min-width: 481px) and (max-width: 768px) {
+  :root {
+    --container-mobile: 100%;
+    --content-padding: 20px;
+  }
+  
+  .chapters-grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-lg);
+  }
+  
+  .progress-stats {
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-lg);
+  }
+}
+
+/* Tablet Landscape & Small Desktop (769px - 1024px) */
+@media (min-width: 769px) {
+  :root {
+    --container-mobile: var(--container-tablet);
+    --content-padding: 24px;
+    --header-height: 70px;
+    --footer-height: 80px;
+  }
+  
+  .app-container {
+    max-width: var(--container-tablet);
+    box-shadow: var(--shadow-heavy);
+  }
+  
+  .header-content,
+  .bottom-nav {
+    max-width: var(--container-tablet);
+  }
+  
+  .chapters-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-xl);
+  }
+  
+  .action-buttons {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-lg);
+  }
+  
+  /* Enhanced verse navigation for tablet */
+  .verse-navigation {
+    bottom: calc(var(--footer-height) + 30px);
+    gap: 30px;
+  }
+}
+
+/* Desktop (1025px+) */
+@media (min-width: 1025px) {
+  :root {
+    --container-mobile: var(--container-desktop);
+    --content-padding: 32px;
+    --header-height: 80px;
+    --footer-height: 0; /* Hide bottom nav on desktop */
+  }
+  
+  .app-container {
+    max-width: var(--container-desktop);
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    grid-template-rows: var(--header-height) 1fr;
+    gap: 0;
+    min-height: 100vh;
+  }
+  
+  /* Desktop Header spans full width */
+  .app-header {
+    grid-column: 1 / -1;
+    position: relative;
+    max-width: none;
+  }
+  
+  /* Desktop Sidebar Navigation */
+  .desktop-sidebar {
+    grid-row: 2;
+    background: var(--card-bg);
+    backdrop-filter: var(--backdrop-blur-medium);
+    border-right: 1px solid rgba(255, 215, 0, 0.1);
+    padding: var(--space-xl) var(--space-lg);
+    overflow-y: auto;
+  }
+  
+  .desktop-nav {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-sm);
+  }
+  
+  .desktop-nav-item {
+    display: flex;
+    align-items: center;
+    gap: var(--space-md);
+    padding: var(--space-md);
+    border-radius: var(--border-radius);
+    background: none;
+    border: none;
+    color: var(--text-dark);
+    cursor: pointer;
+    transition: all var(--transition-fast);
+    text-align: left;
+    font-size: var(--font-size-base);
+  }
+  
+  .desktop-nav-item.active {
+    background: var(--secondary-gold);
+    color: var(--primary-navy);
+  }
+  
+  .desktop-nav-item:hover:not(.active) {
+    background: rgba(255, 215, 0, 0.1);
+  }
+  
+  /* Desktop Main Content */
+  .main-content {
+    grid-row: 2;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: var(--space-xl);
+    overflow-y: auto;
+  }
+  
+  /* Hide mobile bottom navigation on desktop */
+  .bottom-nav {
+    display: none;
+  }
+  
+  /* Desktop Chapters Grid */
+  .chapters-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-xl);
+  }
+  
+  /* Desktop Reader Layout */
+  .reader-container {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  /* Desktop Verse Navigation */
+  .verse-navigation {
+    position: static;
+    transform: none;
+    justify-content: center;
+    margin-top: var(--space-xl);
+    gap: var(--space-xl);
+  }
+  
+  .verse-nav-btn {
+    position: relative;
+    width: auto;
+    height: var(--touch-target-medium);
+    padding: 0 var(--space-lg);
+    border-radius: var(--border-radius);
+  }
+  
+  /* Desktop verse card enhancements */
+  .verse-card {
+    padding: var(--space-2xl) var(--space-2xl);
+    max-width: 700px;
+    margin: 0 auto;
+  }
+  
+  #current-sanskrit {
+    font-size: var(--font-size-3xl);
+  }
+  
+  /* Desktop Settings Layout */
+  .settings-content {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+}
+
+/* Ultra-wide Desktop (1440px+) */
+@media (min-width: 1440px) {
+  .app-container {
+    grid-template-columns: 300px 1fr;
+  }
+  
+  .chapters-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  
+  .reader-container {
+    max-width: 900px;
+  }
+}
+
+/* Enhanced Accessibility & Performance */
+@media (prefers-reduced-motion: reduce) {
+  .screen,
+  .verse-nav-btn,
+  .chapter-card {
+    transition: none;
+  }
+  
+  .verse-nav-btn:hover {
+    transform: none;
+  }
+}
+
+/* High DPI Displays */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .verse-nav-btn,
+  .icon-btn,
+  .back-btn {
+    border: 0.5px solid rgba(255, 215, 0, 0.1);
+  }
+}
+
+/* Landscape Orientation Adjustments */
+@media (orientation: landscape) and (max-height: 500px) {
+  :root {
+    --header-height: 50px;
+    --footer-height: 60px;
+  }
+  
+  .daily-verse-card,
+  .verse-card {
+    padding: var(--space-lg);
+  }
+  
+  .verse-sanskrit,
+  #current-sanskrit {
+    font-size: var(--font-size-lg);
+  }
+}
+
