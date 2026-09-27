@@ -2924,118 +2924,489 @@ label {
    21. RESPONSIVE BREAKPOINTS
    -------------------------------------------------------------------------- */
 
-/* ---- Mobile (< 768px) ---- */
+/* ---- Mobile (< 768px) Clean Zen UI ---- */
 @media (max-width: 767px) {
     :root {
-        --sp-header-h: var(--sp-header-h-mobile);
+        --sp-header-h: 52px;
     }
 
+    /* Minimal Floating Island Header */
     .app-header {
-        height: var(--sp-header-h-mobile);
-        top: 10px;
-        width: calc(100% - 20px);
-        border-radius: 10px;
+        height: 52px;
+        top: 8px;
+        width: calc(100% - 16px);
+        border-radius: 12px;
+        padding: 0 12px;
     }
 
+    .header-inner {
+        gap: 8px;
+    }
+
+    .brand-english {
+        font-size: 15px;
+        letter-spacing: 0.12em;
+    }
+
+    .header-right {
+        gap: 6px;
+    }
+
+    /* Hide redundant mobile controls */
+    #search-toggle { display: none !important; }
+    .desktop-search-wrapper { display: none !important; }
+    .floating-language-btn { display: none !important; }
+
+    .header-pill-btn {
+        padding: 5px 9px;
+        font-size: 11px;
+    }
+
+    .ai-advisor-header-btn {
+        padding: 5px 11px;
+        font-size: 11px;
+    }
+
+    .icon-btn {
+        width: 32px;
+        height: 32px;
+    }
+
+    /* Container Spacing */
     .app-container {
-        padding-top: 76px;
+        padding-top: 68px;
     }
 
     .main-content {
-        padding-bottom: calc(var(--sp-bottom-nav-h) + 64px);
-        padding-left: var(--sp-space-3);
-        padding-right: var(--sp-space-3);
+        padding-bottom: calc(var(--sp-bottom-nav-h) + 40px);
+        padding-left: 16px;
+        padding-right: 16px;
     }
 
     /* Show bottom nav, hide desktop nav */
     .bottom-nav { display: flex; }
     .desktop-nav { display: none; }
-    .desktop-search-wrapper { display: none; }
-    .floating-language-btn { display: flex; }
 
-    /* Hero stacks cleanly without excess vertical bulk */
-    .hero-section { padding: var(--sp-space-3) 0 var(--sp-space-4); }
+    /* Hero Section — Calm, Focused Editorial Opening */
+    .hero-section {
+        padding: 16px 0 24px;
+    }
 
     .hero-container {
         grid-template-columns: 1fr;
-        gap: var(--sp-space-5);
+        gap: 20px;
     }
 
-    .hero-badge { margin-bottom: 12px; font-size: 10px; }
-    .hero-heading { font-size: 24px; line-height: 1.18; margin-bottom: 10px; letter-spacing: -0.5px; }
-    .hero-subheading { font-size: 13.5px; line-height: 1.5; margin-bottom: 18px; }
+    .hero-badge {
+        font-size: 9.5px;
+        letter-spacing: 0.1em;
+        margin-bottom: 10px;
+    }
+
+    .hero-heading {
+        font-size: 22px;
+        line-height: 1.2;
+        letter-spacing: -0.4px;
+        margin-bottom: 10px;
+    }
+
+    .hero-subheading {
+        font-size: 13.5px;
+        line-height: 1.55;
+        margin-bottom: 18px;
+        color: var(--sp-text-secondary);
+    }
 
     .hero-actions {
         display: flex;
         flex-direction: row;
         gap: 8px;
-        margin-bottom: 16px;
+        margin-bottom: 18px;
     }
 
     .hero-actions .action-btn {
         flex: 1;
         padding: 11px 12px;
         font-size: 12.5px;
+        letter-spacing: 0.02em;
     }
 
-    /* Ultra-clean 4-column inline metric rail on mobile */
+    /* Ultra-clean 4-metric milestone rail */
     .stats-grid {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
-        gap: 6px;
+        gap: 4px;
         padding: 12px 0;
-        margin-top: 14px;
+        margin-top: 10px;
+        border-top: 1px solid rgba(255, 255, 255, 0.06);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.06);
     }
 
-    .stat-number { font-size: 18px; }
-    .stat-label { font-size: 8px; letter-spacing: 0.04em; }
+    [data-theme="light"] .stats-grid {
+        border-color: rgba(0, 0, 0, 0.06);
+    }
 
-    /* Daily verse */
-    .daily-verse-wrapper { padding: 20px 16px; border-radius: 12px; }
-    .daily-verse-card { padding: 0; }
-    .daily-shlok-calligraphy { font-size: 17px; line-height: 1.7; }
-    .daily-translation-text { font-size: 13px; line-height: 1.6; margin-bottom: 16px; }
-    .daily-card-actions { gap: 14px; flex-wrap: wrap; }
-    .daily-action-pill { font-size: 11px; }
+    .stat-number {
+        font-size: 17px;
+        font-weight: 700;
+    }
 
-    /* Section Spacing & Highlights on Mobile */
-    .yogas-section { padding: 32px 0; }
-    .counsel-showcase-section { padding: 32px 0; }
-    .counsel-showcase-card { padding: 24px 18px; border-radius: 12px; }
-    .counsel-prompt-chips { flex-direction: column; gap: 8px; }
-    .counsel-prompt-pill { width: 100%; font-size: 12.5px; }
+    .stat-label {
+        font-size: 7.5px;
+        letter-spacing: 0.05em;
+    }
 
-    .home-dilemmas-section { padding: 32px 0; }
-    .home-soundscape-section { padding: 32px 0; }
-    .soundscape-card-inner { padding: 24px 18px; }
+    /* Today's Contemplation Shlok Folio */
+    .daily-verse-wrapper {
+        padding: 22px 18px;
+        border-radius: 14px;
+        margin-top: 4px;
+    }
 
-    /* PWA Install Banner: Float above bottom nav on mobile */
+    .daily-verse-badge {
+        font-size: 10px;
+        margin-bottom: 14px;
+    }
+
+    .daily-verse-card {
+        padding: 0;
+    }
+
+    .daily-shlok-calligraphy {
+        font-size: 17px;
+        line-height: 1.75;
+        margin-bottom: 12px;
+    }
+
+    .daily-translation-text {
+        font-size: 13px;
+        line-height: 1.6;
+        margin-bottom: 18px;
+    }
+
+    .daily-card-actions {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .daily-action-pill {
+        font-size: 11px;
+    }
+
+    /* Section Headers */
+    .section-container {
+        padding: 0;
+    }
+
+    .section-header {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+        justify-content: space-between;
+        margin-bottom: 14px;
+        gap: 8px;
+    }
+
+    .section-header h2 {
+        font-size: 16px;
+        margin-bottom: 2px;
+    }
+
+    .section-subtitle {
+        font-size: 12px;
+        display: block;
+    }
+
+    .section-view-all-btn {
+        font-size: 11.5px;
+    }
+
+    /* ----------------------------------------------------------------------
+       HORIZONTAL SWIPE CAROUSELS — ELIMINATE ENDLESS VERTICAL STACKING
+       ---------------------------------------------------------------------- */
+    
+    /* 1. Four Sacred Yogas Carousel */
+    .yogas-section {
+        padding: 28px 0;
+    }
+
+    .yogas-grid {
+        display: flex !important;
+        overflow-x: auto !important;
+        scroll-snap-type: x mandatory;
+        gap: 12px;
+        padding: 4px 16px 14px 16px;
+        margin: 0 -16px;
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: none;
+    }
+
+    .yogas-grid::-webkit-scrollbar { display: none; }
+
+    .yoga-pathway-card {
+        flex: 0 0 76vw;
+        max-width: 280px;
+        scroll-snap-align: start;
+        padding: 20px 18px;
+        border-radius: 12px;
+    }
+
+    .yoga-card-title {
+        font-size: 16px;
+        margin-bottom: 6px;
+    }
+
+    .yoga-card-desc {
+        font-size: 12.5px;
+        line-height: 1.5;
+        margin-bottom: 14px;
+    }
+
+    .yoga-card-footer {
+        font-size: 11.5px;
+    }
+
+    /* 2. Parthasarathi Socratic Counsel Feature on Mobile */
+    .counsel-showcase-section {
+        padding: 28px 0;
+    }
+
+    .counsel-showcase-card {
+        padding: 22px 18px;
+        border-radius: 14px;
+    }
+
+    .counsel-card-badge {
+        font-size: 10px;
+        margin-bottom: 10px;
+    }
+
+    .counsel-heading {
+        font-size: 18px;
+        line-height: 1.25;
+        margin-bottom: 8px;
+    }
+
+    .counsel-subheading {
+        font-size: 13px;
+        line-height: 1.55;
+        margin-bottom: 16px;
+    }
+
+    /* Horizontally Swipeable Counsel Prompt Chips */
+    .counsel-prompt-chips {
+        display: flex !important;
+        overflow-x: auto !important;
+        flex-wrap: nowrap !important;
+        gap: 8px;
+        padding: 2px 0 10px;
+        margin-bottom: 16px;
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: none;
+    }
+
+    .counsel-prompt-chips::-webkit-scrollbar { display: none; }
+
+    .counsel-prompt-pill {
+        flex: 0 0 auto;
+        white-space: nowrap;
+        font-size: 12px;
+        padding: 8px 14px;
+        border-radius: 7px;
+    }
+
+    .counsel-cta-btn {
+        width: 100%;
+        padding: 12px 18px;
+        font-size: 13px;
+    }
+
+    /* 3. Prashna-Marg Dilemmas Carousel */
+    .home-dilemmas-section {
+        padding: 28px 0;
+    }
+
+    .home-dilemmas-grid {
+        display: flex !important;
+        overflow-x: auto !important;
+        scroll-snap-type: x mandatory;
+        gap: 12px;
+        padding: 4px 16px 14px 16px;
+        margin: 0 -16px;
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: none;
+    }
+
+    .home-dilemmas-grid::-webkit-scrollbar { display: none; }
+
+    .home-dilemma-card {
+        flex: 0 0 74vw;
+        max-width: 270px;
+        scroll-snap-align: start;
+        padding: 18px 16px;
+        border-radius: 12px;
+    }
+
+    .dilemma-state-title {
+        font-size: 14.5px;
+    }
+
+    .dilemma-remedy-text {
+        font-size: 12.5px;
+        line-height: 1.5;
+        margin-bottom: 14px;
+    }
+
+    .dilemma-verse-tag {
+        font-size: 10px;
+    }
+
+    /* 4. Meditative Stillness Soundscape Sanctuary */
+    .home-soundscape-section {
+        padding: 28px 0;
+    }
+
+    .soundscape-card-inner {
+        padding: 22px 18px;
+        border-radius: 14px;
+    }
+
+    .soundscape-badge {
+        font-size: 10px;
+        margin-bottom: 8px;
+    }
+
+    .soundscape-heading {
+        font-size: 18px;
+        line-height: 1.25;
+        margin-bottom: 8px;
+    }
+
+    .soundscape-desc {
+        font-size: 13px;
+        line-height: 1.55;
+        margin-bottom: 18px;
+    }
+
+    .soundscape-actions {
+        display: flex;
+        flex-direction: row;
+        gap: 8px;
+    }
+
+    .soundscape-actions .action-btn {
+        flex: 1;
+        padding: 10px 12px;
+        font-size: 12px;
+        text-align: center;
+    }
+
+    /* 5. Chapters Preview Carousel on Home Screen */
+    .chapters-section {
+        padding: 28px 0 36px;
+    }
+
+    #home-chapters-grid {
+        display: flex !important;
+        overflow-x: auto !important;
+        scroll-snap-type: x mandatory;
+        gap: 12px;
+        padding: 4px 16px 14px 16px;
+        margin: 0 -16px;
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: none;
+    }
+
+    #home-chapters-grid::-webkit-scrollbar { display: none; }
+
+    #home-chapters-grid .chapter-card {
+        flex: 0 0 74vw;
+        max-width: 265px;
+        scroll-snap-align: start;
+        padding: 18px 16px;
+        border-radius: 12px;
+    }
+
+    /* On dedicated chapters screen, use 1-column */
+    #chapters-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+
+    /* 6. Footer on Mobile — Calm & Grouped */
+    .site-footer {
+        margin-top: 40px;
+        padding: 36px 0 20px;
+    }
+
+    .footer-colophon {
+        padding: 16px 14px;
+        margin-bottom: 28px;
+    }
+
+    .colophon-sanskrit {
+        font-size: 14.5px;
+        line-height: 1.7;
+    }
+
+    .colophon-translation {
+        font-size: 12px;
+    }
+
+    .footer-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 22px 14px;
+        margin-bottom: 28px;
+    }
+
+    .footer-col h4 {
+        font-size: 10px;
+        margin-bottom: 10px;
+    }
+
+    .footer-col li a,
+    .footer-col li span {
+        font-size: 12px;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 10px;
+        padding-top: 20px;
+    }
+
+    .footer-brand {
+        flex-direction: column;
+        gap: 4px;
+    }
+
+    .footer-craft-signature {
+        font-size: 10.5px;
+    }
+
+    /* PWA Install Banner: Compact floating card above bottom nav */
     .install-banner {
         bottom: var(--sp-bottom-nav-h);
         z-index: 490;
-        padding: 10px 14px;
+        padding: 8px 12px;
     }
 
-    .install-text h3 { font-size: 13px; }
-    .install-text p { font-size: 11px; }
-    .install-btn { padding: 6px 14px; font-size: 12px; }
+    .install-text h3 { font-size: 12.5px; }
+    .install-text p { font-size: 10.5px; }
+    .install-btn { padding: 5px 12px; font-size: 11.5px; }
 
-    /* Reader */
+    /* Reader Screen Mobile Polish */
     .reader-section { padding-top: var(--sp-space-2); }
     .verse-card { padding: var(--sp-space-4); }
-    .verse-sanskrit-block { font-size: 19px; }
+    .verse-sanskrit-block { font-size: 18px; line-height: 1.8; }
     .desktop-verse-arrow { display: none; }
 
-    /* Chapters */
-    .chapters-section { padding-bottom: var(--sp-space-6); }
-
-    h1 { font-size: 22px; }
-
-    .section-header {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: var(--sp-space-2);
-    }
+    h1 { font-size: 21px; }
 }
 
 /* ---- Tablet (768px - 1023px) ---- */
