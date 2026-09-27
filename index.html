@@ -23,7 +23,7 @@
             if ('caches' in window) {
                 caches.keys().then(function(names) {
                     for (var i = 0; i < names.length; i++) {
-                        if (!names[i].includes('v6-editorial')) {
+                        if (!names[i].includes('v7-editorial')) {
                             caches.delete(names[i]);
                         }
                     }
@@ -51,8 +51,8 @@
         rel="stylesheet">
 
     <!-- Stylesheets with Cache Busting -->
-    <link rel="stylesheet" href="css/main.css?v=6.0">
-    <link rel="stylesheet" href="css/features.css?v=6.0">
+    <link rel="stylesheet" href="css/main.css?v=7.0">
+    <link rel="stylesheet" href="css/features.css?v=7.0">
 </head>
 
 <body>
@@ -612,20 +612,12 @@
                         <label class="control-label">Aesthetic Edition</label>
                         <div class="card-theme-pills">
                             <button class="theme-pill active" data-theme="midnight">
-                                <span class="theme-dot" style="background: #111215; border: 1px solid #c29b62;"></span>
-                                <span>Obsidian Ink</span>
+                                <span class="theme-dot" style="background: #111215; border: 1px solid #c5a059;"></span>
+                                <span>Manuscript Obsidian</span>
                             </button>
                             <button class="theme-pill" data-theme="saffron">
-                                <span class="theme-dot" style="background: #f6f3eb; border: 1px solid #8c5f3e;"></span>
-                                <span>Warm Linen</span>
-                            </button>
-                            <button class="theme-pill" data-theme="sandalwood">
-                                <span class="theme-dot" style="background: #171b1f; border: 1px solid #9d8868;"></span>
-                                <span>Heritage Slate</span>
-                            </button>
-                            <button class="theme-pill" data-theme="emerald">
-                                <span class="theme-dot" style="background: #1c1815; border: 1px solid #b88a52;"></span>
-                                <span>Deep Sandalwood</span>
+                                <span class="theme-dot" style="background: #f8f6f0; border: 1px solid #8c5f3e;"></span>
+                                <span>Imperial Linen</span>
                             </button>
                         </div>
                     </div>
@@ -759,10 +751,10 @@
     <div id="toast-container" class="toast-container"></div>
 
     <!-- Scripts with Cache Busting -->
-    <script src="js/api-client.js?v=6.0"></script>
-    <script src="js/dhyana-audio.js?v=6.0"></script>
-    <script src="js/canvas-card.js?v=6.0"></script>
-    <script src="js/app.js?v=6.0"></script>
+    <script src="js/api-client.js?v=7.0"></script>
+    <script src="js/dhyana-audio.js?v=7.0"></script>
+    <script src="js/canvas-card.js?v=7.0"></script>
+    <script src="js/app.js?v=7.0"></script>
 </body>
 
 </html>

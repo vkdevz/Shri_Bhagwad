@@ -14,52 +14,28 @@
 class DivineCanvasGenerator {
     static THEMES = {
         midnight: {
-            name: 'Obsidian Ink',
-            bgStart: '#14151a',
-            bgEnd: '#0d0e11',
-            borderGold: '#c29b62',
-            innerBorder: 'rgba(194, 155, 98, 0.25)',
-            textGold: '#c29b62',
+            name: 'Manuscript Obsidian',
+            bgStart: '#131418',
+            bgEnd: '#0c0d10',
+            borderGold: '#c5a059',
+            innerBorder: 'rgba(197, 160, 89, 0.25)',
+            textGold: '#c5a059',
             textSanskrit: '#f0ede6',
             textTranslation: '#cfcac0',
-            accent: '#ab854b',
-            watermarkColor: 'rgba(194, 155, 98, 0.05)'
+            accent: '#b38e47',
+            watermarkColor: 'rgba(197, 160, 89, 0.05)'
         },
         saffron: {
-            name: 'Warm Linen',
-            bgStart: '#f7f4ed',
-            bgEnd: '#ebe6dc',
+            name: 'Imperial Linen',
+            bgStart: '#f8f6f0',
+            bgEnd: '#ede8dd',
             borderGold: '#8c5f3e',
             innerBorder: 'rgba(140, 95, 62, 0.25)',
             textGold: '#8c5f3e',
-            textSanskrit: '#1c1c20',
-            textTranslation: '#3d3c40',
-            accent: '#734b2c',
+            textSanskrit: '#18181c',
+            textTranslation: '#424147',
+            accent: '#704728',
             watermarkColor: 'rgba(140, 95, 62, 0.05)'
-        },
-        sandalwood: {
-            name: 'Heritage Slate',
-            bgStart: '#1c2026',
-            bgEnd: '#13161a',
-            borderGold: '#9d8868',
-            innerBorder: 'rgba(157, 136, 104, 0.25)',
-            textGold: '#c2b093',
-            textSanskrit: '#f4f6f8',
-            textTranslation: '#c8cfd6',
-            accent: '#8c7756',
-            watermarkColor: 'rgba(157, 136, 104, 0.05)'
-        },
-        emerald: {
-            name: 'Deep Sandalwood',
-            bgStart: '#201a16',
-            bgEnd: '#14100d',
-            borderGold: '#b88a52',
-            innerBorder: 'rgba(184, 138, 82, 0.25)',
-            textGold: '#d9ad73',
-            textSanskrit: '#f7f2ea',
-            textTranslation: '#d2c9bd',
-            accent: '#9e7239',
-            watermarkColor: 'rgba(184, 138, 82, 0.05)'
         }
     };
 

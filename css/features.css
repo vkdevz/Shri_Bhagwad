@@ -312,17 +312,17 @@
 .download-btn {
     background: var(--color-primary);
     border-color: var(--color-primary);
-    color: #111215;
+    color: var(--color-primary-text);
 }
 
 .download-btn:hover {
     background: var(--color-primary-hover);
     border-color: var(--color-primary-hover);
-    color: #111215;
+    color: var(--color-primary-text);
 }
 
 .download-btn .sub-text {
-    color: rgba(17, 18, 21, 0.75);
+    opacity: 0.8;
 }
 
 .whatsapp-btn,
@@ -567,7 +567,7 @@
 
 .dhyana-btn.primary {
     background: var(--color-primary);
-    color: #111215;
+    color: var(--color-primary-text);
     border: none;
 }
 
@@ -693,7 +693,7 @@
 
 .ai-input-row button {
     background: var(--color-primary);
-    color: #111215;
+    color: var(--color-primary-text);
     border: none;
     border-radius: var(--radius-sm);
     width: 38px;

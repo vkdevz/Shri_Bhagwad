@@ -9,7 +9,7 @@ class GitaApp {
         this.searchIndex = [];
         this.currentScreen = 'home';
         this.settings = {
-            theme: 'divine',
+            theme: 'dark', // 'dark' (Manuscript Obsidian) or 'light' (Imperial Linen)
             fontSize: 16,
             autoReveal: false,
             hapticFeedback: true,
@@ -1766,16 +1766,27 @@ class GitaApp {
 
     // Add other missing methods like setTheme, setFontSize, etc.
     setTheme(theme) {
-        this.settings.theme = theme;
-        document.documentElement.setAttribute('data-theme', theme);
+        const validTheme = theme === 'light' ? 'light' : 'dark';
+        this.settings.theme = validTheme;
+        document.documentElement.setAttribute('data-theme', validTheme);
         this.saveUserData();
+
+        // Update Theme Toggle Button in Header
+        const themeBtn = document.getElementById('theme-toggle');
+        if (themeBtn) {
+            themeBtn.title = validTheme === 'dark'
+                ? 'Switch to Imperial Linen (Light)'
+                : 'Switch to Manuscript Obsidian (Dark)';
+            themeBtn.innerHTML = validTheme === 'dark'
+                ? `<svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 7c-2.76 0-5 2.24-5 5s2.24 5 5 5 5-2.24 5-5-2.24-5-5-5zM2 13h2c.55 0 1-.45 1-1s-.45-1-1-1H2c-.55 0-1 .45-1 1s.45 1 1 1zm18 0h2c.55 0 1-.45 1-1s-.45-1-1-1h-2c-.55 0-1 .45-1 1s.45 1 1 1zM11 2v2c0 .55.45 1 1 1s1-.45 1-1V2c0-.55-.45-1-1-1s-1 .45-1 1zm0 18v2c0 .55.45 1 1 1s1-.45 1-1v-2c0-.55-.45-1-1-1s-1 .45-1 1zM5.99 4.58c-.39-.39-1.03-.39-1.41 0s-.39 1.03 0 1.41l1.06 1.06c.39.39 1.03.39 1.41 0s.39-1.03 0-1.41L5.99 4.58zm12.37 12.37c-.39-.39-1.03-.39-1.41 0s-.39 1.03 0 1.41l1.06 1.06c.39.39 1.03.39 1.41 0s.39-1.03 0-1.41l-1.06-1.06zm1.06-10.96c.39-.39.39-1.03 0-1.41s-1.03-.39-1.41 0l-1.06 1.06c-.39.39-.39 1.03 0 1.41s1.03.39 1.41 0l1.06-1.06zM7.05 18.36c.39-.39.39-1.03 0-1.41s-1.03-.39-1.41 0l-1.06 1.06c-.39.39-.39 1.03 0 1.41s1.03.39 1.41 0l1.06-1.06z"/></svg>`
+                : `<svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 3c-4.97 0-9 4.03-9 9 0 2.12.74 4.07 1.97 5.61L4.35 19.4c-.39.39-.39 1.02 0 1.41.39.39 1.02.39 1.41 0l1.9-1.9C9.28 19.64 10.58 20 12 20c4.97 0 9-4.03 9-9s-4.03-9-9-9zm0 15c-3.31 0-6-2.69-6-6s2.69-6 6-6 6 2.69 6 6-2.69 6-6 6z"/></svg>`;
+        }
     }
 
     cycleTheme() {
-        const themes = ['divine', 'dark', 'light'];
-        const currentIndex = themes.indexOf(this.settings.theme);
-        const nextIndex = (currentIndex + 1) % themes.length;
-        this.setTheme(themes[nextIndex]);
+        const nextTheme = this.settings.theme === 'light' ? 'dark' : 'light';
+        this.setTheme(nextTheme);
+        this.showToast(nextTheme === 'light' ? 'Imperial Linen theme activated' : 'Manuscript Obsidian theme activated');
     }
 
     setFontSize(size) {
