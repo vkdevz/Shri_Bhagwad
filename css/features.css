@@ -1,5 +1,6 @@
 /* ==========================================================================
-   PRASHNA-MARG (DILEMMAS), DHYANA, AI COUNSEL & 3:4 DIVINE CANVAS STYLES
+   PRASHNA-MARG (DILEMMAS), DHYANA, AI COUNSEL & 3:4 SOCIAL CARD STYLES
+   Human-Crafted Editorial System: Zero pills, zero neon, zero glowing halos.
    ========================================================================== */
 
 /* ==========================================================================
@@ -8,9 +9,9 @@
 .gita-modal-overlay {
     position: fixed;
     inset: 0;
-    background: rgba(3, 6, 12, 0.82);
-    backdrop-filter: blur(14px);
-    -webkit-backdrop-filter: blur(14px);
+    background: rgba(10, 11, 14, 0.85);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -18,7 +19,7 @@
     z-index: 2000;
     opacity: 1;
     visibility: visible;
-    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    transition: opacity 0.25s ease, visibility 0.25s ease;
 }
 
 .gita-modal-overlay.hidden {
@@ -28,22 +29,22 @@
 }
 
 .gita-modal-content {
-    background: #0B1324;
-    border: 1px solid var(--color-primary);
-    border-radius: var(--radius-lg);
+    background: var(--color-surface);
+    border: 1px solid var(--color-card-border);
+    border-radius: var(--radius-md);
     width: 100%;
     max-width: 580px;
     max-height: 90vh;
     display: flex;
     flex-direction: column;
-    box-shadow: var(--shadow-lg), var(--glow-gold);
+    box-shadow: var(--shadow-lg);
     overflow: hidden;
-    animation: modalSlideUp 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+    animation: modalIn 0.2s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-@keyframes modalSlideUp {
-    from { opacity: 0; transform: scale(0.95) translateY(20px); }
-    to { opacity: 1; transform: scale(1) translateY(0); }
+@keyframes modalIn {
+    from { opacity: 0; transform: translateY(12px); }
+    to { opacity: 1; transform: translateY(0); }
 }
 
 .gita-modal-header {
@@ -51,22 +52,23 @@
     align-items: center;
     justify-content: space-between;
     padding: 1.25rem 1.5rem;
-    border-bottom: 1px solid rgba(255, 215, 0, 0.15);
-    background: rgba(15, 23, 42, 0.6);
+    border-bottom: 1px solid var(--color-card-border);
+    background: var(--color-surface);
 }
 
 .gita-modal-header h3 {
     font-family: var(--font-heading);
-    color: var(--color-gold-light);
-    font-size: 1.25rem;
+    color: var(--color-text);
+    font-size: 1.15rem;
+    letter-spacing: 0.5px;
     margin: 0;
 }
 
 .modal-close-btn {
     background: none;
     border: none;
-    color: var(--color-text-muted);
-    font-size: 1.8rem;
+    color: var(--color-text-dim);
+    font-size: 1.5rem;
     cursor: pointer;
     line-height: 1;
     padding: 0.25rem;
@@ -74,7 +76,7 @@
 }
 
 .modal-close-btn:hover {
-    color: var(--color-primary);
+    color: var(--color-text);
 }
 
 .gita-modal-body {
@@ -86,11 +88,11 @@
 }
 
 /* ==========================================================================
-   2. DIVINE CANVAS 3:4 QUOTE CARD MODAL (IG & WA)
+   2. 3:4 QUOTE CARD GENERATOR MODAL (FINE-ART PRINT EDITION)
    ========================================================================== */
 .canvas-modal-layout {
-    max-width: 960px;
-    max-height: 94vh;
+    max-width: 920px;
+    max-height: 92vh;
 }
 
 .canvas-modal-body-grid {
@@ -112,13 +114,13 @@
 
 .canvas-aspect-box {
     width: 100%;
-    max-width: 380px;
+    max-width: 360px;
     aspect-ratio: 3 / 4;
-    background: #060B14;
-    border: 2px solid var(--color-primary);
-    border-radius: var(--radius-md);
+    background: #0d0e12;
+    border: 1px solid var(--color-card-border);
+    border-radius: var(--radius-sm);
     overflow: hidden;
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.7), var(--glow-gold);
+    box-shadow: var(--shadow-md);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -132,12 +134,10 @@
 }
 
 .canvas-badge-info {
-    font-size: 0.78rem;
-    color: var(--color-gold-light);
-    background: rgba(255, 215, 0, 0.08);
-    border: 1px solid rgba(255, 215, 0, 0.2);
-    padding: 0.35rem 0.85rem;
-    border-radius: var(--radius-full);
+    font-size: 0.72rem;
+    color: var(--color-text-dim);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
     text-align: center;
 }
 
@@ -155,28 +155,29 @@
 }
 
 .control-label {
-    font-family: var(--font-heading);
-    font-size: 0.85rem;
-    color: var(--color-primary);
+    font-family: var(--font-body);
+    font-size: 0.78rem;
+    font-weight: 600;
+    color: var(--color-text-dim);
     letter-spacing: 0.5px;
     text-transform: uppercase;
 }
 
-/* Theme Selector Pills */
+/* Rectangular Theme Selector (No Pills) */
 .card-theme-pills {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 0.6rem;
+    gap: 0.5rem;
 }
 
 .theme-pill {
-    background: rgba(15, 23, 42, 0.7);
+    background: rgba(255, 255, 255, 0.03);
     border: 1px solid var(--color-card-border);
-    color: var(--color-text);
-    padding: 0.6rem 0.85rem;
-    border-radius: var(--radius-md);
-    font-size: 0.82rem;
-    font-weight: 600;
+    color: var(--color-text-muted);
+    padding: 0.55rem 0.75rem;
+    border-radius: var(--radius-sm);
+    font-size: 0.8rem;
+    font-weight: 500;
     cursor: pointer;
     display: flex;
     align-items: center;
@@ -185,25 +186,25 @@
 }
 
 .theme-pill:hover {
-    border-color: var(--color-primary);
-    background: rgba(255, 215, 0, 0.08);
+    border-color: rgba(255, 255, 255, 0.2);
+    color: var(--color-text);
 }
 
 .theme-pill.active {
-    background: rgba(255, 215, 0, 0.15);
+    background: rgba(255, 255, 255, 0.06);
     border-color: var(--color-primary);
-    color: var(--color-gold-light);
-    box-shadow: 0 0 12px rgba(255, 215, 0, 0.25);
+    color: var(--color-primary);
+    font-weight: 600;
 }
 
 .theme-dot {
-    width: 14px;
-    height: 14px;
-    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    border-radius: 2px;
     flex-shrink: 0;
 }
 
-/* Language Selection Pills */
+/* Rectangular Language Selector */
 .card-lang-buttons {
     display: flex;
     gap: 0.5rem;
@@ -211,35 +212,36 @@
 
 .lang-pill {
     flex: 1;
-    background: rgba(15, 23, 42, 0.7);
+    background: rgba(255, 255, 255, 0.03);
     border: 1px solid var(--color-card-border);
     color: var(--color-text-muted);
-    padding: 0.5rem 0.75rem;
+    padding: 0.5rem 0.65rem;
     border-radius: var(--radius-sm);
-    font-size: 0.85rem;
-    font-weight: 600;
+    font-size: 0.8rem;
+    font-weight: 500;
     cursor: pointer;
     text-align: center;
     transition: all var(--transition-fast);
 }
 
 .lang-pill:hover {
-    border-color: var(--color-primary);
     color: var(--color-text);
+    border-color: rgba(255, 255, 255, 0.2);
 }
 
 .lang-pill.active {
-    background: var(--color-primary);
-    color: #070B14;
+    background: rgba(255, 255, 255, 0.06);
+    color: var(--color-primary);
     border-color: var(--color-primary);
+    font-weight: 600;
 }
 
-/* Checkbox */
+/* Watermark Checkbox */
 .checkbox-label {
     display: flex;
     align-items: center;
-    gap: 0.6rem;
-    font-size: 0.85rem;
+    gap: 0.5rem;
+    font-size: 0.82rem;
     color: var(--color-text-muted);
     cursor: pointer;
     user-select: none;
@@ -247,43 +249,46 @@
 
 .checkbox-label input[type="checkbox"] {
     accent-color: var(--color-primary);
-    width: 16px;
-    height: 16px;
+    width: 14px;
+    height: 14px;
 }
 
 .divider-line {
     height: 1px;
-    background: rgba(255, 215, 0, 0.15);
+    background: var(--color-card-border);
     margin: 0.25rem 0;
 }
 
-/* 4 High-Impact Share Buttons */
+/* Dignified Share Actions (Zero Neon Gradients) */
 .card-sharing-actions {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 0.75rem;
+    gap: 0.65rem;
 }
 
 .share-action-btn {
-    border: none;
-    padding: 0.85rem 1rem;
-    border-radius: var(--radius-md);
+    border: 1px solid var(--color-card-border);
+    background: rgba(255, 255, 255, 0.03);
+    color: var(--color-text);
+    padding: 0.75rem 0.9rem;
+    border-radius: var(--radius-sm);
     cursor: pointer;
     display: flex;
     align-items: center;
-    gap: 0.75rem;
+    gap: 0.65rem;
     text-align: left;
     transition: all var(--transition-fast);
 }
 
 .share-action-btn:hover {
-    transform: translateY(-2px);
-    box-shadow: var(--shadow-md);
+    border-color: rgba(255, 255, 255, 0.25);
+    background: rgba(255, 255, 255, 0.06);
 }
 
 .action-icon {
-    font-size: 1.5rem;
+    font-size: 1.15rem;
     flex-shrink: 0;
+    line-height: 1;
 }
 
 .btn-stacked-text {
@@ -292,45 +297,38 @@
 }
 
 .btn-stacked-text .main-text {
-    font-size: 0.88rem;
-    font-weight: 700;
+    font-size: 0.82rem;
+    font-weight: 600;
     line-height: 1.2;
 }
 
 .btn-stacked-text .sub-text {
-    font-size: 0.72rem;
-    opacity: 0.8;
+    font-size: 0.68rem;
+    color: var(--color-text-dim);
     margin-top: 2px;
 }
 
-/* Specific Button Themes */
+/* Primary High-Contrast Download Button */
 .download-btn {
-    background: linear-gradient(135deg, #FFD700 0%, #F59E0B 100%);
-    color: #070B14;
-    box-shadow: 0 4px 14px rgba(255, 215, 0, 0.3);
-}
-
-.whatsapp-btn {
-    background: linear-gradient(135deg, #25D366 0%, #128C7E 100%);
-    color: #FFFFFF;
-    box-shadow: 0 4px 14px rgba(37, 211, 102, 0.3);
-}
-
-.instagram-btn {
-    background: linear-gradient(135deg, #833AB4 0%, #FD1D1D 50%, #FCB045 100%);
-    color: #FFFFFF;
-    box-shadow: 0 4px 14px rgba(253, 29, 29, 0.3);
-}
-
-.copy-btn {
-    background: rgba(255, 255, 255, 0.08);
-    border: 1px solid var(--color-card-border);
-    color: var(--color-text);
-}
-
-.copy-btn:hover {
+    background: var(--color-primary);
     border-color: var(--color-primary);
-    background: rgba(255, 215, 0, 0.12);
+    color: #111215;
+}
+
+.download-btn:hover {
+    background: var(--color-primary-hover);
+    border-color: var(--color-primary-hover);
+    color: #111215;
+}
+
+.download-btn .sub-text {
+    color: rgba(17, 18, 21, 0.75);
+}
+
+.whatsapp-btn,
+.instagram-btn,
+.copy-btn {
+    background: transparent;
 }
 
 /* ==========================================================================
@@ -339,155 +337,153 @@
 .dilemmas-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-    gap: 1.5rem;
+    gap: 1.25rem;
 }
 
 .dilemma-card {
     background: var(--color-surface);
     border: 1px solid var(--color-card-border);
-    backdrop-filter: blur(16px);
-    border-radius: var(--radius-lg);
-    padding: 1.75rem;
+    border-radius: var(--radius-md);
+    padding: 1.5rem;
     cursor: pointer;
-    transition: all var(--transition-base);
+    transition: border-color var(--transition-fast), transform var(--transition-fast);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     gap: 1rem;
+    min-height: 220px;
 }
 
 .dilemma-card:hover {
-    transform: translateY(-4px);
-    border-color: var(--color-primary);
-    box-shadow: var(--shadow-lg), var(--glow-gold);
+    transform: translateY(-2px);
+    border-color: var(--color-card-border-hover);
 }
 
 .dilemma-card-header {
     display: flex;
-    align-items: center;
-    gap: 1rem;
+    align-items: flex-start;
+    gap: 0.85rem;
 }
 
 .dilemma-icon {
-    font-size: 2rem;
-    width: 52px;
-    height: 52px;
-    border-radius: var(--radius-md);
-    background: rgba(255, 215, 0, 0.1);
-    border: 1px solid rgba(255, 215, 0, 0.25);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-shrink: 0;
+    display: none;
 }
 
 .dilemma-title-block {
     display: flex;
     flex-direction: column;
+    gap: 0.25rem;
 }
 
 .dilemma-sanskrit-tag {
-    font-family: var(--font-sanskrit);
-    font-size: 0.85rem;
-    color: var(--color-gold-light);
-    font-weight: 700;
+    font-family: var(--font-body);
+    font-size: 0.72rem;
+    color: var(--color-primary);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
 }
 
 .dilemma-title {
-    font-size: 1.15rem;
-    font-weight: 700;
-    color: #FFFFFF;
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: var(--color-text);
+    line-height: 1.35;
 }
 
 .dilemma-desc {
-    font-size: 0.88rem;
-    color: var(--color-text-muted);
-    line-height: 1.5;
+    font-size: 0.82rem;
+    color: var(--color-text-dim);
+    line-height: 1.55;
 }
 
 .dilemma-prescription-preview {
-    background: rgba(0, 0, 0, 0.25);
-    border-left: 3px solid var(--color-primary);
-    border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
-    padding: 0.65rem 0.85rem;
-    font-size: 0.82rem;
-    color: var(--color-text);
+    background: rgba(0, 0, 0, 0.2);
+    border-left: 2px solid var(--color-primary);
+    border-radius: 0 var(--radius-xs) var(--radius-xs) 0;
+    padding: 0.6rem 0.85rem;
+    font-size: 0.8rem;
+    color: var(--color-text-muted);
     font-style: italic;
+    line-height: 1.5;
 }
 
 .dilemma-card-footer {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    font-size: 0.8rem;
+    font-size: 0.78rem;
     color: var(--color-primary);
     font-weight: 600;
-    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    border-top: 1px solid var(--color-card-border);
     padding-top: 0.75rem;
+    letter-spacing: 0.3px;
 }
 
 /* Dilemma Detail Container */
 .dilemma-detail-container {
-    max-width: 850px;
+    max-width: 820px;
     margin: 0 auto;
 }
 
 .dilemma-detail-banner {
     background: var(--color-surface);
-    border: 1px solid var(--color-primary);
-    border-radius: var(--radius-lg);
+    border: 1px solid var(--color-card-border);
+    border-radius: var(--radius-md);
     padding: 2rem;
-    box-shadow: var(--shadow-lg), var(--glow-gold);
+    box-shadow: var(--shadow-sm);
     margin-bottom: 2rem;
 }
 
 .dilemma-detail-banner h2 {
     font-family: var(--font-heading);
-    font-size: 1.75rem;
-    color: var(--color-gold-light);
+    font-size: 1.65rem;
+    color: var(--color-text);
     margin-bottom: 0.5rem;
 }
 
 .dilemma-remedy-box {
     margin-top: 1rem;
-    background: rgba(255, 215, 0, 0.08);
-    border: 1px solid rgba(255, 215, 0, 0.25);
-    border-radius: var(--radius-md);
+    background: rgba(0, 0, 0, 0.2);
+    border: 1px solid var(--color-card-border);
+    border-left: 3px solid var(--color-primary);
+    border-radius: var(--radius-sm);
     padding: 1.25rem;
 }
 
 .dilemma-remedy-title {
-    font-weight: 700;
+    font-weight: 600;
     color: var(--color-primary);
-    font-size: 0.95rem;
-    margin-bottom: 0.5rem;
+    font-size: 0.88rem;
+    margin-bottom: 0.4rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
 }
 
 /* ==========================================================================
-   4. DHYANA SCREEN & BREATHING MANDALA
+   4. DHYANA SCREEN & MINIMALIST BREATHING CIRCLE
    ========================================================================== */
 .dhyana-wrapper {
-    max-width: 720px;
+    max-width: 680px;
     margin: 0 auto;
 }
 
 .dhyana-card {
     background: var(--color-surface);
     border: 1px solid var(--color-card-border);
-    backdrop-filter: blur(20px);
-    border-radius: var(--radius-lg);
+    border-radius: var(--radius-md);
     padding: 3rem 2rem;
-    box-shadow: var(--shadow-lg);
+    box-shadow: var(--shadow-sm);
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 2.5rem;
+    gap: 2.25rem;
 }
 
 .breathing-visualizer-container {
     position: relative;
-    width: 260px;
-    height: 260px;
+    width: 220px;
+    height: 220px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -497,8 +493,8 @@
     position: absolute;
     inset: 0;
     border-radius: 50%;
-    border: 2px dashed rgba(255, 215, 0, 0.35);
-    animation: rotateSlow 40s linear infinite;
+    border: 1px dashed rgba(255, 255, 255, 0.15);
+    animation: rotateSlow 60s linear infinite;
 }
 
 @keyframes rotateSlow {
@@ -506,12 +502,11 @@
 }
 
 .breathing-circle {
-    width: 170px;
-    height: 170px;
+    width: 150px;
+    height: 150px;
     border-radius: 50%;
-    background: radial-gradient(circle, rgba(255, 215, 0, 0.25) 0%, rgba(245, 158, 11, 0.05) 70%);
-    border: 2px solid var(--color-primary);
-    box-shadow: var(--glow-gold);
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid var(--color-primary);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -520,47 +515,48 @@
 }
 
 .breathing-circle.inhale {
-    transform: scale(1.35);
-    box-shadow: 0 0 50px rgba(255, 215, 0, 0.6);
+    transform: scale(1.3);
+    background: rgba(194, 155, 98, 0.1);
 }
 
 .breathing-circle.hold {
-    transform: scale(1.35);
-    box-shadow: 0 0 50px rgba(245, 158, 11, 0.6);
+    transform: scale(1.3);
+    background: rgba(194, 155, 98, 0.15);
 }
 
 .breathing-circle.exhale {
     transform: scale(1);
-    box-shadow: var(--glow-gold);
+    background: rgba(255, 255, 255, 0.03);
 }
 
 .breath-phase-text {
     font-family: var(--font-heading);
-    font-size: 1.15rem;
-    font-weight: 700;
-    color: #FFFFFF;
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--color-text);
+    letter-spacing: 0.5px;
 }
 
 .breath-timer-text {
-    font-size: 0.95rem;
-    color: var(--color-gold-light);
+    font-size: 0.85rem;
+    color: var(--color-primary);
     margin-top: 0.25rem;
 }
 
 .dhyana-controls-row {
     display: flex;
-    gap: 1rem;
+    gap: 0.75rem;
     width: 100%;
-    max-width: 440px;
+    max-width: 400px;
 }
 
 .dhyana-btn {
     flex: 1;
-    padding: 0.85rem 1.5rem;
-    border-radius: var(--radius-full);
+    padding: 0.75rem 1.25rem;
+    border-radius: var(--radius-sm);
     font-family: var(--font-body);
-    font-size: 0.95rem;
-    font-weight: 700;
+    font-size: 0.85rem;
+    font-weight: 600;
     cursor: pointer;
     display: flex;
     align-items: center;
@@ -570,46 +566,62 @@
 }
 
 .dhyana-btn.primary {
-    background: linear-gradient(135deg, var(--color-primary), var(--color-primary-hover));
-    color: #070B14;
+    background: var(--color-primary);
+    color: #111215;
     border: none;
-    box-shadow: 0 4px 15px rgba(255, 215, 0, 0.35);
+}
+
+.dhyana-btn.primary:hover {
+    background: var(--color-primary-hover);
 }
 
 .dhyana-btn.secondary {
-    background: rgba(255, 255, 255, 0.06);
+    background: transparent;
     border: 1px solid var(--color-card-border);
     color: var(--color-text);
 }
 
+.dhyana-btn.secondary:hover {
+    border-color: rgba(255, 255, 255, 0.25);
+}
+
+.dhyana-icon {
+    display: none;
+}
+
 .dhyana-quote-card {
-    background: rgba(0, 0, 0, 0.35);
-    border: 1px solid rgba(255, 215, 0, 0.2);
-    border-radius: var(--radius-md);
-    padding: 1.5rem;
+    background: rgba(0, 0, 0, 0.2);
+    border: 1px solid var(--color-card-border);
+    border-radius: var(--radius-sm);
+    padding: 1.25rem;
     text-align: center;
-    max-width: 540px;
+    max-width: 520px;
 }
 
 .dhyana-quote-ref {
-    font-family: var(--font-heading);
-    font-size: 0.85rem;
+    font-family: var(--font-body);
+    font-size: 0.75rem;
+    font-weight: 600;
     color: var(--color-primary);
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.4rem;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
 }
 
 .dhyana-quote-sanskrit {
     font-family: var(--font-sanskrit);
-    font-size: 1.15rem;
-    font-weight: 600;
-    color: #FFFFFF;
-    margin-bottom: 0.5rem;
+    font-size: 1.05rem;
+    font-weight: 500;
+    color: var(--color-text);
+    margin-bottom: 0.4rem;
+    line-height: 1.7;
 }
 
 .dhyana-quote-trans {
-    font-size: 0.88rem;
+    font-size: 0.82rem;
     color: var(--color-text-muted);
     font-style: italic;
+    line-height: 1.5;
 }
 
 /* ==========================================================================
@@ -618,60 +630,60 @@
 .ai-chat-history {
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+    gap: 0.85rem;
     max-height: 380px;
     overflow-y: auto;
     padding-right: 0.5rem;
 }
 
 .chat-bubble {
-    padding: 1rem 1.25rem;
-    border-radius: var(--radius-md);
-    font-size: 0.95rem;
+    padding: 0.85rem 1.15rem;
+    border-radius: var(--radius-sm);
+    font-size: 0.88rem;
     line-height: 1.6;
 }
 
 .chat-bubble.user {
-    background: rgba(255, 215, 0, 0.15);
-    border: 1px solid rgba(255, 215, 0, 0.35);
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid var(--color-card-border);
     align-self: flex-end;
     max-width: 85%;
-    color: #FFFFFF;
+    color: var(--color-text);
 }
 
 .chat-bubble.ai {
-    background: rgba(15, 23, 42, 0.85);
-    border-left: 3px solid var(--color-primary);
+    background: var(--color-surface);
+    border-left: 2px solid var(--color-primary);
     align-self: flex-start;
     max-width: 95%;
     color: var(--color-text);
 }
 
 .cited-shloka-box {
-    margin-top: 0.75rem;
-    padding: 0.75rem 1rem;
-    border-radius: var(--radius-sm);
-    background: rgba(0, 0, 0, 0.3);
-    font-size: 0.85rem;
+    margin-top: 0.65rem;
+    padding: 0.65rem 0.85rem;
+    border-radius: var(--radius-xs);
+    background: rgba(0, 0, 0, 0.25);
+    font-size: 0.8rem;
     border-left: 2px solid var(--color-primary);
 }
 
 .ai-input-row {
     display: flex;
-    gap: 0.75rem;
-    padding: 1rem 1.5rem;
-    border-top: 1px solid rgba(255, 215, 0, 0.15);
-    background: rgba(15, 23, 42, 0.6);
+    gap: 0.5rem;
+    padding: 0.85rem 1.25rem;
+    border-top: 1px solid var(--color-card-border);
+    background: var(--color-surface);
 }
 
 .ai-input-row input {
     flex: 1;
-    background: rgba(255, 255, 255, 0.05);
+    background: rgba(255, 255, 255, 0.04);
     border: 1px solid var(--color-card-border);
-    border-radius: var(--radius-full);
-    padding: 0.65rem 1.25rem;
+    border-radius: var(--radius-sm);
+    padding: 0.55rem 0.95rem;
     color: var(--color-text);
-    font-size: 0.95rem;
+    font-size: 0.88rem;
     outline: none;
 }
 
@@ -681,13 +693,13 @@
 
 .ai-input-row button {
     background: var(--color-primary);
-    color: #070B14;
+    color: #111215;
     border: none;
-    border-radius: 50%;
-    width: 44px;
-    height: 44px;
+    border-radius: var(--radius-sm);
+    width: 38px;
+    height: 38px;
     cursor: pointer;
-    font-size: 1.1rem;
+    font-size: 0.95rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -698,25 +710,25 @@
 .journal-field {
     display: flex;
     flex-direction: column;
-    gap: 0.5rem;
+    gap: 0.4rem;
 }
 
 .journal-field label {
-    font-size: 0.88rem;
+    font-size: 0.82rem;
     font-weight: 600;
-    color: var(--color-primary);
+    color: var(--color-text-muted);
 }
 
 .journal-field textarea,
 .journal-field input {
     width: 100%;
-    background: rgba(255, 255, 255, 0.05);
+    background: rgba(255, 255, 255, 0.04);
     border: 1px solid var(--color-card-border);
     border-radius: var(--radius-sm);
-    padding: 0.75rem 1rem;
+    padding: 0.65rem 0.85rem;
     color: var(--color-text);
     font-family: var(--font-body);
-    font-size: 0.92rem;
+    font-size: 0.88rem;
     outline: none;
 }
 
@@ -737,19 +749,19 @@
 }
 
 .toast {
-    background: #0F172A;
-    border: 1px solid var(--color-primary);
-    color: #FFFFFF;
-    padding: 0.75rem 1.25rem;
-    border-radius: var(--radius-md);
-    box-shadow: var(--shadow-lg);
-    font-size: 0.88rem;
-    font-weight: 600;
-    animation: toastIn 0.3s ease;
+    background: var(--color-surface);
+    border: 1px solid var(--color-card-border);
+    color: var(--color-text);
+    padding: 0.65rem 1rem;
+    border-radius: var(--radius-sm);
+    box-shadow: var(--shadow-md);
+    font-size: 0.82rem;
+    font-weight: 500;
+    animation: toastIn 0.25s ease;
 }
 
 @keyframes toastIn {
-    from { opacity: 0; transform: translateY(10px); }
+    from { opacity: 0; transform: translateY(8px); }
     to { opacity: 1; transform: translateY(0); }
 }
 
@@ -757,8 +769,8 @@
 @media (max-width: 767px) {
     .canvas-modal-body-grid {
         grid-template-columns: 1fr;
-        gap: 1.5rem;
-        padding: 1.25rem;
+        gap: 1.25rem;
+        padding: 1rem;
     }
 
     .card-sharing-actions {

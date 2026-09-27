@@ -23,7 +23,7 @@
             if ('caches' in window) {
                 caches.keys().then(function(names) {
                     for (var i = 0; i < names.length; i++) {
-                        if (!names[i].includes('v4-network-first')) {
+                        if (!names[i].includes('v6-editorial')) {
                             caches.delete(names[i]);
                         }
                     }
@@ -51,8 +51,8 @@
         rel="stylesheet">
 
     <!-- Stylesheets with Cache Busting -->
-    <link rel="stylesheet" href="css/main.css?v=5.0">
-    <link rel="stylesheet" href="css/features.css?v=5.0">
+    <link rel="stylesheet" href="css/main.css?v=6.0">
+    <link rel="stylesheet" href="css/features.css?v=6.0">
 </head>
 
 <body>
@@ -138,7 +138,7 @@
                         </svg>
                     </button>
 
-                    <!-- Language Switcher Pill -->
+                    <!-- Language Switcher -->
                     <button id="language-toggle-btn" class="header-pill-btn" title="Toggle English / Hindi">
                         <span id="lang-current-label">ENG</span>
                         <span class="lang-divider">|</span>
@@ -152,10 +152,12 @@
                         </svg>
                     </button>
 
-                    <!-- Parthasarathi AI Advisor Button -->
-                    <button id="open-ai-advisor" class="ai-advisor-header-btn" title="Seek Counsel from Parthasarathi">
-                        <span class="ai-sparkle">✨</span>
-                        <span class="ai-btn-text">Parthasarathi AI</span>
+                    <!-- Parthasarathi Counsel Button -->
+                    <button id="open-ai-advisor" class="ai-advisor-header-btn" title="Seek Scriptural Counsel">
+                        <svg class="ai-advisor-svg-icon" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm0 14H5.17L4 17.17V4h16v12z"/>
+                        </svg>
+                        <span class="ai-btn-text">Counsel</span>
                     </button>
                 </div>
             </div>
@@ -180,7 +182,7 @@
                     <div class="hero-container">
                         <!-- Left Hero Column: Spiritual Greeting & Stats -->
                         <div class="hero-left">
-                            <div class="hero-badge">🕉️ Canonical 18 Chapters & 701 Verses</div>
+                            <div class="hero-badge">Canonical Scripture • 18 Chapters • 701 Verses</div>
                             <h1 class="hero-heading">The Eternal Song of Supreme Wisdom</h1>
                             <p class="hero-subheading">
                                 Master your duty, overcome emotional distress, and awaken inner serenity through Krishna's sacred dialogue with Arjuna.
@@ -188,34 +190,28 @@
                             
                             <div class="hero-actions">
                                 <button class="action-btn primary" id="continue-reading">
-                                    <span class="btn-icon">📖</span>
-                                    <span class="btn-text">Continue Reading</span>
+                                    <span class="btn-text">Begin Reading →</span>
                                 </button>
                                 <button class="action-btn secondary" id="home-explore-chapters">
-                                    <span class="btn-icon">📜</span>
-                                    <span class="btn-text">Explore All 18 Chapters</span>
+                                    <span class="btn-text">Browse All 18 Chapters</span>
                                 </button>
                             </div>
 
-                            <!-- 4 Journey Stats Cards -->
+                            <!-- 4 Journey Stats Counter -->
                             <div class="stats-grid">
                                 <div class="stat-card">
-                                    <span class="stat-icon">📖</span>
                                     <span class="stat-number" id="total-read">0</span>
                                     <span class="stat-label">Verses Read</span>
                                 </div>
                                 <div class="stat-card">
-                                    <span class="stat-icon">🔥</span>
                                     <span class="stat-number" id="streak-count">1</span>
                                     <span class="stat-label">Day Streak</span>
                                 </div>
                                 <div class="stat-card">
-                                    <span class="stat-icon">💛</span>
                                     <span class="stat-number" id="bookmark-count">0</span>
                                     <span class="stat-label">Bookmarked</span>
                                 </div>
                                 <div class="stat-card">
-                                    <span class="stat-icon">✨</span>
                                     <span class="stat-number" id="progress-percentage">0%</span>
                                     <span class="stat-label">Journey Done</span>
                                 </div>
@@ -226,7 +222,7 @@
                         <div class="hero-right">
                             <div class="daily-verse-wrapper">
                                 <div class="daily-verse-badge">
-                                    <span>🌟 Today's Contemplation</span>
+                                    <span>Today's Contemplation</span>
                                     <span class="daily-verse-ref" id="daily-reference">Chapter 2 • Verse 47</span>
                                 </div>
                                 <div id="daily-verse" class="daily-verse-card">
@@ -235,14 +231,14 @@
                                     <div class="daily-translation-text" id="daily-translation">"You have a right to perform your prescribed duties, but you are not entitled to the fruits of your actions. Never consider yourself the cause of results, nor be attached to inaction."</div>
                                     
                                     <div class="daily-card-actions">
-                                        <button id="daily-card-share-btn" class="daily-action-pill highlight" title="Create 3:4 Instagram/WhatsApp Quote Card">
-                                            <span>🎨 Share 3:4 Card</span>
+                                        <button id="daily-card-share-btn" class="daily-action-pill highlight" title="Create 3:4 Quote Card">
+                                            <span>Create 3:4 Card</span>
                                         </button>
                                         <button id="daily-card-listen-btn" class="daily-action-pill" title="Listen 432 Hz Drone">
-                                            <span>🎵 432 Hz Drone</span>
+                                            <span>432 Hz Drone</span>
                                         </button>
                                         <button id="daily-card-reflect-btn" class="daily-action-pill" title="Write Reflection in Journal">
-                                            <span>📓 Reflect</span>
+                                            <span>Reflect</span>
                                         </button>
                                     </div>
                                 </div>
@@ -255,33 +251,27 @@
                 <section class="section-container mood-chips-section">
                     <div class="section-header">
                         <div>
-                            <h2>प्रश्न-मार्ग • How is your mind feeling today?</h2>
-                            <span class="section-subtitle">Select your present emotional state to receive Krishna's direct scriptural remedy</span>
+                            <h2>प्रश्न-मार्ग • Mental State & Remedies</h2>
+                            <span class="section-subtitle">Select your present inner condition to receive scriptural guidance</span>
                         </div>
                     </div>
                     <div class="mood-chips-scroll">
                         <button class="mood-chip" data-mood="ANXIETY_OVERWHELM">
-                            <span class="mood-emoji">🌊</span>
                             <span class="mood-label">Anxious / Overwhelmed</span>
                         </button>
                         <button class="mood-chip" data-mood="BURNOUT_PROCRASTINATION">
-                            <span class="mood-emoji">⚡</span>
                             <span class="mood-label">Burnt Out / Unmotivated</span>
                         </button>
                         <button class="mood-chip" data-mood="ANGER_RESENTMENT">
-                            <span class="mood-emoji">🔥</span>
                             <span class="mood-label">Angry / Resentful</span>
                         </button>
                         <button class="mood-chip" data-mood="DECISION_PARALYSIS">
-                            <span class="mood-emoji">⚖️</span>
                             <span class="mood-label">Confused / Indecisive</span>
                         </button>
                         <button class="mood-chip" data-mood="PURPOSE_SWADHARMA">
-                            <span class="mood-emoji">🧭</span>
                             <span class="mood-label">Seeking Life Purpose</span>
                         </button>
                         <button class="mood-chip" data-mood="FEAR_OF_FAILURE">
-                            <span class="mood-emoji">🛡️</span>
                             <span class="mood-label">Fear of Failure</span>
                         </button>
                     </div>
@@ -367,11 +357,9 @@
                             <!-- Controls -->
                             <div class="dhyana-controls-row">
                                 <button id="toggle-audio-drone" class="dhyana-btn secondary">
-                                    <span class="dhyana-icon">🎵</span>
                                     <span id="drone-btn-label">Tanpura Drone: Off</span>
                                 </button>
                                 <button id="toggle-breath-timer" class="dhyana-btn primary">
-                                    <span class="dhyana-icon">▶</span>
                                     <span id="breath-btn-label">Start Breathing</span>
                                 </button>
                             </div>
@@ -560,16 +548,20 @@
             </button>
             <button class="nav-item" data-screen="chapters">
                 <svg viewBox="0 0 24 24" fill="currentColor">
-                    <path d="M3 13h8V3H3v10zm0 8h8v-6H3v6zm10 0h8V11h-8v10zm0-18v6h8V3h-8z" />
+                    <path d="M4 6H2v14c0 1.1.9 2 2 2h14v-2H4V6zm16-4H8c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm0 14H8V4h12v12z"/>
                 </svg>
                 <span>Chapters</span>
             </button>
             <button class="nav-item" data-screen="dilemmas">
-                <span class="nav-emoji">🧭</span>
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-5.5-3.5l2.83-6.67 6.67-2.83-2.83 6.67-6.67 2.83zm4.5-3.5c.55 0 1-.45 1-1s-.45-1-1-1-1 .45-1 1 .45 1 1 1z"/>
+                </svg>
                 <span>Dilemmas</span>
             </button>
             <button class="nav-item" data-screen="dhyana">
-                <span class="nav-emoji">🧘</span>
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm0-14c-3.31 0-6 2.69-6 6s2.69 6 6 6 6-2.69 6-6-2.69-6-6-6zm0 10c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4z"/>
+                </svg>
                 <span>Dhyana</span>
             </button>
             <button class="nav-item" data-screen="search">
@@ -594,11 +586,9 @@
         <div class="gita-modal-content canvas-modal-layout">
             <div class="gita-modal-header">
                 <div>
-                    <h3 style="display: flex; align-items: center; gap: 8px;">
-                        <span>🎨</span> Divine Wisdom 3:4 Card
-                    </h3>
+                    <h3>Divine Wisdom • 3:4 Quote Card</h3>
                     <span style="font-size: 12px; color: var(--color-primary); font-weight: 500;">
-                        Customized for Instagram Feed (3:4), Stories, and WhatsApp
+                        High-resolution 3:4 canvas for Instagram and WhatsApp
                     </span>
                 </div>
                 <button id="close-canvas-modal" class="modal-close-btn">&times;</button>
@@ -619,23 +609,23 @@
                 <div class="canvas-controls-panel">
                     <!-- Theme Selector -->
                     <div class="control-group">
-                        <label class="control-label">Aesthetic Sacred Theme</label>
+                        <label class="control-label">Aesthetic Edition</label>
                         <div class="card-theme-pills">
                             <button class="theme-pill active" data-theme="midnight">
-                                <span class="theme-dot" style="background: #142038; border: 1px solid #FFD700;"></span>
-                                <span>Cosmic Midnight</span>
+                                <span class="theme-dot" style="background: #111215; border: 1px solid #c29b62;"></span>
+                                <span>Obsidian Ink</span>
                             </button>
                             <button class="theme-pill" data-theme="saffron">
-                                <span class="theme-dot" style="background: #3A1505; border: 1px solid #F59E0B;"></span>
-                                <span>Sacred Saffron</span>
+                                <span class="theme-dot" style="background: #f6f3eb; border: 1px solid #8c5f3e;"></span>
+                                <span>Warm Linen</span>
                             </button>
                             <button class="theme-pill" data-theme="sandalwood">
-                                <span class="theme-dot" style="background: #2A1F18; border: 1px solid #E5C07B;"></span>
-                                <span>Temple Sandalwood</span>
+                                <span class="theme-dot" style="background: #171b1f; border: 1px solid #9d8868;"></span>
+                                <span>Heritage Slate</span>
                             </button>
                             <button class="theme-pill" data-theme="emerald">
-                                <span class="theme-dot" style="background: #0C2A1E; border: 1px solid #34D399;"></span>
-                                <span>Vrindavan Emerald</span>
+                                <span class="theme-dot" style="background: #1c1815; border: 1px solid #b88a52;"></span>
+                                <span>Deep Sandalwood</span>
                             </button>
                         </div>
                     </div>
@@ -654,17 +644,16 @@
                     <div class="control-group">
                         <label class="checkbox-label">
                             <input type="checkbox" id="canvas-watermark-toggle" checked>
-                            <span>Include Background Logo & Mandala (Low Opacity Watermark)</span>
+                            <span>Include Subtle Background Watermark (0.06 Opacity)</span>
                         </label>
                     </div>
 
                     <div class="divider-line"></div>
 
-                    <!-- Instant Sharing Actions ("in a very best way") -->
+                    <!-- Instant Sharing Actions -->
                     <div class="card-sharing-actions">
                         <!-- 1. Download 3:4 High-Res Image -->
                         <button id="download-canvas-btn" class="share-action-btn download-btn">
-                            <span class="action-icon">📥</span>
                             <div class="btn-stacked-text">
                                 <span class="main-text">Download 3:4 Image</span>
                                 <span class="sub-text">1200x1600 PNG (Retina Crisp)</span>
@@ -673,7 +662,6 @@
 
                         <!-- 2. Share to WhatsApp -->
                         <button id="whatsapp-share-btn" class="share-action-btn whatsapp-btn">
-                            <span class="action-icon">💬</span>
                             <div class="btn-stacked-text">
                                 <span class="main-text">Share to WhatsApp</span>
                                 <span class="sub-text">Status & Chats</span>
@@ -682,7 +670,6 @@
 
                         <!-- 3. Share to Instagram -->
                         <button id="instagram-share-btn" class="share-action-btn instagram-btn">
-                            <span class="action-icon">📸</span>
                             <div class="btn-stacked-text">
                                 <span class="main-text">Share to Instagram</span>
                                 <span class="sub-text">Feed (3:4) & Stories</span>
@@ -691,10 +678,9 @@
 
                         <!-- 4. Copy Caption & Text -->
                         <button id="copy-caption-btn" class="share-action-btn copy-btn">
-                            <span class="action-icon">📋</span>
                             <div class="btn-stacked-text">
-                                <span class="main-text">Copy Quote Caption</span>
-                                <span class="sub-text">Formatted with hashtags</span>
+                                <span class="main-text">Copy Caption</span>
+                                <span class="sub-text">Formatted attribution</span>
                             </div>
                         </button>
                     </div>
@@ -710,16 +696,16 @@
         <div class="gita-modal-content">
             <div class="gita-modal-header">
                 <div>
-                    <h3>✨ Parthasarathi Socratic Counsel</h3>
+                    <h3>Parthasarathi Counsel</h3>
                     <span style="font-size: 12px; color: var(--color-primary); font-weight: 500;">
-                        Contextual AI grounded in Krishna's teachings
+                        Contextual scriptural inquiry grounded in the Gita
                     </span>
                 </div>
                 <button id="close-ai-modal" class="modal-close-btn">&times;</button>
             </div>
             <div class="gita-modal-body">
                 <p style="font-size: 13px; opacity: 0.85; margin: 0 0 10px 0;">
-                    Present your dilemma, work struggle, or inner conflict to receive scriptural counsel:
+                    Present your dilemma, duty struggle, or inner conflict to receive scriptural counsel:
                 </p>
                 <div id="ai-chat-history" class="ai-chat-history">
                     <div class="chat-bubble ai">
@@ -742,8 +728,8 @@
         <div class="gita-modal-content">
             <div class="gita-modal-header">
                 <div>
-                    <h3>📓 Nishkama Karma Journal</h3>
-                    <span style="font-size: 12px; color: var(--color-primary);">Selfless contemplation and daily action</span>
+                    <h3>Nishkama Karma Journal</h3>
+                    <span style="font-size: 12px; color: var(--color-primary);">Contemplation on selfless action</span>
                 </div>
                 <button id="close-journal-modal" class="modal-close-btn">&times;</button>
             </div>
@@ -763,7 +749,7 @@
                 </div>
 
                 <button id="save-journal-btn" class="action-btn primary" style="width: 100%; justify-content: center; margin-top: 12px;">
-                    Save Reflection & Build Streak 🌟
+                    Save Reflection
                 </button>
             </div>
         </div>
@@ -773,10 +759,10 @@
     <div id="toast-container" class="toast-container"></div>
 
     <!-- Scripts with Cache Busting -->
-    <script src="js/api-client.js?v=5.0"></script>
-    <script src="js/dhyana-audio.js?v=5.0"></script>
-    <script src="js/canvas-card.js?v=5.0"></script>
-    <script src="js/app.js?v=5.0"></script>
+    <script src="js/api-client.js?v=6.0"></script>
+    <script src="js/dhyana-audio.js?v=6.0"></script>
+    <script src="js/canvas-card.js?v=6.0"></script>
+    <script src="js/app.js?v=6.0"></script>
 </body>
 
 </html>

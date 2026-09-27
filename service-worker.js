@@ -1,6 +1,6 @@
 // Service Worker for Shrimad Bhagavad Gita Platform
 // Network-First strategy to ensure latest updates are ALWAYS served immediately
-const CACHE_NAME = 'bhagavad-gita-v4-network-first';
+const CACHE_NAME = 'bhagavad-gita-v6-editorial-network-first';
 
 self.addEventListener('install', (event) => {
   // Immediately activate new service worker without waiting

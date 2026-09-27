@@ -14,52 +14,52 @@
 class DivineCanvasGenerator {
     static THEMES = {
         midnight: {
-            name: 'Cosmic Midnight',
-            bgStart: '#142038',
-            bgEnd: '#060B14',
-            borderGold: '#D4AF37',
-            innerBorder: 'rgba(212, 175, 55, 0.35)',
-            textGold: '#FFD700',
-            textSanskrit: '#FFFDF5',
-            textTranslation: '#E2E8F0',
-            accent: '#F59E0B',
-            watermarkColor: 'rgba(255, 215, 0, 0.08)'
+            name: 'Obsidian Ink',
+            bgStart: '#14151a',
+            bgEnd: '#0d0e11',
+            borderGold: '#c29b62',
+            innerBorder: 'rgba(194, 155, 98, 0.25)',
+            textGold: '#c29b62',
+            textSanskrit: '#f0ede6',
+            textTranslation: '#cfcac0',
+            accent: '#ab854b',
+            watermarkColor: 'rgba(194, 155, 98, 0.05)'
         },
         saffron: {
-            name: 'Sacred Saffron',
-            bgStart: '#3A1505',
-            bgEnd: '#1A0802',
-            borderGold: '#F59E0B',
-            innerBorder: 'rgba(245, 158, 11, 0.35)',
-            textGold: '#FDE68A',
-            textSanskrit: '#FFFBEB',
-            textTranslation: '#FED7AA',
-            accent: '#EA580C',
-            watermarkColor: 'rgba(254, 215, 170, 0.08)'
+            name: 'Warm Linen',
+            bgStart: '#f7f4ed',
+            bgEnd: '#ebe6dc',
+            borderGold: '#8c5f3e',
+            innerBorder: 'rgba(140, 95, 62, 0.25)',
+            textGold: '#8c5f3e',
+            textSanskrit: '#1c1c20',
+            textTranslation: '#3d3c40',
+            accent: '#734b2c',
+            watermarkColor: 'rgba(140, 95, 62, 0.05)'
         },
         sandalwood: {
-            name: 'Temple Sandalwood',
-            bgStart: '#2A1F18',
-            bgEnd: '#140E0B',
-            borderGold: '#E5C07B',
-            innerBorder: 'rgba(229, 192, 123, 0.35)',
-            textGold: '#F6E05E',
-            textSanskrit: '#FAF5EE',
-            textTranslation: '#E2D8CE',
-            accent: '#D97706',
-            watermarkColor: 'rgba(246, 224, 94, 0.07)'
+            name: 'Heritage Slate',
+            bgStart: '#1c2026',
+            bgEnd: '#13161a',
+            borderGold: '#9d8868',
+            innerBorder: 'rgba(157, 136, 104, 0.25)',
+            textGold: '#c2b093',
+            textSanskrit: '#f4f6f8',
+            textTranslation: '#c8cfd6',
+            accent: '#8c7756',
+            watermarkColor: 'rgba(157, 136, 104, 0.05)'
         },
         emerald: {
-            name: 'Vrindavan Emerald',
-            bgStart: '#0C2A1E',
-            bgEnd: '#05140E',
-            borderGold: '#34D399',
-            innerBorder: 'rgba(52, 211, 153, 0.35)',
-            textGold: '#A7F3D0',
-            textSanskrit: '#ECFDF5',
-            textTranslation: '#D1FAE5',
-            accent: '#10B981',
-            watermarkColor: 'rgba(167, 243, 208, 0.07)'
+            name: 'Deep Sandalwood',
+            bgStart: '#201a16',
+            bgEnd: '#14100d',
+            borderGold: '#b88a52',
+            innerBorder: 'rgba(184, 138, 82, 0.25)',
+            textGold: '#d9ad73',
+            textSanskrit: '#f7f2ea',
+            textTranslation: '#d2c9bd',
+            accent: '#9e7239',
+            watermarkColor: 'rgba(184, 138, 82, 0.05)'
         }
     };
 
@@ -85,7 +85,7 @@ class DivineCanvasGenerator {
         const themeKey = options.theme || 'midnight';
         const language = options.language || 'english'; // 'english', 'hindi', 'dual'
         const showWatermark = options.showWatermark !== false;
-        const watermarkOpacity = options.watermarkOpacity || 0.10;
+        const watermarkOpacity = options.watermarkOpacity || 0.06;
         const theme = DivineCanvasGenerator.THEMES[themeKey] || DivineCanvasGenerator.THEMES.midnight;
 
         const canvas = document.createElement('canvas');
@@ -100,7 +100,7 @@ class DivineCanvasGenerator {
         ctx.fillStyle = grad;
         ctx.fillRect(0, 0, 1200, 1600);
 
-        // 2. Low-Opacity Background Logo & Sacred Chakra Watermark
+        // 2. Low-Opacity Background Logo & Sacred Chakra Watermark (Subtle blind watermark)
         if (showWatermark) {
             ctx.save();
             ctx.globalAlpha = watermarkOpacity;
@@ -122,70 +122,64 @@ class DivineCanvasGenerator {
             ctx.restore();
         }
 
-        // 3. Ornate Double Golden Borders (Aesthetic Vedic Sanctuary Framing)
+        // 3. Clean Hairline Architectural Framing
         // Outer border
         ctx.strokeStyle = theme.borderGold;
-        ctx.lineWidth = 5;
-        ctx.strokeRect(55, 55, 1090, 1490);
+        ctx.lineWidth = 2;
+        ctx.strokeRect(60, 60, 1080, 1480);
 
         // Inner border with soft opacity
         ctx.strokeStyle = theme.innerBorder;
-        ctx.lineWidth = 2;
-        ctx.strokeRect(72, 72, 1056, 1456);
+        ctx.lineWidth = 1;
+        ctx.strokeRect(76, 76, 1048, 1448);
 
         // Subtle corner embellishments
-        DivineCanvasGenerator.drawOrnateCorner(ctx, 72, 72, 1, 1, theme.borderGold);
-        DivineCanvasGenerator.drawOrnateCorner(ctx, 1128, 72, -1, 1, theme.borderGold);
-        DivineCanvasGenerator.drawOrnateCorner(ctx, 72, 1528, 1, -1, theme.borderGold);
-        DivineCanvasGenerator.drawOrnateCorner(ctx, 1128, 1528, -1, -1, theme.borderGold);
+        DivineCanvasGenerator.drawOrnateCorner(ctx, 76, 76, 1, 1, theme.borderGold);
+        DivineCanvasGenerator.drawOrnateCorner(ctx, 1124, 76, -1, 1, theme.borderGold);
+        DivineCanvasGenerator.drawOrnateCorner(ctx, 76, 1524, 1, -1, theme.borderGold);
+        DivineCanvasGenerator.drawOrnateCorner(ctx, 1124, 1524, -1, -1, theme.borderGold);
 
         // 4. Header: Sacred Symbol (ॐ) & Typography
         ctx.textAlign = 'center';
         
-        // Sacred Om in radiant gold with soft glow
-        ctx.save();
-        ctx.shadowColor = theme.borderGold;
-        ctx.shadowBlur = 18;
+        // Sacred Om in crisp calligraphy
         ctx.fillStyle = theme.textGold;
-        ctx.font = 'bold 64px "Noto Sans Devanagari", serif';
+        ctx.font = '500 58px "Noto Sans Devanagari", serif';
         ctx.fillText('ॐ', 600, 195);
-        ctx.restore();
 
         // Main Header Title
         ctx.fillStyle = theme.borderGold;
-        ctx.font = '700 24px "Inter", sans-serif';
-        ctx.letterSpacing = '6px';
+        ctx.font = '600 22px "Cinzel", serif';
+        ctx.letterSpacing = '5px';
         ctx.fillText('SHRIMAD BHAGAVAD GITA', 600, 245);
 
-        // Chapter & Verse Reference Pill
+        // Chapter & Verse Reference
         const chNum = verse.chapterNumber || (verse.chapter ? verse.chapter.chapterNumber : '1');
         const vNum = verse.verseNumber || '1';
         ctx.fillStyle = theme.textGold;
-        ctx.font = '600 22px "Inter", sans-serif';
+        ctx.font = '600 20px "Inter", sans-serif';
         ctx.letterSpacing = '2px';
-        ctx.fillText(`CHAPTER ${chNum} • VERSE ${vNum}`, 600, 290);
+        ctx.fillText(`CHAPTER ${chNum} • VERSE ${vNum}`, 600, 288);
 
         if (chapterTitle) {
-            ctx.fillStyle = 'rgba(255, 255, 255, 0.65)';
-            ctx.font = 'italic 18px "Inter", sans-serif';
-            ctx.fillText(chapterTitle.toUpperCase(), 600, 320);
+            ctx.fillStyle = theme.innerBorder;
+            ctx.font = 'italic 17px "Inter", sans-serif';
+            ctx.fillText(chapterTitle.toUpperCase(), 600, 318);
         }
 
         // Decorative Divider with Diamond Crest
-        DivineCanvasGenerator.drawDividerWithDiamond(ctx, 600, 360, 320, theme.borderGold);
+        DivineCanvasGenerator.drawDividerWithDiamond(ctx, 600, 355, 300, theme.innerBorder);
 
         // 5. Sanskrit Shlok (Devanagari) - The Heart of the Card
         ctx.save();
         ctx.fillStyle = theme.textSanskrit;
-        ctx.font = '600 38px "Noto Sans Devanagari", serif';
-        ctx.shadowColor = 'rgba(0, 0, 0, 0.6)';
-        ctx.shadowBlur = 10;
+        ctx.font = '500 36px "Noto Sans Devanagari", serif';
         
         const rawSanskrit = verse.sanskrit || '';
         const sanskritLines = DivineCanvasGenerator.wrapText(ctx, rawSanskrit, 920);
         
         // Center Sanskrit block vertically between 440 and ~820
-        let currentY = 460;
+        let currentY = 450;
         const sanskritLineHeight = 62;
         sanskritLines.forEach(line => {
             ctx.fillText(line, 600, currentY);
@@ -195,7 +189,7 @@ class DivineCanvasGenerator {
 
         // Subtle Mid-Section Divider
         currentY += 25;
-        DivineCanvasGenerator.drawDividerWithDiamond(ctx, 600, currentY, 200, theme.innerBorder);
+        DivineCanvasGenerator.drawDividerWithDiamond(ctx, 600, currentY, 180, theme.innerBorder);
         currentY += 45;
 
         // 6. Translations (English / Hindi / Dual)
@@ -213,7 +207,7 @@ class DivineCanvasGenerator {
 
         if (language === 'english' || (language === 'dual' && englishText)) {
             ctx.fillStyle = theme.textTranslation;
-            ctx.font = 'italic 400 30px "Inter", sans-serif';
+            ctx.font = 'italic 400 28px "Inter", sans-serif';
             const engLines = DivineCanvasGenerator.wrapText(ctx, `"${englishText}"`, 940);
             const engLineHeight = 44;
             engLines.forEach(line => {
@@ -227,7 +221,7 @@ class DivineCanvasGenerator {
         if (language === 'hindi' || (language === 'dual' && hindiText)) {
             if (language === 'dual') currentY += 20;
             ctx.fillStyle = theme.textGold;
-            ctx.font = '500 28px "Noto Sans Devanagari", serif';
+            ctx.font = '500 27px "Noto Sans Devanagari", serif';
             const hindiLines = DivineCanvasGenerator.wrapText(ctx, hindiText, 940);
             const hindiLineHeight = 42;
             hindiLines.forEach(line => {
@@ -240,14 +234,14 @@ class DivineCanvasGenerator {
 
         // 7. Footer: Sacred Attribution & Social Watermark
         ctx.fillStyle = theme.borderGold;
-        ctx.font = '600 20px "Inter", sans-serif';
-        ctx.letterSpacing = '3px';
-        ctx.fillText('DIVINE WISDOM • DAILY GITA', 600, 1475);
+        ctx.font = '600 18px "Cinzel", serif';
+        ctx.letterSpacing = '4px';
+        ctx.fillText('SHRIMAD BHAGAVAD GITA', 600, 1475);
 
-        ctx.fillStyle = 'rgba(255, 255, 255, 0.45)';
-        ctx.font = '400 16px "Inter", sans-serif';
+        ctx.fillStyle = 'rgba(255, 255, 255, 0.4)';
+        ctx.font = '400 14px "Inter", sans-serif';
         ctx.letterSpacing = '1px';
-        ctx.fillText('3:4 Instagram & WhatsApp Edition', 600, 1505);
+        ctx.fillText('Editorial 3:4 Edition', 600, 1505);
 
         return canvas;
     }
@@ -431,7 +425,7 @@ class DivineCanvasGenerator {
                 : (verse.translation.english || verse.translation.hindi || '');
         }
 
-        const shareText = `🕉️ *Shrimad Bhagavad Gita* • Chapter ${chNum}, Verse ${vNum}\n\n"${sanskrit}"\n\n✨ *Meaning:*\n"${translation}"\n\n🪔 Shared via Bhagavad Gita Platform`;
+        const shareText = `*Shrimad Bhagavad Gita* • Chapter ${chNum}, Verse ${vNum}\n\n${sanskrit}\n\n*Translation:*\n"${translation}"\n\nShared via Bhagavad Gita Platform`;
 
         // Check if Web Share API with file is supported
         const blob = await DivineCanvasGenerator.generateCardBlob(verse, chapterTitle, options);
@@ -470,7 +464,7 @@ class DivineCanvasGenerator {
                 : (verse.translation.english || verse.translation.hindi || '');
         }
 
-        const igCaption = `🕉️ Shrimad Bhagavad Gita • Chapter ${chNum}, Verse ${vNum}\n\n${sanskrit}\n\n"${translation}"\n\n#BhagavadGita #Krishna #SpiritualWisdom #SanatanDharma #DailyGita #YogaOfKnowledge #InnerPeace`;
+        const igCaption = `Shrimad Bhagavad Gita • Chapter ${chNum}, Verse ${vNum}\n\n${sanskrit}\n\n"${translation}"\n\n#BhagavadGita #Philosophy #Sanskrit #AncientWisdom #DailyGita`;
 
         const blob = await DivineCanvasGenerator.generateCardBlob(verse, chapterTitle, options);
         const file = new File([blob], `Gita-Ch${chNum}-V${vNum}-3x4.png`, { type: 'image/png' });

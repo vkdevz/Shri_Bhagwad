@@ -459,8 +459,8 @@ class GitaApp {
                 if (window.dhyanaAudio) {
                     const isPlaying = window.dhyanaAudio.toggleDrone();
                     droneBtn.innerHTML = isPlaying
-                        ? '<span>🎵 Tanpura Drone: <strong style="color: #FFD700">Playing</strong></span>'
-                        : '<span>🎵 Tanpura Drone: Off</span>';
+                        ? '<span>Tanpura Drone: <strong style="color: var(--color-primary)">Playing</strong></span>'
+                        : '<span>Tanpura Drone: Off</span>';
                     droneBtn.classList.toggle('primary', isPlaying);
                     droneBtn.classList.toggle('secondary', !isPlaying);
                 }
@@ -487,11 +487,15 @@ class GitaApp {
             card.className = 'dilemma-card';
             card.innerHTML = `
                 <div class="dilemma-card-header">
-                    <div class="dilemma-icon">${d.icon || '🕊️'}</div>
-                    <div class="dilemma-title">${isHindi ? (d.titleHindi || d.title) : d.title}</div>
+                    <div class="dilemma-title-block">
+                        <span class="dilemma-sanskrit-tag">Scriptural Remedy</span>
+                        <div class="dilemma-title">${isHindi ? (d.titleHindi || d.title) : d.title}</div>
+                    </div>
                 </div>
                 <div class="dilemma-desc">${d.description || ''}</div>
-                <div style="font-size: 12px; color: var(--color-primary); font-weight: 600; margin-top: 4px;">Tap to view Krishna's guidance →</div>
+                <div class="dilemma-card-footer">
+                    <span>Explore Scripture →</span>
+                </div>
             `;
             card.addEventListener('click', () => this.openDilemma(d.code));
             grid.appendChild(card);
@@ -518,27 +522,27 @@ class GitaApp {
         if (dilemma.verses && dilemma.verses.length > 0) {
             versesHtml = dilemma.verses.map(v => `
                 <div class="prescribed-verse-card" onclick="window.app.openPrescribedVerse(${v.chapterNumber || v.ch}, ${v.verseNumber || v.v})">
-                    <div class="prescribed-verse-ref">📖 Chapter ${v.chapterNumber || v.ch} • Verse ${v.verseNumber || v.v}</div>
+                    <div class="prescribed-verse-ref">Chapter ${v.chapterNumber || v.ch} • Verse ${v.verseNumber || v.v}</div>
                     <div class="prescribed-takeaway">"${v.takeaway || ''}"</div>
-                    <div style="font-size: 12px; color: var(--color-primary);">Tap to read full shloka & commentary →</div>
+                    <div style="font-size: 12px; color: var(--color-primary); font-weight: 500;">Read shloka & commentary →</div>
                 </div>
             `).join('');
         }
 
         container.innerHTML = `
-            <button class="back-btn" onclick="window.app.navigateToScreen('dilemmas')" style="align-self: flex-start; display: flex; align-items: center; gap: 6px; background: none; border: none; color: var(--color-primary); cursor: pointer; font-size: 14px; font-weight: 600;">
+            <button class="back-btn" onclick="window.app.navigateToScreen('dilemmas')" style="align-self: flex-start; display: flex; align-items: center; gap: 6px; background: none; border: none; color: var(--color-primary); cursor: pointer; font-size: 13px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px;">
                 ← Back to Dilemmas
             </button>
-            <div style="display: flex; align-items: center; gap: 12px;">
-                <span style="font-size: 36px;">${dilemma.icon || '🧭'}</span>
-                <h2 style="margin: 0; color: var(--color-primary);">${title}</h2>
+            <div style="margin-top: 1rem;">
+                <span class="dilemma-sanskrit-tag" style="font-size: 12px; color: var(--color-primary); font-weight: 600; text-transform: uppercase; letter-spacing: 1px;">Scriptural Inquiry</span>
+                <h2 style="margin: 0.25rem 0 0; color: var(--color-text); font-family: var(--font-heading); font-size: 1.65rem;">${title}</h2>
             </div>
-            <div class="prescription-box">
-                <h3>Krishna's Prescription:</h3>
-                <p>${dilemma.prescription || ''}</p>
+            <div class="dilemma-remedy-box" style="margin-top: 1.25rem;">
+                <div class="dilemma-remedy-title">Krishna's Prescription</div>
+                <p style="margin: 0; line-height: 1.65; color: var(--color-text); font-size: 0.95rem;">${dilemma.prescription || ''}</p>
             </div>
-            <h3 style="margin-top: 10px; font-size: 16px; color: var(--color-text);">Prescribed Shlokas for this State:</h3>
-            <div style="display: flex; flex-direction: column; gap: 12px;">
+            <h3 style="margin-top: 2rem; font-size: 13px; color: var(--color-text-dim); text-transform: uppercase; letter-spacing: 0.8px; font-weight: 600;">Prescribed Shlokas for this State</h3>
+            <div style="display: flex; flex-direction: column; gap: 0.85rem; margin-top: 0.75rem;">
                 ${versesHtml}
             </div>
         `;
@@ -761,9 +765,9 @@ class GitaApp {
                 const v = this.canvasTarget.v;
                 const verse = this.canvasTarget.verse;
                 const text = this.getTranslation(verse);
-                const caption = `🕉️ Shrimad Bhagavad Gita • Chapter ${ch}, Verse ${v}\n\n${verse.sanskrit || ''}\n\n"${text}"\n\n#BhagavadGita #Krishna #DailyGita #SanatanDharma #YogaWisdom`;
+                const caption = `Shrimad Bhagavad Gita • Chapter ${ch}, Verse ${v}\n\n${verse.sanskrit || ''}\n\n"${text}"\n\n#BhagavadGita #Philosophy #Sanskrit #AncientWisdom #DailyGita`;
                 await navigator.clipboard.writeText(caption);
-                this.showToast('📋 Caption copied to clipboard!', 'success');
+                this.showToast('Caption copied to clipboard', 'success');
             });
         }
 
