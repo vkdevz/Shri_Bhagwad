@@ -51,8 +51,8 @@
         rel="stylesheet">
 
     <!-- Stylesheets with Cache Busting -->
-    <link rel="stylesheet" href="css/main.css?v=9.0">
-    <link rel="stylesheet" href="css/features.css?v=9.0">
+    <link rel="stylesheet" href="css/main.css?v=9.1">
+    <link rel="stylesheet" href="css/features.css?v=9.1">
 </head>
 
 <body>
@@ -118,11 +118,8 @@
 
                 <!-- Right: Header Controls & Actions -->
                 <div class="header-right">
-                    <!-- Desktop Search Bar -->
+                    <!-- Desktop Search Bar (Clean Minimalist, No Lens) -->
                     <div class="desktop-search-wrapper">
-                        <svg class="search-icon-svg" viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z" />
-                        </svg>
                         <input type="text" id="desktop-search-input" placeholder="Search verses, keywords..." />
                         <span class="search-kbd-badge">⌘K</span>
                     </div>
@@ -141,10 +138,18 @@
                         <span id="lang-alt-label">ENG</span>
                     </button>
 
-                    <!-- Theme Switcher -->
-                    <button id="theme-toggle" class="icon-btn" title="Change Theme">
-                        <svg viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" />
+                    <!-- Theme Switcher (Repaired Sun / Moon) -->
+                    <button id="theme-toggle" class="icon-btn" title="Toggle Theme" aria-label="Toggle Theme">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="5"/>
+                            <line x1="12" y1="1" x2="12" y2="3"/>
+                            <line x1="12" y1="21" x2="12" y2="23"/>
+                            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/>
+                            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
+                            <line x1="1" y1="12" x2="3" y2="12"/>
+                            <line x1="21" y1="12" x2="23" y2="12"/>
+                            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/>
+                            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
                         </svg>
                     </button>
 
@@ -763,10 +768,10 @@
     <div id="toast-container" class="toast-container"></div>
 
     <!-- Scripts with Cache Busting -->
-    <script src="js/api-client.js?v=9.0"></script>
-    <script src="js/dhyana-audio.js?v=9.0"></script>
-    <script src="js/canvas-card.js?v=9.0"></script>
-    <script src="js/app.js?v=9.0"></script>
+    <script src="js/api-client.js?v=9.1"></script>
+    <script src="js/dhyana-audio.js?v=9.1"></script>
+    <script src="js/canvas-card.js?v=9.1"></script>
+    <script src="js/app.js?v=9.1"></script>
 </body>
 
 </html>

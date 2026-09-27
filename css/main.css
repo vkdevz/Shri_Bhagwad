@@ -652,17 +652,6 @@ label {
     white-space: nowrap;
 }
 
-.brand-english::after {
-    content: '';
-    display: inline-block;
-    width: 5px;
-    height: 5px;
-    background: var(--sp-accent);
-    border-radius: 1px;
-    margin-left: 4px;
-    vertical-align: middle;
-}
-
 /* Header Center — Desktop Navigation (VeloCura Sleek Pills) */
 .desktop-nav {
     display: flex;
@@ -730,7 +719,7 @@ label {
 
 .desktop-search-wrapper input {
     width: 200px;
-    padding: 6px 32px 6px 10px;
+    padding: 6px 32px 6px 12px;
     font-size: 12.5px;
     background: rgba(255, 255, 255, 0.03);
     border: 1px solid var(--sp-border);
@@ -820,38 +809,40 @@ label {
 
 .icon-btn svg { width: 16px; height: 16px; }
 
-/* AI Counsel button (VeloCura High-Contrast Primary CTA Action) */
+/* AI Counsel button (Harmonious Divine Action) */
 .ai-advisor-header-btn {
     display: inline-flex;
     align-items: center;
     gap: 6px;
-    padding: 7px 15px;
+    padding: 7px 16px;
     font-size: 12.5px;
     font-weight: 600;
-    color: #000000;
-    background: #FFFFFF;
-    border: 1px solid #FFFFFF;
+    color: var(--sp-accent-on);
+    background: var(--sp-accent);
+    border: 1px solid var(--sp-accent);
     border-radius: var(--sp-radius-sm);
-    box-shadow: 0 4px 14px rgba(255, 255, 255, 0.15);
+    box-shadow: 0 2px 10px rgba(197, 160, 89, 0.3);
     transition: all var(--sp-duration-sm) var(--sp-ease);
     cursor: pointer;
 }
 
 .ai-advisor-header-btn:hover {
-    background: #EAEAEA;
+    background: var(--sp-accent-hover);
+    border-color: var(--sp-accent-hover);
     transform: translateY(-1px);
-    box-shadow: 0 6px 20px rgba(255, 255, 255, 0.25);
+    box-shadow: 0 4px 16px rgba(197, 160, 89, 0.45);
 }
 
 [data-theme="light"] .ai-advisor-header-btn {
-    background: #111827;
+    background: #8c5f3e;
     color: #FFFFFF;
-    border-color: #111827;
-    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.12);
+    border-color: #8c5f3e;
+    box-shadow: 0 2px 10px rgba(140, 95, 62, 0.25);
 }
 
 [data-theme="light"] .ai-advisor-header-btn:hover {
-    background: #000000;
+    background: #744b2d;
+    border-color: #744b2d;
 }
 
 .ai-btn-text { line-height: 1; }
