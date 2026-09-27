@@ -186,8 +186,8 @@ class GitaApp {
     }
 
     setupEventListeners() {
-        // Navigation
-        document.querySelectorAll('.nav-item').forEach(item => {
+        // Desktop & Mobile Navigation
+        document.querySelectorAll('.nav-item, .desktop-nav-link').forEach(item => {
             item.addEventListener('click', (e) => {
                 e.preventDefault();
                 const screen = e.currentTarget.dataset.screen;
@@ -196,6 +196,12 @@ class GitaApp {
                 }
             });
         });
+
+        // Brand Logo click -> Home
+        const brandLogo = document.getElementById('brand-logo');
+        if (brandLogo) {
+            brandLogo.addEventListener('click', () => this.navigateToScreen('home'));
+        }
 
         // Header controls
         const backBtn = document.getElementById('back-btn');
@@ -213,19 +219,31 @@ class GitaApp {
             themeToggle.addEventListener('click', () => this.cycleTheme());
         }
 
-        // Language toggle button
+        // Language toggle buttons (Mobile floating & Desktop pill)
         const languageToggle = document.getElementById('language-toggle');
         if (languageToggle) {
             languageToggle.addEventListener('click', () => this.toggleLanguage());
         }
+        const langToggleBtn = document.getElementById('language-toggle-btn');
+        if (langToggleBtn) {
+            langToggleBtn.addEventListener('click', () => this.toggleLanguage());
+        }
 
-        // Search functionality
+        // Desktop and Mobile Search functionality
         const searchInput = document.getElementById('search-input');
         if (searchInput) {
             searchInput.addEventListener('input', (e) => this.handleSearch(e.target.value));
             searchInput.addEventListener('keypress', (e) => {
-                if (e.key === 'Enter') {
-                    e.preventDefault();
+                if (e.key === 'Enter') e.preventDefault();
+            });
+        }
+        const desktopSearch = document.getElementById('desktop-search-input');
+        if (desktopSearch) {
+            desktopSearch.addEventListener('input', (e) => {
+                const val = e.target.value;
+                if (val.trim()) {
+                    if (this.currentScreen !== 'search') this.navigateToScreen('search');
+                    this.handleSearch(val);
                 }
             });
         }
@@ -251,10 +269,59 @@ class GitaApp {
             shareBtn.addEventListener('click', () => this.shareVerse());
         }
 
+        // Reader Stepper & Arrows
+        document.getElementById('desktop-prev-verse-btn')?.addEventListener('click', () => this.previousVerse());
+        document.getElementById('desktop-next-verse-btn')?.addEventListener('click', () => this.nextVerse());
+        document.getElementById('prev-verse-mobile')?.addEventListener('click', () => this.previousVerse());
+        document.getElementById('next-verse-mobile')?.addEventListener('click', () => this.nextVerse());
+
+        // Reader Chapter Dropdown Select
+        const readerChSelect = document.getElementById('reader-chapter-select');
+        if (readerChSelect) {
+            readerChSelect.addEventListener('change', (e) => {
+                const ch = parseInt(e.target.value);
+                if (ch) this.openChapter(ch);
+            });
+        }
+
+        // Reader Translation Tabs (English / Hindi)
+        const primaryTab = document.getElementById('trans-tab-primary');
+        const secondaryTab = document.getElementById('trans-tab-secondary');
+        if (primaryTab && secondaryTab) {
+            primaryTab.addEventListener('click', () => {
+                primaryTab.classList.add('active');
+                secondaryTab.classList.remove('active');
+                this.activeReaderLang = 'english';
+                this.updateReaderTranslationDisplay();
+            });
+            secondaryTab.addEventListener('click', () => {
+                secondaryTab.classList.add('active');
+                primaryTab.classList.remove('active');
+                this.activeReaderLang = 'hindi';
+                this.updateReaderTranslationDisplay();
+            });
+        }
+
+        // Commentary accordion toggle
+        document.getElementById('commentary-toggle')?.addEventListener('click', () => {
+            const exp = document.getElementById('current-explanation');
+            if (exp) exp.classList.toggle('hidden');
+        });
+
         // Home screen actions
         const continueReading = document.getElementById('continue-reading');
         if (continueReading) {
             continueReading.addEventListener('click', () => this.navigateToReader());
+        }
+
+        const homeExplore = document.getElementById('home-explore-chapters');
+        if (homeExplore) {
+            homeExplore.addEventListener('click', () => this.navigateToScreen('chapters'));
+        }
+
+        const homeViewAll = document.getElementById('home-view-all-chapters-btn');
+        if (homeViewAll) {
+            homeViewAll.addEventListener('click', () => this.navigateToScreen('chapters'));
         }
 
         const viewBookmarks = document.getElementById('view-bookmarks');
@@ -266,6 +333,44 @@ class GitaApp {
         if (dailyVerse) {
             dailyVerse.addEventListener('click', () => this.openDailyVerse());
         }
+
+        // Daily Verse Card Direct Actions
+        document.getElementById('daily-card-share-btn')?.addEventListener('click', (e) => {
+            e.stopPropagation();
+            if (this.dailyVerse) {
+                this.openCanvasModal(this.dailyVerse.chapter, this.dailyVerse.verse);
+            }
+        });
+        document.getElementById('daily-card-listen-btn')?.addEventListener('click', (e) => {
+            e.stopPropagation();
+            if (window.dhyanaAudio) {
+                const isPlaying = window.dhyanaAudio.toggleDrone();
+                const btn = document.getElementById('daily-card-listen-btn');
+                if (btn) {
+                    btn.innerHTML = isPlaying
+                        ? '<span>🎵 <strong>432 Hz Playing</strong></span>'
+                        : '<span>🎵 432 Hz Drone</span>';
+                }
+                this.showToast(isPlaying ? '432 Hz Tanpura Drone Started 🧘' : 'Drone Stopped', 'info');
+            }
+        });
+        document.getElementById('daily-card-reflect-btn')?.addEventListener('click', (e) => {
+            e.stopPropagation();
+            if (this.dailyVerse) {
+                this.currentChapter = this.dailyVerse.chapter;
+                this.currentVerse = this.dailyVerse.verse;
+                this.openJournalModal();
+            }
+        });
+
+        // Chapter Category Filters on Chapters Screen
+        document.querySelectorAll('.cat-tab').forEach(tab => {
+            tab.addEventListener('click', (e) => {
+                document.querySelectorAll('.cat-tab').forEach(t => t.classList.remove('active'));
+                e.currentTarget.classList.add('active');
+                this.filterChaptersByCategory(e.currentTarget.dataset.filter);
+            });
+        });
 
         // Settings
         this.setupSettingsEventListeners();
@@ -527,22 +632,148 @@ class GitaApp {
         this.breathTimer = setInterval(runCycle, 19000); // 4 + 7 + 8 = 19 seconds per cycle
     }
 
-    openCanvasModal() {
-        const verse = this.getVerse(this.currentChapter, this.currentVerse);
-        const chapter = this.getChapter(this.currentChapter);
+    openCanvasModal(ch = null, v = null) {
+        const targetChapter = ch || this.currentChapter;
+        const targetVerse = v || this.currentVerse;
+        const verse = this.getVerse(targetChapter, targetVerse);
+        const chapter = this.getChapter(targetChapter);
         if (!verse || !chapter || !window.DivineCanvasGenerator) return;
 
-        const imgData = window.DivineCanvasGenerator.generateCard(verse, chapter.title, this.settings.language);
-        const previewImg = document.getElementById('canvas-card-preview');
-        const downloadBtn = document.getElementById('download-canvas-btn');
+        this.canvasTarget = { verse, chapter, ch: targetChapter, v: targetVerse };
+        this.canvasOptions = {
+            theme: this.canvasOptions?.theme || 'midnight',
+            language: this.canvasOptions?.language || this.settings.language || 'english',
+            showWatermark: this.canvasOptions?.showWatermark !== false
+        };
 
-        if (previewImg) previewImg.src = imgData;
-        if (downloadBtn) {
-            downloadBtn.href = imgData;
-            downloadBtn.download = `Gita-Ch${this.currentChapter}-V${this.currentVerse}.png`;
+        this.setupCanvasModalListeners();
+        this.updateCanvasCardPreview();
+        document.getElementById('canvas-modal')?.classList.remove('hidden');
+    }
+
+    async updateCanvasCardPreview() {
+        if (!this.canvasTarget || !window.DivineCanvasGenerator) return;
+        const { verse, chapter } = this.canvasTarget;
+        const previewImg = document.getElementById('canvas-card-preview');
+        if (!previewImg) return;
+
+        try {
+            previewImg.style.opacity = '0.4';
+            const dataUrl = await window.DivineCanvasGenerator.generateCardDataUrl(
+                verse,
+                chapter.title,
+                this.canvasOptions
+            );
+            previewImg.src = dataUrl;
+            previewImg.style.opacity = '1';
+        } catch (err) {
+            console.error('Error generating 3:4 card preview:', err);
+        }
+    }
+
+    setupCanvasModalListeners() {
+        if (this.canvasListenersSetup) return;
+        this.canvasListenersSetup = true;
+
+        // Theme selection pills
+        document.querySelectorAll('.theme-pill').forEach(pill => {
+            pill.addEventListener('click', (e) => {
+                document.querySelectorAll('.theme-pill').forEach(p => p.classList.remove('active'));
+                const target = e.currentTarget;
+                target.classList.add('active');
+                this.canvasOptions.theme = target.dataset.theme;
+                this.updateCanvasCardPreview();
+            });
+        });
+
+        // Language selection pills
+        document.querySelectorAll('.lang-pill').forEach(pill => {
+            pill.addEventListener('click', (e) => {
+                document.querySelectorAll('.lang-pill').forEach(p => p.classList.remove('active'));
+                const target = e.currentTarget;
+                target.classList.add('active');
+                this.canvasOptions.language = target.dataset.lang;
+                this.updateCanvasCardPreview();
+            });
+        });
+
+        // Watermark logo toggle
+        const watermarkToggle = document.getElementById('canvas-watermark-toggle');
+        if (watermarkToggle) {
+            watermarkToggle.addEventListener('change', (e) => {
+                this.canvasOptions.showWatermark = e.target.checked;
+                this.updateCanvasCardPreview();
+            });
         }
 
-        document.getElementById('canvas-modal')?.classList.remove('hidden');
+        // 1. Download 3:4 High-Res PNG Button
+        const downloadBtn = document.getElementById('download-canvas-btn');
+        if (downloadBtn) {
+            downloadBtn.addEventListener('click', async () => {
+                if (!this.canvasTarget) return;
+                await window.DivineCanvasGenerator.downloadCard(
+                    this.canvasTarget.verse,
+                    this.canvasTarget.chapter.title,
+                    this.canvasOptions
+                );
+                this.showToast('📥 3:4 High-Resolution Card Downloaded!', 'success');
+            });
+        }
+
+        // 2. Share to WhatsApp Button
+        const waBtn = document.getElementById('whatsapp-share-btn');
+        if (waBtn) {
+            waBtn.addEventListener('click', async () => {
+                if (!this.canvasTarget) return;
+                this.showToast('Sharing to WhatsApp... 💬', 'info');
+                await window.DivineCanvasGenerator.shareToWhatsApp(
+                    this.canvasTarget.verse,
+                    this.canvasTarget.chapter.title,
+                    this.canvasOptions
+                );
+            });
+        }
+
+        // 3. Share to Instagram Button
+        const igBtn = document.getElementById('instagram-share-btn');
+        if (igBtn) {
+            igBtn.addEventListener('click', async () => {
+                if (!this.canvasTarget) return;
+                const result = await window.DivineCanvasGenerator.shareToInstagram(
+                    this.canvasTarget.verse,
+                    this.canvasTarget.chapter.title,
+                    this.canvasOptions
+                );
+                if (result.mode === 'download_and_copy') {
+                    this.showToast('📸 3:4 Image downloaded & Instagram caption copied to clipboard!', 'success');
+                } else if (result.success) {
+                    this.showToast('Sharing to Instagram... 📸', 'success');
+                }
+            });
+        }
+
+        // 4. Copy Caption Button
+        const copyBtn = document.getElementById('copy-caption-btn');
+        if (copyBtn) {
+            copyBtn.addEventListener('click', async () => {
+                if (!this.canvasTarget) return;
+                const ch = this.canvasTarget.ch;
+                const v = this.canvasTarget.v;
+                const verse = this.canvasTarget.verse;
+                const text = this.getTranslation(verse);
+                const caption = `🕉️ Shrimad Bhagavad Gita • Chapter ${ch}, Verse ${v}\n\n${verse.sanskrit || ''}\n\n"${text}"\n\n#BhagavadGita #Krishna #DailyGita #SanatanDharma #YogaWisdom`;
+                await navigator.clipboard.writeText(caption);
+                this.showToast('📋 Caption copied to clipboard!', 'success');
+            });
+        }
+
+        // Close button
+        const closeBtn = document.getElementById('close-canvas-modal');
+        if (closeBtn) {
+            closeBtn.addEventListener('click', () => {
+                document.getElementById('canvas-modal')?.classList.add('hidden');
+            });
+        }
     }
 
     openJournalModal() {
@@ -626,14 +857,20 @@ class GitaApp {
     }
 
     updateLanguageButton() {
+        const isHindi = this.settings.language === 'hindi';
         const languageBtn = document.getElementById('language-toggle');
         if (languageBtn) {
-            const isHindi = this.settings.language === 'hindi';
             languageBtn.innerHTML = `
                 <span class="lang-icon">${isHindi ? 'अ' : 'A'}</span>
                 <span class="lang-text">${isHindi ? 'ENG' : 'हिं'}</span>
             `;
             languageBtn.setAttribute('title', `Switch to ${isHindi ? 'English' : 'Hindi'}`);
+        }
+        const curLabel = document.getElementById('lang-current-label');
+        const altLabel = document.getElementById('lang-alt-label');
+        if (curLabel && altLabel) {
+            curLabel.textContent = isHindi ? 'हिं' : 'ENG';
+            altLabel.textContent = isHindi ? 'ENG' : 'हिं';
         }
     }
 
@@ -911,12 +1148,57 @@ class GitaApp {
 
     renderChapters() {
         const chaptersGrid = document.getElementById('chapters-grid');
+        const homeChaptersGrid = document.getElementById('home-chapters-grid');
+        if (!this.gitaData || !this.gitaData.chapters) return;
+
+        if (chaptersGrid) {
+            chaptersGrid.innerHTML = '';
+            this.gitaData.chapters.forEach(chapter => {
+                chaptersGrid.appendChild(this.createChapterCard(chapter));
+            });
+        }
+
+        if (homeChaptersGrid) {
+            homeChaptersGrid.innerHTML = '';
+            this.gitaData.chapters.forEach(chapter => {
+                homeChaptersGrid.appendChild(this.createChapterCard(chapter));
+            });
+        }
+
+        // Also populate reader chapter select dropdown
+        this.populateReaderChapterSelect();
+    }
+
+    populateReaderChapterSelect() {
+        const select = document.getElementById('reader-chapter-select');
+        if (!select || !this.gitaData || !this.gitaData.chapters) return;
+        select.innerHTML = '';
+        this.gitaData.chapters.forEach(ch => {
+            const opt = document.createElement('option');
+            opt.value = ch.number;
+            const sanskrit = ch.titleSanskrit || ch.name_translation || ch.title;
+            opt.textContent = `Chapter ${ch.number}: ${sanskrit}`;
+            select.appendChild(opt);
+        });
+        select.value = this.currentChapter;
+    }
+
+    filterChaptersByCategory(category) {
+        const chaptersGrid = document.getElementById('chapters-grid');
         if (!chaptersGrid || !this.gitaData || !this.gitaData.chapters) return;
 
+        let filtered = this.gitaData.chapters;
+        if (category === 'karma') {
+            filtered = this.gitaData.chapters.filter(ch => ch.number >= 1 && ch.number <= 6);
+        } else if (category === 'bhakti') {
+            filtered = this.gitaData.chapters.filter(ch => ch.number >= 7 && ch.number <= 12);
+        } else if (category === 'jnana') {
+            filtered = this.gitaData.chapters.filter(ch => ch.number >= 13 && ch.number <= 18);
+        }
+
         chaptersGrid.innerHTML = '';
-        this.gitaData.chapters.forEach(chapter => {
-            const chapterCard = this.createChapterCard(chapter);
-            chaptersGrid.appendChild(chapterCard);
+        filtered.forEach(chapter => {
+            chaptersGrid.appendChild(this.createChapterCard(chapter));
         });
     }
 
@@ -927,21 +1209,21 @@ class GitaApp {
 
         const totalVerses = chapter.verses && chapter.verses.length > 0 ? chapter.verses.length : (chapter.verseCount || 0);
         const readVerses = this.getChapterProgress(chapter.number);
-        const progress = totalVerses > 0 ? Math.round((readVerses / totalVerses) * 100) : 0;
+        const titleSanskrit = chapter.titleSanskrit || chapter.name_translation || chapter.title;
+        const themeSnippet = chapter.theme || chapter.subtitle || chapter.description || '';
 
         card.innerHTML = `
-            <div class="chapter-number">${chapter.number}</div>
-            <div class="chapter-info">
-                <h3 class="chapter-title">${this.escapeHtml(chapter.title || '')}</h3>
-                <p class="chapter-subtitle">${this.escapeHtml(chapter.subtitle || '')}</p>
-                <div class="chapter-progress">
-                    <div class="progress-bar">
-                        <div class="progress-fill" style="width: ${progress}%"></div>
-                    </div>
-                    <span class="progress-text">${readVerses}/${totalVerses} verses</span>
-                </div>
+            <div class="chapter-header">
+                <div class="chapter-number-circle">${chapter.number}</div>
+                <span class="chapter-verses-badge">${totalVerses} Verses</span>
             </div>
-            <div class="chapter-theme">${this.escapeHtml(chapter.theme || '')}</div>
+            <div class="chapter-sanskrit-title">${this.escapeHtml(titleSanskrit)}</div>
+            <div class="chapter-english-title">${this.escapeHtml(chapter.title || '')}</div>
+            <div class="chapter-theme-snippet">${this.escapeHtml(themeSnippet.slice(0, 115))}${themeSnippet.length > 115 ? '...' : ''}</div>
+            <div class="chapter-card-footer">
+                <span class="chapter-explore-text">Read Chapter →</span>
+                <span style="font-size: 0.75rem; color: var(--color-text-dim);">${readVerses}/${totalVerses} read</span>
+            </div>
         `;
 
         return card;
@@ -957,9 +1239,14 @@ class GitaApp {
         try {
             const screens = document.querySelectorAll('.screen');
             const navItems = document.querySelectorAll('.nav-item');
+            const desktopNavLinks = document.querySelectorAll('.desktop-nav-link');
 
             navItems.forEach(item => {
                 item.classList.toggle('active', item.dataset.screen === screenName);
+            });
+
+            desktopNavLinks.forEach(link => {
+                link.classList.toggle('active', link.dataset.screen === screenName);
             });
 
             screens.forEach(screen => {
@@ -968,6 +1255,9 @@ class GitaApp {
 
             this.updateHeader(screenName);
             this.currentScreen = screenName;
+
+            // Scroll to top of content
+            window.scrollTo({ top: 0, behavior: 'smooth' });
 
             if (screenName === 'search') {
                 setTimeout(() => this.focusSearchInput(), 300);
@@ -1079,7 +1369,14 @@ class GitaApp {
             this.updateElement('current-verse-number', this.currentVerse.toString());
             this.updateElement('current-sanskrit', verse.sanskrit || '');
             this.updateElement('current-transliteration', verse.transliteration || '');
-            this.updateElement('current-translation', this.getTranslation(verse));
+
+            const badge = document.getElementById('current-verse-badge');
+            if (badge) badge.textContent = `CHAPTER ${this.currentChapter} • VERSE ${this.currentVerse}`;
+
+            const chSelect = document.getElementById('reader-chapter-select');
+            if (chSelect) chSelect.value = this.currentChapter;
+
+            this.updateReaderTranslationDisplay();
             this.updateElement('current-explanation', this.getExplanation(verse));
 
             this.isRevealed = this.settings.autoReveal;
@@ -1092,6 +1389,24 @@ class GitaApp {
             console.error('Error loading reader verse:', error);
             this.showToast('Error loading verse', 'error');
         }
+    }
+
+    updateReaderTranslationDisplay() {
+        const verse = this.getVerse(this.currentChapter, this.currentVerse);
+        if (!verse) return;
+        const transEl = document.getElementById('current-translation');
+        if (!transEl) return;
+
+        let text = '';
+        const lang = this.activeReaderLang || this.settings.language || 'english';
+        if (verse.translation) {
+            if (typeof verse.translation === 'string') {
+                text = verse.translation;
+            } else {
+                text = verse.translation[lang] || verse.translation.english || verse.translation.hindi || '';
+            }
+        }
+        transEl.textContent = text || 'Loading translation...';
     }
 
     updateRevealState() {
