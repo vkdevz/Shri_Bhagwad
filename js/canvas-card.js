@@ -401,17 +401,17 @@ class DivineCanvasGenerator {
                 : (verse.translation.english || verse.translation.hindi || '');
         }
 
-        const shareText = `*Shrimad Bhagavad Gita* • Chapter ${chNum}, Verse ${vNum}\n\n${sanskrit}\n\n*Translation:*\n"${translation}"\n\nShared via Bhagavad Gita Platform`;
+        const shareText = `*Bhagavad Gita* • Chapter ${chNum}, Verse ${vNum}\n\n${sanskrit}\n\n*Translation:*\n"${translation}"\n\nShared via ShlokPath`;
 
         // Check if Web Share API with file is supported
         const blob = await DivineCanvasGenerator.generateCardBlob(verse, chapterTitle, options);
-        const file = new File([blob], `Gita-Ch${chNum}-V${vNum}-3x4.png`, { type: 'image/png' });
+        const file = new File([blob], `ShlokPath-Ch${chNum}-V${vNum}.png`, { type: 'image/png' });
 
         if (navigator.canShare && navigator.canShare({ files: [file] })) {
             try {
                 await navigator.share({
                     files: [file],
-                    title: `Bhagavad Gita Ch ${chNum} Verse ${vNum}`,
+                    title: `Bhagavad Gita ${chNum}.${vNum} — ShlokPath`,
                     text: shareText
                 });
                 return { success: true, mode: 'web-share' };
@@ -440,17 +440,17 @@ class DivineCanvasGenerator {
                 : (verse.translation.english || verse.translation.hindi || '');
         }
 
-        const igCaption = `Shrimad Bhagavad Gita • Chapter ${chNum}, Verse ${vNum}\n\n${sanskrit}\n\n"${translation}"\n\n#BhagavadGita #Philosophy #Sanskrit #AncientWisdom #DailyGita`;
+        const igCaption = `Bhagavad Gita • Chapter ${chNum}, Verse ${vNum}\n\n${sanskrit}\n\n"${translation}"\n\n#ShlokPath #BhagavadGita #Philosophy #Sanskrit #AncientWisdom #DailyGita`;
 
         const blob = await DivineCanvasGenerator.generateCardBlob(verse, chapterTitle, options);
-        const file = new File([blob], `Gita-Ch${chNum}-V${vNum}-3x4.png`, { type: 'image/png' });
+        const file = new File([blob], `ShlokPath-Ch${chNum}-V${vNum}.png`, { type: 'image/png' });
 
         // If Web Share API with files is available (iOS / Android Instagram supports this directly)
         if (navigator.canShare && navigator.canShare({ files: [file] })) {
             try {
                 await navigator.share({
                     files: [file],
-                    title: `Bhagavad Gita Ch ${chNum} Verse ${vNum}`,
+                    title: `Bhagavad Gita ${chNum}.${vNum} — ShlokPath`,
                     text: igCaption
                 });
                 return { success: true, mode: 'web-share' };

@@ -1,10 +1,10 @@
-# 🕉️ Shrimad Bhagavad Gita Enterprise Platform
-**A Cloud-Ready Full-Stack Spiritual-Tech Platform**  
+# ॐ ShlokPath (श्लोकपथ) — The Path of the Verse
+**A Cloud-Ready Full-Stack Spiritual Literature Platform**  
 *Built with Java 21 LTS, Spring Boot 3.3.4, Spring Data JPA, Spring Security (JWT), PostgreSQL / H2, Flyway, Caffeine Cache, Docker, and Mobile-First PWA.*
 
 ---
 
-## 🌟 Highlights & Architecture
+## Highlights & Architecture
 
 - **Complete Canonical Scripture:** Contains all **18 Chapters** and **701 Verses** in canonical Sanskrit (Devanagari), English translation & commentary (Swami Sivananda), and Hindi translation & commentary (Swami Ramsukhdas).
 - **Normalized Relational Architecture:** Replaced monolithic JSON blobs with Flyway-versioned relational tables (`chapters`, `verses`, `translations`, `explanations`, `dilemma_categories`), indexed for sub-15ms lookups.
@@ -13,15 +13,15 @@
   - **Caffeine In-Memory Caching:** L1 cache layer eliminating N+1 queries and redundant database hits.
   - **OpenAPI 3 / Swagger Documentation:** Full interactive API playground at `/swagger-ui.html`.
 - **Innovative Experience Features:**
-  - 🧭 **Prashna-Marg (Dilemma Navigator):** Filter verses by 6 psychological life dilemmas (Duty, Despair, Anger, Attachment, Fear of Death, Mind Control).
-  - 🤖 **Parthasarathi AI Counselor:** Contextual Socratic counselor powered by Google Gemini 1.5 Flash with fallback rule-engine resilience.
-  - 🧘 **Dhyana Mode (Meditation):** 432 Hz authentic Indian Tanpura drone synthesized via native Web Audio API oscillators + 4-7-8 Pranayama breathing timer.
-  - 🎨 **Divine Canvas:** HTML5 Canvas generator rendering 1080x1350 vertical high-resolution social quote cards for Instagram and WhatsApp.
-  - 📔 **Nishkama Karma Journal:** Authenticated reflection diary tracking daily contemplation streaks.
+  - **Prashna-Marg (Dilemma Navigator):** Filter verses by 6 psychological life dilemmas (Duty, Despair, Anger, Attachment, Fear of Death, Mind Control).
+  - **Parthasarathi AI Counselor:** Contextual Socratic counselor powered by Google Gemini 1.5 Flash with fallback rule-engine resilience.
+  - **Dhyana Mode (Meditation):** 432 Hz authentic Indian Tanpura drone synthesized via native Web Audio API oscillators + 4-7-8 Pranayama breathing timer.
+  - **Divine Canvas:** HTML5 Canvas generator rendering 1200x1600 vertical high-resolution social quote cards for Instagram and WhatsApp.
+  - **Nishkama Karma Journal:** Authenticated reflection diary tracking daily contemplation streaks.
 
 ---
 
-## 🏛️ System Architecture
+## System Architecture
 
 ```mermaid
 flowchart TD
@@ -63,7 +63,7 @@ flowchart TD
 
 ---
 
-## 🚀 Quick Start Guide
+## Quick Start Guide
 
 ### Prerequisites
 - **Java 21 LTS** installed (`java -version`)
@@ -105,7 +105,7 @@ Open `http://localhost:3000` in your web browser.
 
 ---
 
-## 📡 REST API Reference
+## REST API Reference
 
 | Method | Endpoint | Description | Access |
 | :--- | :--- | :--- | :--- |
@@ -124,7 +124,7 @@ Open `http://localhost:3000` in your web browser.
 
 ---
 
-## 🧪 Testing & Verification
+## Testing & Verification
 
 The backend includes a comprehensive automated test suite with **13+ tests** covering services, controllers, authentication, and full database initialization.
 
@@ -142,7 +142,7 @@ cd backend
 
 ---
 
-## 📂 Project Directory Structure
+## Project Directory Structure
 
 ```text
 ├── backend/
@@ -160,12 +160,12 @@ cd backend
 │   ├── Dockerfile           # Multi-stage container build
 │   └── mvnw                 # Maven wrapper
 ├── css/
-│   ├── style.css            # Base styles and typography
-│   └── features.css         # Modern UI styles (Dhyana, AI dialog, Canvas, Dilemmas)
+│   ├── main.css             # Base styles, typography, and 2 master themes
+│   └── features.css         # Feature styles (Dhyana, AI dialog, Canvas, Dilemmas)
 ├── js/
 │   ├── api-client.js        # Hybrid REST client (Spring Boot API + fallback)
 │   ├── dhyana-audio.js      # Web Audio API 432 Hz Tanpura synthesizer
-│   ├── canvas-card.js       # HTML5 Canvas 1080x1350 quote card generator
+│   ├── canvas-card.js       # HTML5 Canvas 1200x1600 quote card generator
 │   └── app.js               # Application coordinator & event bindings
 ├── data/
 │   └── chapters/            # Partitioned chapter JSON files for lightweight client caching
@@ -178,7 +178,7 @@ cd backend
 
 ---
 
-## 💼 Resume & Interview Preparation
+## Resume & Interview Preparation
 
 Are you adding this project to your software engineering resume?  
 Check out [`RESUME_GUIDE.md`](./RESUME_GUIDE.md) for:
@@ -188,5 +188,5 @@ Check out [`RESUME_GUIDE.md`](./RESUME_GUIDE.md) for:
 
 ---
 
-## 📜 License
+## License
 This project is open-source and available under the [MIT License](LICENSE).

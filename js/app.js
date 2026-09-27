@@ -1,4 +1,4 @@
-// Shrimad Bhagavad Gita Mobile App
+// ShlokPath (श्लोकपथ) — The Path of the Verse
 class GitaApp {
     constructor() {
         this.currentChapter = 1;
@@ -85,7 +85,7 @@ class GitaApp {
             }
 
             this.gitaData = {
-                metadata: { title: 'Shrimad Bhagavad Gita', totalChapters: 18, totalVerses: 700 },
+                metadata: { title: 'ShlokPath', totalChapters: 18, totalVerses: 700 },
                 chapters: chapters
             };
 
@@ -765,7 +765,7 @@ class GitaApp {
                 const v = this.canvasTarget.v;
                 const verse = this.canvasTarget.verse;
                 const text = this.getTranslation(verse);
-                const caption = `Shrimad Bhagavad Gita • Chapter ${ch}, Verse ${v}\n\n${verse.sanskrit || ''}\n\n"${text}"\n\n#BhagavadGita #Philosophy #Sanskrit #AncientWisdom #DailyGita`;
+                const caption = `Bhagavad Gita • Chapter ${ch}, Verse ${v}\n\n${verse.sanskrit || ''}\n\n"${text}"\n\n#ShlokPath #BhagavadGita #Philosophy #Sanskrit #AncientWisdom #DailyGita`;
                 await navigator.clipboard.writeText(caption);
                 this.showToast('Caption copied to clipboard', 'success');
             });
@@ -1278,7 +1278,7 @@ class GitaApp {
 
     updateHeader(screenName) {
         const titles = {
-            home: 'Shrimad Bhagavad Gita',
+            home: 'ShlokPath',
             chapters: 'Chapters (1 to 18)',
             dilemmas: 'प्रश्न-मार्ग (Dilemma Navigator)',
             'dilemma-detail': 'Krishna\'s Guidance',
@@ -1540,8 +1540,8 @@ class GitaApp {
                 return;
             }
 
-            const shareText = `${verse.sanskrit}\n\n"${this.getTranslation(verse)}"\n\n- Bhagavad Gita ${chapter.number}.${verse.number}`;
-            const shareTitle = `Bhagavad Gita ${chapter.number}.${verse.number}`;
+            const shareText = `${verse.sanskrit}\n\n"${this.getTranslation(verse)}"\n\n— Bhagavad Gita ${chapter.number}.${verse.number}\nvia ShlokPath`;
+            const shareTitle = `Bhagavad Gita ${chapter.number}.${verse.number} — ShlokPath`;
 
             if (navigator.share && navigator.canShare && navigator.canShare({ text: shareText })) {
                 navigator.share({

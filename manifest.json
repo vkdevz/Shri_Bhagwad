@@ -1,7 +1,7 @@
 {
-  "name": "Shrimad Bhagavad Gita",
-  "short_name": "Bhagavad Gita",
-  "description": "Read the divine teachings of Bhagavad Gita with beautiful mobile-first design",
+  "name": "ShlokPath — श्लोकपथ",
+  "short_name": "ShlokPath",
+  "description": "ShlokPath — The path of the verse. Read all 18 chapters of the Bhagavad Gita with editorial design.",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#0A1628",

@@ -1,4 +1,4 @@
-// API Client for Shrimad Bhagavad Gita Platform
+// API Client for ShlokPath (श्लोकपथ)
 // Supports both Spring Boot REST API (http://localhost:8080/api/v1) and offline/local fallback
 
 class GitaApiClient {

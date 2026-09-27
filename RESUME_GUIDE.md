@@ -1,5 +1,5 @@
 # 🎓 Java Full Stack Developer Resume & Interview Guide
-**Project: Shrimad Bhagavad Gita Enterprise Platform**  
+**Project: ShlokPath (श्लोकपथ) — Spiritual Literature Platform**  
 *Full-Stack Java 21, Spring Boot 3.3, Spring Data JPA, Spring Security (JWT), PostgreSQL / H2, Flyway, Caffeine, OpenAPI 3, Docker, PWA*
 
 ---
@@ -8,7 +8,7 @@
 
 ### **Project Entry (Standard Format)**
 
-> **Shrimad Bhagavad Gita Enterprise Platform** | *Java 21, Spring Boot 3.3, Spring Data JPA, Spring Security, JWT, PostgreSQL, Flyway, Caffeine, Docker, PWA*
+> **ShlokPath (श्लोकपथ)** | *Java 21, Spring Boot 3.3, Spring Data JPA, Spring Security, JWT, PostgreSQL, Flyway, Caffeine, Docker, PWA*
 > - Engineered an enterprise spiritual-tech platform serving all 18 chapters and 701 canonical verses in bilingual Sanskrit/English/Hindi with sub-15ms cached response times.
 > - Migrated legacy monolithic JSON storage to a normalized PostgreSQL relational schema versioned through Flyway database migrations (V1–V4), eliminating data redundancy and enabling JPQL full-text search.
 > - Architected stateless REST API tier secured via Spring Security 6 and JWT authentication (RBAC), documenting 18+ endpoints via OpenAPI 3.0 / Swagger UI.

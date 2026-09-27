@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-    <title>Shrimad Bhagavad Gita Platform | Divine Wisdom & Socratic Counsel</title>
-    <meta name="description" content="Read all 18 chapters and 701 verses of the Bhagavad Gita, meditate with 432Hz Tanpura, create 3:4 Instagram/WhatsApp quote cards, and consult Parthasarathi AI.">
+    <title>ShlokPath | श्लोकपथ — Divine Wisdom & Socratic Counsel</title>
+    <meta name="description" content="ShlokPath — Read all 18 chapters and 701 verses of the Bhagavad Gita, meditate with 432Hz Tanpura, create 3:4 Instagram/WhatsApp quote cards, and consult Parthasarathi AI.">
     <meta name="theme-color" content="#070B14">
 
     <!-- Immediate Cache-Buster & Old Service Worker Purge Script -->
@@ -23,7 +23,7 @@
             if ('caches' in window) {
                 caches.keys().then(function(names) {
                     for (var i = 0; i < names.length; i++) {
-                        if (!names[i].includes('v7-editorial')) {
+                        if (!names[i].includes('shlokpath-v8')) {
                             caches.delete(names[i]);
                         }
                     }
@@ -36,7 +36,7 @@
     <link rel="manifest" href="manifest.json?v=5.0">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <meta name="apple-mobile-web-app-title" content="Bhagavad Gita">
+    <meta name="apple-mobile-web-app-title" content="ShlokPath">
 
     <!-- Icons -->
     <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
@@ -51,8 +51,8 @@
         rel="stylesheet">
 
     <!-- Stylesheets with Cache Busting -->
-    <link rel="stylesheet" href="css/main.css?v=7.0">
-    <link rel="stylesheet" href="css/features.css?v=7.0">
+    <link rel="stylesheet" href="css/main.css?v=8.0">
+    <link rel="stylesheet" href="css/features.css?v=8.0">
 </head>
 
 <body>
@@ -69,7 +69,7 @@
     <div id="install-banner" class="install-banner hidden">
         <div class="install-content">
             <div class="install-text">
-                <h3>Install Bhagavad Gita App</h3>
+                <h3>Install ShlokPath</h3>
                 <p>Read all 701 verses & meditate with 432 Hz drone offline</p>
             </div>
             <div class="install-actions">
@@ -95,8 +95,8 @@
                     <div class="brand-container" id="brand-logo" style="cursor: pointer;">
                         <span class="brand-om">ॐ</span>
                         <div class="brand-titles">
-                            <span class="brand-sanskrit">श्रीमद्भगवद्गीता</span>
-                            <span class="brand-english" id="header-title">Shrimad Bhagavad Gita</span>
+                            <span class="brand-sanskrit">श्लोकपथ</span>
+                            <span class="brand-english" id="header-title">ShlokPath</span>
                         </div>
                     </div>
                 </div>
@@ -751,10 +751,10 @@
     <div id="toast-container" class="toast-container"></div>
 
     <!-- Scripts with Cache Busting -->
-    <script src="js/api-client.js?v=7.0"></script>
-    <script src="js/dhyana-audio.js?v=7.0"></script>
-    <script src="js/canvas-card.js?v=7.0"></script>
-    <script src="js/app.js?v=7.0"></script>
+    <script src="js/api-client.js?v=8.0"></script>
+    <script src="js/dhyana-audio.js?v=8.0"></script>
+    <script src="js/canvas-card.js?v=8.0"></script>
+    <script src="js/app.js?v=8.0"></script>
 </body>
 
 </html>
