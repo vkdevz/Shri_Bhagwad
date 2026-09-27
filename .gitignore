@@ -1,0 +1,29 @@
+# Operating System Files
+.DS_Store
+Thumbs.db
+
+# IDE and Editor Files
+.idea/
+*.iml
+.vscode/
+*.swp
+*.swo
+
+# Build Artifacts & Dependencies
+backend/target/
+backend/.maven/
+backend/classpath.txt
+target/
+*.class
+*.jar
+*.war
+
+# Logs and Environment
+*.log
+.env
+.env.local
+
+# Node / Scratch
+node_modules/
+backend/scratch/
+scratch/

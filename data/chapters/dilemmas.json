@@ -1,0 +1,163 @@
+[
+  {
+    "id": 1,
+    "code": "ANXIETY_OVERWHELM",
+    "title": "Anxiety & Overwhelm",
+    "titleHindi": "चिंता और व्याकुलता",
+    "description": "When mind races with what-if scenarios, panic, and uncertainty about outcomes.",
+    "icon": "🌊",
+    "prescription": "Focus entirely on the present action; release attachment to outcomes. The mind is turbulent, but controlled by practice and detachment.",
+    "verses": [
+      {
+        "ch": 2,
+        "v": 47,
+        "takeaway": "You have right only to action, never to fruits. Be not anxious about results."
+      },
+      {
+        "ch": 2,
+        "v": 14,
+        "takeaway": "Pleasure and pain come and go like seasons. Learn to endure them with equanimity."
+      },
+      {
+        "ch": 6,
+        "v": 35,
+        "takeaway": "Doubtless the mind is restless, O Arjuna, but it is mastered by constant practice and detachment."
+      },
+      {
+        "ch": 18,
+        "v": 66,
+        "takeaway": "Abandon all worries and surrender in trust. I shall deliver you from all despair."
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "code": "BURNOUT_PROCRASTINATION",
+    "title": "Burnout & Procrastination",
+    "titleHindi": "थकावट और काम टालना",
+    "description": "When motivation is depleted, tasks feel meaningless, and lethargy takes over.",
+    "icon": "⚡",
+    "prescription": "Action is superior to inaction. Perform your duty without ego-driven pressure, treating work as sacred dedication.",
+    "verses": [
+      {
+        "ch": 3,
+        "v": 8,
+        "takeaway": "Perform your prescribed duty, for action is indeed better than inaction."
+      },
+      {
+        "ch": 3,
+        "v": 19,
+        "takeaway": "Constantly perform your duties without attachment; thus one attains the highest state."
+      },
+      {
+        "ch": 4,
+        "v": 18,
+        "takeaway": "He who sees inaction in action, and action in inaction, is truly wise among humans."
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "code": "ANGER_RESENTMENT",
+    "title": "Anger & Frustration",
+    "titleHindi": "क्रोध और अशांति",
+    "description": "When expectations are violated, leading to frustration, bitterness, and loss of composure.",
+    "icon": "🔥",
+    "prescription": "Trace anger back to attachment. Control the senses before anger clouds intellect and ruins peace.",
+    "verses": [
+      {
+        "ch": 2,
+        "v": 62,
+        "takeaway": "Brooding on objects creates attachment; attachment breeds desire; unfulfilled desire sparks anger."
+      },
+      {
+        "ch": 2,
+        "v": 63,
+        "takeaway": "From anger arises delusion, from delusion loss of memory, and thereby ruin of intellect."
+      },
+      {
+        "ch": 5,
+        "v": 23,
+        "takeaway": "One who can withstand the impulses of lust and anger before leaving the body is truly joyful."
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "code": "GRIEF_LOSS",
+    "title": "Grief & Heartbreak",
+    "titleHindi": "शोक और बिछोह",
+    "description": "Coping with loss of loved ones, broken relationships, or shattered expectations.",
+    "icon": "🕊️",
+    "prescription": "The physical form is transient, but the soul is eternal, unkillable, and indestructible.",
+    "verses": [
+      {
+        "ch": 2,
+        "v": 11,
+        "takeaway": "The wise grieve neither for the living nor for the departed."
+      },
+      {
+        "ch": 2,
+        "v": 20,
+        "takeaway": "The soul is never born, nor does it ever die; unborn, eternal, undying, it is not slain when the body dies."
+      },
+      {
+        "ch": 2,
+        "v": 22,
+        "takeaway": "Just as a person casts off worn-out garments and puts on new ones, the soul casts off worn-out bodies."
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "code": "DECISION_PARALYSIS",
+    "title": "Decision Paralysis & Confusion",
+    "titleHindi": "दुविधा और अनिर्णय",
+    "description": "Stuck between hard choices, fearing making the wrong move or harming others.",
+    "icon": "⚖️",
+    "prescription": "Consult your higher self, establish a one-pointed intellect (Vyavasayatmika Buddhi), and act with integrity.",
+    "verses": [
+      {
+        "ch": 2,
+        "v": 7,
+        "takeaway": "My heart is weighed down by confusion; tell me decisively what is best for me."
+      },
+      {
+        "ch": 2,
+        "v": 41,
+        "takeaway": "The resolute intellect is one-pointed; the intellect of the indecisive is many-branched."
+      },
+      {
+        "ch": 18,
+        "v": 63,
+        "takeaway": "Reflect on this wisdom thoroughly, and then act as you choose."
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "code": "PURPOSE_SWADHARMA",
+    "title": "Finding Purpose (Swadharma)",
+    "titleHindi": "स्वधर्म और जीवन का उद्देश्य",
+    "description": "Questioning your path, comparing yourself to others, or feeling lost in career and life.",
+    "icon": "🧭",
+    "prescription": "Better is one’s own duty, though imperfect, than another’s duty well performed. Align action with your innate nature.",
+    "verses": [
+      {
+        "ch": 3,
+        "v": 35,
+        "takeaway": "Better is one’s own duty, though devoid of merit, than the duty of another well performed."
+      },
+      {
+        "ch": 18,
+        "v": 46,
+        "takeaway": "By worshiping the Supreme through performance of one’s natural duty, a person achieves perfection."
+      },
+      {
+        "ch": 18,
+        "v": 47,
+        "takeaway": "One who performs duties dictated by natural inclination incurs no sin."
+      }
+    ]
+  }
+]

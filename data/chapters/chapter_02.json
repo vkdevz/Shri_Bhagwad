@@ -1,0 +1,1847 @@
+{
+  "number": 2,
+  "title": "Sankhya Yoga",
+  "subtitle": "Transcendental Knowledge",
+  "sanskritName": "सांख्ययोग",
+  "transliterated": "Sānkhya Yog",
+  "theme": "Krishna begins his teachings on the nature of the soul and the path of knowledge",
+  "verseCount": 72,
+  "color": "#4ECDC4",
+  "summary": {},
+  "verses": [
+    {
+      "id": 48,
+      "chapterNumber": 2,
+      "verseNumber": 1,
+      "sanskrit": "सञ्जय उवाच\n\nतं तथा कृपयाऽविष्टमश्रुपूर्णाकुलेक्षणम्।\n\nविषीदन्तमिदं वाक्यमुवाच मधुसूदनः।।2.1।।",
+      "transliteration": "sañjaya uvācha\ntaṁ tathā kṛipayāviṣhṭamaśhru pūrṇākulekṣhaṇam\nviṣhīdantamidaṁ vākyam uvācha madhusūdanaḥ",
+      "wordMeanings": "sañjayaḥ uvācha—Sanjay said; tam—to him (Arjun); tathā—thus; kṛipayā—with pity; āviṣhṭam—overwhelmed; aśhru-pūrṇa—full of tears; ākula—distressed; īkṣhaṇam—eyes; viṣhīdantam—grief-stricken; idam—these; vākyam—words; uvācha—said; madhusūdanaḥ—Shree Krishn, slayer of the Madhu demon",
+      "translation": {
+        "english": "Sanjaya said: Seeing Arjuna overwhelmed with pity, his mind grief-stricken, and his eyes full of tears, Madhusudana (Krishna) spoke the following words.",
+        "hindi": "संजय ने कहा: अर्जुन को करुणा से भरा, आंसुओं से भीगी आंखों वाला और विषाद में डूबा देखकर, मधुसूदन (कृष्ण) ने ये वचन कहे।"
+      },
+      "explanation": {
+        "english": "This verse transitions from Chapter 1's despair to Chapter 2's wisdom. Sanjaya describes Arjuna's complete emotional breakdown - overwhelmed by misplaced compassion and unable to see his dharmic duty clearly. Krishna is called 'Madhusudana' (slayer of the demon Madhu), foreshadowing how he will now destroy the demon of ignorance in Arjuna's mind.",
+        "hindi": "यह श्लोक पहले अध्याय के विषाद से दूसरे अध्याय के ज्ञान की ओर ले जाता है। संजय अर्जुन की पूरी भावनात्मक टूट का वर्णन करते हैं - गलत करुणा से भरे हुए और अपने धर्म को स्पष्ट रूप से न देख पाने वाले। आप देखिए, कृष्ण को 'मधुसूदन' कहा गया है, जो संकेत देता है कि अब वे अर्जुन के मन के अज्ञान रूपी दैत्य का वध करेंगे।"
+      },
+      "keywords": [
+        "sanjaya",
+        "arjuna",
+        "krishna",
+        "madhusudana",
+        "compassion",
+        "grief",
+        "tears",
+        "wisdom"
+      ]
+    },
+    {
+      "id": 49,
+      "chapterNumber": 2,
+      "verseNumber": 2,
+      "sanskrit": "श्री भगवानुवाच\n\nकुतस्त्वा कश्मलमिदं विषमे समुपस्थितम्।\n\nअनार्यजुष्टमस्वर्ग्यमकीर्तिकरमर्जुन।।2.2।।",
+      "transliteration": "śhrī bhagavān uvācha\nkutastvā kaśhmalamidaṁ viṣhame samupasthitam\nanārya-juṣhṭamaswargyam akīrti-karam arjuna",
+      "wordMeanings": "śhrī-bhagavān uvācha—the Supreme Lord said; kutaḥ—wherefrom; tvā—to you; kaśhmalam—delusion; idam—this; viṣhame—in this hour of peril; samupasthitam—overcome; anārya—crude person; juṣhṭam—practiced; aswargyam—which does not lead to the higher abodes; akīrti-karam—leading to disgrace; arjuna—Arjun",
+      "translation": {
+        "english": "The Supreme Lord said: O Arjuna, from where has this weakness come upon you at this perilous hour? It is not befitting a noble person, it does not lead to the higher planets, and it brings infamy.",
+        "hindi": "श्री भगवान ने कहा: हे अर्जुन, इस संकट के समय तुम्हें यह कमजोरी कहां से आ गई? यह श्रेष्ठ पुरुष के योग्य नहीं है, यह स्वर्ग नहीं दिलाता और बदनामी लाता है।"
+      },
+      "explanation": {
+        "english": "Krishna's first words are direct and challenging. He identifies Arjuna's condition as 'kashmala' (weakness/delusion) and points out three problems: it's unworthy of nobility, blocks spiritual progress, and brings dishonor. This is Krishna's technique - first shock the student out of their delusion, then teach wisdom.",
+        "hindi": "कृष्ण के पहले शब्द सीधे और चुनौतीपूर्ण हैं। वे अर्जुन की दशा को 'कश्मल' (कमजोरी/भ्रम) कहते हैं और तीन समस्याएं बताते हैं: यह महानता के योग्य नहीं, आध्यात्मिक प्रगति रोकती है, और बेइज्जती लाती है। यह कृष्ण की तकनीक है - पहले शिष्य को भ्रम से बाहर निकालो, फिर ज्ञान दो।"
+      },
+      "keywords": [
+        "krishna",
+        "bhagavan",
+        "arjuna",
+        "weakness",
+        "delusion",
+        "nobility",
+        "infamy",
+        "challenge"
+      ]
+    },
+    {
+      "id": 50,
+      "chapterNumber": 2,
+      "verseNumber": 3,
+      "sanskrit": "क्लैब्यं मा स्म गमः पार्थ नैतत्त्वय्युपपद्यते।\n\nक्षुद्रं हृदयदौर्बल्यं त्यक्त्वोत्तिष्ठ परन्तप।।2.3।।",
+      "transliteration": "klaibyaṁ mā sma gamaḥ pārtha naitat tvayyupapadyate\nkṣhudraṁ hṛidaya-daurbalyaṁ tyaktvottiṣhṭha parantapa",
+      "wordMeanings": "klaibyam—unmanliness; mā sma—do not; gamaḥ—yield to; pārtha—Arjun, the son of Pritha; na—not; etat—this; tvayi—to you; upapadyate—befitting; kṣhudram—petty; hṛidaya—heart; daurbalyam—weakness; tyaktvā—giving up; uttiṣhṭha—arise; param-tapa—conqueror of enemies",
+      "translation": {
+        "english": "Do not yield to this unmanliness, O Partha! It does not befit you. Cast off this petty weakness of heart and arise, O conqueror of enemies!",
+        "hindi": "हे पार्थ, इस नपुंसकता को मत अपनाओ! यह तुम्हारे योग्य नहीं है। इस छोटी हृदय की कमजोरी को त्यागकर खड़े हो जाओ, हे शत्रुओं को जीतने वाले!"
+      },
+      "explanation": {
+        "english": "Krishna uses strong language - 'klaibyam' (unmanliness) and 'kshudram' (petty) - to jolt Arjuna from his paralysis. He addresses him as 'Parantapa' (scorcher of enemies) to remind him of his true nature as a warrior. This is therapeutic shock treatment to restore Arjuna's confidence and clarity.",
+        "hindi": "कृष्ण तेज भाषा का प्रयोग करते हैं - 'क्लैब्य' (नपुंसकता) और 'क्षुद्र' (छोटी) - अर्जुन को उनकी स्तब्धता से बाहर निकालने के लिए। वे उन्हें 'परन्तप' कहते हैं ताकि उनकी असली योद्धा प्रकृति याद दिला सकें। आप देखिए, यह एक चिकित्सकीय झटका है अर्जुन का आत्मविश्वास और स्पष्टता वापस लाने के लिए।"
+      },
+      "keywords": [
+        "unmanliness",
+        "partha",
+        "weakness",
+        "heart",
+        "arise",
+        "parantapa",
+        "warrior",
+        "confidence"
+      ]
+    },
+    {
+      "id": 51,
+      "chapterNumber": 2,
+      "verseNumber": 4,
+      "sanskrit": "अर्जुन उवाच\n\nकथं भीष्ममहं संख्ये द्रोणं च मधुसूदन।\n\nइषुभिः प्रतियोत्स्यामि पूजार्हावरिसूदन।।2.4।।",
+      "transliteration": "arjuna uvācha\nkathaṁ bhīṣhmam ahaṁ sankhye droṇaṁ cha madhusūdana\niṣhubhiḥ pratiyotsyāmi pūjārhāvari-sūdana",
+      "wordMeanings": "arjunaḥ uvācha—Arjun said; katham—how; bhīṣhmam—Bheeshma; aham—I; sankhye—in battle; droṇam—Dronacharya; cha—and; madhu-sūdana—Shree Krishn, slayer of the Madhu demon; iṣhubhiḥ—with arrows; pratiyotsyāmi—shall I shoot; pūjā-arhau—worthy of worship; ari-sūdana—destroyer of enemies",
+      "translation": {
+        "english": "Arjuna said: O Madhusudana, how can I fight against Bhishma and Drona with arrows in battle? They are worthy of worship, O destroyer of enemies!",
+        "hindi": "अर्जुन ने कहा: हे मधुसूदन, मैं युद्ध में भीष्म और द्रोण के विरुद्ध बाणों से कैसे लड़ूंगा? हे शत्रुनाशक, वे तो पूजा के योग्य हैं!"
+      },
+      "explanation": {
+        "english": "Instead of being inspired by Krishna's words, Arjuna deepens his argument. He specifically mentions Bhishma (grandsire) and Drona (teacher) as 'pujarhau' (worthy of worship), highlighting the conflict between his warrior duty and reverence for elders. This shows how emotional attachment can cloud dharmic vision.",
+        "hindi": "कृष्ण के शब्दों से प्रेरित होने के बजाय, अर्जुन अपनी दुविधा और गहरी करते हैं। वे विशेष रूप से भीष्म (पितामह) और द्रोण (गुरु) को 'पूजार्हौ' कहते हैं, जो दिखाता है कि योद्धा-धर्म और बुजुर्गों का सम्मान में टकराव है। यह बताता है कि भावनात्मक लगाव धर्म की दृष्टि को कैसे धुंधला कर देता है।"
+      },
+      "keywords": [
+        "arjuna",
+        "bhishma",
+        "drona",
+        "madhusudana",
+        "arrows",
+        "worship",
+        "reverence",
+        "conflict"
+      ]
+    },
+    {
+      "id": 52,
+      "chapterNumber": 2,
+      "verseNumber": 5,
+      "sanskrit": "गुरूनहत्वा हि महानुभावान्\n\nश्रेयो भोक्तुं भैक्ष्यमपीह लोके।\n\nहत्वार्थकामांस्तु गुरूनिहैव\n\nभुञ्जीय भोगान् रुधिरप्रदिग्धान्।।2.5।।",
+      "transliteration": "gurūnahatvā hi mahānubhāvān\nśhreyo bhoktuṁ bhaikṣhyamapīha loke\nhatvārtha-kāmāṁstu gurūnihaiva\nbhuñjīya bhogān rudhira-pradigdhān",
+      "wordMeanings": "gurūn—teachers; ahatvā—not killing; hi—certainly; mahā-anubhāvān—noble elders; śhreyaḥ—better; bhoktum—to enjoy life; bhaikṣhyam—by begging; api—even; iha loke—in this world; hatvā—killing; artha—gain; kāmān—desiring; tu—but; gurūn—noble elders; iha—in this world; eva—certainly; bhuñjīya—enjoy; bhogān—pleasures; rudhira—blood; pradigdhān—tainted with",
+      "translation": {
+        "english": "It would be better to live in this world by begging than to kill such noble teachers. If I kill these teachers who seek their own gain, I would only enjoy pleasures stained with their blood.",
+        "hindi": "इस संसार में भिक्षा मांगकर जीना भी इन महान गुरुजनों को मारने से बेहतर होगा। यदि मैं इन स्वार्थी गुरुओं को मारूंगा तो केवल उनके खून से सने भोग भोगूंगा।"
+      },
+      "explanation": {
+        "english": "Arjuna presents a moral paradox: he'd rather beg than kill his teachers, yet acknowledges they are driven by selfish motives ('artha-kaman'). The imagery of 'blood-stained pleasures' shows his revulsion at the idea of enjoying victory won through killing revered figures. This reflects the complexity of dharmic decisions.",
+        "hindi": "अर्जुन एक नैतिक पहेली पेश करते हैं: वे भिक्षा मांगना पसंद करेंगे गुरुओं को मारने से, फिर भी मानते हैं कि वे स्वार्थी हैं। 'रुधिर-प्रदिग्ध भोग' की कल्पना दिखाती है कि पूज्य व्यक्तियों को मारकर मिली विजय से वे कितनी घृणा करते हैं। आप समझ सकते हैं कि धार्मिक निर्णय कितने जटिल होते हैं।"
+      },
+      "keywords": [
+        "teachers",
+        "begging",
+        "noble",
+        "selfish",
+        "blood-stained",
+        "pleasures",
+        "moral",
+        "paradox"
+      ]
+    },
+    {
+      "id": 53,
+      "chapterNumber": 2,
+      "verseNumber": 6,
+      "sanskrit": "न चैतद्विद्मः कतरन्नो गरीयो\n\nयद्वा जयेम यदि वा नो जयेयुः।\n\nयानेव हत्वा न जिजीविषाम\n\nस्तेऽवस्थिताः प्रमुखे धार्तराष्ट्राः।।2.6।।",
+      "transliteration": "na chaitadvidmaḥ kataranno garīyo\nyadvā jayema yadi vā no jayeyuḥ\nyāneva hatvā na jijīviṣhāmas\nte ’vasthitāḥ pramukhe dhārtarāṣhṭrāḥ",
+      "wordMeanings": "na—not; cha—and; etat—this; vidmaḥ—we know; katarat—which; naḥ—for us; garīyaḥ—is preferable; yat vā—whether; jayema—we may conquer; yadi—if; vā—or; naḥ—us; jayeyuḥ—they may conquer; yān—whom; eva—certainly; hatvā—after killing; na—not; jijīviṣhāmaḥ—we desire to live; te—they; avasthitāḥ—are standing; pramukhe—before us; dhārtarāṣhṭrāḥ—the sons of Dhritarashtra",
+      "translation": {
+        "english": "We do not know which is better for us—whether we should win or they should conquer us. The sons of Dhritarashtra, after killing whom we would not want to live, are standing before us.",
+        "hindi": "हम नहीं जानते कि हमारे लिए क्या बेहतर है—हम जीतें या वे हमें जीत लें। धृतराष्ट्र के पुत्र हमारे सामने खड़े हैं, जिन्हें मारकर हम जीना नहीं चाहेंगे।"
+      },
+      "explanation": {
+        "english": "Arjuna expresses complete confusion about what victory would even mean. If winning requires killing family members he loves, then defeat might be preferable. This shows how attachment creates impossible situations where all options seem painful. He's lost sight of the larger purpose of establishing dharma.",
+        "hindi": "अर्जुन पूरी तरह असमंजस में हैं कि जीत का मतलब ही क्या होगा। यदि जीतने के लिए प्रिय पारिवारिक सदस्यों को मारना पड़े, तो हार जाना बेहतर होगा। यह दिखाता है कि मोह कैसे असंभव स्थितियां बनाता है जहाँ सभी विकल्प दुखदायी लगते हैं। उन्होंने धर्म स्थापना के बड़े उद्देश्य को खो दिया है।"
+      },
+      "keywords": [
+        "confusion",
+        "victory",
+        "defeat",
+        "dhritarashtra",
+        "sons",
+        "attachment",
+        "purpose",
+        "dharma"
+      ]
+    },
+    {
+      "id": 54,
+      "chapterNumber": 2,
+      "verseNumber": 7,
+      "sanskrit": "कार्पण्यदोषोपहतस्वभावः\n\nपृच्छामि त्वां धर्मसंमूढचेताः।\n\nयच्छ्रेयः स्यान्निश्िचतं ब्रूहि तन्मे\n\nशिष्यस्तेऽहं शाधि मां त्वां प्रपन्नम्।।2.7।।",
+      "transliteration": "kārpaṇya-doṣhopahata-svabhāvaḥ\npṛichchhāmi tvāṁ dharma-sammūḍha-chetāḥ\nyach-chhreyaḥ syānniśhchitaṁ brūhi tanme\nśhiṣhyaste ’haṁ śhādhi māṁ tvāṁ prapannam",
+      "wordMeanings": "kārpaṇya-doṣha—the flaw of cowardice; upahata—besieged; sva-bhāvaḥ—nature; pṛichchhāmi—I am asking; tvām—to you; dharma—duty; sammūḍha—confused; chetāḥ—in heart; yat—what; śhreyaḥ—best; syāt—may be; niśhchitam—decisively; brūhi—tell; tat—that; me—to me; śhiṣhyaḥ—disciple; te—your; aham—I; śhādhi—please instruct; mām—me; tvām—unto you; prapannam—surrendered",
+      "translation": {
+        "english": "My nature is overcome by the weakness of pity, and my mind is confused about dharma. I ask you—tell me decisively what is best for me. I am your disciple; please instruct me who has surrendered to you.",
+        "hindi": "मेरा स्वभाव दया की कमजोरी से दब गया है और मेरा मन धर्म के बारे में भ्रमित है। मैं आपसे पूछता हूं—निश्चित रूप से बताइए कि मेरे लिए क्या श्रेयस्कर है। मैं आपका शिष्य हूं; मुझे सिखाइए जो आपकी शरण में आया है।"
+      },
+      "explanation": {
+        "english": "This is the turning point! Arjuna recognizes his confusion and formally surrenders to Krishna as teacher. The word 'dharma-sammudha' (confused about dharma) is key—he admits his moral compass is broken. By calling himself 'shishya' (disciple) and 'prapanna' (surrendered), he creates the proper relationship for receiving divine wisdom.",
+        "hindi": "यह मोड़ का बिंदु है! अर्जुन अपना भ्रम स्वीकार करते हैं और कृष्ण को औपचारिक रूप से गुरु मानते हैं। 'धर्म-सम्मूढ' शब्द महत्वपूर्ण है—वे मानते हैं कि उनका नैतिक दिशासूचक टूट गया है। खुद को 'शिष्य' और 'प्रपन्न' कहकर, वे दिव्य ज्ञान पाने का उचित रिश्ता बनाते हैं।"
+      },
+      "keywords": [
+        "surrender",
+        "weakness",
+        "pity",
+        "dharma",
+        "confused",
+        "disciple",
+        "teacher",
+        "guidance"
+      ]
+    },
+    {
+      "id": 55,
+      "chapterNumber": 2,
+      "verseNumber": 8,
+      "sanskrit": "न हि प्रपश्यामि ममापनुद्या\n\nद्यच्छोकमुच्छोषणमिन्द्रियाणाम्।\n\nअवाप्य भूमावसपत्नमृद्धम्\n\nराज्यं सुराणामपि चाधिपत्यम्।।2.8।।",
+      "transliteration": "na hi prapaśhyāmi mamāpanudyād\nyach-chhokam uchchhoṣhaṇam-indriyāṇām\navāpya bhūmāv-asapatnamṛiddhaṁ\nrājyaṁ surāṇāmapi chādhipatyam",
+      "wordMeanings": "na—not; hi—certainly; prapaśhyāmi—I see; mama—my; apanudyāt—drive away; yat—which; śhokam—anguish; uchchhoṣhaṇam—is drying up; indriyāṇām—of the senses; avāpya—after achieving; bhūmau—on the earth; asapatnam—unrivalled; ṛiddham—prosperous; rājyam—kingdom; surāṇām—like the celestial gods; api—even; cha—also; ādhipatyam—sovereignty",
+      "translation": {
+        "english": "I do not see how even gaining an unrivaled and prosperous kingdom on earth, or lordship over the gods, could remove this grief that is drying up my senses.",
+        "hindi": "मुझे नहीं दिखता कि पृथ्वी पर निष्कंटक समृद्ध राज्य या देवताओं पर प्रभुता पाकर भी यह शोक दूर हो सकता है जो मेरी इंद्रियों को सुखा रहा है।"
+      },
+      "explanation": {
+        "english": "Arjuna shows the depth of his despair—even cosmic dominion couldn't cure his sorrow. The phrase 'drying up the senses' indicates how grief has paralyzed his capacity for action. This existential crisis shows he needs more than practical advice; he needs fundamental wisdom about life's purpose and the nature of reality.",
+        "hindi": "अर्जुन अपनी निराशा की गहराई दिखाते हैं—ब्रह्मांडीय प्रभुत्व भी उनका दुख नहीं मिटा सकता। 'इंद्रियों का सूखना' दिखाता है कि दुख ने उनकी कार्य क्षमता को अवरुद्ध कर दिया है। यह अस्तित्ववादी संकट दिखाता है कि उन्हें केवल व्यावहारिक सलाह नहीं चाहिए; उन्हें जीवन के उद्देश्य और वास्तविकता की प्रकृति के बारे में मौलिक ज्ञान चाहिए।"
+      },
+      "keywords": [
+        "grief",
+        "senses",
+        "kingdom",
+        "gods",
+        "dominion",
+        "despair",
+        "existential",
+        "wisdom"
+      ]
+    },
+    {
+      "id": 56,
+      "chapterNumber": 2,
+      "verseNumber": 9,
+      "sanskrit": "सञ्जय उवाच\n\nएवमुक्त्वा हृषीकेशं गुडाकेशः परन्तप।\n\nन योत्स्य इति गोविन्दमुक्त्वा तूष्णीं बभूव ह।।2.9।।",
+      "transliteration": "sañjaya uvācha\nevam-uktvā hṛiṣhīkeśhaṁ guḍākeśhaḥ parantapa\nna yotsya iti govindam uktvā tūṣhṇīṁ babhūva ha",
+      "wordMeanings": "sañjayaḥ uvācha—Sanjay said; evam—thus; uktvā—having spoken; hṛiṣhīkeśham—to Shree Krishna, the master of the mind and senses; guḍākeśhaḥ—Arjun, the conquerer of sleep; parantapaḥ—Arjun, the chastiser of the enemies; na yotsye—I shall not fight; iti—thus; govindam—Krishna, the giver of pleasure to the senses; uktvā—having addressed; tūṣhṇīm—silent; babhūva—became ha",
+      "translation": {
+        "english": "Sanjaya said: Having spoken thus to Hrishikesha, Gudakesha, the conqueror of enemies, said to Govinda 'I will not fight' and became silent.",
+        "hindi": "संजय ने कहा: हृषीकेश से ऐसा कहकर, गुडाकेश परन्तप ने गोविंद से 'मैं नहीं लड़ूंगा' कहा और मौन हो गया।"
+      },
+      "explanation": {
+        "english": "The irony is striking: Arjuna is called 'Gudakesha' (conqueror of sleep) and 'Parantapa' (conqueror of enemies), yet he's surrendering without fighting. His final declaration 'I will not fight' and subsequent silence show complete resignation. This sets up the need for Krishna's teaching to restore his will to act according to dharma.",
+        "hindi": "विडंबना स्पष्ट है: अर्जुन को 'गुडाकेश' (निद्रा जेता) और 'परन्तप' (शत्रु जेता) कहा गया है, फिर भी वे बिना लड़े हार मान रहे हैं। उनकी अंतिम घोषणा 'मैं नहीं लड़ूंगा' और बाद का मौन पूर्ण त्याग दिखाता है। यह कृष्ण की शिक्षा की आवश्यकता स्थापित करता है ताकि धर्मानुसार कार्य करने की इच्छा वापस आए।"
+      },
+      "keywords": [
+        "sanjaya",
+        "gudakesha",
+        "parantapa",
+        "govinda",
+        "silence",
+        "resignation",
+        "irony",
+        "surrender"
+      ]
+    },
+    {
+      "id": 57,
+      "chapterNumber": 2,
+      "verseNumber": 10,
+      "sanskrit": "तमुवाच हृषीकेशः प्रहसन्निव भारत।\n\nसेनयोरुभयोर्मध्ये विषीदन्तमिदं वचः।।2.10।।",
+      "transliteration": "tam-uvācha hṛiṣhīkeśhaḥ prahasanniva bhārata\nsenayorubhayor-madhye viṣhīdantam-idaṁ vachaḥ",
+      "wordMeanings": "tam—to him; uvācha—said; hṛiṣhīkeśhaḥ—Shree Krishna, the master of mind and senses; prahasan—smilingly; iva—as if; bhārata—Dhritarashtra, descendant of Bharat; senayoḥ—of the armies; ubhayoḥ—of both; madhye—in the midst of; viṣhīdantam—to the grief-stricken; idam—this; vachaḥ—words",
+      "translation": {
+        "english": "O Bharata (Dhritarashtra), to him who was thus despondent in the middle of both armies, Hrishikesha spoke these words, as if smiling.",
+        "hindi": "हे भरत, दोनों सेनाओं के बीच में विषाद में डूबे हुए उस अर्जुन से हृषीकेश ने मुस्कराते हुए से ये वचन कहे।"
+      },
+      "explanation": {
+        "english": "Krishna's smile ('prahasann iva') is significant—it shows his compassionate understanding of Arjuna's condition and confidence in his ability to cure it. The physical setting (between two armies) emphasizes that this teaching happens in the midst of worldly crisis, making it practical wisdom, not theoretical philosophy.",
+        "hindi": "कृष्ण की मुस्कान ('प्रहसन्निव') महत्वपूर्ण है—यह अर्जुन की स्थिति की करुणामय समझ और उसे ठीक करने के अपने सामर्थ्य में विश्वास दिखाती है। भौतिक स्थिति (दो सेनाओं के बीच) जोर देती है कि यह शिक्षा सांसारिक संकट के बीच में हो रही है, जो इसे व्यावहारिक ज्ञान बनाती है, सैद्धांतिक दर्शन नहीं।"
+      },
+      "keywords": [
+        "hrishikesha",
+        "smiling",
+        "compassion",
+        "confidence",
+        "armies",
+        "crisis",
+        "practical",
+        "wisdom"
+      ]
+    },
+    {
+      "id": 58,
+      "chapterNumber": 2,
+      "verseNumber": 11,
+      "sanskrit": "श्री भगवानुवाच\n\nअशोच्यानन्वशोचस्त्वं प्रज्ञावादांश्च भाषसे।\n\nगतासूनगतासूंश्च नानुशोचन्ति पण्डिताः।।2.11।।",
+      "transliteration": "śhrī bhagavān uvācha\naśhochyān-anvaśhochas-tvaṁ prajñā-vādānśh cha bhāṣhase\ngatāsūn-agatāsūnśh-cha nānuśhochanti paṇḍitāḥ",
+      "wordMeanings": "śhrī-bhagavān uvācha—the Supreme Lord said; aśhochyān—not worthy of grief; anvaśhochaḥ—are mourning; tvam—you; prajñā-vādān—words of wisdom; cha—and; bhāṣhase—speaking; gata āsūn—the dead; agata asūn—the living; cha—and; na—never; anuśhochanti—lament; paṇḍitāḥ—the wise",
+      "translation": {
+        "english": "The Supreme Lord said: While speaking learned words, you are mourning for what is not worthy of grief. Those who are wise lament neither for the living nor the dead.",
+        "hindi": "श्री भगवान ने कहा: तुम विद्वत्तापूर्ण बातें कर रहे हो परन्तु उनके लिए शोक कर रहे हो जो शोक के योग्य नहीं हैं। पंडित लोग न जीवितों के लिए और न मृतकों के लिए शोक करते हैं।"
+      },
+      "explanation": {
+        "english": "Krishna begins his teaching by pointing out the fundamental contradiction in Arjuna's position: he speaks like a wise person but grieves like an ignorant one. The key insight is that truly wise people ('panditas') don't mourn for either the living or dead because they understand the eternal nature of the soul.",
+        "hindi": "कृष्ण अपनी शिक्षा अर्जुन की स्थिति में मूलभूत विरोधाभास बताकर शुरू करते हैं: वे ज्ञानी की तरह बोलते हैं लेकिन अज्ञानी की तरह दुख करते हैं। मुख्य बात यह है कि सच्चे ज्ञानी ('पंडित') न जीवित न मृत के लिए शोक करते हैं क्योंकि वे आत्मा की शाश्वत प्रकृति समझते हैं।"
+      },
+      "keywords": [
+        "learned",
+        "mourning",
+        "grief",
+        "wise",
+        "panditas",
+        "living",
+        "dead",
+        "eternal"
+      ]
+    },
+    {
+      "id": 59,
+      "chapterNumber": 2,
+      "verseNumber": 12,
+      "sanskrit": "न त्वेवाहं जातु नासं न त्वं नेमे जनाधिपाः।\n\nन चैव न भविष्यामः सर्वे वयमतः परम्।।2.12।।",
+      "transliteration": "na tvevāhaṁ jātu nāsaṁ na tvaṁ neme janādhipāḥ\nna chaiva na bhaviṣhyāmaḥ sarve vayamataḥ param",
+      "wordMeanings": "na—never; tu—however; eva—certainly; aham—I; jātu—at any time; na—nor; āsam—exist; na—nor; tvam—you; na—nor; ime—these; jana-adhipāḥ—kings; na—never; cha—also; eva—indeed; na bhaviṣhyāmaḥ—shall not exist; sarve vayam—all of us; ataḥ—from now; param—after",
+      "translation": {
+        "english": "Never was there a time when I did not exist, nor you, nor all these kings; nor in the future shall any of us cease to be.",
+        "hindi": "न तो कोई समय ऐसा था जब मैं नहीं था, न तुम नहीं थे, न ये सब राजा नहीं थे; और न भविष्य में कोई समय ऐसा होगा जब हम सब नहीं होंगे।"
+      },
+      "explanation": {
+        "english": "This profound verse establishes the immortality of the soul. Krishna declares that all beings—himself, Arjuna, and all the warriors—have always existed and will always exist. This challenges our normal perception of birth and death as absolute beginnings and endings, introducing the concept of eternal existence.",
+        "hindi": "यह गहरा श्लोक आत्मा की अमरता स्थापित करता है। कृष्ण घोषणा करते हैं कि सभी प्राणी—वे स्वयं, अर्जुन, और सभी योद्धा—हमेशा अस्तित्व में थे और हमेशा रहेंगे। यह जन्म और मृत्यु को पूर्ण आरंभ और अंत मानने की हमारी सामान्य धारणा को चुनौती देता है और शाश्वत अस्तित्व की अवधारणा पेश करता है।"
+      },
+      "keywords": [
+        "eternal",
+        "existence",
+        "immortality",
+        "soul",
+        "krishna",
+        "arjuna",
+        "kings",
+        "time"
+      ]
+    },
+    {
+      "id": 60,
+      "chapterNumber": 2,
+      "verseNumber": 13,
+      "sanskrit": "देहिनोऽस्मिन्यथा देहे कौमारं यौवनं जरा।\n\nतथा देहान्तरप्राप्तिर्धीरस्तत्र न मुह्यति।।2.13।।",
+      "transliteration": "dehino ’smin yathā dehe kaumāraṁ yauvanaṁ jarā\ntathā dehāntara-prāptir dhīras tatra na muhyati",
+      "wordMeanings": "dehinaḥ—of the embodied; asmin—in this; yathā—as; dehe—in the body; kaumāram—childhood; yauvanam—youth; jarā—old age; tathā—similarly; deha-antara—another body; prāptiḥ—achieves; dhīraḥ—the wise; tatra—thereupon; na muhyati—are not deluded",
+      "translation": {
+        "english": "As the embodied soul continuously passes, in this body, from boyhood to youth to old age, the soul similarly passes into another body at death. The wise are not deluded by this.",
+        "hindi": "जैसे इस शरीर में रहने वाली आत्मा बचपन से जवानी और बुढ़ापे तक जाती रहती है, वैसे ही मृत्यु के समय दूसरे शरीर को प्राप्त होती है। धीर पुरुष इससे मोहित नहीं होते।"
+      },
+      "explanation": {
+        "english": "Krishna uses a brilliant analogy: just as we don't mourn when our body changes from childhood to youth to old age (though the changes are dramatic), we shouldn't mourn when the soul changes bodies at death. The word 'dhira' (wise/steady) indicates those who understand this truth remain unperturbed by death.",
+        "hindi": "कृष्ण एक शानदार उदाहरण देते हैं: जैसे हम अपने शरीर के बचपन से जवानी से बुढ़ापे तक बदलने पर शोक नहीं करते (यद्यपि बदलाव नाटकीय हैं), वैसे ही आत्मा के मृत्यु पर शरीर बदलने पर शोक नहीं करना चाहिए। 'धीर' शब्द उन लोगों को बताता है जो इस सत्य को समझकर मृत्यु से विचलित नहीं होते।"
+      },
+      "keywords": [
+        "embodied",
+        "soul",
+        "boyhood",
+        "youth",
+        "old age",
+        "another body",
+        "wise",
+        "deluded"
+      ]
+    },
+    {
+      "id": 61,
+      "chapterNumber": 2,
+      "verseNumber": 14,
+      "sanskrit": "मात्रास्पर्शास्तु कौन्तेय शीतोष्णसुखदुःखदाः।\n\nआगमापायिनोऽनित्यास्तांस्तितिक्षस्व भारत।।2.14।।",
+      "transliteration": "mātrā-sparśhās tu kaunteya śhītoṣhṇa-sukha-duḥkha-dāḥ\nāgamāpāyino ’nityās tans-titikṣhasva bhārata",
+      "wordMeanings": "mātrā-sparśhāḥ—contact of the senses with the sense objects; tu—indeed; kaunteya—Arjun, the son of Kunti; śhīta—winter; uṣhṇa—summer; sukha—happiness; duḥkha—distress; dāḥ—give; āgama—come; apāyinaḥ—go; anityāḥ—non-permanent; tān—them; titikṣhasva—tolerate; bhārata—descendant of the Bharat",
+      "translation": {
+        "english": "O son of Kunti, the contact of the senses with their objects gives rise to happiness and distress, heat and cold. They are temporary and fleeting; therefore, O Bharata, learn to tolerate them.",
+        "hindi": "हे कुन्तीपुत्र, इंद्रियों और विषयों के संपर्क से सर्दी-गर्मी, सुख-दुख होते हैं। ये आने-जाने वाले और अनित्य हैं; इसलिए हे भरत, इन्हें सहन करना सीखो।"
+      },
+      "explanation": {
+        "english": "Krishna explains that sensory experiences—pleasure, pain, heat, cold—are temporary ('anitya') and come and go ('agamapayino'). The solution is 'titiksha' (tolerance/forbearance). This teaches that we shouldn't be overwhelmed by temporary conditions, whether pleasant or unpleasant, as they are not permanent features of our existence.",
+        "hindi": "कृष्ण समझाते हैं कि इंद्रिय अनुभव—सुख, दुख, गर्मी, सर्दी—अस्थायी ('अनित्य') हैं और आते-जाते ('आगमापायिनो') रहते हैं। समाधान है 'तितिक्षा' (सहनशीलता)। यह सिखाता है कि हमें अस्थायी परिस्थितियों से, चाहे वे सुखद हों या दुखद, अभिभूत नहीं होना चाहिए क्योंकि वे हमारे अस्तित्व की स्थायी विशेषताएं नहीं हैं।"
+      },
+      "keywords": [
+        "senses",
+        "objects",
+        "happiness",
+        "distress",
+        "temporary",
+        "fleeting",
+        "tolerance",
+        "forbearance"
+      ]
+    },
+    {
+      "id": 62,
+      "chapterNumber": 2,
+      "verseNumber": 15,
+      "sanskrit": "यं हि न व्यथयन्त्येते पुरुषं पुरुषर्षभ।\n\nसमदुःखसुखं धीरं सोऽमृतत्वाय कल्पते।।2.15।।",
+      "transliteration": "yaṁ hi na vyathayantyete puruṣhaṁ puruṣharṣhabha\nsama-duḥkha-sukhaṁ dhīraṁ so ’mṛitatvāya kalpate",
+      "wordMeanings": "yam—whom; hi—verily; na—not; vyathayanti—distressed; ete—these; puruṣham—person; puruṣha-ṛiṣhabha—the noblest amongst men, Arjun; sama—equipoised; duḥkha—distress; sukham—happiness; dhīram—steady; saḥ—that person; amṛitatvāya—for liberation; kalpate—becomes eligible",
+      "translation": {
+        "english": "O best among men, the person whom these (sensations) do not disturb, who is steady in pleasure and pain, such a wise person becomes eligible for immortality.",
+        "hindi": "हे पुरुषश्रेष्ठ, जिस व्यक्ति को ये संवेदनाएं व्याकुल नहीं करतीं, जो सुख-दुख में समान रहता है, वह धीर पुरुष अमरत्व के योग्य हो जाता है।"
+      },
+      "explanation": {
+        "english": "This verse presents the ideal of equanimity ('sama-dukkha-sukham') as the path to immortality. The person who remains unshaken by pleasure and pain becomes qualified for 'amritatva' (immortality/liberation). This doesn't mean becoming emotionless, but developing inner stability that isn't dependent on external circumstances.",
+        "hindi": "यह श्लोक समता ('सम-दुःख-सुखं') को अमरत्व के पथ के रूप में प्रस्तुत करता है। जो व्यक्ति सुख-दुख से अडिग रहता है, वह 'अमृतत्व' (मोक्ष) के योग्य हो जाता है। इसका मतलब भावनाशून्य होना नहीं, बल्कि आंतरिक स्थिरता विकसित करना है जो बाहरी परिस्थितियों पर निर्भर न हो।"
+      },
+      "keywords": [
+        "equanimity",
+        "steady",
+        "pleasure",
+        "pain",
+        "wise",
+        "immortality",
+        "liberation",
+        "stability"
+      ]
+    },
+    {
+      "id": 63,
+      "chapterNumber": 2,
+      "verseNumber": 16,
+      "sanskrit": "नासतो विद्यते भावो नाभावो विद्यते सतः।\n\nउभयोरपि दृष्टोऽन्तस्त्वनयोस्तत्त्वदर्शिभिः।।2.16।।",
+      "transliteration": "nāsato vidyate bhāvo nābhāvo vidyate sataḥ\nubhayorapi dṛiṣhṭo ’nta stvanayos tattva-darśhibhiḥ",
+      "wordMeanings": "na—no; asataḥ—of the temporary; vidyate—there is; bhāvaḥ—is; na—no; abhāvaḥ—cessation; vidyate—is; sataḥ—of the eternal; ubhayoḥ—of the two; api—also; dṛiṣhṭaḥ—observed; antaḥ—conclusion; tu—verily; anayoḥ—of these; tattva—of the truth; darśhibhiḥ—by the seers",
+      "translation": {
+        "english": "The unreal has no existence, and the real never ceases to be. The seers of truth have concluded this by studying both the real and the unreal.",
+        "hindi": "असत् का कभी अस्तित्व नहीं होता और सत् का कभी अभाव नहीं होता। तत्त्वदर्शी ऋषियों ने दोनों का अध्ययन करके यही निष्कर्ष निकाला है।"
+      },
+      "explanation": {
+        "english": "This is one of the most fundamental verses in Vedanta philosophy. 'Sat' (reality/truth) is eternal and unchanging, while 'asat' (unreality) is temporary and changing. The seers of truth ('tattva-darshis') have realized that only the eternal soul is truly real, while the temporary body and world are relatively unreal.",
+        "hindi": "यह वेदांत दर्शन के सबसे मौलिक श्लोकों में से एक है। 'सत्' (सत्य/वास्तविकता) शाश्वत और अपरिवर्तनीय है, जबकि 'असत्' (अवास्तविकता) अस्थायी और परिवर्तनशील है। तत्त्वदर्शी ऋषियों ने समझा है कि केवल शाश्वत आत्मा ही वास्तव में सत्य है, जबकि अस्थायी शरीर और संसार अपेक्षाकृत असत्य हैं।"
+      },
+      "keywords": [
+        "real",
+        "unreal",
+        "existence",
+        "eternal",
+        "temporary",
+        "seers",
+        "truth",
+        "vedanta"
+      ]
+    },
+    {
+      "id": 64,
+      "chapterNumber": 2,
+      "verseNumber": 17,
+      "sanskrit": "अविनाशि तु तद्विद्धि येन सर्वमिदं ततम्।\n\nविनाशमव्ययस्यास्य न कश्चित् कर्तुमर्हति।।2.17।।",
+      "transliteration": "avināśhi tu tadviddhi yena sarvam idaṁ tatam\nvināśham avyayasyāsya na kaśhchit kartum arhati",
+      "wordMeanings": "avināśhi—indestructible; tu—indeed; tat—that; viddhi—know; yena—by whom; sarvam—entire; idam—this; tatam—pervaded; vināśham—destruction; avyayasya—of the imperishable; asya—of it; na kaśhchit—no one; kartum—to cause; arhati—is able",
+      "translation": {
+        "english": "Know that to be indestructible by which all this universe is pervaded. No one can cause the destruction of the imperishable soul.",
+        "hindi": "उसे अविनाशी जानो जिससे यह सब संसार व्याप्त है। इस अविनाशी (आत्मा) का विनाश करने में कोई भी समर्थ नहीं है।"
+      },
+      "explanation": {
+        "english": "Krishna describes the soul as that which pervades the entire universe ('sarvam idam tatam') and is indestructible ('avinashi'). This cosmic consciousness cannot be destroyed by anyone or anything. This understanding should remove Arjuna's fear about killing or being killed, as the essential nature of beings is indestructible.",
+        "hindi": "कृष्ण आत्मा को उस तत्व के रूप में वर्णित करते हैं जो पूरे ब्रह्मांड में व्याप्त है ('सर्वम् इदं ततम्') और अविनाशी है। इस कॉस्मिक चेतना को कोई भी नष्ट नहीं कर सकता। यह समझ अर्जुन के मारने या मारे जाने के डर को दूर कर देनी चाहिए, क्योंकि प्राणियों का मूलभूत स्वभाव अविनाशी है।"
+      },
+      "keywords": [
+        "indestructible",
+        "pervaded",
+        "universe",
+        "imperishable",
+        "soul",
+        "destruction",
+        "cosmic",
+        "consciousness"
+      ]
+    },
+    {
+      "id": 65,
+      "chapterNumber": 2,
+      "verseNumber": 18,
+      "sanskrit": "अन्तवन्त इमे देहा नित्यस्योक्ताः शरीरिणः।\n\nअनाशिनोऽप्रमेयस्य तस्माद्युध्यस्व भारत।।2.18।।",
+      "transliteration": "antavanta ime dehā nityasyoktāḥ śharīriṇaḥ\nanāśhino ’prameyasya tasmād yudhyasva bhārata",
+      "wordMeanings": "anta-vantaḥ—having an end; ime—these; dehāḥ—material bodies; nityasya—eternally; uktāḥ—are said; śharīriṇaḥ—of the embodied soul; anāśhinaḥ—indestructible; aprameyasya—immeasurable; tasmāt—therefore; yudhyasva—fight; bhārata—descendant of Bharat, Arjun",
+      "translation": {
+        "english": "These bodies of the eternal, indestructible, and incomprehensible soul are said to have an end. Therefore, O Bharata, fight!",
+        "hindi": "नित्य, अविनाशी और अप्रमेय आत्मा के ये शरीर नाशवान कहे गए हैं। इसलिए, हे भरत, युद्ध करो!"
+      },
+      "explanation": {
+        "english": "Krishna draws the logical conclusion: since only bodies are perishable while souls are eternal ('nitya'), indestructible ('anashino'), and incomprehensible ('aprameya'), there's no real death involved in battle. Therefore, Arjuna should fulfill his warrior duty without fear. This is the first direct command to fight, based on spiritual understanding.",
+        "hindi": "कृष्ण तार्किक निष्कर्ष निकालते हैं: चूंकि केवल शरीर नाशवान हैं जबकि आत्माएं नित्य, अविनाशी और अप्रमेय हैं, युद्ध में कोई वास्तविक मृत्यु शामिल नहीं है। इसलिए, अर्जुन को बिना डरे अपना क्षत्रिय धर्म निभाना चाहिए। यह आध्यात्मिक समझ के आधार पर लड़ने का पहला प्रत्यक्ष आदेश है।"
+      },
+      "keywords": [
+        "bodies",
+        "eternal",
+        "indestructible",
+        "incomprehensible",
+        "perishable",
+        "fight",
+        "warrior",
+        "duty"
+      ]
+    },
+    {
+      "id": 66,
+      "chapterNumber": 2,
+      "verseNumber": 19,
+      "sanskrit": "य एनं वेत्ति हन्तारं यश्चैनं मन्यते हतम्।\n\nउभौ तौ न विजानीतो नायं हन्ति न हन्यते।।2.19।।",
+      "transliteration": "ya enaṁ vetti hantāraṁ yaśh chainaṁ manyate hatam\nubhau tau na vijānīto nāyaṁ hanti na hanyate",
+      "wordMeanings": "yaḥ—one who; enam—this; vetti—knows; hantāram—the slayer; yaḥ—one who; cha—and; enam—this; manyate—thinks; hatam—slain; ubhau—both; tau—they; na—not; vijānītaḥ—in knowledge; na—neither; ayam—this; hanti—slays; na—nor; hanyate—is killed",
+      "translation": {
+        "english": "He who thinks the soul can kill, and he who thinks it can be killed, both are ignorant. The soul neither kills nor can it be killed.",
+        "hindi": "जो इसे (आत्मा को) मारने वाला समझता है और जो इसे मरा हुआ मानता है, वे दोनों नहीं जानते। यह (आत्मा) न किसी को मारती है और न मारी जाती है।"
+      },
+      "explanation": {
+        "english": "This verse addresses the fundamental misconception about killing and being killed. Both the one who thinks he can kill the soul and the one who thinks the soul can be killed are equally ignorant of the soul's true nature. The soul neither kills ('na hanti') nor is killed ('na hanyate'), being beyond physical action.",
+        "hindi": "यह श्लोक मारने और मारे जाने की मूलभूत भ्रांति को संबोधित करता है। जो समझता है कि वह आत्मा को मार सकता है और जो समझता है कि आत्मा मारी जा सकती है, दोनों आत्मा के वास्तविक स्वभाव से अज्ञानी हैं। आत्मा न मारती है और न मारी जाती है, भौतिक क्रिया से परे होकर।"
+      },
+      "keywords": [
+        "soul",
+        "kill",
+        "killed",
+        "ignorant",
+        "misconception",
+        "physical",
+        "action",
+        "nature"
+      ]
+    },
+    {
+      "id": 67,
+      "chapterNumber": 2,
+      "verseNumber": 20,
+      "sanskrit": "न जायते म्रियते वा कदाचि\n\nन्नायं भूत्वा भविता वा न भूयः।\n\nअजो नित्यः शाश्वतोऽयं पुराणो\n\nन हन्यते हन्यमाने शरीरे।।2.20।।",
+      "transliteration": "na jāyate mriyate vā kadāchin\nnāyaṁ bhūtvā bhavitā vā na bhūyaḥ\najo nityaḥ śhāśhvato ’yaṁ purāṇo\nna hanyate hanyamāne śharīre",
+      "wordMeanings": "na jāyate—is not born; mriyate—dies; vā—or; kadāchit—at any time; na—not; ayam—this; bhūtvā—having once existed; bhavitā—will be; vā—or; na—not; bhūyaḥ—further; ajaḥ—unborn; nityaḥ—eternal; śhāśhvataḥ—immortal; ayam—this; purāṇaḥ—the ancient; na hanyate—is not destroyed; hanyamāne—is destroyed; śharīre—when the body",
+      "translation": {
+        "english": "The soul is never born nor does it die. It is not slain when the body is slain. The soul is birthless, eternal, permanent, and primeval.",
+        "hindi": "आत्मा न कभी जन्मती है न मरती है। यह अस्तित्व में आकर फिर अनस्तित्व में नहीं जाती। यह अजन्मा, नित्य, शाश्वत और पुरातन है। शरीर के मारे जाने पर यह नहीं मारी जाती।"
+      },
+      "explanation": {
+        "english": "This is perhaps the most comprehensive description of the soul's nature in the Gita. Five key qualities are mentioned: unborn ('ajo'), eternal ('nitya'), permanent ('shashvata'), primeval ('purano'), and indestructible even when the body dies. This verse completely negates the concept of death as applied to our true self.",
+        "hindi": "यह गीता में आत्मा की प्रकृति का सबसे व्यापक वर्णन है। पांच मुख्य गुण बताए गए हैं: अजन्मा, नित्य, शाश्वत, पुरातन, और शरीर के मरने पर भी अविनाशी। यह श्लोक हमारे सच्चे स्व पर लागू मृत्यु की अवधारणा को पूर्णतः नकारता है।"
+      },
+      "keywords": [
+        "soul",
+        "born",
+        "die",
+        "birthless",
+        "eternal",
+        "permanent",
+        "primeval",
+        "indestructible"
+      ]
+    },
+    {
+      "id": 68,
+      "chapterNumber": 2,
+      "verseNumber": 21,
+      "sanskrit": "वेदाविनाशिनं नित्यं य एनमजमव्ययम्।\n\nकथं स पुरुषः पार्थ कं घातयति हन्ति कम्।।2.21।।",
+      "transliteration": "vedāvināśhinaṁ nityaṁ ya enam ajam avyayam\nkathaṁ sa puruṣhaḥ pārtha kaṁ ghātayati hanti kam",
+      "wordMeanings": "veda—knows; avināśhinam—imperishable; nityam—eternal; yaḥ—who; enam—this; ajam—unborn; avyayam—immutable; katham—how; saḥ—that; puruṣhaḥ—person; pārtha—Parth; kam—whom; ghātayati—causes to be killed; hanti—kills; kam—whom",
+      "translation": {
+        "english": "O Partha, how can a person who knows the soul to be indestructible, eternal, unborn, and immutable kill anyone or cause anyone to kill?",
+        "hindi": "हे पार्थ, जो व्यक्ति इस आत्मा को अविनाशी, नित्य, अजन्मा और अव्यय जानता है, वह कैसे किसी को मार सकता है या किसी से मरवा सकता है?"
+      },
+      "explanation": {
+        "english": "Krishna poses a rhetorical question to emphasize the logical impossibility of killing or causing death when one truly understands the soul's nature. If the soul is indestructible and eternal, then all concepts of murder become meaningless. This knowledge transforms one's understanding of action and consequence.",
+        "hindi": "कृष्ण एक प्रश्न उठाते हैं जो इस बात पर जोर देता है कि आत्मा की प्रकृति को सच में समझने पर मारना या मरवाना तर्कसंगत रूप से असंभव है। यदि आत्मा अविनाशी और नित्य है, तो हत्या की सभी अवधारणाएं निरर्थक हो जाती हैं। यह ज्ञान कर्म और परिणाम की समझ को बदल देता है।"
+      },
+      "keywords": [
+        "indestructible",
+        "eternal",
+        "unborn",
+        "immutable",
+        "kill",
+        "cause",
+        "knowledge",
+        "impossible"
+      ]
+    },
+    {
+      "id": 69,
+      "chapterNumber": 2,
+      "verseNumber": 22,
+      "sanskrit": "वासांसि जीर्णानि यथा विहाय\n\nनवानि गृह्णाति नरोऽपराणि।\n\nतथा शरीराणि विहाय जीर्णा\n\nन्यन्यानि संयाति नवानि देही।।2.22।।",
+      "transliteration": "vāsānsi jīrṇāni yathā vihāya\nnavāni gṛihṇāti naro ’parāṇi\ntathā śharīrāṇi vihāya jīrṇānya\nnyāni sanyāti navāni dehī",
+      "wordMeanings": "vāsānsi—garments; jīrṇāni—worn-out; yathā—as; vihāya—sheds; navāni—new; gṛihṇāti—accepts; naraḥ—a person; aparāṇi—others; tathā—likewise; śharīrāṇi—bodies; vihāya—casting off; jirṇāni—worn-out; anyāni—other; sanyāti—enters; navāni—new; dehī—the embodied soul",
+      "translation": {
+        "english": "As a person puts on new garments, giving up old ones, the soul similarly accepts new material bodies, giving up the old and useless ones.",
+        "hindi": "जैसे मनुष्य पुराने वस्त्रों को त्यागकर दूसरे नए वस्त्र ग्रहण करता है, वैसे ही आत्मा पुराने शरीरों को त्यागकर दूसरे नए शरीर को प्राप्त होती है।"
+      },
+      "explanation": {
+        "english": "This famous analogy compares death to changing clothes. Just as we don't mourn when changing worn-out garments for new ones, we shouldn't grieve when the soul changes bodies. The body is like clothing for the soul—temporary and replaceable. This metaphor makes the concept of reincarnation accessible and removes the fear of death.",
+        "hindi": "यह प्रसिद्ध उपमा मृत्यु की तुलना कपड़े बदलने से करती है। जैसे हम घिसे-पुराने कपड़ों की जगह नए कपड़े पहनने पर दुख नहीं करते, वैसे ही आत्मा के शरीर बदलने पर शोक नहीं करना चाहिए। शरीर आत्मा के लिए कपड़े की तरह है—अस्थायी और बदलने योग्य। यह रूपक पुनर्जन्म की अवधारणा को समझने योग्य बनाता है और मृत्यु का भय दूर करता है।"
+      },
+      "keywords": [
+        "garments",
+        "new",
+        "old",
+        "soul",
+        "bodies",
+        "reincarnation",
+        "temporary",
+        "replaceable"
+      ]
+    },
+    {
+      "id": 70,
+      "chapterNumber": 2,
+      "verseNumber": 23,
+      "sanskrit": "नैनं छिन्दन्ति शस्त्राणि नैनं दहति पावकः।\n\nन चैनं क्लेदयन्त्यापो न शोषयति मारुतः।।2.23।।",
+      "transliteration": "nainaṁ chhindanti śhastrāṇi nainaṁ dahati pāvakaḥ\nna chainaṁ kledayantyāpo na śhoṣhayati mārutaḥ",
+      "wordMeanings": "na—not; enam—this soul; chhindanti—shred; śhastrāṇi—weapons; na—nor; enam—this soul; dahati—burns; pāvakaḥ—fire; na—not; cha—and; enam—this soul; kledayanti—moisten; āpaḥ—water; na—nor; śhoṣhayati—dry; mārutaḥ—wind",
+      "translation": {
+        "english": "Weapons cannot cut the soul, fire cannot burn it, water cannot wet it, and wind cannot dry it.",
+        "hindi": "इस आत्मा को शस्त्र नहीं काट सकते, आग नहीं जला सकती, पानी नहीं भिगो सकता, और हवा नहीं सुखा सकती।"
+      },
+      "explanation": {
+        "english": "Krishna systematically shows how the soul transcends all physical elements—earth (weapons), fire, water, and air. None of the fundamental forces of nature can affect the soul. This verse emphasizes the soul's complete independence from material conditions and its indestructible nature against all possible threats.",
+        "hindi": "कृष्ण व्यवस्थित रूप से दिखाते हैं कि आत्मा सभी भौतिक तत्वों से परे है—पृथ्वी (शस्त्र), अग्नि, जल, और वायु। प्रकृति की कोई भी मूलभूत शक्ति आत्मा को प्रभावित नहीं कर सकती। यह श्लोक आत्मा की भौतिक परिस्थितियों से पूर्ण स्वतंत्रता और सभी संभावित खतरों के विरुद्ध उसकी अविनाशी प्रकृति पर जोर देता है।"
+      },
+      "keywords": [
+        "weapons",
+        "cut",
+        "fire",
+        "burn",
+        "water",
+        "wet",
+        "wind",
+        "dry",
+        "transcends"
+      ]
+    },
+    {
+      "id": 71,
+      "chapterNumber": 2,
+      "verseNumber": 24,
+      "sanskrit": "अच्छेद्योऽयमदाह्योऽयमक्लेद्योऽशोष्य एव च।\n\nनित्यः सर्वगतः स्थाणुरचलोऽयं सनातनः।।2.24।।",
+      "transliteration": "achchhedyo ’yam adāhyo ’yam akledyo ’śhoṣhya eva cha\nnityaḥ sarva-gataḥ sthāṇur achalo ’yaṁ sanātanaḥ",
+      "wordMeanings": "achchhedyaḥ—unbreakable; ayam—this soul; adāhyaḥ—incombustible; ayam—this soul; akledyaḥ—cannot be dampened; aśhoṣhyaḥ—cannot be dried; eva—indeed; cha—and; nityaḥ—everlasting; sarva-gataḥ—all-pervading; sthāṇuḥ—unalterable; achalaḥ—immutable; ayam—this soul; sanātanaḥ—primordial",
+      "translation": {
+        "english": "This soul is unbreakable and insoluble; it can neither be burned nor dried. It is everlasting, present everywhere, unchangeable, immovable, and eternally the same.",
+        "hindi": "यह आत्मा अच्छेद्य, अदाह्य, अक्लेद्य और अशोष्य है। यह नित्य, सर्वव्यापी, स्थिर, अचल और सनातन है।"
+      },
+      "explanation": {
+        "english": "This verse provides eight qualities of the soul: unbreakable, insoluble, unburnable, undryable, everlasting, omnipresent, unchangeable, and immovable. These attributes collectively establish the soul's complete transcendence of all material limitations and changes. The word 'sanatana' (eternal) emphasizes its timeless nature.",
+        "hindi": "यह श्लोक आत्मा के आठ गुण देता है: अटूट, अघुलनशील, अजलनशील, असूखनशील, शाश्वत, सर्वव्यापी, अपरिवर्तनीय, और अचल। ये विशेषताएं सामूहिक रूप से आत्मा की सभी भौतिक सीमाओं और परिवर्तनों से पूर्ण ट्रांसेंडेंस स्थापित करती हैं। 'सनातन' शब्द इसकी कालातीत प्रकृति पर जोर देता है।"
+      },
+      "keywords": [
+        "unbreakable",
+        "insoluble",
+        "everlasting",
+        "omnipresent",
+        "unchangeable",
+        "immovable",
+        "eternal",
+        "transcendent"
+      ]
+    },
+    {
+      "id": 72,
+      "chapterNumber": 2,
+      "verseNumber": 25,
+      "sanskrit": "अव्यक्तोऽयमचिन्त्योऽयमविकार्योऽयमुच्यते।\n\nतस्मादेवं विदित्वैनं नानुशोचितुमर्हसि।।2.25।।",
+      "transliteration": "avyakto ’yam achintyo ’yam avikāryo ’yam uchyate\ntasmādevaṁ viditvainaṁ nānuśhochitum arhasi",
+      "wordMeanings": "avyaktaḥ—unmanifested; ayam—this soul; achintyaḥ—inconceivable; ayam—this soul; avikāryaḥ—unchangeable; ayam—this soul; uchyate—is said; tasmāt—therefore; evam—thus; viditvā—having known; enam—this soul; na—not; anuśhochitum—to grieve; arhasi—befitting",
+      "translation": {
+        "english": "It is said that the soul is unmanifest, incomprehensible, and unchangeable. Knowing this, you should not grieve for the body.",
+        "hindi": "यह कहा जाता है कि आत्मा अव्यक्त, अचिन्त्य और अविकारी है। इसे इस प्रकार जानकर तुम्हें शोक नहीं करना चाहिए।"
+      },
+      "explanation": {
+        "english": "Krishna concludes this section with three more attributes: unmanifest ('avyakta'), incomprehensible ('achintya'), and unchangeable ('avikarya'). Since the soul has these transcendental qualities, grief for the body becomes illogical. This verse serves as a conclusion to the teaching on the soul's nature and a transition to practical application.",
+        "hindi": "कृष्ण इस खंड को तीन और विशेषताओं के साथ समाप्त करते हैं: अव्यक्त, अचिन्त्य, और अविकारी। चूंकि आत्मा की ये दिव्य विशेषताएं हैं, शरीर के लिए शोक अतर्कसंगत हो जाता है। यह श्लोक आत्मा की प्रकृति की शिक्षा का निष्कर्ष और व्यावहारिक प्रयोग में संक्रमण का काम करता है।"
+      },
+      "keywords": [
+        "unmanifest",
+        "incomprehensible",
+        "unchangeable",
+        "soul",
+        "grieve",
+        "body",
+        "transcendental",
+        "illogical"
+      ]
+    },
+    {
+      "id": 73,
+      "chapterNumber": 2,
+      "verseNumber": 26,
+      "sanskrit": "अथ चैनं नित्यजातं नित्यं वा मन्यसे मृतम्।\n\nतथापि त्वं महाबाहो नैवं शोचितुमर्हसि।।2.26।।",
+      "transliteration": "atha chainaṁ nitya-jātaṁ nityaṁ vā manyase mṛitam\ntathāpi tvaṁ mahā-bāho naivaṁ śhochitum arhasi",
+      "wordMeanings": "atha—if, however; cha—and; enam—this soul; nitya-jātam—taking constant birth; nityam—always; vā—or; manyase—you think; mṛitam—dead; tathā api—even then; tvam—you; mahā-bāho—mighty-armed one, Arjun; na—not; evam—like this; śhochitum—grieve; arhasi—befitting",
+      "translation": {
+        "english": "If, however, you think that the soul is perpetually born and always dies, even then, O mighty-armed one, you should not lament.",
+        "hindi": "यदि तुम यह मानते हो कि आत्मा निरंतर जन्मती और निरंतर मरती रहती है, तो भी हे महाबाहो, तुम्हें इस प्रकार शोक नहीं करना चाहिए।"
+      },
+      "explanation": {
+        "english": "Krishna presents an alternative argument for those who might not accept the soul's immortality. Even if one believes in constant birth and death cycles, grief is still pointless because it's a natural, inevitable process. This shows Krishna's comprehensive approach—he provides multiple angles of reasoning to address different philosophical positions.",
+        "hindi": "कृष्ण उन लोगों के लिए वैकल्पिक तर्क देते हैं जो आत्मा की अमरता को नहीं मान सकते। यदि कोई निरंतर जन्म-मृत्यु चक्र में विश्वास करता है, तो भी शोक व्यर्थ है क्योंकि यह प्राकृतिक, अपरिहार्य प्रक्रिया है। आप देखिए, यह कृष्ण के व्यापक दृष्टिकोण को दिखाता है—वे विभिन्न दार्शनिक स्थितियों को संबोधित करने के लिए कई कोणों से तर्क देते हैं।"
+      },
+      "keywords": [
+        "perpetually",
+        "born",
+        "dies",
+        "mighty-armed",
+        "lament",
+        "alternative",
+        "natural",
+        "inevitable"
+      ]
+    },
+    {
+      "id": 74,
+      "chapterNumber": 2,
+      "verseNumber": 27,
+      "sanskrit": "जातस्य हि ध्रुवो मृत्युर्ध्रुवं जन्म मृतस्य च।\n\nतस्मादपरिहार्येऽर्थे न त्वं शोचितुमर्हसि।।2.27।।",
+      "transliteration": "jātasya hi dhruvo mṛityur dhruvaṁ janma mṛitasya cha\ntasmād aparihārye ’rthe na tvaṁ śhochitum arhasi",
+      "wordMeanings": "jātasya—for one who has been born; hi—for; dhruvaḥ—certain; mṛityuḥ—death; dhruvam—certain; janma—birth; mṛitasya—for the dead; cha—and; tasmāt—therefore; aparihārye arthe—in this inevitable situation; na—not; tvam—you; śhochitum—lament; arhasi—befitting",
+      "translation": {
+        "english": "Death is certain for one who has been born, and rebirth is certain for one who has died. Therefore, you should not lament over the inevitable.",
+        "hindi": "जो जन्मा है उसकी मृत्यु निश्चित है, और जो मरा है उसका जन्म निश्चित है। इसलिए इस अपरिहार्य विषय में तुम्हें शोक नहीं करना चाहिए।"
+      },
+      "explanation": {
+        "english": "Krishna states a fundamental law of nature: birth inevitably leads to death, and death leads to rebirth. The word 'dhruva' (certain/inevitable) emphasizes that this is an unalterable natural law. Since this process is 'apariharyε' (unavoidable), lamenting it is futile. This teaching helps accept life's natural cycles without emotional disturbance.",
+        "hindi": "कृष्ण प्रकृति का एक मूलभूत नियम बताते हैं: जन्म से मृत्यु अवश्यंभावी है, और मृत्यु से पुनर्जन्म। 'ध्रुव' शब्द जोर देता है कि यह अटल प्राकृतिक नियम है। चूंकि यह प्रक्रिया 'अपरिहार्य' है, इसके लिए विलाप करना व्यर्थ है। यह शिक्षा भावनात्मक विक्षोभ के बिना जीवन के प्राकृतिक चक्रों को स्वीकार करने में मदद करती है।"
+      },
+      "keywords": [
+        "death",
+        "certain",
+        "born",
+        "rebirth",
+        "died",
+        "inevitable",
+        "unavoidable",
+        "natural"
+      ]
+    },
+    {
+      "id": 75,
+      "chapterNumber": 2,
+      "verseNumber": 28,
+      "sanskrit": "अव्यक्तादीनि भूतानि व्यक्तमध्यानि भारत।\n\nअव्यक्तनिधनान्येव तत्र का परिदेवना।।2.28।।",
+      "transliteration": "avyaktādīni bhūtāni vyakta-madhyāni bhārata\navyakta-nidhanānyeva tatra kā paridevanā",
+      "wordMeanings": "avyakta-ādīni—unmanifest before birth; bhūtāni—created beings; vyakta—manifest; madhyāni—in the middle; bhārata—Arjun, scion of Bharat; avyakta—unmanifest; nidhanāni—on death; eva—indeed; tatra—therefore; kā—why; paridevanā—grieve",
+      "translation": {
+        "english": "All beings are unmanifest before birth, manifest in the middle state, and unmanifest again after death. What is there to lament about?",
+        "hindi": "हे भरत, सभी प्राणी जन्म से पहले अव्यक्त हैं, जीवन में व्यक्त हैं, और मृत्यु के बाद फिर अव्यक्त हो जाते हैं। इसमें शोक की क्या बात है?"
+      },
+      "explanation": {
+        "english": "Krishna presents the three states of existence: unmanifest (before birth), manifest (during life), and unmanifest again (after death). Only the middle phase is visible to us. Since we don't lament the pre-birth unmanifest state, why should we grieve the post-death unmanifest state? This logical argument shows the inconsistency in our emotional responses.",
+        "hindi": "कृष्ण अस्तित्व की तीन अवस्थाएं बताते हैं: अव्यक्त (जन्म से पहले), व्यक्त (जीवन के दौरान), और फिर अव्यक्त (मृत्यु के बाद)। केवल बीच की अवस्था हमें दिखती है। जब हम जन्म से पूर्व की अव्यक्त अवस्था के लिए शोक नहीं करते, तो मृत्यु के बाद की अव्यक्त अवस्था के लिए क्यों दुख करें? यह तर्कसंगत बात हमारी भावनात्मक प्रतिक्रियाओं की असंगति दिखाती है।"
+      },
+      "keywords": [
+        "unmanifest",
+        "beings",
+        "manifest",
+        "middle",
+        "death",
+        "lament",
+        "three states",
+        "logical"
+      ]
+    },
+    {
+      "id": 76,
+      "chapterNumber": 2,
+      "verseNumber": 29,
+      "sanskrit": "आश्चर्यवत्पश्यति कश्चिदेन\n\nमाश्चर्यवद्वदति तथैव चान्यः।\n\nआश्चर्यवच्चैनमन्यः श्रृणोति\n\nश्रुत्वाप्येनं वेद न चैव कश्चित्।।2.29।।",
+      "transliteration": "āśhcharya-vat paśhyati kaśhchid enan\nāśhcharya-vad vadati tathaiva chānyaḥ\nāśhcharya-vach chainam anyaḥ śhṛiṇoti\nśhrutvāpyenaṁ veda na chaiva kaśhchit",
+      "wordMeanings": "āśhcharya-vat—as amazing; paśhyati—see; kaśhchit—someone; enam—this soul; āśhcharya-vat—as amazing; vadati—speak of; tathā—thus; eva—indeed; cha—and; anyaḥ—other; āśhcharya-vat—similarly amazing; cha—also; enam—this soul; anyaḥ—others; śhṛiṇoti—hear; śhrutvā—having heard; api—even; enam—this soul; veda—understand; na—not; cha—and; eva—even; kaśhchit—some",
+      "translation": {
+        "english": "Some look upon the soul as amazing, some describe it as amazing, and some hear of it as amazing, while others, even after hearing about it, cannot understand it at all.",
+        "hindi": "कोई इस आत्मा को आश्चर्य की तरह देखता है, कोई इसे आश्चर्य की तरह कहता है, कोई इसे आश्चर्य की तरह सुनता है, और कुछ लोग सुनकर भी इसे जान नहीं पाते।"
+      },
+      "explanation": {
+        "english": "This verse describes four categories of people in relation to spiritual knowledge: those who see the soul as wondrous, those who speak of it as wondrous, those who hear about it with wonder, and those who, despite hearing, cannot comprehend it. The repetition of 'ashcharya' (amazing/wondrous) emphasizes how extraordinary this knowledge is and why few truly grasp it.",
+        "hindi": "यह श्लोक आध्यात्मिक ज्ञान के संबंध में चार प्रकार के लोग बताता है: जो आत्मा को आश्चर्यजनक मानते हैं, जो इसे आश्चर्यजनक कहते हैं, जो इसे आश्चर्य से सुनते हैं, और जो सुनकर भी समझ नहीं पाते। 'आश्चर्य' की पुनरावृत्ति इस बात पर जोर देती है कि यह ज्ञान कितना असाधारण है और कम लोग ही इसे वास्तव में समझ पाते हैं।"
+      },
+      "keywords": [
+        "amazing",
+        "wondrous",
+        "soul",
+        "see",
+        "describe",
+        "hear",
+        "understand",
+        "spiritual"
+      ]
+    },
+    {
+      "id": 77,
+      "chapterNumber": 2,
+      "verseNumber": 30,
+      "sanskrit": "देही नित्यमवध्योऽयं देहे सर्वस्य भारत।\n\nतस्मात्सर्वाणि भूतानि न त्वं शोचितुमर्हसि।।2.30।।",
+      "transliteration": "dehī nityam avadhyo ’yaṁ dehe sarvasya bhārata\ntasmāt sarvāṇi bhūtāni na tvaṁ śhochitum arhasi",
+      "wordMeanings": "dehī—the soul that dwells within the body; nityam—always; avadhyaḥ—immortal; ayam—this soul; dehe—in the body; sarvasya—of everyone; bhārata—descendant of Bharat, Arjun; tasmāt—therefore; sarvāṇi—for all; bhūtāni—living entities; na—not; tvam—you; śhochitum—mourn; arhasi—should",
+      "translation": {
+        "english": "O Bharata, the soul that dwells in the body of every being is immortal and indestructible. Therefore, you should not mourn for any living creature.",
+        "hindi": "हे भरत, सभी प्राणियों के शरीर में रहने वाली यह आत्मा सदा अवध्य (न मारी जाने वाली) है। इसलिए तुम्हें किसी भी प्राणी के लिए शोक नहीं करना चाहिए।"
+      },
+      "explanation": {
+        "english": "Krishna concludes the section on the soul's immortality with a universal principle: the soul in every being ('sarvasya') is eternally indestructible ('nitya avadhya'). This applies not just to the warriors on the battlefield, but to 'sarvani bhutani' (all living beings). The teaching moves from specific to universal, establishing that grief is inappropriate for any death because the essential nature of all life is immortal.",
+        "hindi": "कृष्ण आत्मा की अमरता के खंड को एक सार्वभौमिक सिद्धांत के साथ समाप्त करते हैं: हर प्राणी में आत्मा सदा अवध्य है। यह केवल युद्धक्षेत्र के योद्धाओं पर नहीं बल्कि 'सर्वाणि भूतानि' (सभी जीवों) पर लागू होता है। शिक्षा विशिष्ट से सार्वभौमिक की ओर जाती है, यह स्थापित करते हुए कि किसी भी मृत्यु के लिए शोक अनुचित है क्योंकि सभी जीवन का मूलभूत स्वभाव अमर है।"
+      },
+      "keywords": [
+        "embodied",
+        "immortal",
+        "indestructible",
+        "body",
+        "all beings",
+        "universal",
+        "mourn",
+        "principle"
+      ]
+    },
+    {
+      "id": 78,
+      "chapterNumber": 2,
+      "verseNumber": 31,
+      "sanskrit": "स्वधर्ममपि चावेक्ष्य न विकम्पितुमर्हसि।\n\nधर्म्याद्धि युद्धाछ्रेयोऽन्यत्क्षत्रियस्य न विद्यते।।2.31।।",
+      "transliteration": "swa-dharmam api chāvekṣhya na vikampitum arhasi\ndharmyāddhi yuddhāch chhreyo ’nyat kṣhatriyasya na vidyate",
+      "wordMeanings": "swa-dharmam—one’s duty in accordance with the Vedas; api—also; cha—and; avekṣhya—considering; na—not; vikampitum—to waver; arhasi—should; dharmyāt—for righteousness; hi—indeed; yuddhāt—than fighting; śhreyaḥ—better; anyat—another; kṣhatriyasya—of a warrior; na—not; vidyate—exists",
+      "translation": {
+        "english": "Considering your own dharma, you should not waver. For a Kshatriya, nothing is better than a righteous war.",
+        "hindi": "अपने स्वधर्म को भी देखते हुए तुम्हें कांपना नहीं चाहिए। क्षत्रिय के लिए धर्मयुद्ध से बढ़कर कुछ भी नहीं है।"
+      },
+      "explanation": {
+        "english": "Krishna appeals to Arjuna's duty as a warrior. For each person according to their nature and role, certain duties are paramount. For a Kshatriya, fighting for righteousness is the highest dharma.",
+        "hindi": "कृष्ण अर्जुन के योद्धा-धर्म का आह्वान करते हैं। हर व्यक्ति के लिए उसकी प्रकृति और भूमिका के अनुसार कुछ कर्तव्य सर्वोपरि होते हैं। क्षत्रिय के लिए धर्म की रक्षा हेतु युद्ध ही परम कर्तव्य है।"
+      },
+      "keywords": [
+        "svadharma",
+        "kshatriya",
+        "righteous war",
+        "duty",
+        "no wavering",
+        "dharmic"
+      ]
+    },
+    {
+      "id": 79,
+      "chapterNumber": 2,
+      "verseNumber": 32,
+      "sanskrit": "यदृच्छया चोपपन्नं स्वर्गद्वारमपावृतम्।\n\nसुखिनः क्षत्रियाः पार्थ लभन्ते युद्धमीदृशम्।।2.32।।",
+      "transliteration": "yadṛichchhayā chopapannaṁ swarga-dvāram apāvṛitam\nsukhinaḥ kṣhatriyāḥ pārtha labhante yuddham īdṛiśham",
+      "wordMeanings": "yadṛichchhayā—unsought; cha—and; upapannam—come; swarga—celestial abodes; dvāram—door; apāvṛitam—wide open; sukhinaḥ—happy; kṣhatriyāḥ—warriors; pārtha—Arjun, the son of Pritha; labhante—obtain; yuddham—war; īdṛiśham—such",
+      "translation": {
+        "english": "O Partha, fortunate are the Kshatriyas who get such a war that comes unsought and opens the gates of heaven.",
+        "hindi": "हे पार्थ, भाग्यशाली हैं वे क्षत्रिय जिन्हें ऐसा युद्ध मिलता है जो अकस्मात् आए और स्वर्ग के द्वार खोल दे।"
+      },
+      "explanation": {
+        "english": "Krishna presents this war as a divine opportunity that has come unbidden to Arjuna. Such righteous battles are rare gifts that open the path to higher realms for a warrior who fights without personal agenda.",
+        "hindi": "कृष्ण इस युद्ध को एक दैवी अवसर के रूप में प्रस्तुत करते हैं जो अर्जुन के पास बिना मांगे आया है। ऐसे धर्मयुद्ध दुर्लभ उपहार हैं जो निष्काम योद्धा के लिए उच्च लोकों का मार्ग खोलते हैं।"
+      },
+      "keywords": [
+        "unsought",
+        "heaven gates",
+        "fortunate",
+        "kshatriyas",
+        "divine opportunity",
+        "gift"
+      ]
+    },
+    {
+      "id": 80,
+      "chapterNumber": 2,
+      "verseNumber": 33,
+      "sanskrit": "अथ चैत्त्वमिमं धर्म्यं संग्रामं न करिष्यसि।\n\nततः स्वधर्मं कीर्तिं च हित्वा पापमवाप्स्यसि।।2.33।।",
+      "transliteration": "atha chet tvam imaṁ dharmyaṁ saṅgrāmaṁ na kariṣhyasi\ntataḥ sva-dharmaṁ kīrtiṁ cha hitvā pāpam avāpsyasi",
+      "wordMeanings": "atha chet—if, however; tvam—you; imam—this; dharmyam saṅgrāmam—righteous war; na—not; kariṣhyasi—act; tataḥ—then; sva-dharmam—one’s duty in accordance with the Vedas; kīrtim—reputation; cha—and; hitvā—abandoning; pāpam—sin; avāpsyasi—will incur",
+      "translation": {
+        "english": "But if you do not fight this righteous war, then abandoning your own dharma and honor, you will incur sin.",
+        "hindi": "परंतु यदि तुम इस धर्मयुद्ध को नहीं करोगे, तो अपने स्वधर्म और कीर्ति को त्यागकर पाप के भागी होगे।"
+      },
+      "explanation": {
+        "english": "Krishna points out the consequences of inaction. Abandoning one's prescribed duty brings both spiritual degradation (sin) and worldly dishonor. Sometimes avoiding action is itself the wrong action.",
+        "hindi": "कृष्ण निष्क्रियता के परिणाम बताते हैं। निर्धारित कर्तव्य का त्याग आध्यात्मिक पतन (पाप) और सांसारिक अपमान दोनों लाता है। कभी-कभी कर्म से बचना ही गलत कर्म होता है।"
+      },
+      "keywords": [
+        "righteous war",
+        "abandon",
+        "svadharma",
+        "honor",
+        "sin",
+        "consequences"
+      ]
+    },
+    {
+      "id": 81,
+      "chapterNumber": 2,
+      "verseNumber": 34,
+      "sanskrit": "अकीर्तिं चापि भूतानि कथयिष्यन्ति तेऽव्ययाम्।\n\nसंभावितस्य चाकीर्तिर्मरणादतिरिच्यते।।2.34।।",
+      "transliteration": "akīrtiṁ chāpi bhūtāni\nkathayiṣhyanti te ’vyayām\nsambhāvitasya chākīrtir\nmaraṇād atirichyate",
+      "wordMeanings": "akīrtim—infamy; cha—and; api—also; bhūtāni—people; kathayiṣhyanti—will speak; te—of your; avyayām—everlasting; sambhāvitasya—of a respectable person; cha—and; akīrtiḥ—infamy; maraṇāt—than death; atirichyate—is greater",
+      "translation": {
+        "english": "People will speak of your everlasting infamy. For one who has been honored, dishonor is worse than death.",
+        "hindi": "लोग तुम्हारी अनंत कलंक की कथा कहेंगे। सम्मानित व्यक्ति के लिए अपमान मृत्यु से भी बुरा है।"
+      },
+      "explanation": {
+        "english": "Krishna appeals to Arjuna's sense of honor and reputation. For a respected warrior, the social consequences of cowardice—eternal infamy—are worse than dying in battle. Honor is valued above life itself.",
+        "hindi": "कृष्ण अर्जुन की मान-मर्यादा की भावना से अपील करते हैं। एक सम्मानित योद्धा के लिए कायरता के सामाजिक परिणाम—शाश्वत कलंक—युद्ध में मरने से भी बुरे हैं। सम्मान जीवन से भी श्रेष्ठ माना जाता है।"
+      },
+      "keywords": [
+        "infamy",
+        "everlasting",
+        "honored",
+        "dishonor",
+        "worse than death",
+        "reputation"
+      ]
+    },
+    {
+      "id": 82,
+      "chapterNumber": 2,
+      "verseNumber": 35,
+      "sanskrit": "भयाद्रणादुपरतं मंस्यन्ते त्वां महारथाः।\n\nयेषां च त्वं बहुमतो भूत्वा यास्यसि लाघवम्।।2.35।।",
+      "transliteration": "bhayād raṇād uparataṁ mansyante tvāṁ mahā-rathāḥ\nyeṣhāṁ cha tvaṁ bahu-mato bhūtvā yāsyasi lāghavam",
+      "wordMeanings": "bhayāt—out of fear; raṇāt—from the battlefield; uparatam—have fled; maṁsyante—will think; tvām—you; mahā-rathāḥ—warriors who could single handedly match the strength of ten thousand ordinary warriors; yeṣhām—for whom; cha—and; tvam—you; bahu-mataḥ—high esteemed; bhūtvā—having been; yāsyasi—you will loose; lāghavam—decreased in value",
+      "translation": {
+        "english": "The great warriors will think you have withdrawn from battle out of fear. Those who held you in high esteem will consider you insignificant.",
+        "hindi": "महारथी यह सोचेंगे कि तुम डर से युद्ध से भागे हो। जिनकी दृष्टि में तुम्हारा बहुत सम्मान था, उनमें तुम हीन हो जाओगे।"
+      },
+      "explanation": {
+        "english": "Krishna highlights how Arjuna's peers will interpret his withdrawal. Great warriors ('maharathas') will assume fear is the motive, and Arjuna will fall from respected ('bahu-mata') to contemptible ('laghava') in their eyes.",
+        "hindi": "कृष्ण बताते हैं कि अर्जुन के समकक्ष योद्धा उनके पीछे हटने की कैसे व्याख्या करेंगे। महारथी भय को मूल कारण मानेंगे, और अर्जुन उनकी नजर में सम्मानित से तुच्छ हो जाएंगे।"
+      },
+      "keywords": [
+        "great warriors",
+        "fear",
+        "withdrawn",
+        "high esteem",
+        "insignificant",
+        "contempt"
+      ]
+    },
+    {
+      "id": 83,
+      "chapterNumber": 2,
+      "verseNumber": 36,
+      "sanskrit": "अवाच्यवादांश्च बहून् वदिष्यन्ति तवाहिताः।\n\nनिन्दन्तस्तव सामर्थ्यं ततो दुःखतरं नु किम्।।2.36।।",
+      "transliteration": "avāchya-vādānśh cha bahūn vadiṣhyanti tavāhitāḥ\nnindantastava sāmarthyaṁ tato duḥkhataraṁ nu kim",
+      "wordMeanings": "avāchya-vādān—using harsh words; cha—and; bahūn—many; vadiṣhyanti—will say; tava—your; ahitāḥ—enemies; nindantaḥ—defame; tava—your; sāmarthyam—might; tataḥ—than that; duḥkha-taram—more painful; nu—indeed; kim—what",
+      "translation": {
+        "english": "Your enemies will speak many unspeakable words, scorning your ability. What could be more painful than this?",
+        "hindi": "तुम्हारे शत्रु अनेक अवाच्य बातें कहेंगे, तुम्हारी सामर्थ्य की निंदा करेंगे। इससे दुखदायी और क्या हो सकता है?"
+      },
+      "explanation": {
+        "english": "Krishna points to the ultimate humiliation—enemies mocking Arjuna's prowess with unspeakable taunts. For a warrior whose identity is built on valor, having one's ability ridiculed is the deepest wound possible.",
+        "hindi": "कृष्ण परम अपमान की ओर इशारा करते हैं—शत्रुओं द्वारा अर्जुन की वीरता का अवाच्य ताने से उपहास। एक योद्धा के लिए जिसकी पहचान वीरता पर आधारित है, अपनी क्षमता का मजाक उड़ाया जाना सबसे गहरा घाव है।"
+      },
+      "keywords": [
+        "enemies",
+        "unspeakable words",
+        "scorning",
+        "ability",
+        "painful",
+        "mockery"
+      ]
+    },
+    {
+      "id": 84,
+      "chapterNumber": 2,
+      "verseNumber": 37,
+      "sanskrit": "हतो वा प्राप्स्यसि स्वर्गं जित्वा वा भोक्ष्यसे महीम्।\n\nतस्मादुत्तिष्ठ कौन्तेय युद्धाय कृतनिश्चयः।।2.37।।",
+      "transliteration": "hato vā prāpsyasi swargaṁ jitvā vā bhokṣhyase mahīm\ntasmād uttiṣhṭha kaunteya yuddhāya kṛita-niśhchayaḥ",
+      "wordMeanings": "hataḥ—slain; vā—or; prāpsyasi—you will attain; swargam—celestial abodes; jitvā—by achieving victory; vā—or; bhokṣhyase—you shall enjoy; mahīm—the kingdom on earth; tasmāt—therefore; uttiṣhṭha—arise; kaunteya—Arjun, the son of Kunti; yuddhāya—for fight; kṛita-niśhchayaḥ—with determination",
+      "translation": {
+        "english": "Slain, you will attain heaven; victorious, you will enjoy the earth. Therefore arise, O son of Kunti, resolved for battle.",
+        "hindi": "मारे जाने पर स्वर्ग प्राप्त करोगे, जीतने पर पृथ्वी का भोग करोगे। इसलिए हे कुंतीपुत्र, युद्ध के लिए निश्चयपूर्वक उठो।"
+      },
+      "explanation": {
+        "english": "Krishna presents a win-win scenario: death in righteous battle leads to heaven, victory leads to earthly rulership. Either outcome is beneficial, so there's no logical reason for hesitation. This is practical wisdom applied to decision-making.",
+        "hindi": "कृष्ण एक द्विविजयी स्थिति प्रस्तुत करते हैं: धर्मयुद्ध में मृत्यु स्वर्ग दिलाती है, विजय पार्थिव राज्य। दोनों परिणाम लाभकारी हैं, अतः हिचकिचाने का कोई तर्कसंगत कारण नहीं। यह निर्णय-प्रक्रिया में व्यावहारिक बुद्धि का प्रयोग है।"
+      },
+      "keywords": [
+        "slain",
+        "heaven",
+        "victorious",
+        "earth",
+        "arise",
+        "resolved",
+        "win-win"
+      ]
+    },
+    {
+      "id": 85,
+      "chapterNumber": 2,
+      "verseNumber": 38,
+      "sanskrit": "सुखदुःखे समे कृत्वा लाभालाभौ जयाजयौ।\n\nततो युद्धाय युज्यस्व नैवं पापमवाप्स्यसि।।2.38।।",
+      "transliteration": "sukha-duḥkhe same kṛitvā lābhālābhau jayājayau\ntato yuddhāya yujyasva naivaṁ pāpam avāpsyasi",
+      "wordMeanings": "sukha—happiness; duḥkhe—in distress; same kṛitvā—treating alike; lābha-alābhau—gain and loss; jaya-ajayau—victory and defeat; tataḥ—thereafter; yuddhāya—for fighting; yujyasva—engage; na—never; evam—thus; pāpam—sin; avāpsyasi—shall incur",
+      "translation": {
+        "english": "Treating pleasure and pain, gain and loss, victory and defeat as equal, prepare for battle. Acting thus, you will not incur sin.",
+        "hindi": "सुख-दुख, लाभ-हानि, जय-पराजय को समान मानकर युद्ध के लिए तैयार हो जाओ। इस प्रकार करने से तुम पाप के भागी नहीं होगे।"
+      },
+      "explanation": {
+        "english": "This verse introduces the fundamental principle of equanimity (samatva). When action is performed with equal-minded detachment from outcomes, it doesn't create karmic bondage. This is the transition from ordinary action to yoga.",
+        "hindi": "यह श्लोक समता का मूलभूत सिद्धांत प्रस्तुत करता है। जब कर्म फल से समान मानसिक निरासक्ति के साथ किया जाता है, तो वह कर्म-बंधन नहीं बनाता। यह साधारण कर्म से योग में संक्रमण है।"
+      },
+      "keywords": [
+        "equal",
+        "pleasure",
+        "pain",
+        "gain",
+        "loss",
+        "victory",
+        "defeat",
+        "no sin"
+      ]
+    },
+    {
+      "id": 86,
+      "chapterNumber": 2,
+      "verseNumber": 39,
+      "sanskrit": "एषा तेऽभिहिता सांख्ये बुद्धिर्योगे त्विमां श्रृणु।\n\nबुद्ध्यायुक्तो यया पार्थ कर्मबन्धं प्रहास्यसि।।2.39।।",
+      "transliteration": "eṣhā te ’bhihitā sānkhye\nbuddhir yoge tvimāṁ śhṛiṇu\nbuddhyā yukto yayā pārtha\nkarma-bandhaṁ prahāsyasi",
+      "wordMeanings": "eṣhā—hitherto; te—to you; abhihitā—explained; sānkhye—by analytical knowledge; buddhiḥ yoge—by the yog of intellect; tu—indeed; imām—this; śhṛiṇu—listen; buddhyā—by understanding; yuktaḥ—united; yayā—by which; pārtha—Arjun, the son of Pritha; karma-bandham—bondage of karma; prahāsyasi—you shall be released from",
+      "translation": {
+        "english": "This wisdom has been explained to you from the perspective of Sankhya; now hear about it from the perspective of Yoga. Armed with this understanding, O Partha, you will break free from the bondage of action.",
+        "hindi": "यह बुद्धि तुमसे सांख्य के दृष्टिकोण से कही गई है; अब योग के दृष्टिकोण से सुनो। हे पार्थ, इस बुद्धि से युक्त होकर तुम कर्म-बंधन से मुक्त हो जाओगे।"
+      },
+      "explanation": {
+        "english": "Krishna signals a transition in his teaching. The analytical wisdom of Sankhya (knowledge of soul vs. body) now shifts to the practical approach of Yoga (selfless action). Both lead to freedom from karmic bondage but through different methods.",
+        "hindi": "कृष्ण अपनी शिक्षा में संक्रमण का संकेत देते हैं। सांख्य की विश्लेषणात्मक बुद्धि (आत्मा बनाम शरीर का ज्ञान) अब योग के व्यावहारिक उपाय (निष्काम कर्म) में बदलती है। दोनों कर्म-बंधन से मुक्ति दिलाते हैं पर अलग तरीकों से।"
+      },
+      "keywords": [
+        "sankhya",
+        "yoga",
+        "wisdom",
+        "understanding",
+        "karma bondage",
+        "freedom",
+        "transition"
+      ]
+    },
+    {
+      "id": 87,
+      "chapterNumber": 2,
+      "verseNumber": 40,
+      "sanskrit": "नेहाभिक्रमनाशोऽस्ति प्रत्यवायो न विद्यते।\n\nस्वल्पमप्यस्य धर्मस्य त्रायते महतो भयात्।।2.40।।",
+      "transliteration": "nehābhikrama-nāśho ’sti pratyavāyo na vidyate\nsvalpam apyasya dharmasya trāyate mahato bhayāt",
+      "wordMeanings": "na—not; iha—in this; abhikrama—efforts; nāśhaḥ—loss; asti—there is; pratyavāyaḥ—adverse result; na—not; vidyate—is; su-alpam—a little; api—even; asya—of this; dharmasya—occupation; trāyate—saves; mahataḥ—from great; bhayāt—danger",
+      "translation": {
+        "english": "In this path there is no loss of effort, nor is there any harm. Even a little practice of this dharma protects one from great fear.",
+        "hindi": "इस मार्ग में न तो प्रयास का नाश होता है, न कोई हानि होती है। इस धर्म का थोड़ा सा भी अभ्यास महान भय से रक्षा करता है।"
+      },
+      "explanation": {
+        "english": "Unlike material endeavors where failure means total loss, spiritual practice accumulates benefit. Even small efforts in yoga carry forward and provide protection from the ultimate fear—the cycle of birth and death.",
+        "hindi": "भौतिक प्रयासों के विपरीत जहाँ असफलता का मतलब पूर्ण हानि है, आध्यात्मिक अभ्यास में लाभ संचित होता रहता है। योग में थोड़े से प्रयास भी आगे चलते हैं और परम भय—जन्म-मृत्यु के चक्र—से सुरक्षा प्रदान करते हैं।"
+      },
+      "keywords": [
+        "no loss",
+        "effort",
+        "no harm",
+        "little practice",
+        "protects",
+        "great fear"
+      ]
+    },
+    {
+      "id": 88,
+      "chapterNumber": 2,
+      "verseNumber": 41,
+      "sanskrit": "व्यवसायात्मिका बुद्धिरेकेह कुरुनन्दन।\n\nबहुशाखा ह्यनन्ताश्च बुद्धयोऽव्यवसायिनाम्।।2.41।।",
+      "transliteration": "vyavasāyātmikā buddhir ekeha kuru-nandana\nbahu-śhākhā hyanantāśh cha buddhayo ’vyavasāyinām",
+      "wordMeanings": "vyavasāya-ātmikā—resolute; buddhiḥ—intellect; ekā—single; iha—on this path; kuru-nandana—descendent of the Kurus; bahu-śhākhāḥ—many-branched; hi—indeed; anantāḥ—endless; cha—also; buddhayaḥ—intellect; avyavasāyinām—of the irresolute",
+      "translation": {
+        "english": "O descendant of Kuru, the resolute intellect is one-pointed, but the intelligence of the irresolute branches out endlessly.",
+        "hindi": "हे कुरुनंदन, व्यवसायात्मक बुद्धि एक होती है, परंतु अव्यवसायियों की बुद्धि अनेक शाखाओं वाली और अनंत होती है।"
+      },
+      "explanation": {
+        "english": "Krishna contrasts focused determination with scattered thinking. A resolute mind has singular purpose and clear direction, while an irresolute mind branches into countless distractions and possibilities, achieving nothing substantial.",
+        "hindi": "कृष्ण केंद्रित दृढ़ता और बिखरी सोच में अंतर करते हैं। दृढ़ मन का एक ही उद्देश्य और स्पष्ट दिशा होती है, जबकि अदृढ़ मन अनगिनत भटकावों और संभावनाओं में बंटकर कुछ भी ठोस हासिल नहीं करता।"
+      },
+      "keywords": [
+        "resolute",
+        "intellect",
+        "one-pointed",
+        "irresolute",
+        "branches",
+        "endless",
+        "focus"
+      ]
+    },
+    {
+      "id": 89,
+      "chapterNumber": 2,
+      "verseNumber": 42,
+      "sanskrit": "यामिमां पुष्पितां वाचं प्रवदन्त्यविपश्चितः।\n\nवेदवादरताः पार्थ नान्यदस्तीति वादिनः।।2.42।।",
+      "transliteration": "yāmimāṁ puṣhpitāṁ vāchaṁ pravadanty-avipaśhchitaḥ\nveda-vāda-ratāḥ pārtha nānyad astīti vādinaḥ\n kāmātmānaḥ swarga-parā janma-karma-phala-pradām\nkriyā-viśheṣha-bahulāṁ bhogaiśhwarya-gatiṁ prati",
+      "wordMeanings": "yām imām—all these; puṣhpitām—flowery; vācham—words; pravadanti—speak; avipaśhchitaḥ—those with limited understanding; veda-vāda-ratāḥ—attached to the flowery words of the Vedas; pārtha—Arjun, the son of Pritha; na anyat—no other; asti—is; iti—thus; vādinaḥ—advocate;\n kāma-ātmānaḥ—desirous of sensual pleasure; swarga-parāḥ—aiming to achieve the heavenly planets; janma-karma-phala—high birth and fruitive results; pradāṁ—awarding; kriyā-viśheṣha—pompous ritualistic ceremonies; bahulām—various; bhoga—gratification; aiśhwarya—luxury; gatim—progress; prati—toward",
+      "translation": {
+        "english": "O Partha, those of limited understanding speak flowery words, delighting in the letter of the Vedas, claiming there is nothing beyond this.",
+        "hindi": "हे पार्थ, अल्पज्ञानी लोग फूलदार वाणी बोलते हैं, वेदों के वाद-विवाद में रत रहकर कहते हैं कि इसके अलावा कुछ नहीं है।"
+      },
+      "explanation": {
+        "english": "Krishna criticizes those who get caught in ritualistic interpretations of scriptures. They use elaborate language ('flowery words') but miss the deeper spiritual essence, thinking ritual performance is the ultimate goal.",
+        "hindi": "कृष्ण उन लोगों की आलोचना करते हैं जो शास्त्रों की कर्मकांडी व्याख्याओं में फंस जाते हैं। वे भड़कीली भाषा का प्रयोग करते हैं पर गहरे आध्यात्मिक तत्व से चूक जाते हैं, कर्मकांड को ही परम लक्ष्य मानते हैं।"
+      },
+      "keywords": [
+        "limited understanding",
+        "flowery words",
+        "vedas",
+        "nothing beyond",
+        "ritualistic",
+        "literal"
+      ]
+    },
+    {
+      "id": 90,
+      "chapterNumber": 2,
+      "verseNumber": 43,
+      "sanskrit": "कामात्मानः स्वर्गपरा जन्मकर्मफलप्रदाम्।\n\nक्रियाविशेषबहुलां भोगैश्वर्यगतिं प्रति।।2.43।।",
+      "transliteration": "kāmātmānaḥ svarga-parā \n\n janma-karma-phala-pradām\n\n kriyā-viśeṣa-bahulāṁ\n\n bhogaiśvarya-gatiṁ prati",
+      "wordMeanings": "kāmaātmānaḥ—desirous   of  sense   gratification;  svarga-parāḥ—aiming to  achieve heavenly    planets;    janma-karma-phala-pradām—resulting  in  fruitive    action, good        birth,     etc.;      kriyā-viśeṣa—pompous       ceremonies;        bahulām—various; bhoga—sense       enjoyment;     aiśvarya—opulence;     gatim—progress;    prati—towards.",
+      "translation": {
+        "english": "They are full of desires, heaven-seeking, speaking of elaborate rituals that promise rebirth, action and results, aimed at enjoyment and power.",
+        "hindi": "वे कामनाओं से भरे, स्वर्ग के इच्छुक, जन्म-कर्म-फल देने वाली, विशेष क्रियाओं से भरपूर, भोग और ऐश्वर्य की प्राप्ति के बारे में बोलते हैं।"
+      },
+      "explanation": {
+        "english": "Such people are driven by desires ('kamatmanah'), seek heavenly pleasures, and promote complex rituals promising material gains. They miss the point that true spirituality transcends desire for enjoyment and power.",
+        "hindi": "ऐसे लोग कामनाओं से प्रेरित होते हैं, स्वर्गीय सुखों की तलाश करते हैं, और भौतिक लाभ का वादा करने वाले जटिल कर्मकांडों को बढ़ावा देते हैं। वे इस बात से चूक जाते हैं कि सच्ची आध्यात्मिकता भोग और शक्ति की इच्छा से परे होती है।"
+      },
+      "keywords": [
+        "desires",
+        "heaven-seeking",
+        "elaborate rituals",
+        "enjoyment",
+        "power",
+        "material gains",
+        "complex"
+      ]
+    },
+    {
+      "id": 91,
+      "chapterNumber": 2,
+      "verseNumber": 44,
+      "sanskrit": "भोगैश्वर्यप्रसक्तानां तयापहृतचेतसाम्।\n\nव्यवसायात्मिका बुद्धिः समाधौ न विधीयते।।2.44।।",
+      "transliteration": "bhogaiśwvarya-prasaktānāṁ tayāpahṛita-chetasām\nvyavasāyātmikā buddhiḥ samādhau na vidhīyate",
+      "wordMeanings": "bhoga—gratification; aiśhwarya—luxury; prasaktānām—whose minds are deeply attached; tayā—by that; apahṛita-chetasām—bewildered in intellect; vyavasāya-ātmikā—resolute; buddhiḥ—intellect; samādhau—fulfilment; na—never; vidhīyate—occurs",
+      "translation": {
+        "english": "For those attached to enjoyment and power, whose discrimination has been carried away by such flowery speech, resolute determination toward samadhi is not established.",
+        "hindi": "भोग और ऐश्वर्य में आसक्त, ऐसी फूलदार वाणी से हृत-चेतना लोगों में समाधि के प्रति व्यवसायात्मक बुद्धि स्थापित नहीं होती।"
+      },
+      "explanation": {
+        "english": "When people are attached to sensual pleasures and worldly power, and their minds are carried away by elaborate promises, they cannot develop the focused determination needed for spiritual concentration (samadhi).",
+        "hindi": "जब लोग इंद्रिय-सुखों और सांसारिक शक्ति में आसक्त होते हैं, और उनका मन भड़कीले वादों से बह जाता है, तो वे आध्यात्मिक एकाग्रता (समाधि) के लिए आवश्यक केंद्रित दृढ़ता विकसित नहीं कर सकते।"
+      },
+      "keywords": [
+        "attachment",
+        "enjoyment",
+        "power",
+        "carried away",
+        "resolute determination",
+        "samadhi",
+        "concentration"
+      ]
+    },
+    {
+      "id": 92,
+      "chapterNumber": 2,
+      "verseNumber": 45,
+      "sanskrit": "त्रैगुण्यविषया वेदा निस्त्रैगुण्यो भवार्जुन।\n\nनिर्द्वन्द्वो नित्यसत्त्वस्थो निर्योगक्षेम आत्मवान्।।2.45।।",
+      "transliteration": "trai-guṇya-viṣhayā vedā nistrai-guṇyo bhavārjuna\nnirdvandvo nitya-sattva-stho niryoga-kṣhema ātmavān",
+      "wordMeanings": "trai-guṇya—of the three modes of material nature; viṣhayāḥ—subject matter; vedāḥ—Vedic scriptures; nistrai-guṇyaḥ—above the three modes of material nature, transcendental; bhava—be; arjuna—Arjun; nirdvandvaḥ—free from dualities; nitya-sattva-sthaḥ—eternally fixed in truth; niryoga-kṣhemaḥ—unconcerned about gain and preservation; ātma-vān—situated in the self",
+      "translation": {
+        "english": "The Vedas deal with the three gunas; be beyond the three gunas, O Arjuna. Be free from dualities, ever established in sattva, free from acquisition and preservation, and self-possessed.",
+        "hindi": "वेद त्रिगुणों के विषयों से संबंधित हैं; हे अर्जुन, त्रिगुणों से परे हो जाओ। द्वंद्वों से मुक्त, नित्य सत्त्व में स्थित, योग-क्षेम से रहित और आत्मवान बनो।"
+      },
+      "explanation": {
+        "english": "Krishna advises transcending the three gunas (sattva, rajas, tamas) that govern material nature and are addressed by Vedic teachings. True spiritual life requires going beyond dualities, being established in pure consciousness, and free from concerns about getting and keeping things.",
+        "hindi": "कृष्ण तीन गुणों (सत्त्व, रजस, तमस) से परे जाने की सलाह देते हैं जो प्राकृतिक संसार को नियंत्रित करते हैं और जिन्हें वैदिक शिक्षाएं संबोधित करती हैं। सच्चा आध्यात्मिक जीवन द्वंद्वों से परे जाने, शुद्ध चेतना में स्थापित होने, और चीजें पाने-रखने की चिंताओं से मुक्त होने की मांग करता है।"
+      },
+      "keywords": [
+        "three gunas",
+        "beyond",
+        "dualities",
+        "sattva",
+        "acquisition",
+        "preservation",
+        "self-possessed",
+        "pure consciousness"
+      ]
+    },
+    {
+      "id": 93,
+      "chapterNumber": 2,
+      "verseNumber": 46,
+      "sanskrit": "यावानर्थ उदपाने सर्वतः संप्लुतोदके।\n\nतावान्सर्वेषु वेदेषु ब्राह्मणस्य विजानतः।।2.46।।",
+      "transliteration": "yāvān artha udapāne sarvataḥ samplutodake\ntāvānsarveṣhu vedeṣhu brāhmaṇasya vijānataḥ",
+      "wordMeanings": "yāvān—whatever; arthaḥ—purpose; uda-pāne—a well of water; sarvataḥ—in all respects; sampluta-udake—by a large lake; tāvān—that many; sarveṣhu—in all; vedeṣhu—Vedas; brāhmaṇasya—one who realizes the Absolute Truth; vijānataḥ—who is in complete knowledge",
+      "translation": {
+        "english": "As much purpose as there is in a small well when there is water everywhere, so much purpose is there in all the Vedas for a Brahmana who truly knows.",
+        "hindi": "जब चारों ओर बाढ़ का पानी हो तो छोटे कुएं में जितनी उपयोगिता है, जानने वाले ब्राह्मण के लिए सभी वेदों में उतनी ही उपयोगिता है।"
+      },
+      "explanation": {
+        "english": "Krishna uses a beautiful analogy: when one realizes Brahman (like being surrounded by unlimited water), the limited utility of Vedic rituals becomes apparent (like a small well becomes unnecessary). This doesn't negate the Vedas but shows their relative place in spiritual evolution.",
+        "hindi": "कृष्ण सुंदर उदाहरण देते हैं: जब व्यक्ति ब्रह्म का साक्षात्कार कर लेता है (असीमित पानी से घिरे होने की तरह), तो वैदिक कर्मकांड की सीमित उपयोगिता स्पष्ट हो जाती है (छोटे कुएं की अनावश्यकता की तरह)। यह वेदों को नकारता नहीं बल्कि आध्यात्मिक विकास में उनका सापेक्ष स्थान दिखाता है।"
+      },
+      "keywords": [
+        "well",
+        "water everywhere",
+        "purpose",
+        "vedas",
+        "brahmana",
+        "knows",
+        "relative",
+        "analogy"
+      ]
+    },
+    {
+      "id": 94,
+      "chapterNumber": 2,
+      "verseNumber": 47,
+      "sanskrit": "कर्मण्येवाधिकारस्ते मा फलेषु कदाचन।\n\nमा कर्मफलहेतुर्भूर्मा ते सङ्गोऽस्त्वकर्मणि।।2.47।।",
+      "transliteration": "karmaṇy-evādhikāras te mā phaleṣhu kadāchana\nmā karma-phala-hetur bhūr mā te saṅgo ’stvakarmaṇi",
+      "wordMeanings": "karmaṇi—in prescribed duties; eva—only; adhikāraḥ—right; te—your; mā—not; phaleṣhu—in the fruits; kadāchana—at any time; mā—never; karma-phala—results of the activities; hetuḥ—cause; bhūḥ—be; mā—not; te—your; saṅgaḥ—attachment; astu—must be; akarmaṇi—in inaction",
+      "translation": {
+        "english": "You have a right to perform your prescribed duty, but never to the fruits of action. Never consider yourself the cause of the results, nor be attached to not doing your duty.",
+        "hindi": "तुम्हारा अधिकार केवल कर्म पर है, फल पर कभी नहीं। न तुम कर्मफल के हेतु बनो, न तुम्हारी अकर्म में आसक्ति हो।"
+      },
+      "explanation": {
+        "english": "This is one of the most famous verses in the Gita, establishing the principle of Karma Yoga. We have the right and responsibility to act, but not to control results. Neither should we claim to be the cause of outcomes, nor should we be attached to inaction.",
+        "hindi": "यह गीता के सबसे प्रसिद्ध श्लोकों में से एक है, जो कर्मयोग का सिद्धांत स्थापित करता है। हमारा अधिकार और जिम्मेदारी कर्म करने में है, परिणामों को नियंत्रित करने में नहीं। न हमें परिणामों का कारण होने का दावा करना चाहिए, न निष्क्रियता में आसक्त होना चाहिए।"
+      },
+      "keywords": [
+        "right",
+        "duty",
+        "fruits",
+        "cause",
+        "results",
+        "attachment",
+        "inaction",
+        "karma yoga"
+      ]
+    },
+    {
+      "id": 95,
+      "chapterNumber": 2,
+      "verseNumber": 48,
+      "sanskrit": "योगस्थः कुरु कर्माणि सङ्गं त्यक्त्वा धनञ्जय।\n\nसिद्ध्यसिद्ध्योः समो भूत्वा समत्वं योग उच्यते।।2.48।।",
+      "transliteration": "yoga-sthaḥ kuru karmāṇi saṅgaṁ tyaktvā dhanañjaya\nsiddhy-asiddhyoḥ samo bhūtvā samatvaṁ yoga uchyate",
+      "wordMeanings": "yoga-sthaḥ—being steadfast in yog; kuru—perform; karmāṇi—duties; saṅgam—attachment; tyaktvā—having abandoned; dhanañjaya—Arjun; siddhi-asiddhyoḥ—in success and failure; samaḥ—equipoised; bhūtvā—becoming; samatvam—equanimity; yogaḥ—Yog; uchyate—is called",
+      "translation": {
+        "english": "Perform your duty established in yoga, abandoning attachment, O Dhananjaya. Be equal in success and failure; this equanimity is called yoga.",
+        "hindi": "हे धनंजय, आसक्ति त्यागकर योग में स्थित होकर कर्म करो। सिद्धि-असिद्धि में समान रहो; यह समत्व ही योग कहलाता है।"
+      },
+      "explanation": {
+        "english": "Krishna defines yoga as equanimity (samatva). True yoga is not physical postures but mental equilibrium—performing actions while remaining equally balanced in success and failure. This inner stability while acting is the essence of Karma Yoga.",
+        "hindi": "कृष्ण योग को समत्व के रूप में परिभाषित करते हैं। सच्चा योग शारीरिक आसन नहीं बल्कि मानसिक संतुलन है—सफलता और असफलता में समान रूप से संतुलित रहते हुए कर्म करना। कर्म करते समय यह आंतरिक स्थिरता कर्मयोग का सार है।"
+      },
+      "keywords": [
+        "yoga-established",
+        "abandoning attachment",
+        "equal",
+        "success",
+        "failure",
+        "equanimity",
+        "definition"
+      ]
+    },
+    {
+      "id": 96,
+      "chapterNumber": 2,
+      "verseNumber": 49,
+      "sanskrit": "दूरेण ह्यवरं कर्म बुद्धियोगाद्धनञ्जय।\n\nबुद्धौ शरणमन्विच्छ कृपणाः फलहेतवः।।2.49।।",
+      "transliteration": "dūreṇa hy-avaraṁ karma buddhi-yogād dhanañjaya\nbuddhau śharaṇam anvichchha kṛipaṇāḥ phala-hetavaḥ",
+      "wordMeanings": "dūreṇa—(discrad) from far away; hi—certainly; avaram—inferior; karma—reward-seeking actions; buddhi-yogāt—with the intellect established in Divine knowledge; dhanañjaya—Arjun; buddhau—divine knowledge and insight; śharaṇam—refuge; anvichchha—seek; kṛipaṇāḥ—miserly; phala-hetavaḥ—those seeking fruits of their work",
+      "translation": {
+        "english": "Far inferior is action with desire for results compared to the yoga of wisdom, O Dhananjaya. Seek refuge in wisdom; wretched are those motivated by results.",
+        "hindi": "हे धनंजय, फलहेतु कर्म बुद्धियोग से बहुत हीन है। बुद्धि की शरण लो; फल के हेतु वाले कृपण हैं।"
+      },
+      "explanation": {
+        "english": "Krishna contrasts motivated action with wisdom-guided action. Acting for results is inferior ('avaram') to acting with discriminative wisdom ('buddhi-yoga'). Those who work only for outcomes are called 'wretched' because they miss the transformative power of selfless service.",
+        "hindi": "कृष्ण प्रेरित कर्म और बुद्धि-निर्देशित कर्म में अंतर करते हैं। परिणाम के लिए कर्म करना विवेकपूर्ण बुद्धि से कर्म करने से हीन है। जो केवल परिणामों के लिए काम करते हैं उन्हें 'कृपण' कहा गया है क्योंकि वे निष्काम सेवा की रूपांतरकारी शक्ति से चूक जाते हैं।"
+      },
+      "keywords": [
+        "inferior",
+        "action",
+        "results",
+        "buddhi-yoga",
+        "wisdom",
+        "refuge",
+        "wretched",
+        "motivated"
+      ]
+    },
+    {
+      "id": 97,
+      "chapterNumber": 2,
+      "verseNumber": 50,
+      "sanskrit": "बुद्धियुक्तो जहातीह उभे सुकृतदुष्कृते।\n\nतस्माद्योगाय युज्यस्व योगः कर्मसु कौशलम्।।2.50।।",
+      "transliteration": "buddhi-yukto jahātīha ubhe sukṛita-duṣhkṛite\ntasmād yogāya yujyasva yogaḥ karmasu kauśhalam",
+      "wordMeanings": "buddhi-yuktaḥ—endowed with wisdom; jahāti—get rid of; iha—in this life; ubhe—both; sukṛita-duṣhkṛite—good and bad deeds; tasmāt—therefore; yogāya—for Yog; yujyasva—strive for; yogaḥ—yog is; karmasu kauśhalam—the art of working skillfully",
+      "translation": {
+        "english": "One endowed with wisdom casts off both good and bad actions in this life. Therefore strive for yoga; yoga is skill in action.",
+        "hindi": "बुद्धियुक्त व्यक्ति इस जीवन में अच्छे-बुरे दोनों कर्मों को त्याग देता है। इसलिए योग के लिए प्रयत्न करो; योग कर्मों में कुशलता है।"
+      },
+      "explanation": {
+        "english": "The wise person transcends the duality of good and bad karma through skillful action. Krishna defines yoga as 'skill in action' (karmasu kaushalam)—the ability to act without creating karmic residue. This skill comes from acting without attachment and ego.",
+        "hindi": "बुद्धिमान व्यक्ति कुशल कर्म के माध्यम से अच्छे-बुरे कर्म के द्वैत से परे चला जाता है। कृष्ण योग को 'कर्मों में कुशलता' के रूप में परिभाषित करते हैं—कर्म अवशेष बनाए बिना कार्य करने की क्षमता। यह कुशलता आसक्ति और अहंकार के बिना कार्य करने से आती है।"
+      },
+      "keywords": [
+        "wisdom-endowed",
+        "casts off",
+        "good",
+        "bad actions",
+        "skill in action",
+        "transcends",
+        "duality"
+      ]
+    },
+    {
+      "id": 98,
+      "chapterNumber": 2,
+      "verseNumber": 51,
+      "sanskrit": "कर्मजं बुद्धियुक्ता हि फलं त्यक्त्वा मनीषिणः।\n\nजन्मबन्धविनिर्मुक्ताः पदं गच्छन्त्यनामयम्।।2.51।।",
+      "transliteration": "karma-jaṁ buddhi-yuktā hi phalaṁ tyaktvā manīṣhiṇaḥ\njanma-bandha-vinirmuktāḥ padaṁ gachchhanty-anāmayam",
+      "wordMeanings": "karma-jam—born of fruitive actions; buddhi-yuktāḥ—endowed with equanimity of intellect; hi—as; phalam—fruits; tyaktvā—abandoning; manīṣhiṇaḥ—the wise; janma-bandha-vinirmuktāḥ—freedom from the bondage of life and death; padam—state; gachchhanti—attain; anāmayam—devoid of sufferings",
+      "translation": {
+        "english": "The wise, endowed with equanimous intellect, abandon the fruits born of action and, freed from the bondage of birth, attain the state beyond suffering.",
+        "hindi": "बुद्धियुक्त मनीषी कर्मजनित फल को त्यागकर जन्म-बंधन से मुक्त होकर निरामय पद को प्राप्त करते हैं।"
+      },
+      "explanation": {
+        "english": "Those who practice selfless action ('buddhi-yukta') and renounce results achieve freedom from the cycle of birth and death. They reach the 'state beyond suffering' (anamayam padam)—the realm where pain and pleasure no longer affect the essential self.",
+        "hindi": "जो निष्काम कर्म का अभ्यास करते हैं और फलों का त्याग करते हैं, वे जन्म-मृत्यु के चक्र से मुक्ति प्राप्त करते हैं। वे 'दुख से परे की अवस्था' तक पहुंचते हैं—वह क्षेत्र जहाँ सुख-दुख अब मूल आत्मा को प्रभावित नहीं करते।"
+      },
+      "keywords": [
+        "wise",
+        "equanimous",
+        "abandon fruits",
+        "bondage",
+        "birth",
+        "beyond suffering",
+        "liberation"
+      ]
+    },
+    {
+      "id": 99,
+      "chapterNumber": 2,
+      "verseNumber": 52,
+      "sanskrit": "यदा ते मोहकलिलं बुद्धिर्व्यतितरिष्यति।\n\nतदा गन्तासि निर्वेदं श्रोतव्यस्य श्रुतस्य च।।2.52।।",
+      "transliteration": "yadā te moha-kalilaṁ buddhir vyatitariṣhyati\ntadā gantāsi nirvedaṁ śhrotavyasya śhrutasya cha",
+      "wordMeanings": "yadā—when; te—your; moha—delusion; kalilam—quagmire; buddhiḥ—intellect; vyatitariṣhyati—crosses; tadā—then; gantāsi—you shall acquire; nirvedam—indifferent; śhrotavyasya—to what is yet to be heard; śhrutasya—to what has been heard; cha—and",
+      "translation": {
+        "english": "When your intellect crosses beyond the mire of delusion, then you will attain dispassion toward what is to be heard and what has been heard.",
+        "hindi": "जब तुम्हारी बुद्धि मोहरूपी कीचड़ को पार कर जाएगी, तब तुम सुने जाने वाले और सुने गए दोनों के प्रति निर्वेद को प्राप्त करोगे।"
+      },
+      "explanation": {
+        "english": "When wisdom matures enough to transcend the 'mire of delusion' (moha-kalilam), one develops detachment (nirveda) from both scriptural knowledge already learned and yet to be learned. Direct experience makes indirect knowledge secondary.",
+        "hindi": "जब बुद्धि 'मोह के कीचड़' को पार करने के लिए पर्याप्त परिपक्व हो जाती है, तो व्यक्ति पहले से सीखे गए और अभी सीखे जाने वाले दोनों शास्त्रीय ज्ञान से वैराग्य विकसित करता है। प्रत्यक्ष अनुभव अप्रत्यक्ष ज्ञान को गौण बना देता है।"
+      },
+      "keywords": [
+        "intellect",
+        "crosses",
+        "mire",
+        "delusion",
+        "dispassion",
+        "heard",
+        "direct experience"
+      ]
+    },
+    {
+      "id": 100,
+      "chapterNumber": 2,
+      "verseNumber": 53,
+      "sanskrit": "श्रुतिविप्रतिपन्ना ते यदा स्थास्यति निश्चला।\n\nसमाधावचला बुद्धिस्तदा योगमवाप्स्यसि।।2.53।।",
+      "transliteration": "śhruti-vipratipannā te yadā sthāsyati niśhchalā\nsamādhāv-achalā buddhis tadā yogam avāpsyasi",
+      "wordMeanings": "śhruti-vipratipannā—not allured by the fruitive sections of the Vedas; te—your; yadā—when; sthāsyati—remains; niśhchalā—steadfast; samādhau—in divine consciousness; achalā—steadfast; buddhiḥ—intellect; tadā—at that time; yogam—Yog; avāpsyasi—you will attain",
+      "translation": {
+        "english": "When your intellect, confused by hearing various teachings, shall stand immovable and steady in samadhi, then you shall attain yoga.",
+        "hindi": "जब विभिन्न श्रुतियों से विक्षिप्त तुम्हारी बुद्धि समाधि में अचल और स्थिर हो जाएगी, तब तुम योग को प्राप्त करोगे।"
+      },
+      "explanation": {
+        "english": "Initially, hearing diverse teachings creates confusion. But when the intellect becomes steady and immovable in meditative absorption (samadhi), true yoga is achieved. This describes the progression from intellectual understanding to direct realization.",
+        "hindi": "प्रारंभ में, विविध शिक्षाएं सुनना भ्रम पैदा करता है। लेकिन जब बुद्धि ध्यानात्मक लीनता (समाधि) में स्थिर और अचल हो जाती है, तो सच्चा योग प्राप्त होता है। यह बौद्धिक समझ से प्रत्यक्ष साक्षात्कार तक की प्रगति का वर्णन करता है।"
+      },
+      "keywords": [
+        "confused",
+        "various teachings",
+        "immovable",
+        "steady",
+        "samadhi",
+        "attain yoga",
+        "realization"
+      ]
+    },
+    {
+      "id": 101,
+      "chapterNumber": 2,
+      "verseNumber": 54,
+      "sanskrit": "अर्जुन उवाच\n\nस्थितप्रज्ञस्य का भाषा समाधिस्थस्य केशव।\n\nस्थितधीः किं प्रभाषेत किमासीत व्रजेत किम्।।2.54।।",
+      "transliteration": "arjuna uvācha\nsthita-prajñasya kā bhāṣhā samādhi-sthasya keśhava\nsthita-dhīḥ kiṁ prabhāṣheta kim āsīta vrajeta kim",
+      "wordMeanings": "arjunaḥ uvācha—Arjun said; sthita-prajñasya—one with steady intellect; kā—what; bhāṣhā—talk; samādhi-sthasya—situated in divine consciousness; keśhava—Shree Krishna, killer of the Keshi Demon; sthita-dhīḥ—enlightened person; kim—what; prabhāṣheta—talks; kim—how; āsīta—sits; vrajeta—walks; kim—how",
+      "translation": {
+        "english": "Arjuna said: O Keshava, what are the characteristics of one established in wisdom and absorbed in samadhi? How does such a steady-minded person speak, sit, and walk?",
+        "hindi": "अर्जुन ने कहा: हे केशव, स्थितप्रज्ञ और समाधिस्थ पुरुष के क्या लक्षण हैं? स्थितधी व्यक्ति कैसे बोलता, बैठता और चलता है?"
+      },
+      "explanation": {
+        "english": "Arjuna asks practical questions about the realized person. He wants to know the visible characteristics (bhasha - speech, asita - sitting, vrajeta - walking) of someone established in wisdom (sthita-prajna). This shifts the discussion from theory to practical identification of wisdom.",
+        "hindi": "अर्जुन साक्षात्कारी व्यक्ति के बारे में व्यावहारिक प्रश्न पूछते हैं। वे स्थितप्रज्ञ व्यक्ति के दृश्य लक्षण (भाषा - बोलना, आसीत - बैठना, व्रजेत - चलना) जानना चाहते हैं। यह चर्चा को सिद्धांत से ज्ञान की व्यावहारिक पहचान की ओर ले जाता है।"
+      },
+      "keywords": [
+        "arjuna",
+        "established wisdom",
+        "samadhi",
+        "characteristics",
+        "speak",
+        "sit",
+        "walk",
+        "practical"
+      ]
+    },
+    {
+      "id": 102,
+      "chapterNumber": 2,
+      "verseNumber": 55,
+      "sanskrit": "श्री भगवानुवाच\n\nप्रजहाति यदा कामान् सर्वान् पार्थ मनोगतान्।\n\nआत्मन्येवात्मना तुष्टः स्थितप्रज्ञस्तदोच्यते।।2.55।।",
+      "transliteration": "śhrī bhagavān uvācha\nprajahāti yadā kāmān sarvān pārtha mano-gatān\nātmany-evātmanā tuṣhṭaḥ sthita-prajñas tadochyate",
+      "wordMeanings": "śhrī-bhagavān uvācha—The Supreme Lord said; prajahāti—discards; yadā—when; kāmān—selfish desires; sarvān—all; pārtha—Arjun, the son of Pritha; manaḥ-gatān—of the mind; ātmani—of the self; eva—only; ātmanā—by the purified mind; tuṣhṭaḥ—satisfied; sthita-prajñaḥ—one with steady intellect; tadā—at that time; uchyate—is said",
+      "translation": {
+        "english": "The Supreme Lord said: When one completely casts away all desires of the mind, O Partha, and is satisfied in the Self by the Self alone, then one is called established in wisdom.",
+        "hindi": "श्री भगवान ने कहा: हे पार्थ, जब व्यक्ति मन की सभी कामनाओं को पूर्णतः त्याग देता है और केवल आत्मा में आत्मा द्वारा ही संतुष्ट होता है, तब उसे स्थितप्रज्ञ कहते हैं।"
+      },
+      "explanation": {
+        "english": "Krishna defines the person of stable wisdom: one who has abandoned all mental desires and finds complete satisfaction within the Self. This self-contentment ('atmany eva atmana tushtah') is the hallmark of realized wisdom—needing nothing external for fulfillment.",
+        "hindi": "कृष्ण स्थिर बुद्धि वाले व्यक्ति को परिभाषित करते हैं: जिसने सभी मानसिक इच्छाओं को त्याग दिया है और आत्मा के भीतर ही पूर्ण संतुष्टि पाता है। यह आत्म-संतुष्टि साक्षात्कारी ज्ञान की पहचान है—पूर्णता के लिए किसी बाहरी चीज की आवश्यकता नहीं।"
+      },
+      "keywords": [
+        "casts away",
+        "desires",
+        "mind",
+        "satisfied",
+        "self alone",
+        "stable wisdom",
+        "contentment"
+      ]
+    },
+    {
+      "id": 103,
+      "chapterNumber": 2,
+      "verseNumber": 56,
+      "sanskrit": "दुःखेष्वनुद्विग्नमनाः सुखेषु विगतस्पृहः।\n\nवीतरागभयक्रोधः स्थितधीर्मुनिरुच्यते।।2.56।।",
+      "transliteration": "duḥkheṣhv-anudvigna-manāḥ sukheṣhu vigata-spṛihaḥ\nvīta-rāga-bhaya-krodhaḥ sthita-dhīr munir uchyate",
+      "wordMeanings": "duḥkheṣhu—amidst miseries; anudvigna-manāḥ—one whose mind is undisturbed; sukheṣhu—in pleasure; vigata-spṛihaḥ—without craving; vīta—free from; rāga—attachment; bhaya—fear; krodhaḥ—anger; sthita-dhīḥ—enlightened person; muniḥ—a sage; uchyate—is called",
+      "translation": {
+        "english": "One whose mind is unagitated in sorrows, who has no longing for pleasures, who is free from attachment, fear and anger—such a person of steady wisdom is called a sage.",
+        "hindi": "दुखों में जिसका मन उद्विग्न नहीं होता, सुखों में जिसकी स्पृहा नहीं, जो राग-भय-क्रोध से मुक्त है—ऐसा स्थितधी मुनि कहलाता है।"
+      },
+      "explanation": {
+        "english": "Krishna describes emotional equanimity as the sign of wisdom. The sage remains unshaken by sorrow, doesn't crave pleasure, and is free from the three primary disturbances: attachment (raga), fear (bhaya), and anger (krodha). This emotional mastery indicates inner stability.",
+        "hindi": "कृष्ण भावनात्मक समता को ज्ञान का चिह्न बताते हैं। मुनि दुख से अडिग रहता है, सुख की लालसा नहीं करता, और तीन मुख्य विक्षोभों से मुक्त होता है: राग, भय और क्रोध। यह भावनात्मक नियंत्रण आंतरिक स्थिरता को दर्शाता है।"
+      },
+      "keywords": [
+        "unagitated",
+        "sorrows",
+        "no longing",
+        "pleasures",
+        "attachment",
+        "fear",
+        "anger",
+        "sage"
+      ]
+    },
+    {
+      "id": 104,
+      "chapterNumber": 2,
+      "verseNumber": 57,
+      "sanskrit": "यः सर्वत्रानभिस्नेहस्तत्तत्प्राप्य शुभाशुभम्।\n\nनाभिनन्दति न द्वेष्टि तस्य प्रज्ञा प्रतिष्ठिता।।2.57।।",
+      "transliteration": "yaḥ sarvatrānabhisnehas tat tat prāpya śhubhāśhubham\nnābhinandati na dveṣhṭi tasya prajñā pratiṣhṭhitā",
+      "wordMeanings": "yaḥ—who; sarvatra—in all conditions; anabhisnehaḥ—unattached; tat—that; tat—that; prāpya—attaining; śhubha—good; aśhubham—evil; na—neither; abhinandati—delight in; na—nor; dveṣhṭi—dejected by; tasya—his; prajñā—knowledge; pratiṣhṭhitā—is fixed",
+      "translation": {
+        "english": "One who is without attachment everywhere, who neither rejoices on receiving good nor hates on encountering evil—such a person's wisdom is firmly established.",
+        "hindi": "जो सर्वत्र अनासक्त है, शुभ-अशुभ प्राप्त होने पर न आनंदित होता है न द्वेष करता है—उसकी प्रज्ञा प्रतिष्ठित है।"
+      },
+      "explanation": {
+        "english": "The wise person maintains universal non-attachment and doesn't get emotionally swayed by good or bad circumstances. Neither celebration in success nor hatred in adversity—this consistent emotional equilibrium indicates established wisdom (pratiṣhṭhitā prajñā).",
+        "hindi": "बुद्धिमान व्यक्ति सार्वभौमिक अनासक्ति बनाए रखता है और अच्छी या बुरी परिस्थितियों से भावनात्मक रूप से प्रभावित नहीं होता। न सफलता में उत्सव न विपत्ति में घृणा—यह निरंतर भावनात्मक संतुलन स्थापित ज्ञान को दर्शाता है।"
+      },
+      "keywords": [
+        "no attachment",
+        "everywhere",
+        "good",
+        "evil",
+        "neither rejoices",
+        "nor hates",
+        "established wisdom"
+      ]
+    },
+    {
+      "id": 105,
+      "chapterNumber": 2,
+      "verseNumber": 58,
+      "sanskrit": "यदा संहरते चायं कूर्मोऽङ्गानीव सर्वशः।\n\nइन्द्रियाणीन्द्रियार्थेभ्यस्तस्य प्रज्ञा प्रतिष्ठिता।।2.58।।",
+      "transliteration": "yadā sanharate chāyaṁ kūrmo ’ṅgānīva sarvaśhaḥ\nindriyāṇīndriyārthebhyas tasya prajñā pratiṣhṭhitā",
+      "wordMeanings": "yadā—when; sanharate—withdraw; cha—and; ayam—this; kūrmaḥ—tortoise; aṅgāni—limbs; iva—as; sarvaśhaḥ—fully; indriyāṇi—senses; indriya-arthebhyaḥ—from the sense objects; tasya—his; prajñā—divine wisdom; pratiṣhṭhitā—fixed in",
+      "translation": {
+        "english": "When one can completely withdraw the senses from their objects, like a turtle withdraws its limbs, then that person's wisdom is firmly established.",
+        "hindi": "जब यह व्यक्ति कछुए की भांति अपने अंगों को समेट लेता है, इसी प्रकार इंद्रियों को इंद्रिय-विषयों से हटा लेता है, तब उसकी प्रज्ञा प्रतिष्ठित है।"
+      },
+      "explanation": {
+        "english": "Krishna uses the famous analogy of a turtle withdrawing its limbs. Just as a turtle can completely retract its limbs for protection, the wise person can withdraw the senses from their objects at will. This voluntary sense-control indicates mastery over the mind and established wisdom.",
+        "hindi": "कृष्ण कछुए का प्रसिद्ध उदाहरण देते हैं जो अपने अंग समेट लेता है। जैसे कछुआ सुरक्षा के लिए अपने अंग पूर्णतः समेट लेता है, वैसे ही बुद्धिमान व्यक्ति इच्छानुसार इंद्रियों को उनके विषयों से हटा सकता है। यह स्वैच्छिक इंद्रिय-नियंत्रण मन पर नियंत्रण और स्थापित ज्ञान को दर्शाता है।"
+      },
+      "keywords": [
+        "withdraw",
+        "senses",
+        "objects",
+        "turtle",
+        "limbs",
+        "voluntary",
+        "sense-control",
+        "mastery"
+      ]
+    },
+    {
+      "id": 106,
+      "chapterNumber": 2,
+      "verseNumber": 59,
+      "sanskrit": "विषया विनिवर्तन्ते निराहारस्य देहिनः।\n\nरसवर्जं रसोऽप्यस्य परं दृष्ट्वा निवर्तते।।2.59।।",
+      "transliteration": "viṣhayā vinivartante nirāhārasya dehinaḥ\nrasa-varjaṁ raso ’pyasya paraṁ dṛiṣhṭvā nivartate",
+      "wordMeanings": "viṣhayāḥ—objects for senses; vinivartante—restrain; nirāhārasya—practicing self restraint; dehinaḥ—for the embodied; rasa-varjam—cessation of taste; rasaḥ—taste; api—however; asya—person’s; param—the Supreme; dṛiṣhṭvā—on realization; nivartate—ceases to be",
+      "translation": {
+        "english": "Objects of the senses turn away from one who does not feed them, but the taste for them remains. However, even this taste ceases for one who sees the Supreme.",
+        "hindi": "निराहारी देही से विषय तो हट जाते हैं परंतु रस बना रहता है। परं को देखने पर यह रस भी निवृत्त हो जाता है।"
+      },
+      "explanation": {
+        "english": "Krishna distinguishes between external withdrawal and internal transformation. Through discipline, sense objects may be avoided, but the inner taste (rasa) or craving remains. Only by experiencing the Supreme ('param drishtva') does even this subtle desire completely cease.",
+        "hindi": "कृष्ण बाहरी निवृत्ति और आंतरिक रूपांतरण में अंतर करते हैं। अनुशासन से इंद्रिय-विषयों से बचा जा सकता है, पर भीतरी रुचि या तृष्णा बनी रहती है। केवल परम का अनुभव करने से यह सूक्ष्म इच्छा भी पूर्णतः समाप्त हो जाती है।"
+      },
+      "keywords": [
+        "objects",
+        "turn away",
+        "taste remains",
+        "supreme",
+        "sees",
+        "craving",
+        "ceases",
+        "transformation"
+      ]
+    },
+    {
+      "id": 107,
+      "chapterNumber": 2,
+      "verseNumber": 60,
+      "sanskrit": "यततो ह्यपि कौन्तेय पुरुषस्य विपश्चितः।\n\nइन्द्रियाणि प्रमाथीनि हरन्ति प्रसभं मनः।।2.60।।",
+      "transliteration": "yatato hyapi kaunteya puruṣhasya vipaśhchitaḥ\nindriyāṇi pramāthīni haranti prasabhaṁ manaḥ",
+      "wordMeanings": "yatataḥ—while practicing self-control; hi—for; api—even; kaunteya—Arjun, the son of Kunti; puruṣhasya—of a person; vipaśhchitaḥ—one endowed with discrimination; indriyāṇi—the senses; pramāthīni—turbulent; haranti—carry away; prasabham—forcibly; manaḥ—the mind",
+      "translation": {
+        "english": "O son of Kunti, even for a discerning person who is striving, the turbulent senses can forcibly carry away the mind.",
+        "hindi": "हे कुंतीपुत्र, प्रयत्नशील विवेकी पुरुष के भी चंचल इन्द्रियां बलपूर्वक मन को हर लेती हैं।"
+      },
+      "explanation": {
+        "english": "Krishna acknowledges the power and turbulence of the senses. Even wise and striving individuals can be overpowered by forceful sensory impulses. This validates the difficulty of the spiritual path and prepares for teaching about steady practice and vigilance.",
+        "hindi": "कृष्ण इंद्रियों की शक्ति और अशांति को स्वीकार करते हैं। यहाँ तक कि बुद्धिमान और प्रयत्नशील व्यक्ति भी बलशाली इंद्रिय आवेगों से पराजित हो सकते हैं। यह आध्यात्मिक मार्ग की कठिनाई को वैध ठहराता है और निरंतर अभ्यास तथा सजगता की शिक्षा की तैयारी करता है।"
+      },
+      "keywords": [
+        "striving",
+        "discerning",
+        "turbulent",
+        "senses",
+        "forcibly",
+        "carry away",
+        "mind",
+        "difficulty"
+      ]
+    },
+    {
+      "id": 108,
+      "chapterNumber": 2,
+      "verseNumber": 61,
+      "sanskrit": "तानि सर्वाणि संयम्य युक्त आसीत मत्परः।\n\nवशे हि यस्येन्द्रियाणि तस्य प्रज्ञा प्रतिष्ठिता।।2.61।।",
+      "transliteration": "tāni sarvāṇi sanyamya yukta āsīta mat-paraḥ\nvaśhe hi yasyendriyāṇi tasya prajñā pratiṣhṭhitā",
+      "wordMeanings": "tāni—them; sarvāṇi—all; sanyamya—subduing; yuktaḥ—united; āsīta—seated; mat-paraḥ—toward me (Shree Krishna); vaśhe—control; hi—certainly; yasya—whose; indriyāṇi—senses; tasya—their; prajñā—perfect knowledge pratiṣhṭhitā",
+      "translation": {
+        "english": "Restraining all the senses, one should sit focused in meditation with Me as the supreme goal. One whose senses are under control has firmly established wisdom.",
+        "hindi": "उन सभी इंद्रियों को संयमित करके, मुझे परम लक्ष्य मानकर योगस्थ होकर बैठे। जिसकी इंद्रियां वश में हैं, उसकी प्रज्ञा प्रतिष्ठित है।"
+      },
+      "explanation": {
+        "english": "Krishna provides the solution to sensory turbulence: restrain the senses and meditate with devotion to the Divine as the highest goal. True wisdom is established only when the senses are under complete control, which comes through focused spiritual practice.",
+        "hindi": "कृष्ण इंद्रिय उथल-पुथल का समाधान देते हैं: इंद्रियों को संयमित करें और दिव्य को परम लक्ष्य मानकर भक्ति के साथ ध्यान करें। सच्चा ज्ञान तभी स्थापित होता है जब इंद्रियां पूर्ण नियंत्रण में हों, जो केंद्रित आध्यात्मिक अभ्यास से आता है।"
+      },
+      "keywords": [
+        "restraining",
+        "senses",
+        "focused",
+        "meditation",
+        "supreme goal",
+        "control",
+        "established wisdom"
+      ]
+    },
+    {
+      "id": 109,
+      "chapterNumber": 2,
+      "verseNumber": 62,
+      "sanskrit": "ध्यायतो विषयान्पुंसः सङ्गस्तेषूपजायते।\n\nसङ्गात् संजायते कामः कामात्क्रोधोऽभिजायते।।2.62।।",
+      "transliteration": "dhyāyato viṣhayān puṁsaḥ saṅgas teṣhūpajāyate\nsaṅgāt sañjāyate kāmaḥ kāmāt krodho ’bhijāyate",
+      "wordMeanings": "dhyāyataḥ—contemplating; viṣhayān—sense objects; puṁsaḥ—of a person; saṅgaḥ—attachment; teṣhu—to them (sense objects); upajāyate—arises; saṅgāt—from attachment; sañjāyate—develops; kāmaḥ—desire; kāmāt—from desire; krodhaḥ—anger; abhijāyate—arises",
+      "translation": {
+        "english": "When a person contemplates sense objects, attachment to them develops. From attachment comes desire, and from desire arises anger.",
+        "hindi": "विषयों का ध्यान करने से उनमें आसक्ति उत्पन्न होती है। आसक्ति से कामना जन्मती है, और कामना से क्रोध पैदा होता है।"
+      },
+      "explanation": {
+        "english": "Krishna describes the psychological chain of bondage: contemplation → attachment → desire → anger. This shows how mental dwelling on sense objects leads progressively to emotional disturbance. Understanding this sequence helps in breaking the cycle at its root.",
+        "hindi": "कृष्ण बंधन की मनोवैज्ञानिक श्रृंखला का वर्णन करते हैं: चिंतन → आसक्ति → कामना → क्रोध। यह दिखाता है कि इंद्रिय-विषयों पर मानसिक ध्यान कैसे क्रमशः भावनात्मक अशांति की ओर ले जाता है। इस क्रम को समझना इसे जड़ से तोड़ने में मदद करता है।"
+      },
+      "keywords": [
+        "contemplating",
+        "objects",
+        "attachment",
+        "develops",
+        "desire",
+        "anger",
+        "chain",
+        "bondage"
+      ]
+    },
+    {
+      "id": 110,
+      "chapterNumber": 2,
+      "verseNumber": 63,
+      "sanskrit": "क्रोधाद्भवति संमोहः संमोहात्स्मृतिविभ्रमः।\n\nस्मृतिभ्रंशाद् बुद्धिनाशो बुद्धिनाशात्प्रणश्यति।।2.63।।",
+      "transliteration": "krodhād bhavati sammohaḥ sammohāt smṛiti-vibhramaḥ\nsmṛiti-bhranśhād buddhi-nāśho buddhi-nāśhāt praṇaśhyati",
+      "wordMeanings": "krodhāt—from anger; bhavati—comes; sammohaḥ—clouding of judgement; sammohāt—from clouding of judgement; smṛiti—memory; vibhramaḥ—bewilderment; smṛiti-bhranśhāt—from bewilderment of memory; buddhi-nāśhaḥ—destruction of intellect; buddhi-nāśhāt—from destruction of intellect; praṇaśhyati—one is ruined",
+      "translation": {
+        "english": "From anger comes delusion; from delusion, loss of memory; from loss of memory, destruction of intelligence; and from destruction of intelligence, one is ruined.",
+        "hindi": "क्रोध से सम्मोह होता है, सम्मोह से स्मृति-भ्रम होता है, स्मृति भ्रंश से बुद्धि का नाश होता है, और बुद्धि नाश से व्यक्ति का पतन हो जाता है।"
+      },
+      "explanation": {
+        "english": "Krishna completes the chain of downfall: anger → delusion → memory loss → destroyed intelligence → complete ruin. This shows how initial contemplation of sense objects can lead to total spiritual destruction. Each step makes the next inevitable unless the cycle is broken.",
+        "hindi": "कृष्ण पतन की श्रृंखला पूरी करते हैं: क्रोध → सम्मोह → स्मृति-नाश → बुद्धि-विनाश → पूर्ण पतन। यह दिखाता है कि इंद्रिय-विषयों का प्रारंभिक चिंतन कैसे पूर्ण आध्यात्मिक विनाश की ओर ले जा सकता है। जब तक चक्र न टूटे, हर कदम अगले को अपरिहार्य बनाता है।"
+      },
+      "keywords": [
+        "anger",
+        "delusion",
+        "memory loss",
+        "intelligence destroyed",
+        "ruined",
+        "downfall",
+        "chain"
+      ]
+    },
+    {
+      "id": 111,
+      "chapterNumber": 2,
+      "verseNumber": 64,
+      "sanskrit": "रागद्वेषवियुक्तैस्तु विषयानिन्द्रियैश्चरन्।\n\nआत्मवश्यैर्विधेयात्मा प्रसादमधिगच्छति।।2.64।।",
+      "transliteration": "rāga-dveṣha-viyuktais tu viṣhayān indriyaiśh charan\nātma-vaśhyair-vidheyātmā prasādam adhigachchhati",
+      "wordMeanings": "rāga—attachment; dveṣha—aversion; viyuktaiḥ—free; tu—but; viṣhayān—objects of the senses; indriyaiḥ—by the senses; charan—while using; ātma-vaśhyaiḥ—controlling one’s mind; vidheya-ātmā—one who controls the mind; prasādam—the Grace of God; adhigachchhati—attains",
+      "translation": {
+        "english": "But one who moves among sense objects with senses under self-control, free from attraction and aversion, and with a disciplined mind, attains serenity.",
+        "hindi": "परंतु जो राग-द्वेष से रहित, वश में की गई इंद्रियों के द्वारा विषयों में विचरण करता है, वह विधेयात्मा प्रसाद को प्राप्त करता है।"
+      },
+      "explanation": {
+        "english": "Krishna presents the positive alternative: one can move among sense objects without falling into bondage by maintaining self-control, freedom from attraction-aversion, and disciplined awareness. This leads to 'prasada'—divine grace or inner tranquility.",
+        "hindi": "कृष्ण सकारात्मक विकल्प प्रस्तुत करते हैं: व्यक्ति आत्म-नियंत्रण, राग-द्वेष से मुक्ति, और अनुशासित जागरूकता बनाए रखकर इंद्रिय-विषयों में बिना बंधन के विचरण कर सकता है। इससे 'प्रसाद'—दैवी कृपा या आंतरिक शांति—प्राप्त होती है।"
+      },
+      "keywords": [
+        "free from",
+        "attraction",
+        "aversion",
+        "self-control",
+        "disciplined",
+        "serenity",
+        "divine grace"
+      ]
+    },
+    {
+      "id": 112,
+      "chapterNumber": 2,
+      "verseNumber": 65,
+      "sanskrit": "प्रसादे सर्वदुःखानां हानिरस्योपजायते।\n\nप्रसन्नचेतसो ह्याशु बुद्धिः पर्यवतिष्ठते।।2.65।।",
+      "transliteration": "prasāde sarva-duḥkhānāṁ hānir asyopajāyate\nprasanna-chetaso hyāśhu buddhiḥ paryavatiṣhṭhate",
+      "wordMeanings": "prasāde—by divine grace; sarva—all; duḥkhānām—of sorrows; hāniḥ—destruction; asya—his; upajāyate—comes; prasanna-chetasaḥ—with a tranquil mind; hi—indeed; āśhu—soon; buddhiḥ—intellect; paryavatiṣhṭhate—becomes firmly established",
+      "translation": {
+        "english": "In that serenity, all sorrows are destroyed, and the intelligence of such a tranquil-minded person soon becomes firmly established.",
+        "hindi": "प्रसाद में इसके सभी दुखों का नाश हो जाता है, और प्रसन्न-चित्त व्यक्ति की बुद्धि शीघ्र ही दृढ़तापूर्वक स्थापित हो जाती है।"
+      },
+      "explanation": {
+        "english": "Divine grace brings complete freedom from suffering and rapid establishment of steady intelligence. The tranquil mind ('prasanna-chetas') naturally develops stable wisdom. This shows how inner serenity is both the means and the result of spiritual practice.",
+        "hindi": "दैवी कृपा दुख से पूर्ण मुक्ति और स्थिर बुद्धि की शीघ्र स्थापना लाती है। शांत मन स्वाभाविक रूप से स्थिर ज्ञान विकसित करता है। यह दिखाता है कि आंतरिक शांति आध्यात्मिक अभ्यास का साधन और परिणाम दोनों है।"
+      },
+      "keywords": [
+        "serenity",
+        "sorrows destroyed",
+        "tranquil mind",
+        "intelligence",
+        "established",
+        "stable wisdom"
+      ]
+    },
+    {
+      "id": 113,
+      "chapterNumber": 2,
+      "verseNumber": 66,
+      "sanskrit": "नास्ति बुद्धिरयुक्तस्य न चायुक्तस्य भावना।\n\nन चाभावयतः शान्तिरशान्तस्य कुतः सुखम्।।2.66।।",
+      "transliteration": "nāsti buddhir-ayuktasya na chāyuktasya bhāvanā\nna chābhāvayataḥ śhāntir aśhāntasya kutaḥ sukham",
+      "wordMeanings": "na—not; asti—is; buddhiḥ—intellect; ayuktasya—not united; na—not; cha—and; ayuktasya—not united; bhāvanā—contemplation; na—nor; cha—and; abhāvayataḥ—for those not united; śhāntiḥ—peace; aśhāntasya—of the unpeaceful; kutaḥ—where; sukham—happiness",
+      "translation": {
+        "english": "There is no wisdom for one not established in yoga, nor meditation for the non-yogi. For one without meditation there is no peace, and for the peaceless, how can there be happiness?",
+        "hindi": "अयुक्त पुरुष के पास न बुद्धि होती है न भावना। भावना रहित के पास शांति नहीं होती, और अशांत को सुख कहाँ?"
+      },
+      "explanation": {
+        "english": "Krishna shows the progressive necessity of yoga practice. Without yoga there's no wisdom; without wisdom, no meditation; without meditation, no peace; without peace, no happiness. This emphasizes the systematic development required for spiritual life.",
+        "hindi": "कृष्ण योगाभ्यास की क्रमिक आवश्यकता दिखाते हैं। योग के बिना बुद्धि नहीं; बुद्धि के बिना ध्यान नहीं; ध्यान के बिना शांति नहीं; शांति के बिना सुख नहीं। यह आध्यात्मिक जीवन के लिए आवश्यक व्यवस्थित विकास पर जोर देता है।"
+      },
+      "keywords": [
+        "no wisdom",
+        "not established",
+        "yoga",
+        "no meditation",
+        "no peace",
+        "no happiness",
+        "progressive"
+      ]
+    },
+    {
+      "id": 114,
+      "chapterNumber": 2,
+      "verseNumber": 67,
+      "sanskrit": "इन्द्रियाणां हि चरतां यन्मनोऽनुविधीयते।\n\nतदस्य हरति प्रज्ञां वायुर्नावमिवाम्भसि।।2.67।।",
+      "transliteration": "indriyāṇāṁ hi charatāṁ yan mano ’nuvidhīyate\ntadasya harati prajñāṁ vāyur nāvam ivāmbhasi",
+      "wordMeanings": "indriyāṇām—of the senses; hi—indeed; charatām—roaming; yat—which; manaḥ—the mind; anuvidhīyate—becomes constantly engaged; tat—that; asya—of that; harati—carries away; prajñām—intellect; vāyuḥ—wind; nāvam—boat; iva—as; ambhasi—on the water",
+      "translation": {
+        "english": "When the mind follows the wandering senses, it carries away wisdom like wind carries away a ship on water.",
+        "hindi": "भटकती हुई इंद्रियों के पीछे जब मन चलता है, तो वह इसकी प्रज्ञा को हर लेता है, जैसे हवा पानी में नाव को बहा ले जाती है।"
+      },
+      "explanation": {
+        "english": "Krishna uses a powerful analogy: just as wind can blow a ship off course on water, following wandering senses can completely derail wisdom. The mind that chases sensory impulses loses its discriminative power and spiritual direction.",
+        "hindi": "कृष्ण शक्तिशाली उपमा देते हैं: जैसे हवा पानी में नाव को रास्ते से भटका सकती है, वैसे ही भटकती इंद्रियों के पीछे चलना ज्ञान को पूर्णतः पटरी से उतार सकता है। जो मन इंद्रिय आवेगों के पीछे भागता है, वह अपनी विवेकशील शक्ति और आध्यात्मिक दिशा खो देता है।"
+      },
+      "keywords": [
+        "wandering",
+        "senses",
+        "mind follows",
+        "carries away",
+        "wisdom",
+        "wind",
+        "ship",
+        "derail"
+      ]
+    },
+    {
+      "id": 115,
+      "chapterNumber": 2,
+      "verseNumber": 68,
+      "sanskrit": "तस्माद्यस्य महाबाहो निगृहीतानि सर्वशः।\n\nइन्द्रियाणीन्द्रियार्थेभ्यस्तस्य प्रज्ञा प्रतिष्ठिता।।2.68।।",
+      "transliteration": "tasmād yasya mahā-bāho nigṛihītāni sarvaśhaḥ\nindriyāṇīndriyārthebhyas tasya prajñā pratiṣhṭhitā",
+      "wordMeanings": "tasmāt—therefore; yasya—whose; mahā-bāho—mighty-armed one; nigṛihītāni—restrained; sarvaśhaḥ—completely; indriyāṇi—senses; indriya-arthebhyaḥ—from sense objects; tasya—of that person; prajñā—transcendental knowledge; pratiṣhṭhitā—remains fixed",
+      "translation": {
+        "english": "Therefore, O mighty-armed one, one whose senses are completely restrained from their objects has firmly established wisdom.",
+        "hindi": "इसलिए हे महाबाहो, जिसकी इंद्रियां सभी प्रकार से इंद्रिय-विषयों से निग्रहीत हैं, उसकी प्रज्ञा प्रतिष्ठित है।"
+      },
+      "explanation": {
+        "english": "Krishna concludes this section by reemphasizing that complete sense-control is the foundation of established wisdom. The word 'sarvashah' (completely, in all ways) indicates total mastery, not partial control, is required for true spiritual stability.",
+        "hindi": "कृष्ण इस खंड को इस बात पर पुनः जोर देकर समाप्त करते हैं कि पूर्ण इंद्रिय-नियंत्रण स्थापित ज्ञान की आधारशिला है। 'सर्वशः' शब्द दर्शाता है कि सच्ची आध्यात्मिक स्थिरता के लिए आंशिक नहीं बल्कि पूर्ण नियंत्रण आवश्यक है।"
+      },
+      "keywords": [
+        "therefore",
+        "completely restrained",
+        "objects",
+        "established wisdom",
+        "total mastery",
+        "foundation"
+      ]
+    },
+    {
+      "id": 116,
+      "chapterNumber": 2,
+      "verseNumber": 69,
+      "sanskrit": "या निशा सर्वभूतानां तस्यां जागर्ति संयमी।\n\nयस्यां जाग्रति भूतानि सा निशा पश्यतो मुनेः।।2.69।।",
+      "transliteration": "yā niśhā sarva-bhūtānāṁ tasyāṁ jāgarti sanyamī\nyasyāṁ jāgrati bhūtāni sā niśhā paśhyato muneḥ",
+      "wordMeanings": "yā—which; niśhā—night; sarva-bhūtānām—of all living beings; tasyām—in that; jāgarti—is awake; sanyamī—self-controlled; yasyām—in which; jāgrati—are awake; bhūtāni—creatures; sā—that; niśhā—night; paśhyataḥ—see; muneḥ—sage",
+      "translation": {
+        "english": "What is night for all beings is the time of awakening for the self-controlled; and what is the time of awakening for all beings is night for the introspective sage.",
+        "hindi": "जो सब भूतों के लिए रात्रि है उसमें संयमी जागता है; और जिसमें भूत जागते हैं वह देखने वाले मुनि के लिए रात्रि है।"
+      },
+      "explanation": {
+        "english": "Krishna presents a paradox about spiritual awareness. The sage is 'awake' to spiritual reality (which is 'night' or unknown to ordinary people), while remaining 'asleep' to worldly attractions (which keep ordinary people 'awake' or engaged). This describes inverted values between spiritual and material consciousness.",
+        "hindi": "कृष्ण आध्यात्मिक जागरूकता के बारे में एक विरोधाभास प्रस्तुत करते हैं। मुनि आध्यात्मिक सत्य के प्रति 'जागा' रहता है (जो साधारण लोगों के लिए 'रात्रि' या अज्ञात है), जबकि सांसारिक आकर्षणों के प्रति 'सोया' रहता है (जो साधारण लोगों को 'जगाए' या व्यस्त रखते हैं)। यह आध्यात्मिक और भौतिक चेतना के बीच उलटे मूल्यों का वर्णन करता है।"
+      },
+      "keywords": [
+        "night",
+        "all beings",
+        "awakening",
+        "self-controlled",
+        "sage",
+        "spiritual reality",
+        "inverted values"
+      ]
+    },
+    {
+      "id": 117,
+      "chapterNumber": 2,
+      "verseNumber": 70,
+      "sanskrit": "आपूर्यमाणमचलप्रतिष्ठं\n\nसमुद्रमापः प्रविशन्ति यद्वत्।\n\nतद्वत्कामा यं प्रविशन्ति सर्वे\n\nस शान्तिमाप्नोति न कामकामी।।2.70।।",
+      "transliteration": "āpūryamāṇam achala-pratiṣhṭhaṁ\nsamudram āpaḥ praviśhanti yadvat\ntadvat kāmā yaṁ praviśhanti sarve\nsa śhāntim āpnoti na kāma-kāmī",
+      "wordMeanings": "āpūryamāṇam—filled from all sides; achala-pratiṣhṭham—undisturbed; samudram—ocean; āpaḥ—waters; praviśhanti—enter; yadvat—as; tadvat—likewise; kāmāḥ—desires; yam—whom; praviśhanti—enter; sarve—all; saḥ—that person; śhāntim—peace; āpnoti—attains; na—not; kāma-kāmī—one who strives to satisfy desires",
+      "translation": {
+        "english": "Just as rivers flow into the ocean, which remains full and undisturbed, so all desires merge into one who remains unmoved—such a person attains peace, not one who strives to satisfy desires.",
+        "hindi": "जैसे नदियाँ भरे, अचल प्रतिष्ठा वाले समुद्र में प्रवेश करती हैं, वैसे ही जिसमें सभी कामनाएँ प्रवेश करती हैं, वह शांति को प्राप्त करता है, कामनाओं को चाहने वाला नहीं।"
+      },
+      "explanation": {
+        "english": "Krishna gives a beautiful metaphor of the ocean: just as the ocean remains undisturbed despite countless rivers flowing into it, the wise person remains peaceful despite desires arising in the mind. Peace comes not from fulfilling desires but from remaining unmoved by them.",
+        "hindi": "कृष्ण समुद्र का सुंदर रूपक देते हैं: जैसे अनगिनत नदियों के बहने के बावजूद समुद्र अविचलित रहता है, वैसे ही मन में इच्छाएँ उत्पन्न होने के बावजूद बुद्धिमान व्यक्ति शांत रहता है। शांति इच्छाओं को पूरा करने से नहीं बल्कि उनसे अप्रभावित रहने से आती है।"
+      },
+      "keywords": [
+        "ocean",
+        "rivers",
+        "full",
+        "undisturbed",
+        "desires",
+        "unmoved",
+        "peace",
+        "metaphor"
+      ]
+    },
+    {
+      "id": 118,
+      "chapterNumber": 2,
+      "verseNumber": 71,
+      "sanskrit": "विहाय कामान्यः सर्वान्पुमांश्चरति निःस्पृहः।\n\nनिर्ममो निरहंकारः स शांतिमधिगच्छति।।2.71।।",
+      "transliteration": "vihāya kāmān yaḥ sarvān pumānśh charati niḥspṛihaḥ\nnirmamo nirahankāraḥ sa śhāntim adhigachchhati",
+      "wordMeanings": "vihāya—giving up; kāmān—material desires; yaḥ—who; sarvān—all; pumān—a person; charati—lives; niḥspṛihaḥ—free from hankering; nirmamaḥ—without a sense of proprietorship; nirahankāraḥ—without egoism; saḥ—that person; śhāntim—perfect peace; adhigachchhati—attains",
+      "translation": {
+        "english": "One who has given up all desires and moves without longing, free from the sense of 'mine' and ego—such a person attains peace.",
+        "hindi": "जो सभी कामनाओं को त्यागकर निःस्पृह, निर्मम और निरहंकार होकर विचरता है, वह शांति को प्राप्त करता है।"
+      },
+      "explanation": {
+        "english": "Krishna describes the liberated person with three key qualities: 'niḥspṛiha' (without longing), 'nirmama' (without possessiveness), and 'nirahaṅkāra' (without ego). These three freedoms—from desire, possession, and identification—constitute the foundation of lasting peace.",
+        "hindi": "कृष्ण मुक्त व्यक्ति का तीन मुख्य गुणों से वर्णन करते हैं: निःस्पृह (लालसा रहित), निर्मम (ममता रहित), और निरहंकार (अहंकार रहित)। ये तीन मुक्तियाँ—इच्छा, संग्रह, और तादात्म्य से—स्थायी शांति की आधारशिला हैं।"
+      },
+      "keywords": [
+        "given up",
+        "desires",
+        "longing",
+        "possessiveness",
+        "ego",
+        "three freedoms",
+        "lasting peace"
+      ]
+    },
+    {
+      "id": 119,
+      "chapterNumber": 2,
+      "verseNumber": 72,
+      "sanskrit": "एषा ब्राह्मी स्थितिः पार्थ नैनां प्राप्य विमुह्यति।\n\nस्थित्वाऽस्यामन्तकालेऽपि ब्रह्मनिर्वाणमृच्छति।।2.72।।",
+      "transliteration": "eṣhā brāhmī sthitiḥ pārtha naināṁ prāpya vimuhyati\nsthitvāsyām anta-kāle ’pi brahma-nirvāṇam ṛichchhati",
+      "wordMeanings": "eṣhā—such; brāhmī sthitiḥ—state of God-realization; pārtha—Arjun, the son of Pritha; na—never; enām—this; prāpya—having attained; vimuhyati—is deluded; sthitvā—being established; asyām—in this; anta-kāle—at the hour of death; api—even; brahma-nirvāṇam—liberation from Maya; ṛichchhati—attains",
+      "translation": {
+        "english": "This is the Brahmic state, O Partha. Having attained this, one is never again deluded. Established in this state even at the time of death, one attains Brahma-nirvana.",
+        "hindi": "हे पार्थ, यह ब्राह्मी स्थिति है। इसे प्राप्त करके मनुष्य मोहित नहीं होता। अंत समय में भी इसमें स्थित रहकर ब्रह्म-निर्वाण को प्राप्त करता है।"
+      },
+      "explanation": {
+        "english": "Krishna concludes Chapter 2 by describing the ultimate goal: the Brahmic state. Once achieved, this consciousness is permanent—there's no falling back into delusion. Even if attained just before death ('anta-kale'), it leads to Brahma-nirvana—complete merger with the Absolute.",
+        "hindi": "कृष्ण दूसरे अध्याय को परम लक्ष्य का वर्णन करते हुए समाप्त करते हैं: ब्राह्मी स्थिति। एक बार प्राप्त होने पर, यह चेतना स्थायी है—मोह में वापस गिरना नहीं होता। यहाँ तक कि मृत्यु से ठीक पहले प्राप्त होने पर भी, यह ब्रह्म-निर्वाण—परम के साथ पूर्ण मिलन—की ओर ले जाती है।"
+      },
+      "keywords": [
+        "brahmic state",
+        "never deluded",
+        "permanent",
+        "death",
+        "brahma-nirvana",
+        "ultimate goal",
+        "absolute"
+      ]
+    }
+  ]
+}

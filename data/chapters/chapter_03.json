@@ -1,0 +1,1131 @@
+{
+  "number": 3,
+  "title": "Karma Yoga",
+  "subtitle": "Path of Selfless Service",
+  "sanskritName": "कर्मयोग",
+  "transliterated": "Karm Yog",
+  "theme": "Krishna teaches the path of selfless action and the importance of performing one's duty without attachment to results",
+  "verseCount": 43,
+  "color": "#FF9F43",
+  "summary": {},
+  "verses": [
+    {
+      "id": 120,
+      "chapterNumber": 3,
+      "verseNumber": 1,
+      "sanskrit": "अर्जुन उवाच\n\nज्यायसी चेत्कर्मणस्ते मता बुद्धिर्जनार्दन।\n\nतत्किं कर्मणि घोरे मां नियोजयसि केशव।।3.1।।",
+      "transliteration": "arjuna uvācha\njyāyasī chet karmaṇas te matā buddhir janārdana\ntat kiṁ karmaṇi ghore māṁ niyojayasi keśhava",
+      "wordMeanings": "arjunaḥ uvācha—Arjun said; jyāyasī—superior; chet—if; karmaṇaḥ—than fruitive action; te—by you; matā—is considered; buddhiḥ—intellect; janārdana—he who looks after the public, Krishna; tat—then; kim—why; karmaṇi—action; ghore—terrible; mām—me; niyojayasi—do you engage; keśhava—Krishna, the killer of the demon named Keshi;",
+      "translation": {
+        "english": "Arjuna said: O Janardana, if you consider knowledge superior to action, then why do you engage me in this terrible action, O Keshava?",
+        "hindi": "अर्जुन ने कहा: हे जनार्दन, यदि आपकी मति में ज्ञान कर्म से श्रेष्ठ है, तो हे केशव, आप मुझे इस भयानक कर्म में क्यों लगाते हैं?"
+      },
+      "explanation": {
+        "english": "Arjuna expresses confusion about Krishna's teachings. In Chapter 2, Krishna emphasized knowledge of the soul, leading Arjuna to think that knowledge is superior to action. Now he questions why Krishna still wants him to fight if wisdom is more important than action. This confusion sets up Krishna's teaching on Karma Yoga.",
+        "hindi": "अर्जुन कृष्ण की शिक्षाओं को लेकर भ्रम प्रकट करते हैं। दूसरे अध्याय में कृष्ण ने आत्मज्ञान पर जोर दिया था, जिससे अर्जुन को लगा कि ज्ञान कर्म से श्रेष्ठ है। अब वे पूछते हैं कि यदि बुद्धि कर्म से बेहतर है तो कृष्ण उन्हें युद्ध के लिए क्यों कह रहे हैं। यह भ्रम कर्मयोग की शिक्षा का आधार बनता है।"
+      },
+      "keywords": [
+        "arjuna",
+        "knowledge",
+        "action",
+        "superior",
+        "terrible",
+        "confusion",
+        "janardana",
+        "keshava"
+      ]
+    },
+    {
+      "id": 121,
+      "chapterNumber": 3,
+      "verseNumber": 2,
+      "sanskrit": "व्यामिश्रेणेव वाक्येन बुद्धिं मोहयसीव मे।\n\nतदेकं वद निश्िचत्य येन श्रेयोऽहमाप्नुयाम्।।3.2।।",
+      "transliteration": "vyāmiśhreṇeva vākyena buddhiṁ mohayasīva me\ntad ekaṁ vada niśhchitya yena śhreyo ’ham āpnuyām",
+      "wordMeanings": "vyāmiśhreṇa iva—by your apparently ambiguous; vākyena—words; buddhim—intellect; mohayasi—I am getting bewildered; iva—as it were; me—my; tat—therefore; ekam—one; vada—please tell; niśhchitya—decisively; yena—by which; śhreyaḥ—the highest good; aham—I; āpnuyām—may attain",
+      "translation": {
+        "english": "With these apparently contradictory words, you are confusing my understanding. Therefore, please tell me decisively the one path by which I may attain the highest good.",
+        "hindi": "इन मिश्रित वचनों से आप मेरी बुद्धि को मोहित कर रहे हैं। इसलिए निश्चयपूर्वक वह एक बात कहिए जिससे मैं कल्याण को प्राप्त कर सकूं।"
+      },
+      "explanation": {
+        "english": "Arjuna feels Krishna's teachings are contradictory ('vyamishreṇa') and confusing his intellect. He asks for one clear path ('tad ekam') to attain the highest good ('shreyas'). This request shows Arjuna wants practical, unambiguous guidance rather than complex philosophical discussions.",
+        "hindi": "अर्जुन को लगता है कि कृष्ण की शिक्षाएं विरोधाभासी हैं और उनकी बुद्धि को भ्रमित कर रही हैं। वे एक स्पष्ट मार्ग मांगते हैं जिससे परम कल्याण मिल सके। यह अनुरोध दिखाता है कि अर्जुन जटिल दर्शन के बजाय व्यावहारिक, स्पष्ट मार्गदर्शन चाहते हैं।"
+      },
+      "keywords": [
+        "contradictory",
+        "words",
+        "confusing",
+        "understanding",
+        "decisively",
+        "one path",
+        "highest good",
+        "clarity"
+      ]
+    },
+    {
+      "id": 122,
+      "chapterNumber": 3,
+      "verseNumber": 3,
+      "sanskrit": "श्री भगवानुवाच\n\nलोकेऽस्मिन्द्विविधा निष्ठा पुरा प्रोक्ता मयानघ।\n\nज्ञानयोगेन सांख्यानां कर्मयोगेन योगिनाम्।।3.3।।",
+      "transliteration": "śhrī bhagavān uvācha\nloke’smin dvi-vidhā niṣhṭhā purā proktā mayānagha\njñāna-yogena sāṅkhyānāṁ karma-yogena yoginām",
+      "wordMeanings": "śhrī-bhagavān uvācha—the Blessed Lord said; loke—in the world; asmin—this; dvi-vidhā—two kinds of; niṣhṭhā—faith; purā—previously; proktā—explained; mayā—by me (Shree Krishna); anagha—sinless; jñāna-yogena—through the path of knowledge; sānkhyānām—for those inclined toward contemplation; karma-yogena—through the path of action; yoginām—of the yogis",
+      "translation": {
+        "english": "The Supreme Lord said: O sinless one, in this world there are two kinds of spiritual paths, as I explained before: the path of knowledge for the contemplative, and the path of work for the active.",
+        "hindi": "श्री भगवान ने कहा: हे निष्पाप, इस संसार में दो प्रकार की निष्ठाएं हैं जो मैंने पहले कही थीं: सांख्यों के लिए ज्ञानयोग और योगियों के लिए कर्मयोग।"
+      },
+      "explanation": {
+        "english": "Krishna clarifies that there are two distinct spiritual paths: Jñāna Yoga (path of knowledge) for contemplative people (Sāṅkhyas), and Karma Yoga (path of action) for active people (Yogis). This resolves Arjuna's confusion by showing these are not contradictory but complementary paths suited to different temperaments.",
+        "hindi": "कृष्ण स्पष्ट करते हैं कि दो अलग आध्यात्मिक पथ हैं: चिंतनशील लोगों (सांख्य) के लिए ज्ञानयोग और सक्रिय लोगों (योगी) के लिए कर्मयोग। यह अर्जुन के भ्रम को हल करता है यह दिखाकर कि ये विरोधी नहीं बल्कि विभिन्न स्वभाव के लिए उपयुक्त पूरक मार्ग हैं।"
+      },
+      "keywords": [
+        "two paths",
+        "spiritual",
+        "knowledge",
+        "contemplative",
+        "action",
+        "active",
+        "sankhya",
+        "yoga"
+      ]
+    },
+    {
+      "id": 123,
+      "chapterNumber": 3,
+      "verseNumber": 4,
+      "sanskrit": "न कर्मणामनारम्भान्नैष्कर्म्यं पुरुषोऽश्नुते।\n\nन च संन्यसनादेव सिद्धिं समधिगच्छति।।3.4।।",
+      "transliteration": "na karmaṇām anārambhān naiṣhkarmyaṁ puruṣho ’śhnute\nna cha sannyasanād eva siddhiṁ samadhigachchhati",
+      "wordMeanings": "na—not; karmaṇām—of actions; anārambhāt—by abstaining from; naiṣhkarmyam—freedom from karmic reactions; puruṣhaḥ—a person; aśhnute—attains; na—not; cha—and; sannyasanāt—by renunciation; eva—only; siddhim—perfection; samadhigachchhati—attains",
+      "translation": {
+        "english": "Not by abstaining from action does one achieve freedom from action, nor by renunciation alone does one attain perfection.",
+        "hindi": "कर्मों को न आरंभ करने से मनुष्य कर्म से मुक्ति नहीं पाता, और न केवल संन्यास लेने से सिद्धि प्राप्त करता है।"
+      },
+      "explanation": {
+        "english": "Krishna explains that simply avoiding action ('anaramban') doesn't lead to 'naishkarmya' (freedom from action), nor does mere external renunciation ('sannyasa') lead to spiritual perfection ('siddhi'). True freedom comes from the right attitude toward action, not from avoiding action altogether.",
+        "hindi": "कृष्ण समझाते हैं कि केवल कर्म से बचना 'नैष्कर्म्य' (कर्म से मुक्ति) नहीं दिलाता, और न केवल बाहरी संन्यास से आध्यात्मिक सिद्धि मिलती है। सच्ची मुक्ति कर्म के प्रति सही दृष्टिकोण से आती है, कर्म से पूर्णतः बचने से नहीं।"
+      },
+      "keywords": [
+        "abstaining",
+        "action",
+        "freedom",
+        "renunciation",
+        "perfection",
+        "attitude",
+        "avoidance",
+        "liberation"
+      ]
+    },
+    {
+      "id": 124,
+      "chapterNumber": 3,
+      "verseNumber": 5,
+      "sanskrit": "न हि कश्िचत्क्षणमपि जातु तिष्ठत्यकर्मकृत्।\n\nकार्यते ह्यवशः कर्म सर्वः प्रकृतिजैर्गुणैः।।3.5।।",
+      "transliteration": "na hi kaśhchit kṣhaṇam api jātu tiṣhṭhatyakarma-kṛit\nkāryate hyavaśhaḥ karma sarvaḥ prakṛiti-jair guṇaiḥ",
+      "wordMeanings": "na—not; hi—certainly; kaśhchit—anyone; kṣhaṇam—a moment; api—even; jātu—ever; tiṣhṭhati—can remain; akarma-kṛit—without action; kāryate—are performed; hi—certainly; avaśhaḥ—helpless; karma—work; sarvaḥ—all; prakṛiti-jaiḥ—born of material nature; guṇaiḥ—by the qualities",
+      "translation": {
+        "english": "No one can remain without acting even for a moment. Everyone is compelled to act by the qualities born of material nature.",
+        "hindi": "कोई भी व्यक्ति एक क्षण भी बिना कर्म किए नहीं रह सकता। सभी प्रकृति से उत्पन्न गुणों द्वारा बेबस होकर कर्म करने पर मजबूर हैं।"
+      },
+      "explanation": {
+        "english": "Krishna states a fundamental truth: complete inaction is impossible. Everyone is forced to act by the three gunas (qualities) of material nature—sattva, rajas, and tamas. Even basic functions like breathing, thinking, and digestion are actions. Therefore, the goal should be right action, not no action.",
+        "hindi": "कृष्ण एक मूलभूत सत्य बताते हैं: पूर्ण निष्क्रियता असंभव है। सभी प्रकृति के तीन गुणों—सत्व, रजस, तमस—द्वारा कर्म करने पर मजबूर हैं। सांस लेना, सोचना, पाचन भी कर्म हैं। इसलिए लक्ष्य सही कर्म होना चाहिए, कर्म न करना नहीं।"
+      },
+      "keywords": [
+        "impossible",
+        "inaction",
+        "moment",
+        "compelled",
+        "material nature",
+        "qualities",
+        "gunas",
+        "breathing"
+      ]
+    },
+    {
+      "id": 125,
+      "chapterNumber": 3,
+      "verseNumber": 6,
+      "sanskrit": "कर्मेन्द्रियाणि संयम्य य आस्ते मनसा स्मरन्।\n\nइन्द्रियार्थान्विमूढात्मा मिथ्याचारः स उच्यते।।3.6।।",
+      "transliteration": "karmendriyāṇi sanyamya ya āste manasā smaran\nindriyārthān vimūḍhātmā mithyāchāraḥ sa uchyate",
+      "wordMeanings": "karma-indriyāṇi—the organs of action; sanyamya—restrain; yaḥ—who; āste—remain; manasā—in the mind; smaran—to remember; indriya-arthān—sense objects; vimūḍha-ātmā—the deluded; mithyā-āchāraḥ—hypocrite; saḥ—they; uchyate—are called",
+      "translation": {
+        "english": "One who restrains the organs of action but whose mind dwells on sense objects, such a deluded person is called a hypocrite.",
+        "hindi": "जो कर्मेंद्रियों को रोककर मन से विषयों का चिंतन करता रहता है, वह मूढ़ आत्मा मिथ्याचारी कहलाता है।"
+      },
+      "explanation": {
+        "english": "Krishna warns against false renunciation. A person who outwardly controls their organs of action ('karmendriyani') but mentally dwells on sensory pleasures is a 'mithyachari' (hypocrite). True spiritual practice requires inner purification, not just external restraint. Mental engagement with sense objects while physically abstaining is self-deception.",
+        "hindi": "कृष्ण झूठे संन्यास के विरुद्ध चेतावनी देते हैं। जो व्यक्ति बाहर से कर्मेंद्रियों को काबू में रखता है लेकिन मन से विषयों में लगा रहता है, वह 'मिथ्याचारी' है। सच्ची आध्यात्मिक साधना में भीतरी शुद्धता चाहिए, केवल बाहरी संयम नहीं। शारीरिक रूप से त्याग करके मानसिक रूप से विषयों में लगे रहना आत्म-धोखा है।"
+      },
+      "keywords": [
+        "restraint",
+        "organs",
+        "action",
+        "mind",
+        "sense objects",
+        "deluded",
+        "hypocrite",
+        "false"
+      ]
+    },
+    {
+      "id": 126,
+      "chapterNumber": 3,
+      "verseNumber": 7,
+      "sanskrit": "यस्त्विन्द्रियाणि मनसा नियम्यारभतेऽर्जुन।\n\nकर्मेन्द्रियैः कर्मयोगमसक्तः स विशिष्यते।।3.7।।",
+      "transliteration": "yas tvindriyāṇi manasā niyamyārabhate ’rjuna\nkarmendriyaiḥ karma-yogam asaktaḥ sa viśhiṣhyate",
+      "wordMeanings": "yaḥ—who; tu—but; indriyāṇi—the senses; manasā—by the mind; niyamya—control; ārabhate—begins; arjuna—Arjun; karma-indriyaiḥ—by the working senses; karma-yogam—karm yog; asaktaḥ—without attachment; saḥ—they; viśhiṣhyate—are superior",
+      "translation": {
+        "english": "But one who controls the senses by the mind and engages in Karma Yoga with the organs of action, remaining unattached—such a person excels.",
+        "hindi": "परंतु हे अर्जुन, जो मन से इंद्रियों को वश में करके, कर्मेंद्रियों से आसक्ति रहित होकर कर्मयोग का आचरण करता है, वह श्रेष्ठ है।"
+      },
+      "explanation": {
+        "english": "Krishna presents the superior approach: controlling the senses through the mind ('manasa niyamya') and then engaging in Karma Yoga without attachment ('asakta'). This person excels ('vishishyate') because they combine inner control with outer engagement. True renunciation is internal detachment while remaining externally active.",
+        "hindi": "कृष्ण श्रेष्ठ उपाय बताते हैं: मन के द्वारा इंद्रियों को काबू में करना और फिर आसक्ति के बिना कर्मयोग में संलग्न होना। ऐसा व्यक्ति श्रेष्ठ है क्योंकि वह आंतरिक नियंत्रण और बाहरी सक्रियता को जोड़ता है। सच्चा संन्यास है बाहर से सक्रिय रहकर भीतर से निरासक्त होना।"
+      },
+      "keywords": [
+        "controls",
+        "senses",
+        "mind",
+        "karma yoga",
+        "unattached",
+        "excels",
+        "superior",
+        "detachment"
+      ]
+    },
+    {
+      "id": 127,
+      "chapterNumber": 3,
+      "verseNumber": 8,
+      "sanskrit": "नियतं कुरु कर्म त्वं कर्म ज्यायो ह्यकर्मणः।\n\nशरीरयात्रापि च ते न प्रसिद्ध्येदकर्मणः।।3.8।।",
+      "transliteration": "niyataṁ kuru karma tvaṁ karma jyāyo hyakarmaṇaḥ\nśharīra-yātrāpi cha te na prasiddhyed akarmaṇaḥ",
+      "wordMeanings": "niyatam—constantly; kuru—perform; karma—Vedic duties; tvam—you; karma—action; jyāyaḥ—superior; hi—certainly; akarmaṇaḥ—than inaction; śharīra—bodily; yātrā—maintenance; api—even; cha—and; te—your; na prasiddhyet—would not be possible; akarmaṇaḥ—inaction",
+      "translation": {
+        "english": "Perform your prescribed duty, for action is better than inaction. Even the maintenance of your body would not be possible if you were completely inactive.",
+        "hindi": "तुम अपना नियत कर्म करो, क्योंकि कर्म अकर्म से श्रेष्ठ है। अकर्म से तो तुम्हारे शरीर का निर्वाह भी नहीं हो सकता।"
+      },
+      "explanation": {
+        "english": "Krishna gives practical advice: perform your prescribed duties ('niyatam karma') because action is superior to inaction. Even basic bodily maintenance ('sharira-yatra') requires action. This verse emphasizes that complete inaction is neither possible nor desirable, making the case for engaged spiritual practice.",
+        "hindi": "कृष्ण व्यावहारिक सलाह देते हैं: अपने निर्धारित कर्तव्य करो क्योंकि कर्म अकर्म से बेहतर है। शरीर का निर्वाह भी कर्म के बिना असंभव है। यह श्लोक जोर देता है कि पूर्ण निष्क्रियता न संभव है न वांछनीय, जो सक्रिय आध्यात्मिक अभ्यास का पक्ष लेता है।"
+      },
+      "keywords": [
+        "prescribed",
+        "duty",
+        "action",
+        "inaction",
+        "superior",
+        "body",
+        "maintenance",
+        "engaged"
+      ]
+    },
+    {
+      "id": 128,
+      "chapterNumber": 3,
+      "verseNumber": 9,
+      "sanskrit": "यज्ञार्थात्कर्मणोऽन्यत्र लोकोऽयं कर्मबन्धनः।\n\nतदर्थं कर्म कौन्तेय मुक्तसंगः समाचर।।3.9।।",
+      "transliteration": "yajñārthāt karmaṇo ’nyatra loko ’yaṁ karma-bandhanaḥ\ntad-arthaṁ karma kaunteya mukta-saṅgaḥ samāchara",
+      "wordMeanings": "yajña-arthāt—for the sake of sacrifice; karmaṇaḥ—than action; anyatra—else; lokaḥ—material world; ayam—this; karma-bandhanaḥ—bondage through one’s work; tat—that; artham—for the sake of; karma—action; kaunteya—Arjun, the son of Kunti; mukta-saṅgaḥ—free from attachment; samāchara—perform properly",
+      "translation": {
+        "english": "This world is bound by actions other than those performed as sacrifice. Therefore, O son of Kunti, perform action for that purpose, free from attachment.",
+        "hindi": "यज्ञ के अतिरिक्त दूसरे कर्मों में यह संसार बंधता है। इसलिए हे कुन्तीपुत्र, आसक्ति रहित होकर यज्ञार्थ कर्म करो।"
+      },
+      "explanation": {
+        "english": "Krishna introduces the concept of 'yajna' (sacrifice/offering). Actions performed as offerings to the Divine don't create bondage ('karma-bandhana'), while selfish actions do bind us. The key is performing all actions as 'yajnartha' (for the sake of sacrifice) while remaining 'mukta-sanga' (free from attachment).",
+        "hindi": "कृष्ण 'यज्ञ' की अवधारणा पेश करते हैं। दिव्य को अर्पित किए गए कर्म बंधन नहीं बनाते, जबकि स्वार्थी कर्म बांधते हैं। मुख्य बात है सभी कर्मों को 'यज्ञार्थ' (यज्ञ के लिए) करना और 'मुक्त-संग' (आसक्ति से मुक्त) रहना।"
+      },
+      "keywords": [
+        "sacrifice",
+        "yajna",
+        "bondage",
+        "attachment",
+        "divine",
+        "offering",
+        "selfless",
+        "freedom"
+      ]
+    },
+    {
+      "id": 129,
+      "chapterNumber": 3,
+      "verseNumber": 10,
+      "sanskrit": "सहयज्ञाः प्रजाः सृष्ट्वा पुरोवाच प्रजापतिः।\n\nअनेन प्रसविष्यध्वमेष वोऽस्त्विष्टकामधुक्।।3.10।।",
+      "transliteration": "saha-yajñāḥ prajāḥ sṛiṣhṭvā purovācha prajāpatiḥ\nanena prasaviṣhyadhvam eṣha vo ’stviṣhṭa-kāma-dhuk",
+      "wordMeanings": "saha—along with; yajñāḥ—sacrifices; prajāḥ—humankind; sṛiṣhṭvā—created; purā—in beginning; uvācha—said; prajā-patiḥ—Brahma; anena—by this; prasaviṣhyadhvam—increase prosperity; eṣhaḥ—these; vaḥ—your; astu—shall be; iṣhṭa-kāma-dhuk—bestower of all wishes",
+      "translation": {
+        "english": "In the beginning, the Creator, having created mankind along with sacrifice, said: 'By this you shall multiply; let this be the cow of plenty that yields all your desires.'",
+        "hindi": "प्राचीन काल में प्रजापति ने प्रजा को यज्ञ सहित उत्पन्न करके कहा था: इससे तुम वृद्धि को प्राप्त होओ, यह तुम्हारी इच्छाओं को पूरा करने वाली कामधेनु हो।"
+      },
+      "explanation": {
+        "english": "Krishna explains the cosmic principle of sacrifice. The Creator (Prajapati) established mankind with the law of yajna, promising that sacrifice would be like 'ishta-kama-dhuk' (a wish-fulfilling cow). This suggests that selfless action aligned with cosmic principles naturally fulfills legitimate needs and desires.",
+        "hindi": "कृष्ण यज्ञ के कॉस्मिक सिद्धांत को समझाते हैं। सृष्टिकर्ता ने मानवजाति को यज्ञ के नियम के साथ स्थापित किया, वादा करते हुए कि यज्ञ 'इष्ट-काम-धुक' (कामधेनु) की तरह होगा। यह बताता है कि कॉस्मिक सिद्धांतों के अनुरूप निस्वार्थ कर्म स्वाभाविक रूप से वैध आवश्यकताओं और इच्छाओं को पूरा करता है।"
+      },
+      "keywords": [
+        "creator",
+        "prajapati",
+        "sacrifice",
+        "multiply",
+        "desires",
+        "cosmic",
+        "principle",
+        "fulfillment"
+      ]
+    },
+    {
+      "id": 130,
+      "chapterNumber": 3,
+      "verseNumber": 11,
+      "sanskrit": "देवान्भावयतानेन ते देवा भावयन्तु वः।\n\nपरस्परं भावयन्तः श्रेयः परमवाप्स्यथ।।3.11।।",
+      "transliteration": "devān bhāvayatānena te devā bhāvayantu vaḥ\nparasparaṁ bhāvayantaḥ śhreyaḥ param avāpsyatha",
+      "wordMeanings": "devān—celestial gods; bhāvayatā—will be pleased; anena—by these (sacrifices); te—those; devāḥ—celestial gods; bhāvayantu—will be pleased; vaḥ—you; parasparam—one another; bhāvayantaḥ—pleasing one another; śhreyaḥ—prosperity; param—the supreme; avāpsyatha—shall achieve",
+      "translation": {
+        "english": "Nourish the gods with sacrifice, and the gods will nourish you. Thus nourishing each other, you shall attain the supreme good.",
+        "hindi": "इस यज्ञ से देवताओं को संतुष्ट करो और देवता तुम्हें संतुष्ट करें। इस प्रकार एक-दूसरे को संतुष्ट करते हुए तुम परम कल्याण को प्राप्त करोगे।"
+      },
+      "explanation": {
+        "english": "Krishna describes the reciprocal relationship between humans and cosmic forces ('devas'). Through sacrifice, we nourish the universal powers, and they in turn support us. This mutual nourishment ('parasparam bhavayantah') leads to the supreme good ('shreyas param'). It's a cosmic ecosystem of give and take.",
+        "hindi": "कृष्ण मनुष्यों और कॉस्मिक शक्तियों ('देव') के बीच पारस्परिक संबंध बताते हैं। यज्ञ से हम सार्वभौमिक शक्तियों का पोषण करते हैं, और वे बदले में हमारा समर्थन करती हैं। यह पारस्परिक पोषण परम कल्याण की ओर ले जाता है। यह देना-लेना का कॉस्मिक इकोसिस्टम है।"
+      },
+      "keywords": [
+        "gods",
+        "devas",
+        "nourish",
+        "sacrifice",
+        "reciprocal",
+        "mutual",
+        "supreme good",
+        "ecosystem"
+      ]
+    },
+    {
+      "id": 131,
+      "chapterNumber": 3,
+      "verseNumber": 12,
+      "sanskrit": "इष्टान्भोगान्हि वो देवा दास्यन्ते यज्ञभाविताः।\n\nतैर्दत्तानप्रदायैभ्यो यो भुङ्क्ते स्तेन एव सः।।3.12।।",
+      "transliteration": "iṣhṭān bhogān hi vo devā dāsyante yajña-bhāvitāḥ\ntair dattān apradāyaibhyo yo bhuṅkte stena eva saḥ",
+      "wordMeanings": "iṣhṭān—desired; bhogān—necessities of life; hi—certainly; vaḥ—unto you; devāḥ—the celestial gods; dāsyante—will grant; yajña-bhāvitāḥ—satisfied by sacrifice; taiḥ—by them; dattān—things granted; apradāya—without offering; ebhyaḥ—to them; yaḥ—who; bhuṅkte—enjoys; stenaḥ—thieves; eva—verily; saḥ—they",
+      "translation": {
+        "english": "Satisfied by sacrifice, the gods will grant you your desired enjoyments. But one who enjoys these gifts without offering them to others is indeed a thief.",
+        "hindi": "यज्ञ से संतुष्ट होकर देवता तुम्हें इच्छित भोग प्रदान करेंगे। परंतु जो इन दिए गए उपहारों को दूसरों को दिए बिना भोगता है, वह चोर ही है।"
+      },
+      "explanation": {
+        "english": "Krishna explains that when we perform yajna, the cosmic forces provide desired enjoyments. However, one who consumes these gifts without sharing or offering them back becomes a 'stena' (thief). This teaches the principle that all resources are meant to be shared, not hoarded selfishly.",
+        "hindi": "कृष्ण समझाते हैं कि जब हम यज्ञ करते हैं, तो कॉस्मिक शक्तियां वांछित भोग देती हैं। लेकिन जो इन उपहारों को बांटे बिना या वापस अर्पित किए बिना भोगता है, वह 'चोर' बन जाता है। यह सिखाता है कि सभी संसाधन बांटने के लिए हैं, स्वार्थपूर्वक जमा करने के लिए नहीं।"
+      },
+      "keywords": [
+        "satisfied",
+        "desired",
+        "enjoyments",
+        "gifts",
+        "sharing",
+        "thief",
+        "resources",
+        "selfish"
+      ]
+    },
+    {
+      "id": 132,
+      "chapterNumber": 3,
+      "verseNumber": 13,
+      "sanskrit": "यज्ञशिष्टाशिनः सन्तो मुच्यन्ते सर्वकिल्बिषैः।\n\nभुञ्जते ते त्वघं पापा ये पचन्त्यात्मकारणात्।।3.13।।",
+      "transliteration": "yajña-śhiṣhṭāśhinaḥ santo muchyante sarva-kilbiṣhaiḥ\nbhuñjate te tvaghaṁ pāpā ye pachantyātma-kāraṇāt",
+      "wordMeanings": "yajña-śhiṣhṭa—of remnants of food offered in sacrifice; aśhinaḥ—eaters; santaḥ—saintly persons; muchyante—are released; sarva—all kinds of; kilbiṣhaiḥ—from sins; bhuñjate—enjoy; te—they; tu—but; agham—sins; pāpāḥ—sinners; ye—who; pachanti—cook (food); ātma-kāraṇāt—for their own sake",
+      "translation": {
+        "english": "The righteous who eat the remnants of sacrifice are freed from all sins. But those who cook only for themselves eat sin.",
+        "hindi": "यज्ञ के अवशेष को खाने वाले सज्जन सब पापों से मुक्त हो जाते हैं। परंतु जो केवल अपने लिए पकाते हैं, वे पाप खाते हैं।"
+      },
+      "explanation": {
+        "english": "Krishna distinguishes between two attitudes toward consumption. Those who eat 'yajna-shishta' (remnants of sacrifice) after offering to the Divine and sharing with others are freed from sins. But those who cook and consume only for themselves ('atma-karanat') accumulate sin. This promotes the attitude of offering and sharing.",
+        "hindi": "कृष्ण उपभोग के प्रति दो दृष्टिकोणों में अंतर करते हैं। जो दिव्य को अर्पित करके और दूसरों के साथ बांटकर 'यज्ञ-शिष्ट' खाते हैं, वे पापों से मुक्त हो जाते हैं। लेकिन जो केवल अपने लिए पकाते और खाते हैं, वे पाप संचित करते हैं। यह अर्पण और साझाकरण की भावना को बढ़ावा देता है।"
+      },
+      "keywords": [
+        "remnants",
+        "sacrifice",
+        "righteous",
+        "freed",
+        "sins",
+        "selfish",
+        "sharing",
+        "offering"
+      ]
+    },
+    {
+      "id": 133,
+      "chapterNumber": 3,
+      "verseNumber": 14,
+      "sanskrit": "अन्नाद्भवन्ति भूतानि पर्जन्यादन्नसम्भवः।\n\nयज्ञाद्भवति पर्जन्यो यज्ञः कर्मसमुद्भवः।।3.14।।",
+      "transliteration": "annād bhavanti bhūtāni parjanyād anna-sambhavaḥ\nyajñād bhavati parjanyo yajñaḥ karma-samudbhavaḥ",
+      "wordMeanings": "annāt—from food; bhavanti—subsist; bhūtāni—living beings; parjanyāt—from rains; anna—of food grains; sambhavaḥ—production; yajñāt—from the performance of sacrifice; bhavati—becomes possible; parjanyaḥ—rain; yajñaḥ—performance of sacrifice; karma—prescribed duties; samudbhavaḥ—born of",
+      "translation": {
+        "english": "All beings are nourished by food, food comes from rain, rain comes from sacrifice, and sacrifice is born of action.",
+        "hindi": "सभी प्राणी अन्न से होते हैं, अन्न वर्षा से होता है, वर्षा यज्ञ से होती है, और यज्ञ कर्म से उत्पन्न होता है।"
+      },
+      "explanation": {
+        "english": "Krishna presents the cosmic food chain: beings depend on food, food depends on rain, rain depends on sacrifice, and sacrifice depends on action. This shows the interconnectedness of all existence and how human actions (karma) ultimately support the entire cosmic ecosystem through the principle of yajna.",
+        "hindi": "कृष्ण कॉस्मिक आहार श्रृंखला प्रस्तुत करते हैं: प्राणी अन्न पर निर्भर हैं, अन्न वर्षा पर निर्भर है, वर्षा यज्ञ पर निर्भर है, और यज्ञ कर्म पर निर्भर है। यह सभी अस्तित्व की अंतर्संबद्धता दिखाता है और कैसे मानवीय कर्म यज्ञ के सिद्धांत के माध्यम से पूरे कॉस्मिक इकोसिस्टम का समर्थन करते हैं।"
+      },
+      "keywords": [
+        "food",
+        "beings",
+        "rain",
+        "sacrifice",
+        "action",
+        "cosmic",
+        "chain",
+        "interconnected"
+      ]
+    },
+    {
+      "id": 134,
+      "chapterNumber": 3,
+      "verseNumber": 15,
+      "sanskrit": "कर्म ब्रह्मोद्भवं विद्धि ब्रह्माक्षरसमुद्भवम्।\n\nतस्मात्सर्वगतं ब्रह्म नित्यं यज्ञे प्रतिष्ठितम्।।3.15।।",
+      "transliteration": "karma brahmodbhavaṁ viddhi brahmākṣhara-samudbhavam\ntasmāt sarva-gataṁ brahma nityaṁ yajñe pratiṣhṭhitam",
+      "wordMeanings": "karma—duties; brahma—in the Vedas; udbhavam—manifested; viddhi—you should know; brahma—The Vedas; akṣhara—from the Imperishable (God); samudbhavam—directly manifested; tasmāt—therefore; sarva-gatam—all-pervading; brahma—The Lord; nityam—eternally; yajñe—in sacrifice; pratiṣhṭhitam—established",
+      "translation": {
+        "english": "Know that action comes from Brahma, and Brahma comes from the imperishable. Therefore, the all-pervading Brahma is eternally established in sacrifice.",
+        "hindi": "कर्म को ब्रह्मा से उत्पन्न जानो और ब्रह्मा को अक्षर (परब्रह्म) से उत्पन्न जानो। इसलिए सर्वव्यापी ब्रह्म सदा यज्ञ में प्रतिष्ठित है।"
+      },
+      "explanation": {
+        "english": "Krishna traces action back to its ultimate source: action comes from Brahma (the Creator), Brahma comes from Akshara (the Imperishable Supreme), and therefore the all-pervading Brahman is eternally established in sacrifice. This gives cosmic significance to all righteous action as expressions of the Divine.",
+        "hindi": "कृष्ण कर्म को उसके परम स्रोत तक ले जाते हैं: कर्म ब्रह्मा से आता है, ब्रह्मा अक्षर (अविनाशी परम) से आते हैं, और इसलिए सर्वव्यापी ब्रह्म सदा यज्ञ में स्थित है। यह सभी धार्मिक कर्मों को दिव्य अभिव्यक्ति के रूप में कॉस्मिक महत्व देता है।"
+      },
+      "keywords": [
+        "action",
+        "brahma",
+        "imperishable",
+        "supreme",
+        "all-pervading",
+        "established",
+        "sacrifice",
+        "divine"
+      ]
+    },
+    {
+      "id": 135,
+      "chapterNumber": 3,
+      "verseNumber": 16,
+      "sanskrit": "एवं प्रवर्तितं चक्रं नानुवर्तयतीह यः।\n\nअघायुरिन्द्रियारामो मोघं पार्थ स जीवति।।3.16।।",
+      "transliteration": "evaṁ pravartitaṁ chakraṁ nānuvartayatīha yaḥ\naghāyur indriyārāmo moghaṁ pārtha sa jīvati",
+      "wordMeanings": "evam—thus; pravartitam—set into motion; chakram—cycle; na—not; anuvartayati—follow; iha—in this life; yaḥ—who; agha-āyuḥ—sinful living; indriya-ārāmaḥ—for the delight of their senses; mogham—vainly; pārtha—Arjun, the son of Pritha; saḥ—they; jīvati—live",
+      "translation": {
+        "english": "One who does not follow this cycle established in creation, who is sinful and rejoices in sense pleasures, lives in vain, O Partha.",
+        "hindi": "हे पार्थ, जो व्यक्ति इस प्रकार चलाए गए चक्र का अनुसरण नहीं करता, वह पापी, इंद्रिय सुखों में रमने वाला व्यर्थ ही जीवित रहता है।"
+      },
+      "explanation": {
+        "english": "Krishna warns that one who doesn't participate in this cosmic cycle of giving and receiving through sacrifice lives a wasted life. Such a person is 'aghayu' (sinful), 'indriyarama' (indulgent in sensory pleasures), and lives 'mogham' (in vain). True fulfillment comes from aligning with cosmic principles, not from selfish enjoyment.",
+        "hindi": "कृष्ण चेतावनी देते हैं कि जो व्यक्ति यज्ञ के माध्यम से देने-लेने के इस कॉस्मिक चक्र में भाग नहीं लेता, वह व्यर्थ जीवन जीता है। ऐसा व्यक्ति पापी, इंद्रिय सुखों में लिप्त, और व्यर्थ जीता है। सच्ची पूर्णता कॉस्मिक सिद्धांतों के साथ तालमेल से आती है, स्वार्थी भोग से नहीं।"
+      },
+      "keywords": [
+        "cycle",
+        "creation",
+        "sinful",
+        "sense pleasures",
+        "vain",
+        "cosmic",
+        "principles",
+        "selfish"
+      ]
+    },
+    {
+      "id": 136,
+      "chapterNumber": 3,
+      "verseNumber": 17,
+      "sanskrit": "यस्त्वात्मरतिरेव स्यादात्मतृप्तश्च मानवः।\n\nआत्मन्येव च सन्तुष्टस्तस्य कार्यं न विद्यते।।3.17।।",
+      "transliteration": "yas tvātma-ratir eva syād ātma-tṛiptaśh cha mānavaḥ\nātmanyeva cha santuṣhṭas tasya kāryaṁ na vidyate",
+      "wordMeanings": "yaḥ—who; tu—but; ātma-ratiḥ—rejoice in the self; eva—certainly; syāt—is; ātma-tṛiptaḥ—self-satisfied; cha—and; mānavaḥ—human being; ātmani—in the self; eva—certainly; cha—and; santuṣhṭaḥ—satisfied; tasya—his; kāryam—duty; na—not; vidyate—exist",
+      "translation": {
+        "english": "But for one who rejoices in the Self, who is satisfied in the Self, and who is content in the Self alone, there is no duty.",
+        "hindi": "परंतु जो व्यक्ति आत्मा में ही आनंदित है, आत्मा में ही तृप्त है, और केवल आत्मा में ही संतुष्ट है, उसके लिए कोई कर्तव्य नहीं है।"
+      },
+      "explanation": {
+        "english": "Krishna describes the state of a self-realized person who has transcended the need for external duties. Such a person is 'atma-rati' (rejoicing in the Self), 'atma-tripta' (satisfied in the Self), and 'atma-santuṣhṭa' (content in the Self). For such realized souls, there are no binding duties because they have gone beyond ego-driven action.",
+        "hindi": "कृष्ण आत्म-साक्षात्कारी व्यक्ति की अवस्था बताते हैं जो बाहरी कर्तव्यों की आवश्यकता से परे हो गया है। ऐसा व्यक्ति आत्म-रति, आत्म-तृप्त, और आत्म-संतुष्ट है। ऐसी महान आत्माओं के लिए कोई बाध्यकारी कर्तव्य नहीं है क्योंकि वे अहंकार-प्रेरित कर्म से परे हो गए हैं।"
+      },
+      "keywords": [
+        "self-realized",
+        "rejoicing",
+        "satisfied",
+        "content",
+        "self",
+        "duty",
+        "transcended",
+        "ego"
+      ]
+    },
+    {
+      "id": 137,
+      "chapterNumber": 3,
+      "verseNumber": 18,
+      "sanskrit": "नैव तस्य कृतेनार्थो नाकृतेनेह कश्चन।\n\nन चास्य सर्वभूतेषु कश्िचदर्थव्यपाश्रयः।।3.18।।",
+      "transliteration": "naiva tasya kṛitenārtho nākṛiteneha kaśhchana\nna chāsya sarva-bhūteṣhu kaśhchid artha-vyapāśhrayaḥ",
+      "wordMeanings": "na—not; eva—indeed; tasya—his; kṛitena—by discharge of duty; arthaḥ—gain; na—not; akṛitena—without discharge of duty; iha—here; kaśhchana—whatsoever; na—never; cha—and; asya—of that person; sarva-bhūteṣhu—among all living beings; kaśhchit—any; artha—necessity; vyapāśhrayaḥ—to depend upon",
+      "translation": {
+        "english": "Such a person has no interest in what is done or not done. Nor does such a person depend on any being for any object.",
+        "hindi": "ऐसे व्यक्ति का न तो किए गए कर्म में कोई स्वार्थ होता है और न ही न किए गए में। न ही सभी प्राणियों में से किसी का कोई स्वार्थपूर्ण आश्रय होता है।"
+      },
+      "explanation": {
+        "english": "The self-realized person has no selfish interest ('artha') in performing or not performing actions. They don't depend on anyone ('artha-vyapashraya') for fulfilling personal needs because they have found complete fulfillment in the Self. This is the state of true freedom from karmic bondage.",
+        "hindi": "आत्म-साक्षात्कारी व्यक्ति का कर्म करने या न करने में कोई स्वार्थ नहीं होता। वे व्यक्तिगत आवश्यकताओं की पूर्ति के लिए किसी पर निर्भर नहीं होते क्योंकि उन्होंने आत्मा में पूर्ण संतुष्टि पा ली है। यह कर्म बंधन से सच्ची मुक्ति की अवस्था है।"
+      },
+      "keywords": [
+        "interest",
+        "done",
+        "undone",
+        "depend",
+        "beings",
+        "object",
+        "freedom",
+        "bondage"
+      ]
+    },
+    {
+      "id": 138,
+      "chapterNumber": 3,
+      "verseNumber": 19,
+      "sanskrit": "तस्मादसक्तः सततं कार्यं कर्म समाचर।\n\nअसक्तो ह्याचरन्कर्म परमाप्नोति पूरुषः।।3.19।।",
+      "transliteration": "tasmād asaktaḥ satataṁ kāryaṁ karma samāchara\nasakto hyācharan karma param āpnoti pūruṣhaḥ",
+      "wordMeanings": "tasmāt—therefore; asaktaḥ—without attachment; satatam—constantly; kāryam—duty; karma—action; samāchara—perform; asaktaḥ—unattached; hi—certainly; ācharan—performing; karma—work; param—the Supreme; āpnoti—attains; pūruṣhaḥ—a person",
+      "translation": {
+        "english": "Therefore, always perform your duty without attachment. By working without attachment, one attains the Supreme.",
+        "hindi": "इसलिए तुम सदा आसक्ति रहित होकर कार्य रूप कर्म को करते रहो। आसक्ति रहित होकर कर्म करने से मनुष्य परम को प्राप्त करता है।"
+      },
+      "explanation": {
+        "english": "Krishna draws the practical conclusion: perform all duties without attachment ('asakta'). This doesn't mean becoming inactive like the self-realized soul, but working without ego-attachment. Through such detached action, one can attain the Supreme ('param'). This is the essence of Karma Yoga—action without attachment leading to liberation.",
+        "hindi": "कृष्ण व्यावहारिक निष्कर्ष निकालते हैं: सभी कर्तव्य आसक्ति के बिना करो। इसका मतलब आत्म-साक्षात्कारी की तरह निष्क्रिय होना नहीं, बल्कि अहंकार-आसक्ति के बिना काम करना है। ऐसे निरासक्त कर्म से व्यक्ति परम को प्राप्त कर सकता है। यही कर्मयोग का सार है—आसक्ति रहित कर्म जो मोक्ष की ओर ले जाता है।"
+      },
+      "keywords": [
+        "attachment",
+        "duty",
+        "working",
+        "supreme",
+        "karma yoga",
+        "liberation",
+        "detached",
+        "essence"
+      ]
+    },
+    {
+      "id": 139,
+      "chapterNumber": 3,
+      "verseNumber": 20,
+      "sanskrit": "कर्मणैव हि संसिद्धिमास्थिता जनकादयः।\n\nलोकसंग्रहमेवापि संपश्यन्कर्तुमर्हसि।।3.20।।",
+      "transliteration": "karmaṇaiva hi sansiddhim āsthitā janakādayaḥ\nloka-saṅgraham evāpi sampaśhyan kartum arhasi",
+      "wordMeanings": "karmaṇā—by the performance of prescribed duties; eva—only; hi—certainly; sansiddhim—perfection; āsthitāḥ—attained; janaka-ādayaḥ—King Janak and other kings; loka-saṅgraham—for the welfare of the masses; eva api—only; sampaśhyan—considering; kartum—to perform; arhasi—you should;",
+      "translation": {
+        "english": "It was by action alone that King Janaka and others attained perfection. You should also act, keeping in view the maintenance of the world order.",
+        "hindi": "राजा जनक आदि ने कर्म से ही सिद्धि प्राप्त की है। लोक संग्रह को देखते हुए भी तुम्हें कर्म करना चाहिए।"
+      },
+      "explanation": {
+        "english": "Krishna gives historical examples, particularly King Janaka, who achieved perfection ('samsiddhi') through action alone. Even for world maintenance ('loka-sangraha'), Arjuna should act. This shows that great souls can achieve liberation while remaining engaged in worldly duties, providing a model for active spiritual life.",
+        "hindi": "कृष्ण ऐतिहासिक उदाहरण देते हैं, विशेषकर राजा जनक का, जिन्होंने केवल कर्म से सिद्धि पाई। विश्व के कल्याण के लिए भी अर्जुन को कार्य करना चाहिए। यह दिखाता है कि महान आत्माएं सांसारिक कर्तव्यों में लगी रहकर भी मोक्ष पा सकती हैं, जो सक्रिय आध्यात्मिक जीवन का आदर्श प्रस्तुत करता है।"
+      },
+      "keywords": [
+        "action",
+        "janaka",
+        "perfection",
+        "world",
+        "maintenance",
+        "engaged",
+        "spiritual",
+        "model"
+      ]
+    },
+    {
+      "id": 140,
+      "chapterNumber": 3,
+      "verseNumber": 21,
+      "sanskrit": "यद्यदाचरति श्रेष्ठस्तत्तदेवेतरो जनः।\n\nस यत्प्रमाणं कुरुते लोकस्तदनुवर्तते।।3.21।।",
+      "transliteration": "yad yad ācharati śhreṣhṭhas tat tad evetaro janaḥ\nsa yat pramāṇaṁ kurute lokas tad anuvartate",
+      "wordMeanings": "yat yat—whatever; ācharati—does; śhreṣhṭhaḥ—the best; tat tat—that (alone); eva—certainly; itaraḥ—common; janaḥ—people; saḥ—they; yat—whichever; pramāṇam—standard; kurute—perform; lokaḥ—world; tat—that; anuvartate—pursues",
+      "translation": {
+        "english": "Whatever action a great person performs, common people follow. Whatever standard such a person sets, the world follows.",
+        "hindi": "श्रेष्ठ पुरुष जो-जो आचरण करता है, दूसरे लोग वही करते हैं। वह जो प्रमाण स्थापित करता है, लोक उसका अनुसरण करता है।"
+      },
+      "explanation": {
+        "english": "Krishna explains the principle of leadership by example. Great people ('shreṣhṭha') set standards ('pramāṇa') that others naturally follow. This gives additional responsibility to those in positions of influence—they must act righteously not just for their own liberation, but to guide society properly.",
+        "hindi": "कृष्ण उदाहरण द्वारा नेतृत्व का सिद्धांत समझाते हैं। श्रेष्ठ लोग जो मानदंड स्थापित करते हैं, दूसरे स्वाभाविक रूप से उनका अनुसरण करते हैं। यह प्रभावशाली पदों पर बैठे लोगों को अतिरिक्त जिम्मेदारी देता है—उन्हें न केवल अपनी मुक्ति के लिए बल्कि समाज का उचित मार्गदर्शन के लिए धर्मानुसार आचरण करना चाहिए।"
+      },
+      "keywords": [
+        "great",
+        "person",
+        "follow",
+        "standard",
+        "leadership",
+        "example",
+        "responsibility",
+        "society"
+      ]
+    },
+    {
+      "id": 141,
+      "chapterNumber": 3,
+      "verseNumber": 22,
+      "sanskrit": "न मे पार्थास्ति कर्तव्यं त्रिषु लोकेषु किञ्चन।\n\nनानवाप्तमवाप्तव्यं वर्त एव च कर्मणि।।3.22।।",
+      "transliteration": "na me pārthāsti kartavyaṁ triṣhu lokeṣhu kiñchana\nnānavāptam avāptavyaṁ varta eva cha karmaṇi",
+      "wordMeanings": "na—not; me—mine; pārtha—Arjun; asti—is; kartavyam—duty; triṣhu—in the three; lokeṣhu—worlds; kiñchana—any; na—not; anavāptam—to be attained; avāptavyam—to be gained; varte—I am engaged; eva—yet; cha—also; karmaṇi—in prescribed duties",
+      "translation": {
+        "english": "O Partha, there is nothing in the three worlds that I must do, nor is there anything I have not attained that I should attain, yet I engage in action.",
+        "hindi": "हे पार्थ, तीनों लोकों में मेरे लिए कोई कर्तव्य नहीं है, न कुछ अप्राप्त है जो प्राप्त करना हो, फिर भी मैं कर्म में लगा रहता हूं।"
+      },
+      "explanation": {
+        "english": "Krishna uses himself as the ultimate example. As the Supreme Being, he has no duties ('kartavya') in the three worlds, nothing to attain ('avaptavya'), yet he continues to act. This demonstrates that action can be performed without any personal motivation, purely for cosmic welfare.",
+        "hindi": "कृष्ण स्वयं को परम उदाहरण के रूप में प्रस्तुत करते हैं। परम तत्व के रूप में उनके पास तीनों लोकों में कोई कर्तव्य नहीं है, कुछ पाने को नहीं है, फिर भी वे कर्म करते रहते हैं। यह दिखाता है कि कर्म बिना किसी व्यक्तिगत प्रेरणा के, केवल कॉस्मिक कल्याण के लिए किया जा सकता है।"
+      },
+      "keywords": [
+        "three worlds",
+        "duty",
+        "attain",
+        "engage",
+        "supreme",
+        "example",
+        "motivation",
+        "welfare"
+      ]
+    },
+    {
+      "id": 142,
+      "chapterNumber": 3,
+      "verseNumber": 23,
+      "sanskrit": "यदि ह्यहं न वर्तेयं जातु कर्मण्यतन्द्रितः।\n\nमम वर्त्मानुवर्तन्ते मनुष्याः पार्थ सर्वशः।।3.23।।",
+      "transliteration": "yadi hyahaṁ na varteyaṁ jātu karmaṇyatandritaḥ\nmama vartmānuvartante manuṣhyāḥ pārtha sarvaśhaḥ",
+      "wordMeanings": "yadi—if; hi—certainly; aham—I; na—not; varteyam—thus engage; jātu—ever; karmaṇi—in the performance of prescribed duties; atandritaḥ—carefully; mama—my; vartma—path; anuvartante—follow; manuṣhyāḥ—all men; pārtha—Arjun, the son of Pritha; sarvaśhaḥ—in all respects",
+      "translation": {
+        "english": "If I did not engage in action tirelessly, O Partha, people would follow my path in every way.",
+        "hindi": "यदि मैं कभी भी कर्म में सावधानी से न लगा रहूं, तो हे पार्थ, मनुष्य सब प्रकार से मेरे मार्ग का अनुसरण करेंगे।"
+      },
+      "explanation": {
+        "english": "Krishna explains the consequence if he became inactive: people would follow his example and become lazy. Since people naturally imitate divine behavior, Krishna must remain 'atandrita' (tireless) in action to prevent humanity from falling into inactivity and spiritual decline.",
+        "hindi": "कृष्ण समझाते हैं कि यदि वे निष्क्रिय हो जाएं तो लोग उनका अनुसरण करके आलसी हो जाएंगे। चूंकि लोग स्वाभाविक रूप से दिव्य व्यवहार की नकल करते हैं, कृष्ण को मानवता को निष्क्रियता और आध्यात्मिक पतन से बचाने के लिए कर्म में अतंद्रित रहना चाहिए।"
+      },
+      "keywords": [
+        "engage",
+        "tirelessly",
+        "follow",
+        "path",
+        "imitate",
+        "divine",
+        "lazy",
+        "decline"
+      ]
+    },
+    {
+      "id": 143,
+      "chapterNumber": 3,
+      "verseNumber": 24,
+      "sanskrit": "उत्सीदेयुरिमे लोका न कुर्यां कर्म चेदहम्।\n\nसङ्करस्य च कर्ता स्यामुपहन्यामिमाः प्रजाः।।3.24।।",
+      "transliteration": "utsīdeyur ime lokā na kuryāṁ karma ched aham\nsankarasya cha kartā syām upahanyām imāḥ prajāḥ",
+      "wordMeanings": "utsīdeyuḥ—would perish; ime—all these; lokāḥ—worlds; na—not; kuryām—I perform; karma—prescribed duties; chet—if; aham—I; sankarasya—of uncultured population; cha—and; kartā—responsible; syām—would be; upahanyām—would destroy; imāḥ—all these; prajāḥ—living entities",
+      "translation": {
+        "english": "If I ceased to work, these worlds would perish. I would be the cause of confusion and would destroy these people.",
+        "hindi": "यदि मैं कर्म न करूं तो ये सब लोक नष्ट हो जाएंगे। मैं संकर का कर्ता बनूंगा और इन प्रजाओं का नाश करूंगा।"
+      },
+      "explanation": {
+        "english": "Krishna describes the catastrophic result if he stopped working: the worlds would perish ('utsīdeyur'), confusion would arise ('saṅkara'), and people would be destroyed. This shows how cosmic order depends on divine action, and by extension, how social order depends on righteous action by leaders and responsible individuals.",
+        "hindi": "कृष्ण बताते हैं कि यदि वे काम करना बंद कर दें तो क्या विनाशकारी परिणाम होंगे: लोक नष्ट हो जाएंगे, भ्रम फैलेगा, और लोग नष्ट हो जाएंगे। यह दिखाता है कि कॉस्मिक व्यवस्था दिव्य कर्म पर निर्भर है, और इसी तरह सामाजिक व्यवस्था नेताओं और जिम्मेदार व्यक्तियों के धर्मयुक्त कर्म पर निर्भर है।"
+      },
+      "keywords": [
+        "cease",
+        "work",
+        "worlds",
+        "perish",
+        "confusion",
+        "destroy",
+        "cosmic",
+        "order"
+      ]
+    },
+    {
+      "id": 144,
+      "chapterNumber": 3,
+      "verseNumber": 25,
+      "sanskrit": "सक्ताः कर्मण्यविद्वांसो यथा कुर्वन्ति भारत।\n\nकुर्याद्विद्वांस्तथासक्तश्िचकीर्षुर्लोकसंग्रहम्।।3.25।।",
+      "transliteration": "saktāḥ karmaṇyavidvānso yathā kurvanti bhārata\nkuryād vidvāns tathāsaktaśh chikīrṣhur loka-saṅgraham",
+      "wordMeanings": "saktāḥ—attached; karmaṇi—duties; avidvānsaḥ—the ignorant; yathā—as much as; kurvanti—act; bhārata—scion of Bharat (Arjun); kuryāt—should do; vidvān—the wise; tathā—thus; asaktaḥ—unattached; chikīrṣhuḥ—wishing; loka-saṅgraham—welfare of the world",
+      "translation": {
+        "english": "As the ignorant act with attachment to work, O Bharata, so should the wise act without attachment, desiring to maintain world order.",
+        "hindi": "हे भरत, जैसे अज्ञानी लोग आसक्ति से कर्म करते हैं, वैसे ही ज्ञानी को लोक संग्रह की इच्छा से आसक्ति रहित होकर कर्म करना चाहिए।"
+      },
+      "explanation": {
+        "english": "Krishna gives the practical formula: the wise should act just like the ignorant in terms of engagement, but with a crucial difference—without attachment ('asakta') and with the desire for world welfare ('loka-sangraha'). This maintains social stability while promoting spiritual evolution.",
+        "hindi": "कृष्ण व्यावहारिक सूत्र देते हैं: ज्ञानी को संलग्नता के मामले में अज्ञानी की तरह ही कार्य करना चाहिए, लेकिन महत्वपूर्ण अंतर के साथ—आसक्ति के बिना और विश्व कल्याण की इच्छा से। यह आध्यात्मिक विकास को बढ़ावा देते हुए सामाजिक स्थिरता बनाए रखता है।"
+      },
+      "keywords": [
+        "ignorant",
+        "attachment",
+        "wise",
+        "without",
+        "world",
+        "order",
+        "engagement",
+        "welfare"
+      ]
+    },
+    {
+      "id": 145,
+      "chapterNumber": 3,
+      "verseNumber": 26,
+      "sanskrit": "न बुद्धिभेदं जनयेदज्ञानां कर्मसङ्गिनाम्।\n\nजोषयेत्सर्वकर्माणि विद्वान् युक्तः समाचरन्।।3.26।।",
+      "transliteration": "na buddhi-bhedaṁ janayed ajñānāṁ karma-saṅginām\njoṣhayet sarva-karmāṇi vidvān yuktaḥ samācharan",
+      "wordMeanings": "na—not; buddhi-bhedam—discord in the intellects; janayet—should create; ajñānām—of the ignorant; karma-saṅginām—who are attached to fruitive actions; joṣhayet—should inspire (them) to perform; sarva—all; karmāṇi—prescribed; vidvān—the wise; yuktaḥ—enlightened; samācharan—performing properly",
+      "translation": {
+        "english": "The wise should not create confusion in the minds of ignorant people who are attached to action. Rather, acting in accordance with yoga, they should inspire others to work.",
+        "hindi": "कर्म में आसक्त अज्ञानियों की बुद्धि में भेद उत्पन्न न करे। योग में स्थित ज्ञानी को सभी कर्मों का आचरण करते हुए उन्हें प्रेरित करना चाहिए।"
+      },
+      "explanation": {
+        "english": "Krishna advises against creating 'buddhi-bheda' (confusion of understanding) in those attached to action. Instead of criticizing others' attachment, the wise should inspire by example, remaining 'yukta' (connected/balanced) while performing all actions. This is compassionate leadership—meeting people where they are.",
+        "hindi": "कृष्ण कर्म में आसक्त लोगों में समझ की भ्रांति न फैलाने की सलाह देते हैं। दूसरों की आसक्ति की आलोचना करने के बजाय, ज्ञानी को उदाहरण से प्रेरित करना चाहिए, सभी कर्म करते हुए 'युक्त' रहकर। यह करुणामय नेतृत्व है—लोगों से वहीं मिलना जहाँ वे हैं।"
+      },
+      "keywords": [
+        "confusion",
+        "minds",
+        "ignorant",
+        "attached",
+        "inspire",
+        "example",
+        "balanced",
+        "compassionate"
+      ]
+    },
+    {
+      "id": 146,
+      "chapterNumber": 3,
+      "verseNumber": 27,
+      "sanskrit": "प्रकृतेः क्रियमाणानि गुणैः कर्माणि सर्वशः।\n\nअहङ्कारविमूढात्मा कर्ताऽहमिति मन्यते।।3.27।।",
+      "transliteration": "prakṛiteḥ kriyamāṇāni guṇaiḥ karmāṇi sarvaśhaḥ\nahankāra-vimūḍhātmā kartāham iti manyate",
+      "wordMeanings": "prakṛiteḥ—of material nature; kriyamāṇāni—carried out; guṇaiḥ—by the three modes; karmāṇi—activities; sarvaśhaḥ—all kinds of; ahankāra-vimūḍha-ātmā—those who are bewildered by the ego and misidentify themselves with the body; kartā—the doer; aham—I; iti—thus; manyate—thinks",
+      "translation": {
+        "english": "All actions are performed by the modes of material nature. But one deluded by ego thinks 'I am the doer.'",
+        "hindi": "सभी कर्म प्रकृति के गुणों द्वारा किए जाते हैं, परंतु अहंकार से मोहित व्यक्ति 'मैं कर्ता हूं' ऐसा मानता है।"
+      },
+      "explanation": {
+        "english": "Krishna reveals a profound truth: all actions are actually performed by the gunas (modes) of prakriti (material nature), not by the individual soul. But the ego-deluded person ('ahankara-vimudhatma') falsely claims doership. Understanding this dissolves the ego's claim to authorship of actions.",
+        "hindi": "कृष्ण गहरा सत्य प्रकट करते हैं: सभी कर्म वास्तव में प्रकृति के गुणों द्वारा किए जाते हैं, व्यक्तिगत आत्मा द्वारा नहीं। लेकिन अहंकार से भ्रमित व्यक्ति झूठा कर्तृत्व का दावा करता है। इसे समझने से अहंकार का कर्म के ऊपर मालिकाना हक समाप्त हो जाता है।"
+      },
+      "keywords": [
+        "actions",
+        "performed",
+        "modes",
+        "material nature",
+        "ego",
+        "deluded",
+        "doer",
+        "authorship"
+      ]
+    },
+    {
+      "id": 147,
+      "chapterNumber": 3,
+      "verseNumber": 28,
+      "sanskrit": "तत्त्ववित्तु महाबाहो गुणकर्मविभागयोः।\n\nगुणा गुणेषु वर्तन्त इति मत्वा न सज्जते।।3.28।।",
+      "transliteration": "tattva-vit tu mahā-bāho guṇa-karma-vibhāgayoḥ\nguṇā guṇeṣhu vartanta iti matvā na sajjate",
+      "wordMeanings": "tattva-vit—the knower of the Truth; tu—but; mahā-bāho—mighty-armed one; guṇa-karma—from guṇas and karma; vibhāgayoḥ—distinguish; guṇāḥ—modes of material nature in the shape of the senses, mind, etc; guṇeṣhu—modes of material nature in the shape of objects of perception; vartante—are engaged; iti—thus; matvā—knowing; na—never; sajjate—becomes attached",
+      "translation": {
+        "english": "But one who knows the truth about the role of the gunas and their actions, O mighty-armed, understands that it is the gunas interacting with gunas, and thus does not get attached.",
+        "hindi": "परंतु हे महाबाहो, गुण और कर्म के विभाग को तत्त्व से जानने वाला 'गुण ही गुणों में बरत रहे हैं' ऐसा समझकर आसक्त नहीं होता।"
+      },
+      "explanation": {
+        "english": "Krishna describes the enlightened perspective: one who truly understands ('tattva-vit') realizes that all interactions are simply 'gunas acting upon gunas'—the modes of nature interacting with each other. The wise person sees through the illusion of personal doership and remains non-attached ('na sajjate') to the cosmic play.",
+        "hindi": "कृष्ण प्रबुद्ध दृष्टिकोण बताते हैं: जो सच में समझता है ('तत्त्व-वित्'), वह महसूस करता है कि सभी अंतर्क्रियाएं केवल 'गुणों का गुणों में काम' हैं—प्रकृति के गुणों का आपस में संपर्क। बुद्धिमान व्यक्ति व्यक्तिगत कर्तृत्व के भ्रम को भेदकर कॉस्मिक लीला से अनासक्त रहता है।"
+      },
+      "keywords": [
+        "truth",
+        "gunas",
+        "actions",
+        "interacting",
+        "enlightened",
+        "doership",
+        "illusion",
+        "non-attached"
+      ]
+    },
+    {
+      "id": 148,
+      "chapterNumber": 3,
+      "verseNumber": 29,
+      "sanskrit": "प्रकृतेर्गुणसम्मूढाः सज्जन्ते गुणकर्मसु।\n\nतानकृत्स्नविदो मन्दान्कृत्स्नविन्न विचालयेत्।।3.29।।",
+      "transliteration": "prakṛiter guṇa-sammūḍhāḥ sajjante guṇa-karmasu\ntān akṛitsna-vido mandān kṛitsna-vin na vichālayet",
+      "wordMeanings": "prakṛiteḥ—of material nature; guṇa—by the modes of material nature; sammūḍhāḥ—deluded; sajjante—become attached; guṇa-karmasu—to results of actions; tān—those; akṛitsna-vidaḥ—persons without knowledge; mandān—the ignorant; kṛitsna-vit—persons with knowledge; na vichālayet—should not unsettle",
+      "translation": {
+        "english": "Those deluded by the modes of nature become attached to the actions of the gunas. But the wise, having complete knowledge, should not disturb those of incomplete understanding.",
+        "hindi": "प्रकृति के गुणों से मोहित लोग गुण-कर्मों में आसक्त हो जाते हैं। परंतु पूर्ण ज्ञान वाला अधूरे ज्ञान वाले मंदबुद्धि लोगों को विचलित न करे।"
+      },
+      "explanation": {
+        "english": "Krishna explains why some people remain attached while others don't: those deluded by the gunas ('guna-sammudha') naturally get attached to actions. However, the fully enlightened ('kritsna-vin') should not disturb ('na vichalayet') those with incomplete understanding ('akritsna-vido'). This teaches patience and compassion in spiritual guidance.",
+        "hindi": "कृष्ण समझाते हैं कि कुछ लोग आसक्त क्यों रहते हैं जबकि अन्य नहीं: गुणों से भ्रमित लोग स्वाभाविक रूप से कर्मों में आसक्त हो जाते हैं। लेकिन पूर्ण प्रबुद्ध व्यक्ति को अधूरी समझ वाले लोगों को परेशान नहीं करना चाहिए। यह आध्यात्मिक मार्गदर्शन में धैर्य और करुणा सिखाता है।"
+      },
+      "keywords": [
+        "deluded",
+        "modes",
+        "attached",
+        "complete",
+        "knowledge",
+        "incomplete",
+        "understanding",
+        "patience"
+      ]
+    },
+    {
+      "id": 149,
+      "chapterNumber": 3,
+      "verseNumber": 30,
+      "sanskrit": "मयि सर्वाणि कर्माणि संन्यस्याध्यात्मचेतसा।\n\nनिराशीर्निर्ममो भूत्वा युध्यस्व विगतज्वरः।।3.30।।",
+      "transliteration": "mayi sarvāṇi karmāṇi sannyasyādhyātma-chetasā\nnirāśhīr nirmamo bhūtvā yudhyasva vigata-jvaraḥ",
+      "wordMeanings": "mayi—unto me; sarvāṇi—all; karmāṇi—works; sannyasya—renouncing completely; adhyātma-chetasā—with the thoughts resting on God; nirāśhīḥ—free from hankering for the results of the actions; nirmamaḥ—without ownership; bhūtvā—so being; yudhyasva—fight; vigata-jvaraḥ—without mental fever",
+      "translation": {
+        "english": "Surrendering all actions to Me with a spiritual consciousness, free from desire, free from possessiveness, and free from mental fever, fight!",
+        "hindi": "आध्यात्मिक चेतना के साथ सभी कर्मों को मुझमें समर्पित करके, आशा रहित, ममता रहित होकर, मानसिक ज्वर से मुक्त होकर युद्ध करो!"
+      },
+      "explanation": {
+        "english": "Krishna gives the final formula for Karma Yoga: surrender all actions to the Divine ('mayi sarvani karmani sannyasya') with spiritual awareness ('adhyatma-chetasa'). This requires being 'nirashi' (desireless), 'nirmama' (without possessiveness), and 'vigata-jvara' (free from anxiety). This is the perfect synthesis of action and surrender.",
+        "hindi": "कृष्ण कर्मयोग का अंतिम सूत्र देते हैं: आध्यात्मिक जागरूकता के साथ सभी कर्मों को दिव्य को समर्पित करना। इसके लिए निराशी (इच्छारहित), निर्मम (ममतारहित), और विगतज्वर (चिंतामुक्त) होना आवश्यक है। यह कर्म और समर्पण का परिपूर्ण संश्लेषण है।"
+      },
+      "keywords": [
+        "surrender",
+        "actions",
+        "spiritual",
+        "consciousness",
+        "desireless",
+        "possessiveness",
+        "anxiety",
+        "synthesis"
+      ]
+    },
+    {
+      "id": 150,
+      "chapterNumber": 3,
+      "verseNumber": 31,
+      "sanskrit": "ये मे मतमिदं नित्यमनुतिष्ठन्ति मानवाः।\n\nश्रद्धावन्तोऽनसूयन्तो मुच्यन्ते तेऽपि कर्मभिः।।3.31।।",
+      "transliteration": "ye me matam idaṁ nityam anutiṣhṭhanti mānavāḥ\nśhraddhāvanto ’nasūyanto muchyante te ’pi karmabhiḥ",
+      "wordMeanings": "ye—who; me—my; matam—teachings; idam—these; nityam—constantly; anutiṣhṭhanti—abide by; mānavāḥ—human beings; śhraddhā-vantaḥ—with profound faith; anasūyantaḥ—free from cavilling; muchyante—become free; te—those; api—also; karmabhiḥ—from the bondage of karma",
+      "translation": {
+        "english": "Those who constantly practice this teaching of Mine with faith and without envy are freed from the bondage of actions.",
+        "hindi": "जो मनुष्य श्रद्धा सहित और दोषदृष्टि के बिना मेरे इस मत का निरंतर अनुसरण करते हैं, वे भी कर्मों से मुक्त हो जाते हैं।"
+      },
+      "explanation": {
+        "english": "Krishna promises liberation to those who follow his teaching with 'shraddha' (faith) and 'anasuyanta' (without envy or criticism). The key is consistent practice ('nityam') and the right attitude. Even ordinary people can achieve freedom from karmic bondage through faithful adherence to these principles.",
+        "hindi": "कृष्ण उन लोगों को मुक्ति का वादा करते हैं जो श्रद्धा और बिना दोषदृष्टि के उनकी शिक्षा का पालन करते हैं। मुख्य बात है निरंतर अभ्यास और सही दृष्टिकोण। साधारण लोग भी इन सिद्धांतों के प्रति निष्ठापूर्वक चलकर कर्म बंधन से मुक्त हो सकते हैं।"
+      },
+      "keywords": [
+        "teaching",
+        "faith",
+        "envy",
+        "freed",
+        "bondage",
+        "practice",
+        "liberation",
+        "attitude"
+      ]
+    },
+    {
+      "id": 151,
+      "chapterNumber": 3,
+      "verseNumber": 32,
+      "sanskrit": "ये त्वेतदभ्यसूयन्तो नानुतिष्ठन्ति मे मतम्।\n\nसर्वज्ञानविमूढांस्तान्विद्धि नष्टानचेतसः।।3.32।।",
+      "transliteration": "ye tvetad abhyasūyanto nānutiṣhṭhanti me matam\nsarva-jñāna-vimūḍhāns tān viddhi naṣhṭān achetasaḥ",
+      "wordMeanings": "ye—those; tu—but; etat—this; abhyasūyantaḥ—cavilling; na—not; anutiṣhṭhanti—follow; me—my; matam—teachings; sarva-jñāna—in all types of knowledge; vimūḍhān—deluded; tān—they are; viddhi—know; naṣhṭān—ruined; achetasaḥ—devoid of discrimination",
+      "translation": {
+        "english": "But those who, out of envy, do not follow this teaching of Mine, know them to be deluded in all knowledge, devoid of discrimination, and doomed to ignorance.",
+        "hindi": "परंतु जो ईर्ष्या से मेरे इस मत का अनुसरण नहीं करते, उन्हें सब ज्ञान में मोहित, विवेकहीन और नष्ट जानो।"
+      },
+      "explanation": {
+        "english": "Krishna warns about the consequences of rejecting this wisdom out of 'abhyasuya' (envy or fault-finding). Such people become 'sarva-jnana-vimudha' (deluded in all knowledge) and 'nashtan acetasa' (lost and devoid of discrimination). Envy and criticism of spiritual teachings leads to spiritual ruin.",
+        "hindi": "कृष्ण ईर्ष्या से इस ज्ञान को ठुकराने के परिणामों की चेतावनी देते हैं। ऐसे लोग सभी ज्ञान में भ्रमित, विवेकहीन और आध्यात्मिक रूप से नष्ट हो जाते हैं। आध्यात्मिक शिक्षाओं की ईर्ष्या और आलोचना आध्यात्मिक विनाश की ओर ले जाती है।"
+      },
+      "keywords": [
+        "envy",
+        "reject",
+        "teaching",
+        "deluded",
+        "knowledge",
+        "discrimination",
+        "ignorance",
+        "ruin"
+      ]
+    },
+    {
+      "id": 152,
+      "chapterNumber": 3,
+      "verseNumber": 33,
+      "sanskrit": "सदृशं चेष्टते स्वस्याः प्रकृतेर्ज्ञानवानपि।\n\nप्रकृतिं यान्ति भूतानि निग्रहः किं करिष्यति।।3.33।।",
+      "transliteration": "sadṛiśhaṁ cheṣhṭate svasyāḥ prakṛiter jñānavān api\nprakṛitiṁ yānti bhūtāni nigrahaḥ kiṁ kariṣhyati",
+      "wordMeanings": "sadṛiśham—accordingly; cheṣhṭate—act; svasyāḥ—by their own; prakṛiteḥ—modes of nature; jñāna-vān—the wise; api—even; prakṛitim—nature; yānti—follow; bhūtāni—all living beings; nigrahaḥ—repression; kim—what; kariṣhyati—will do",
+      "translation": {
+        "english": "Even a person of knowledge acts according to their own nature. All living beings follow their nature; what can repression accomplish?",
+        "hindi": "ज्ञानी पुरुष भी अपने स्वभाव के अनुसार चेष्टा करता है। सभी प्राणी प्रकृति का अनुसरण करते हैं; दमन क्या कर सकता है?"
+      },
+      "explanation": {
+        "english": "Krishna acknowledges that even wise people act according to their nature ('prakriti'). Since all beings naturally follow their inherent tendencies, forceful repression ('nigraha') is futile. This suggests that transformation should work with nature, not against it, through gradual purification rather than violent suppression.",
+        "hindi": "कृष्ण स्वीकार करते हैं कि बुद्धिमान लोग भी अपने स्वभाव के अनुसार कार्य करते हैं। चूंकि सभी प्राणी स्वाभाविक रूप से अपनी प्रवृत्तियों का पालन करते हैं, जबरदस्त दमन व्यर्थ है। यह सुझाता है कि परिवर्तन हिंसक दमन के बजाय क्रमिक शुद्धीकरण के माध्यम से प्रकृति के साथ काम करना चाहिए।"
+      },
+      "keywords": [
+        "knowledge",
+        "nature",
+        "beings",
+        "follow",
+        "repression",
+        "futile",
+        "transformation",
+        "purification"
+      ]
+    },
+    {
+      "id": 153,
+      "chapterNumber": 3,
+      "verseNumber": 34,
+      "sanskrit": "इन्द्रियस्येन्द्रियस्यार्थे रागद्वेषौ व्यवस्थितौ।\n\nतयोर्न वशमागच्छेत्तौ ह्यस्य परिपन्थिनौ।।3.34।।",
+      "transliteration": "indriyasyendriyasyārthe rāga-dveṣhau vyavasthitau\ntayor na vaśham āgachchhet tau hyasya paripanthinau",
+      "wordMeanings": "indriyasya—of the senses; indriyasya arthe—in the sense objects; rāga—attachment; dveṣhau—aversion; vyavasthitau—situated; tayoḥ—of them; na—never; vaśham—be controlled; āgachchhet—should become; tau—those; hi—certainly; asya—for him; paripanthinau—foes",
+      "translation": {
+        "english": "In every sense and its objects, attraction and aversion are firmly rooted. One should not come under their control, for they are one's enemies on the path.",
+        "hindi": "हर इंद्रिय में उसके विषय के प्रति राग और द्वेष स्थित हैं। इनके वश में नहीं आना चाहिए, क्योंकि ये मार्ग में बाधक हैं।"
+      },
+      "explanation": {
+        "english": "Krishna identifies the root problem: 'raga' (attraction) and 'dvesha' (aversion) are naturally established in the relationship between senses and their objects. These are called 'paripanthinau' (enemies on the path) because they create bondage. The key is not to come under their control ('na vasham agachchhet').",
+        "hindi": "कृष्ण मूल समस्या की पहचान करते हैं: इंद्रियों और उनके विषयों के संबंध में राग और द्वेष स्वाभाविक रूप से स्थापित हैं। इन्हें 'परिपंथिनौ' (मार्ग के शत्रु) कहा गया है क्योंकि ये बंधन बनाते हैं। मुख्य बात है इनके नियंत्रण में न आना।"
+      },
+      "keywords": [
+        "senses",
+        "objects",
+        "attraction",
+        "aversion",
+        "control",
+        "enemies",
+        "path",
+        "bondage"
+      ]
+    },
+    {
+      "id": 154,
+      "chapterNumber": 3,
+      "verseNumber": 35,
+      "sanskrit": "श्रेयान्स्वधर्मो विगुणः परधर्मात्स्वनुष्ठितात्।\n\nस्वधर्मे निधनं श्रेयः परधर्मो भयावहः।।3.35।।",
+      "transliteration": "śhreyān swa-dharmo viguṇaḥ para-dharmāt sv-anuṣhṭhitāt\nswa-dharme nidhanaṁ śhreyaḥ para-dharmo bhayāvahaḥ",
+      "wordMeanings": "śhreyān—better; swa-dharmaḥ—personal duty; viguṇaḥ—tinged with faults; para-dharmāt—than another’s prescribed duties; su-anuṣhṭhitāt—perfectly done; swa-dharme—in one’s personal duties; nidhanam—death; śhreyaḥ—better; para-dharmaḥ—duties prescribed for others; bhaya-āvahaḥ—fraught with fear",
+      "translation": {
+        "english": "Better is one's own dharma, though imperfectly performed, than the dharma of another well performed. Better is death in one's own dharma; the dharma of another is fraught with danger.",
+        "hindi": "दूसरे के धर्म से अच्छी तरह आचरण किए गए से भी अपना धर्म, यद्यपि दोषयुक्त हो, श्रेयस्कर है। अपने धर्म में मृत्यु भी कल्याणकारी है; पराया धर्म भयकारक है।"
+      },
+      "explanation": {
+        "english": "This is one of the Gita's most important teachings about svadharma (one's own duty). Even if performed imperfectly ('viguna'), one's own dharma is superior to another's dharma performed well. The reason: 'para-dharma' (another's path) is 'bhayavaha' (dangerous) because it goes against one's natural constitution and spiritual development.",
+        "hindi": "यह गीता की स्वधर्म के बारे में सबसे महत्वपूर्ण शिक्षाओं में से एक है। दोषपूर्ण रूप से किया गया भी अपना धर्म दूसरे के अच्छी तरह किए गए धर्म से श्रेष्ठ है। कारण: पराया धर्म खतरनाक है क्योंकि यह व्यक्ति की प्राकृतिक संरचना और आध्यात्मिक विकास के विपरीत है।"
+      },
+      "keywords": [
+        "svadharma",
+        "own duty",
+        "imperfect",
+        "another's dharma",
+        "death",
+        "better",
+        "danger",
+        "constitution"
+      ]
+    },
+    {
+      "id": 155,
+      "chapterNumber": 3,
+      "verseNumber": 36,
+      "sanskrit": "अर्जुन उवाच\n\nअथ केन प्रयुक्तोऽयं पापं चरति पूरुषः।\n\nअनिच्छन्नपि वार्ष्णेय बलादिव नियोजितः।।3.36।।",
+      "transliteration": "arjuna uvācha\natha kena prayukto ’yaṁ pāpaṁ charati pūruṣhaḥ\nanichchhann api vārṣhṇeya balād iva niyojitaḥ",
+      "wordMeanings": "arjunaḥ uvācha—Arjun said; atha—then; kena—by what; prayuktaḥ—impelled; ayam—one; pāpam—sins; charati—commit; pūruṣhaḥ—a person; anichchhan—unwillingly; api—even; vārṣhṇeya—he who belongs to the Vrishni clan, Shree Krishna; balāt—by force; iva—as if; niyojitaḥ—engaged",
+      "translation": {
+        "english": "Arjuna said: O Varshneya (Krishna), by what is a person driven to commit sin, even unwillingly, as if compelled by force?",
+        "hindi": "अर्जुन ने कहा: हे वृष्णिनंदन, मनुष्य किस के द्वारा प्रेरित होकर, न चाहते हुए भी, मानो बलपूर्वक लगाया गया हो, पाप करता है?"
+      },
+      "explanation": {
+        "english": "Arjuna asks a profound question about human psychology: what force compels people to sin against their better judgment? He uses the word 'anichchhan' (unwillingly) and 'balat' (by force), showing he understands that people often act against their conscious will. This question addresses the universal human experience of moral conflict.",
+        "hindi": "अर्जुन मानव मनोविज्ञान के बारे में गहरा प्रश्न पूछते हैं: कौन सी शक्ति लोगों को अपने बेहतर निर्णय के विरुद्ध पाप करने पर मजबूर करती है? वे 'अनिच्छन्' और 'बलात्' शब्द का प्रयोग करते हैं, दिखाते हुए कि वे समझते हैं कि लोग अक्सर अपनी सचेत इच्छा के विरुद्ध कार्य करते हैं। यह प्रश्न नैतिक संघर्ष के सार्वभौमिक मानवीय अनुभव को संबोधित करता है।"
+      },
+      "keywords": [
+        "arjuna",
+        "driven",
+        "sin",
+        "unwillingly",
+        "compelled",
+        "force",
+        "psychology",
+        "moral conflict"
+      ]
+    },
+    {
+      "id": 156,
+      "chapterNumber": 3,
+      "verseNumber": 37,
+      "sanskrit": "श्री भगवानुवाच\n\nकाम एष क्रोध एष रजोगुणसमुद्भवः।\n\nमहाशनो महापाप्मा विद्ध्येनमिह वैरिणम्।।3.37।।",
+      "transliteration": "śhrī bhagavān uvācha\nkāma eṣha krodha eṣha rajo-guṇa-samudbhavaḥ\nmahāśhano mahā-pāpmā viddhyenam iha vairiṇam",
+      "wordMeanings": "śhri-bhagavān uvācha—the Supreme Lord said; kāmaḥ—desire; eṣhaḥ—this; krodhaḥ—wrath; eṣhaḥ—this; rajaḥ-guṇa—the mode of passion; samudbhavaḥ—born of; mahā-aśhanaḥ—all-devouring; mahā-pāpmā—greatly sinful; viddhi—know; enam—this; iha—in the material world; vairiṇam—the enemy",
+      "translation": {
+        "english": "The Supreme Lord said: It is desire, it is anger, born of the mode of passion. It is all-consuming and most sinful. Know this to be the enemy here.",
+        "hindi": "श्री भगवान ने कहा: यह काम है, यह क्रोध है, रजोगुण से उत्पन्न होने वाला। यह महान भक्षक और महान पापी है। इसे यहाँ शत्रु जानो।"
+      },
+      "explanation": {
+        "english": "Krishna identifies the culprit: 'kama' (desire/lust) and 'krodha' (anger), born from 'rajas' (passion). These are described as 'mahashana' (great devourer) and 'maha-papma' (great sin). He calls them 'vairinam' (enemy). This verse reveals that the real enemy is not external but internal - our own desires and anger.",
+        "hindi": "कृष्ण अपराधी की पहचान करते हैं: काम और क्रोध, जो रजोगुण से पैदा होते हैं। इन्हें 'महाशन' (महान भक्षक) और 'महापाप्मा' (महान पापी) कहा गया है। वे इन्हें 'वैरिणम्' (शत्रु) कहते हैं। यह श्लोक प्रकट करता है कि असली शत्रु बाहरी नहीं बल्कि आंतरिक है - हमारी अपनी इच्छाएं और क्रोध।"
+      },
+      "keywords": [
+        "desire",
+        "anger",
+        "passion",
+        "rajas",
+        "devourer",
+        "sinful",
+        "enemy",
+        "internal"
+      ]
+    },
+    {
+      "id": 157,
+      "chapterNumber": 3,
+      "verseNumber": 38,
+      "sanskrit": "धूमेनाव्रियते वह्निर्यथाऽऽदर्शो मलेन च।\n\nयथोल्बेनावृतो गर्भस्तथा तेनेदमावृतम्।।3.38।।",
+      "transliteration": "dhūmenāvriyate vahnir yathādarśho malena cha\nyatholbenāvṛito garbhas tathā tenedam āvṛitam",
+      "wordMeanings": "dhūmena—by smoke; āvriyate—is covered; vahniḥ—fire; yathā—just as; ādarśhaḥ—mirror; malena—by dust; cha—also; yathā—just as; ulbena—by the womb; āvṛitaḥ—is covered; garbhaḥ—embryo; tathā—similarly; tena—by that (desire); idam—this; āvṛitam—is covered",
+      "translation": {
+        "english": "As fire is covered by smoke, as a mirror is covered by dust, and as an embryo is covered by the womb, so is wisdom covered by desire.",
+        "hindi": "जैसे धुएं से अग्नि ढकी जाती है, जैसे मैल से दर्पण ढका जाता है, और जैसे जेर से गर्भ ढका रहता है, वैसे ही इससे यह (ज्ञान) ढका रहता है।"
+      },
+      "explanation": {
+        "english": "Krishna uses three analogies to show how desire covers wisdom: fire covered by smoke (temporary covering), mirror covered by dust (removable covering), and embryo covered by womb (natural but temporary covering). These show different degrees of concealment and suggest that wisdom can be recovered by removing the covering of desire.",
+        "hindi": "कृष्ण तीन उदाहरण देते हैं यह दिखाने के लिए कि कैसे काम ज्ञान को ढकता है: धुएं से ढकी आग (अस्थायी आवरण), धूल से ढका दर्पण (हटाने योग्य आवरण), और गर्भाशय से ढका भ्रूण (प्राकृतिक लेकिन अस्थायी)। ये अलग-अलग स्तर के आवरण दिखाते हैं और सुझाते हैं कि काम का आवरण हटाकर ज्ञान वापस पाया जा सकता है।"
+      },
+      "keywords": [
+        "fire",
+        "smoke",
+        "mirror",
+        "dust",
+        "embryo",
+        "womb",
+        "wisdom",
+        "covered"
+      ]
+    },
+    {
+      "id": 158,
+      "chapterNumber": 3,
+      "verseNumber": 39,
+      "sanskrit": "आवृतं ज्ञानमेतेन ज्ञानिनो नित्यवैरिणा।\n\nकामरूपेण कौन्तेय दुष्पूरेणानलेन च।।3.39।।",
+      "transliteration": "āvṛitaṁ jñānam etena jñānino nitya-vairiṇā\nkāma-rūpeṇa kaunteya duṣhpūreṇānalena cha",
+      "wordMeanings": "āvṛitam—covered; jñānam—knowledge; etena—by this; jñāninaḥ—of the wise; nitya-vairiṇā—by the perpetual enemy; kāma-rūpeṇa—in the form of desires; kaunteya—Arjun the son of Kunti; duṣhpūreṇa—insatiable; analena—like fire; cha—and",
+      "translation": {
+        "english": "Wisdom is covered by this eternal enemy of the wise in the form of desire, which is insatiable like fire, O son of Kunti.",
+        "hindi": "हे कुन्तीपुत्र, ज्ञानी के इस नित्य शत्रु काम रूप, दुष्पूर अग्नि के समान से ज्ञान ढका रहता है।"
+      },
+      "explanation": {
+        "english": "Krishna elaborates that desire is the 'nitya-vairin' (eternal enemy) of the wise ('jnanino'). It's described as 'dushpurena analena' (insatiable fire) - like fire that can never be completely satisfied, desire keeps growing when fed. This explains why temporary satisfaction of desires doesn't bring lasting peace.",
+        "hindi": "कृष्ण विस्तार से बताते हैं कि काम ज्ञानी का 'नित्य-वैरी' (शाश्वत शत्रु) है। इसे 'दुष्पूरेणानलेन' (अतृप्त अग्नि) कहा गया है - आग की तरह जो कभी पूरी तरह संतुष्ट नहीं हो सकती, काम खिलाने पर बढ़ता रहता है। यह समझाता है कि इच्छाओं की अस्थायी संतुष्टि स्थायी शांति नहीं लाती।"
+      },
+      "keywords": [
+        "wisdom",
+        "eternal",
+        "enemy",
+        "wise",
+        "desire",
+        "insatiable",
+        "fire",
+        "satisfaction"
+      ]
+    },
+    {
+      "id": 159,
+      "chapterNumber": 3,
+      "verseNumber": 40,
+      "sanskrit": "इन्द्रियाणि मनो बुद्धिरस्याधिष्ठानमुच्यते।\n\nएतैर्विमोहयत्येष ज्ञानमावृत्य देहिनम्।।3.40।।",
+      "transliteration": "indriyāṇi mano buddhir asyādhiṣhṭhānam uchyate\netair vimohayatyeṣha jñānam āvṛitya dehinam",
+      "wordMeanings": "indriyāṇi—the senses; manaḥ—the mind; buddhiḥ—the intellect; asya—of this; adhiṣhṭhānam—dwelling place; uchyate—are said to be; etaiḥ—by these; vimohayati—deludes; eṣhaḥ—this; jñānam—knowledge; āvṛitya—clouds; dehinam—the embodied soul",
+      "translation": {
+        "english": "The senses, mind, and intellect are said to be its seats. Through these it deludes the embodied soul by veiling wisdom.",
+        "hindi": "इंद्रियां, मन और बुद्धि इसके अधिष्ठान कहे जाते हैं। इनके द्वारा यह ज्ञान को आवृत करके देही को मोहित करता है।"
+      },
+      "explanation": {
+        "english": "Krishna identifies the three-fold base ('adhishthanam') of desire: senses ('indriyani'), mind ('mano'), and intellect ('buddhi'). Through these instruments, desire deludes ('vimohayati') the embodied soul ('dehinam') by covering wisdom. This shows how desire operates at all levels of human consciousness - sensory, mental, and intellectual.",
+        "hindi": "कृष्ण काम के तीन आधारों की पहचान करते हैं: इंद्रियां, मन, और बुद्धि। इन साधनों के माध्यम से काम ज्ञान को ढककर जीवात्मा को भ्रमित करता है। यह दिखाता है कि काम मानवीय चेतना के सभी स्तरों - संवेदी, मानसिक, और बौद्धिक - पर कैसे काम करता है।"
+      },
+      "keywords": [
+        "senses",
+        "mind",
+        "intellect",
+        "seats",
+        "deludes",
+        "embodied",
+        "soul",
+        "consciousness"
+      ]
+    },
+    {
+      "id": 160,
+      "chapterNumber": 3,
+      "verseNumber": 41,
+      "sanskrit": "तस्मात्त्वमिन्द्रियाण्यादौ नियम्य भरतर्षभ।\n\nपाप्मानं प्रजहि ह्येनं ज्ञानविज्ञाननाशनम्।।3.41।।",
+      "transliteration": "tasmāt tvam indriyāṇyādau niyamya bharatarṣhabha\npāpmānaṁ prajahi hyenaṁ jñāna-vijñāna-nāśhanam",
+      "wordMeanings": "tasmāt—therefore; tvam—you; indriyāṇi—senses; ādau—in the very beginning; niyamya—having controlled; bharata-ṛiṣhabha—Arjun, the best of the Bharatas; pāpmānam—the sinful; prajahi—slay; hi—certainly; enam—this; jñāna—knowledge; vijñāna—realization; nāśhanam—the destroyer",
+      "translation": {
+        "english": "Therefore, O best of the Bharatas, first controlling the senses, slay this sinful enemy that destroys knowledge and realization.",
+        "hindi": "इसलिए हे भरतश्रेष्ठ, पहले इंद्रियों को वश में करके इस ज्ञान-विज्ञान के नाशक पापी को मार डालो।"
+      },
+      "explanation": {
+        "english": "Krishna gives the practical solution: first control the senses ('indriyani adau niyamya'), then destroy this enemy. He calls desire 'jnana-vijnana-nashanam' (destroyer of both theoretical knowledge and practical realization). The word 'adau' (first) indicates that sense control is the foundational step in spiritual practice.",
+        "hindi": "कृष्ण व्यावहारिक समाधान देते हैं: पहले इंद्रियों को काबू में करो, फिर इस शत्रु को नष्ट करो। वे काम को 'ज्ञान-विज्ञान-नाशनम्' (सैद्धांतिक ज्ञान और व्यावहारिक साक्षात्कार दोनों का नाशक) कहते हैं। 'आदौ' (पहले) शब्द बताता है कि इंद्रिय नियंत्रण आध्यात्मिक अभ्यास का आधारभूत कदम है।"
+      },
+      "keywords": [
+        "control",
+        "senses",
+        "first",
+        "slay",
+        "sinful",
+        "enemy",
+        "knowledge",
+        "realization"
+      ]
+    },
+    {
+      "id": 161,
+      "chapterNumber": 3,
+      "verseNumber": 42,
+      "sanskrit": "इन्द्रियाणि पराण्याहुरिन्द्रियेभ्यः परं मनः।\n\nमनसस्तु परा बुद्धिर्यो बुद्धेः परतस्तु सः।।3.42।।",
+      "transliteration": "indriyāṇi parāṇyāhur indriyebhyaḥ paraṁ manaḥ\nmanasas tu parā buddhir yo buddheḥ paratas tu saḥ",
+      "wordMeanings": "indriyāṇi—senses; parāṇi—superior; āhuḥ—are said; indriyebhyaḥ—than the senses; param—superior; manaḥ—the mind; manasaḥ—than the mind; tu—but; parā—superior; buddhiḥ—intellect; yaḥ—who; buddheḥ—than the intellect; parataḥ—more superior; tu—but; saḥ—that (soul)",
+      "translation": {
+        "english": "The senses are said to be superior to the gross body; superior to the senses is the mind; superior to the mind is the intellect; and superior to the intellect is the Self.",
+        "hindi": "इंद्रियां स्थूल शरीर से श्रेष्ठ कही जाती हैं; इंद्रियों से श्रेष्ठ मन है; मन से श्रेष्ठ बुद्धि है; और बुद्धि से जो श्रेष्ठ है वह आत्मा है।"
+      },
+      "explanation": {
+        "english": "Krishna presents the hierarchy of human faculties: body < senses < mind < intellect < Self. This ascending order shows the progressive refinement of consciousness. Understanding this hierarchy is crucial for spiritual strategy - we must use the higher to control the lower, ultimately using the Self (atman) to master all other faculties.",
+        "hindi": "कृष्ण मानवीय शक्तियों का क्रम प्रस्तुत करते हैं: शरीर < इंद्रियां < मन < बुद्धि < आत्मा। यह आरोही क्रम चेतना के क्रमिक परिशोधन को दिखाता है। इस क्रम को समझना आध्यात्मिक रणनीति के लिए महत्वपूर्ण है - हमें निम्न को नियंत्रित करने के लिए उच्च का उपयोग करना चाहिए, अंततः सभी अन्य शक्तियों में महारत के लिए आत्मा का उपयोग करना चाहिए।"
+      },
+      "keywords": [
+        "hierarchy",
+        "senses",
+        "mind",
+        "intellect",
+        "self",
+        "superior",
+        "consciousness",
+        "strategy"
+      ]
+    },
+    {
+      "id": 162,
+      "chapterNumber": 3,
+      "verseNumber": 43,
+      "sanskrit": "एवं बुद्धेः परं बुद्ध्वा संस्तभ्यात्मानमात्मना।\n\nजहि शत्रुं महाबाहो कामरूपं दुरासदम्।।3.43।।",
+      "transliteration": "evaṁ buddheḥ paraṁ buddhvā sanstabhyātmānam ātmanā\njahi śhatruṁ mahā-bāho kāma-rūpaṁ durāsadam",
+      "wordMeanings": "evam—thus; buddheḥ—than the intellect; param—superior; buddhvā—knowing; sanstabhya—subdue; ātmānam—the lower self (senses, mind, and intellect); ātmanā—by higher self (soul); jahi—kill; śhatrum—the enemy; mahā-bāho—mighty-armed one; kāma-rūpam—in the form of desire; durāsadam—formidable",
+      "translation": {
+        "english": "Thus, knowing the Self to be superior to the intellect, and steadying the mind by the Self, slay that mighty enemy in the form of desire, O mighty-armed one.",
+        "hindi": "इस प्रकार बुद्धि से परे आत्मा को जानकर और आत्मा के द्वारा मन को स्थिर करके, हे महाबाहो, काम रूपी इस दुर्जेय शत्रु को मार डालो।"
+      },
+      "explanation": {
+        "english": "Krishna concludes with the final strategy: realize the Self as superior to intellect ('buddheḥ paraṁ buddhvā'), use the Self to steady the mind ('saṁstabhya ātmānam ātmanā'), and then destroy the enemy desire. The word 'durāsadam' (difficult to conquer) shows that this victory requires the highest spiritual power - the Self itself.",
+        "hindi": "कृष्ण अंतिम रणनीति के साथ समाप्त करते हैं: आत्मा को बुद्धि से श्रेष्ठ समझो, आत्मा के द्वारा मन को स्थिर करो, और फिर शत्रु काम को नष्ट करो। 'दुरासदम्' (जीतने में कठिन) शब्द दिखाता है कि इस विजय के लिए सर्वोच्च आध्यात्मिक शक्ति - स्वयं आत्मा की आवश्यकता है।"
+      },
+      "keywords": [
+        "self",
+        "superior",
+        "intellect",
+        "steadying",
+        "mind",
+        "enemy",
+        "desire",
+        "conquer"
+      ]
+    }
+  ]
+}
