@@ -966,7 +966,7 @@ label {
 
 /* Hero */
 .hero-section {
-    padding: 32px 0 64px;
+    padding: 44px 0 72px;
 }
 
 .hero-container {
@@ -1236,7 +1236,7 @@ label {
    Four Sacred Yogas Section (चतुर्योग मार्ग)
    -------------------------------------------------------------------------- */
 .yogas-section {
-    padding: 48px 0;
+    padding: 68px 0;
     border-top: 1px solid rgba(255, 255, 255, 0.06);
 }
 
@@ -1353,7 +1353,7 @@ label {
    Parthasarathi Socratic Counsel Feature Spotlight
    -------------------------------------------------------------------------- */
 .counsel-showcase-section {
-    padding: 48px 0;
+    padding: 68px 0;
 }
 
 .counsel-showcase-card {
@@ -1361,7 +1361,7 @@ label {
     border: 1px solid rgba(255, 255, 255, 0.08);
     border-top: 1px solid rgba(212, 175, 55, 0.4);
     border-radius: 16px;
-    padding: 44px 48px;
+    padding: 52px 56px;
     position: relative;
     overflow: hidden;
 }
@@ -1451,7 +1451,7 @@ label {
    Prashna-Marg Dilemma Showcase Grid on Home
    -------------------------------------------------------------------------- */
 .home-dilemmas-section {
-    padding: 48px 0;
+    padding: 68px 0;
     border-top: 1px solid rgba(255, 255, 255, 0.06);
 }
 
@@ -1514,8 +1514,16 @@ label {
     margin-bottom: 10px;
 }
 
+.dilemma-index {
+    font-family: var(--sp-font-mono, monospace);
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    color: var(--sp-accent);
+}
+
 .dilemma-icon {
-    font-size: 20px;
+    font-size: 16px;
 }
 
 .dilemma-state-title {
@@ -1567,7 +1575,7 @@ label {
    Sacred 432 Hz Soundscape Banner on Home
    -------------------------------------------------------------------------- */
 .home-soundscape-section {
-    padding: 48px 0;
+    padding: 68px 0;
     border-top: 1px solid rgba(255, 255, 255, 0.06);
 }
 
@@ -1580,7 +1588,7 @@ label {
     border: 1px solid rgba(255, 255, 255, 0.08);
     border-left: 3px solid var(--sp-accent);
     border-radius: 14px;
-    padding: 38px 42px;
+    padding: 44px 50px;
 }
 
 [data-theme="light"] .soundscape-card-inner {
@@ -1627,8 +1635,8 @@ label {
    Site Footer (Vedic Colophon & Comprehensive Directory)
    -------------------------------------------------------------------------- */
 .site-footer {
-    margin-top: 64px;
-    padding: 56px 0 36px;
+    margin-top: 88px;
+    padding: 72px 0 44px;
     border-top: 1px solid rgba(255, 255, 255, 0.08);
 }
 
@@ -1724,14 +1732,20 @@ label {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-top: 24px;
+    padding-top: 28px;
     border-top: 1px solid rgba(255, 255, 255, 0.05);
     flex-wrap: wrap;
-    gap: 16px;
+    gap: 20px;
 }
 
 [data-theme="light"] .footer-bottom {
     border-top-color: rgba(0, 0, 0, 0.06);
+}
+
+.footer-brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
 }
 
 .footer-brand-name {
@@ -1740,7 +1754,6 @@ label {
     font-weight: 700;
     letter-spacing: 0.12em;
     color: var(--sp-text);
-    margin-right: 12px;
 }
 
 .footer-brand-tag {
@@ -1748,10 +1761,38 @@ label {
     color: var(--sp-text-tertiary);
 }
 
+.footer-craft-signature {
+    font-family: var(--sp-font-mono, monospace);
+    font-size: 11.5px;
+    font-weight: 500;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--sp-text-tertiary);
+}
+
+.footer-craft-signature a {
+    color: var(--sp-accent);
+    text-decoration: none;
+    font-weight: 600;
+    border-bottom: 1px solid rgba(212, 175, 55, 0.35);
+    padding-bottom: 1px;
+    transition: all var(--sp-duration-sm) var(--sp-ease);
+}
+
+.footer-craft-signature a:hover {
+    color: #FFFFFF;
+    border-bottom-color: #FFFFFF;
+}
+
+[data-theme="light"] .footer-craft-signature a:hover {
+    color: #000000;
+    border-bottom-color: #000000;
+}
+
 .footer-back-to-top {
     font-size: 12px;
     font-weight: 600;
-    letter-spacing: 0.03em;
+    letter-spacing: 0.04em;
     color: var(--sp-text-secondary);
     background: transparent;
     border: none;

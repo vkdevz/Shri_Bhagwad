@@ -358,10 +358,10 @@ class GitaApp {
                 const btn = document.getElementById('daily-card-listen-btn');
                 if (btn) {
                     btn.innerHTML = isPlaying
-                        ? '<span>🎵 <strong>432 Hz Playing</strong></span>'
-                        : '<span>🎵 432 Hz Drone</span>';
+                        ? '<span><strong>Stillness Active</strong></span>'
+                        : '<span>Stillness ↗</span>';
                 }
-                this.showToast(isPlaying ? '432 Hz Tanpura Drone Started 🧘' : 'Drone Stopped', 'info');
+                this.showToast(isPlaying ? 'Meditative Soundscape Started' : 'Soundscape Paused', 'info');
             }
         });
         document.getElementById('daily-card-reflect-btn')?.addEventListener('click', (e) => {
@@ -569,9 +569,9 @@ class GitaApp {
                 if (window.dhyanaAudio) {
                     const isPlaying = window.dhyanaAudio.toggleDrone();
                     homeDhyanaToggle.innerHTML = isPlaying
-                        ? '<span>🔊 <strong>432 Hz Drone Active</strong></span>'
-                        : '<span>▶ Play 432 Hz Drone</span>';
-                    this.showToast(isPlaying ? '432 Hz Sacred Drone Started 🧘' : 'Drone Paused', 'info');
+                        ? '<span><strong>Stillness Active</strong></span>'
+                        : '<span>Harmonic Stillness</span>';
+                    this.showToast(isPlaying ? 'Meditative Stillness Begun' : 'Stillness Paused', 'info');
                 }
             });
         }
