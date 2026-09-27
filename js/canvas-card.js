@@ -59,7 +59,7 @@ class DivineCanvasGenerator {
      */
     static async generateCardCanvas(verse, chapterTitle, options = {}) {
         const themeKey = options.theme || 'midnight';
-        const language = options.language || 'english'; // 'english', 'hindi', 'dual'
+        const language = options.language || 'hindi'; // 'hindi', 'english', 'dual'
         const showWatermark = options.showWatermark !== false;
         const watermarkOpacity = options.watermarkOpacity || 0.06;
         const theme = DivineCanvasGenerator.THEMES[themeKey] || DivineCanvasGenerator.THEMES.midnight;

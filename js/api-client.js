@@ -164,7 +164,7 @@ class GitaApiClient {
     }
 
     // Ask Parthasarathi AI Advisor
-    async askAdvisor(query, mood, language = 'english') {
+    async askAdvisor(query, mood, language = 'hindi') {
         if (this.isApiAvailable) {
             try {
                 const res = await fetch(`${this.baseUrl}/advisor/ask`, {

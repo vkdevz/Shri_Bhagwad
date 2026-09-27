@@ -13,7 +13,7 @@ class GitaApp {
             fontSize: 16,
             autoReveal: false,
             hapticFeedback: true,
-            language: 'english' // Default language
+            language: 'hindi' // Default language is Hindi
         };
         this.touchStart = { x: 0, y: 0 };
         this.touchEnd = { x: 0, y: 0 };
@@ -151,6 +151,12 @@ class GitaApp {
             const savedSettings = localStorage.getItem('gita-settings');
             if (savedSettings) {
                 this.settings = { ...this.settings, ...JSON.parse(savedSettings) };
+                // Ensure Hindi is default unless user has manually chosen another language
+                if (!localStorage.getItem('gita-language-chosen')) {
+                    this.settings.language = 'hindi';
+                }
+            } else {
+                this.settings.language = 'hindi';
             }
 
             const savedPosition = localStorage.getItem('gita-current-position');
@@ -862,10 +868,12 @@ class GitaApp {
     // Language functions
     toggleLanguage() {
         this.settings.language = this.settings.language === 'english' ? 'hindi' : 'english';
+        localStorage.setItem('gita-language-chosen', 'true');
         this.saveUserData();
         this.updateLanguageButton();
         this.refreshCurrentView();
-        this.showToast(`Language switched to ${this.settings.language.charAt(0).toUpperCase() + this.settings.language.slice(1)}`, 'success');
+        const langName = this.settings.language === 'hindi' ? 'हिन्दी' : 'English';
+        this.showToast(`भाषा: ${langName}`, 'success');
     }
 
     updateLanguageButton() {
