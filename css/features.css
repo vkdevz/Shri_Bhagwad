@@ -1,783 +1,516 @@
-/* ==========================================================================
-   PRASHNA-MARG (DILEMMAS), DHYANA, AI COUNSEL & 3:4 SOCIAL CARD STYLES
-   Human-Crafted Editorial System: Zero pills, zero neon, zero glowing halos.
-   ========================================================================== */
+/* ============================================================================
+   ShlokPath — Feature Styles (Modals, Canvas Card, AI Counsel, Journal)
+   ============================================================================ */
 
-/* ==========================================================================
-   1. MODAL FRAMEWORK & OVERLAYS
-   ========================================================================== */
+/* --------------------------------------------------------------------------
+   1. MODAL OVERLAY & BASE
+   -------------------------------------------------------------------------- */
 .gita-modal-overlay {
     position: fixed;
     inset: 0;
-    background: rgba(10, 11, 14, 0.85);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
+    z-index: 2000;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 1.5rem;
-    z-index: 2000;
-    opacity: 1;
-    visibility: visible;
-    transition: opacity 0.25s ease, visibility 0.25s ease;
+    background: var(--sp-overlay);
+    padding: var(--sp-space-4);
+    animation: sp-modal-fade-in var(--sp-duration-md) var(--sp-ease);
 }
 
-.gita-modal-overlay.hidden {
-    opacity: 0;
-    visibility: hidden;
-    pointer-events: none;
+@keyframes sp-modal-fade-in {
+    from { opacity: 0; }
+    to   { opacity: 1; }
 }
 
 .gita-modal-content {
-    background: var(--color-surface);
-    border: 1px solid var(--color-card-border);
-    border-radius: var(--radius-md);
     width: 100%;
-    max-width: 580px;
-    max-height: 90vh;
+    max-width: 640px;
+    max-height: 85vh;
+    background: var(--sp-bg-card);
+    border: 1px solid var(--sp-border);
+    border-radius: var(--sp-radius-lg);
+    box-shadow: var(--sp-shadow-xl);
     display: flex;
     flex-direction: column;
-    box-shadow: var(--shadow-lg);
     overflow: hidden;
-    animation: modalIn 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+    animation: sp-modal-slide-in var(--sp-duration-md) var(--sp-ease);
 }
 
-@keyframes modalIn {
-    from { opacity: 0; transform: translateY(12px); }
-    to { opacity: 1; transform: translateY(0); }
+@keyframes sp-modal-slide-in {
+    from { opacity: 0; transform: translateY(8px); }
+    to   { opacity: 1; transform: translateY(0); }
 }
 
 .gita-modal-header {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-between;
-    padding: 1.25rem 1.5rem;
-    border-bottom: 1px solid var(--color-card-border);
-    background: var(--color-surface);
+    padding: var(--sp-space-5) var(--sp-space-5) var(--sp-space-4);
+    border-bottom: 1px solid var(--sp-border);
+    flex-shrink: 0;
 }
 
 .gita-modal-header h3 {
-    font-family: var(--font-heading);
-    color: var(--color-text);
-    font-size: 1.15rem;
-    letter-spacing: 0.5px;
-    margin: 0;
+    font-family: var(--sp-font-heading);
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 2px;
+}
+
+.gita-modal-header span,
+.modal-subtitle {
+    font-size: 12px;
+    color: var(--sp-accent);
+    font-weight: 500;
 }
 
 .modal-close-btn {
-    background: none;
-    border: none;
-    color: var(--color-text-dim);
-    font-size: 1.5rem;
-    cursor: pointer;
-    line-height: 1;
-    padding: 0.25rem;
-    transition: color var(--transition-fast);
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    color: var(--sp-text-tertiary);
+    border-radius: var(--sp-radius-sm);
+    flex-shrink: 0;
+    transition: color var(--sp-duration-sm), background var(--sp-duration-sm);
 }
 
 .modal-close-btn:hover {
-    color: var(--color-text);
+    color: var(--sp-text);
+    background: var(--sp-bg-elevated);
 }
 
 .gita-modal-body {
-    padding: 1.5rem;
+    flex: 1;
     overflow-y: auto;
-    display: flex;
-    flex-direction: column;
-    gap: 1.25rem;
+    padding: var(--sp-space-5);
 }
 
-/* ==========================================================================
-   2. 3:4 QUOTE CARD GENERATOR MODAL (FINE-ART PRINT EDITION)
-   ========================================================================== */
+/* --------------------------------------------------------------------------
+   2. CANVAS MODAL (3:4 Quote Card Generator)
+   -------------------------------------------------------------------------- */
 .canvas-modal-layout {
-    max-width: 920px;
-    max-height: 92vh;
+    max-width: 880px;
 }
 
 .canvas-modal-body-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 2rem;
-    padding: 1.75rem;
+    gap: var(--sp-space-5);
+    padding: var(--sp-space-5);
     overflow-y: auto;
-    align-items: start;
+    max-height: calc(85vh - 70px);
 }
 
-/* 3:4 Canvas Preview Container */
+/* Preview Column */
 .canvas-preview-wrapper {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    gap: 0.75rem;
+    gap: var(--sp-space-3);
 }
 
 .canvas-aspect-box {
-    width: 100%;
-    max-width: 360px;
+    position: relative;
     aspect-ratio: 3 / 4;
-    background: #0d0e12;
-    border: 1px solid var(--color-card-border);
-    border-radius: var(--radius-sm);
+    background: var(--sp-bg-elevated);
+    border: 1px solid var(--sp-border);
+    border-radius: var(--sp-radius-md);
     overflow: hidden;
-    box-shadow: var(--shadow-md);
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 .canvas-preview-img {
     width: 100%;
     height: 100%;
     object-fit: contain;
-    display: block;
 }
 
 .canvas-badge-info {
-    font-size: 0.72rem;
-    color: var(--color-text-dim);
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
+    font-size: 11px;
+    color: var(--sp-text-tertiary);
     text-align: center;
 }
 
-/* Controls Panel */
+/* Controls Column */
 .canvas-controls-panel {
     display: flex;
     flex-direction: column;
-    gap: 1.25rem;
+    gap: var(--sp-space-5);
 }
 
 .control-group {
     display: flex;
     flex-direction: column;
-    gap: 0.5rem;
+    gap: var(--sp-space-2);
 }
 
 .control-label {
-    font-family: var(--font-body);
-    font-size: 0.78rem;
+    font-size: 12px;
     font-weight: 600;
-    color: var(--color-text-dim);
-    letter-spacing: 0.5px;
+    letter-spacing: 0.03em;
     text-transform: uppercase;
+    color: var(--sp-text-tertiary);
 }
 
-/* Rectangular Theme Selector (No Pills) */
-.card-theme-pills {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 0.5rem;
+/* Theme pills (segmented buttons, NOT pills) */
+.card-theme-pills,
+.card-lang-buttons {
+    display: flex;
+    gap: var(--sp-space-2);
+    flex-wrap: wrap;
 }
 
-.theme-pill {
-    background: rgba(255, 255, 255, 0.03);
-    border: 1px solid var(--color-card-border);
-    color: var(--color-text-muted);
-    padding: 0.55rem 0.75rem;
-    border-radius: var(--radius-sm);
-    font-size: 0.8rem;
-    font-weight: 500;
-    cursor: pointer;
+.theme-pill,
+.lang-pill {
     display: flex;
     align-items: center;
-    gap: 0.5rem;
-    transition: all var(--transition-fast);
+    gap: var(--sp-space-2);
+    padding: 8px 14px;
+    font-size: 12px;
+    font-weight: 500;
+    color: var(--sp-text-secondary);
+    border: 1px solid var(--sp-border);
+    border-radius: var(--sp-radius-sm);
+    transition: all var(--sp-duration-sm) var(--sp-ease);
 }
 
-.theme-pill:hover {
-    border-color: rgba(255, 255, 255, 0.2);
-    color: var(--color-text);
+.theme-pill:hover,
+.lang-pill:hover {
+    border-color: var(--sp-border-hover);
+    color: var(--sp-text);
 }
 
-.theme-pill.active {
-    background: rgba(255, 255, 255, 0.06);
-    border-color: var(--color-primary);
-    color: var(--color-primary);
-    font-weight: 600;
+.theme-pill.active,
+.lang-pill.active {
+    background: var(--sp-accent);
+    color: var(--sp-accent-on);
+    border-color: var(--sp-accent);
 }
 
 .theme-dot {
-    width: 10px;
-    height: 10px;
-    border-radius: 2px;
+    width: 14px;
+    height: 14px;
+    border-radius: 3px;
     flex-shrink: 0;
 }
 
-/* Rectangular Language Selector */
-.card-lang-buttons {
-    display: flex;
-    gap: 0.5rem;
+.theme-dot-dark {
+    background: #111215;
+    border: 1px solid #c5a059;
 }
 
-.lang-pill {
-    flex: 1;
-    background: rgba(255, 255, 255, 0.03);
-    border: 1px solid var(--color-card-border);
-    color: var(--color-text-muted);
-    padding: 0.5rem 0.65rem;
-    border-radius: var(--radius-sm);
-    font-size: 0.8rem;
-    font-weight: 500;
-    cursor: pointer;
-    text-align: center;
-    transition: all var(--transition-fast);
+.theme-dot-light {
+    background: #f8f6f0;
+    border: 1px solid #8c5f3e;
 }
 
-.lang-pill:hover {
-    color: var(--color-text);
-    border-color: rgba(255, 255, 255, 0.2);
-}
-
-.lang-pill.active {
-    background: rgba(255, 255, 255, 0.06);
-    color: var(--color-primary);
-    border-color: var(--color-primary);
-    font-weight: 600;
-}
-
-/* Watermark Checkbox */
 .checkbox-label {
     display: flex;
     align-items: center;
-    gap: 0.5rem;
-    font-size: 0.82rem;
-    color: var(--color-text-muted);
-    cursor: pointer;
-    user-select: none;
-}
-
-.checkbox-label input[type="checkbox"] {
-    accent-color: var(--color-primary);
-    width: 14px;
-    height: 14px;
+    gap: var(--sp-space-2);
+    font-size: 13px;
+    color: var(--sp-text-secondary);
 }
 
 .divider-line {
     height: 1px;
-    background: var(--color-card-border);
-    margin: 0.25rem 0;
+    background: var(--sp-border);
 }
 
-/* Dignified Share Actions (Zero Neon Gradients) */
+/* Sharing Actions */
 .card-sharing-actions {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 0.65rem;
+    display: flex;
+    flex-direction: column;
+    gap: var(--sp-space-2);
 }
 
 .share-action-btn {
-    border: 1px solid var(--color-card-border);
-    background: rgba(255, 255, 255, 0.03);
-    color: var(--color-text);
-    padding: 0.75rem 0.9rem;
-    border-radius: var(--radius-sm);
-    cursor: pointer;
     display: flex;
     align-items: center;
-    gap: 0.65rem;
-    text-align: left;
-    transition: all var(--transition-fast);
+    justify-content: center;
+    padding: 12px var(--sp-space-4);
+    font-size: 13px;
+    font-weight: 600;
+    border-radius: var(--sp-radius-sm);
+    border: 1px solid var(--sp-border);
+    color: var(--sp-text);
+    background: var(--sp-bg-elevated);
+    transition: all var(--sp-duration-sm) var(--sp-ease);
 }
 
 .share-action-btn:hover {
-    border-color: rgba(255, 255, 255, 0.25);
-    background: rgba(255, 255, 255, 0.06);
-}
-
-.action-icon {
-    font-size: 1.15rem;
-    flex-shrink: 0;
-    line-height: 1;
+    border-color: var(--sp-border-hover);
 }
 
 .btn-stacked-text {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    gap: 2px;
 }
 
-.btn-stacked-text .main-text {
-    font-size: 0.82rem;
+.main-text {
+    font-size: 13px;
     font-weight: 600;
-    line-height: 1.2;
 }
 
-.btn-stacked-text .sub-text {
-    font-size: 0.68rem;
-    color: var(--color-text-dim);
-    margin-top: 2px;
+.sub-text {
+    font-size: 11px;
+    color: var(--sp-text-tertiary);
+    font-weight: 400;
 }
 
-/* Primary High-Contrast Download Button */
+/* Download button (primary) */
 .download-btn {
-    background: var(--color-primary);
-    border-color: var(--color-primary);
-    color: var(--color-primary-text);
+    background: var(--sp-accent);
+    color: var(--sp-accent-on);
+    border-color: var(--sp-accent);
 }
 
 .download-btn:hover {
-    background: var(--color-primary-hover);
-    border-color: var(--color-primary-hover);
-    color: var(--color-primary-text);
+    background: var(--sp-accent-hover);
+    border-color: var(--sp-accent-hover);
 }
 
 .download-btn .sub-text {
+    color: var(--sp-accent-on);
     opacity: 0.8;
 }
 
-.whatsapp-btn,
-.instagram-btn,
+/* WhatsApp */
+.whatsapp-btn {
+    border-color: #25d366;
+    color: #25d366;
+    background: transparent;
+}
+
+.whatsapp-btn:hover {
+    background: #25d366;
+    color: #fff;
+}
+
+.whatsapp-btn .sub-text { color: #25d366; }
+.whatsapp-btn:hover .sub-text { color: #fff; opacity: 0.85; }
+
+/* Instagram */
+.instagram-btn {
+    border-color: #c13584;
+    color: #c13584;
+    background: transparent;
+}
+
+.instagram-btn:hover {
+    background: #c13584;
+    color: #fff;
+}
+
+.instagram-btn .sub-text { color: #c13584; }
+.instagram-btn:hover .sub-text { color: #fff; opacity: 0.85; }
+
+/* Copy */
 .copy-btn {
-    background: transparent;
+    color: var(--sp-text-secondary);
 }
 
-/* ==========================================================================
-   3. PRASHNA-MARG (DILEMMAS SCREEN & CARDS)
-   ========================================================================== */
-.dilemmas-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-    gap: 1.25rem;
+/* Canvas Modal — Mobile */
+@media (max-width: 767px) {
+    .canvas-modal-layout { max-width: 100%; }
+
+    .canvas-modal-body-grid {
+        grid-template-columns: 1fr;
+        gap: var(--sp-space-4);
+    }
+
+    .canvas-aspect-box { max-height: 50vh; }
 }
 
-.dilemma-card {
-    background: var(--color-surface);
-    border: 1px solid var(--color-card-border);
-    border-radius: var(--radius-md);
-    padding: 1.5rem;
-    cursor: pointer;
-    transition: border-color var(--transition-fast), transform var(--transition-fast);
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    gap: 1rem;
-    min-height: 220px;
-}
-
-.dilemma-card:hover {
-    transform: translateY(-2px);
-    border-color: var(--color-card-border-hover);
-}
-
-.dilemma-card-header {
-    display: flex;
-    align-items: flex-start;
-    gap: 0.85rem;
-}
-
-.dilemma-icon {
-    display: none;
-}
-
-.dilemma-title-block {
-    display: flex;
-    flex-direction: column;
-    gap: 0.25rem;
-}
-
-.dilemma-sanskrit-tag {
-    font-family: var(--font-body);
-    font-size: 0.72rem;
-    color: var(--color-primary);
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 0.8px;
-}
-
-.dilemma-title {
-    font-size: 1.05rem;
-    font-weight: 600;
-    color: var(--color-text);
-    line-height: 1.35;
-}
-
-.dilemma-desc {
-    font-size: 0.82rem;
-    color: var(--color-text-dim);
-    line-height: 1.55;
-}
-
-.dilemma-prescription-preview {
-    background: rgba(0, 0, 0, 0.2);
-    border-left: 2px solid var(--color-primary);
-    border-radius: 0 var(--radius-xs) var(--radius-xs) 0;
-    padding: 0.6rem 0.85rem;
-    font-size: 0.8rem;
-    color: var(--color-text-muted);
-    font-style: italic;
-    line-height: 1.5;
-}
-
-.dilemma-card-footer {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    font-size: 0.78rem;
-    color: var(--color-primary);
-    font-weight: 600;
-    border-top: 1px solid var(--color-card-border);
-    padding-top: 0.75rem;
-    letter-spacing: 0.3px;
-}
-
-/* Dilemma Detail Container */
-.dilemma-detail-container {
-    max-width: 820px;
-    margin: 0 auto;
-}
-
-.dilemma-detail-banner {
-    background: var(--color-surface);
-    border: 1px solid var(--color-card-border);
-    border-radius: var(--radius-md);
-    padding: 2rem;
-    box-shadow: var(--shadow-sm);
-    margin-bottom: 2rem;
-}
-
-.dilemma-detail-banner h2 {
-    font-family: var(--font-heading);
-    font-size: 1.65rem;
-    color: var(--color-text);
-    margin-bottom: 0.5rem;
-}
-
-.dilemma-remedy-box {
-    margin-top: 1rem;
-    background: rgba(0, 0, 0, 0.2);
-    border: 1px solid var(--color-card-border);
-    border-left: 3px solid var(--color-primary);
-    border-radius: var(--radius-sm);
-    padding: 1.25rem;
-}
-
-.dilemma-remedy-title {
-    font-weight: 600;
-    color: var(--color-primary);
-    font-size: 0.88rem;
-    margin-bottom: 0.4rem;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
-}
-
-/* ==========================================================================
-   4. DHYANA SCREEN & MINIMALIST BREATHING CIRCLE
-   ========================================================================== */
-.dhyana-wrapper {
-    max-width: 680px;
-    margin: 0 auto;
-}
-
-.dhyana-card {
-    background: var(--color-surface);
-    border: 1px solid var(--color-card-border);
-    border-radius: var(--radius-md);
-    padding: 3rem 2rem;
-    box-shadow: var(--shadow-sm);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 2.25rem;
-}
-
-.breathing-visualizer-container {
-    position: relative;
-    width: 220px;
-    height: 220px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.breathing-outer-ring {
-    position: absolute;
-    inset: 0;
-    border-radius: 50%;
-    border: 1px dashed rgba(255, 255, 255, 0.15);
-    animation: rotateSlow 60s linear infinite;
-}
-
-@keyframes rotateSlow {
-    to { transform: rotate(360deg); }
-}
-
-.breathing-circle {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    background: rgba(255, 255, 255, 0.03);
-    border: 1px solid var(--color-primary);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    transition: transform 1s ease-in-out;
-}
-
-.breathing-circle.inhale {
-    transform: scale(1.3);
-    background: rgba(194, 155, 98, 0.1);
-}
-
-.breathing-circle.hold {
-    transform: scale(1.3);
-    background: rgba(194, 155, 98, 0.15);
-}
-
-.breathing-circle.exhale {
-    transform: scale(1);
-    background: rgba(255, 255, 255, 0.03);
-}
-
-.breath-phase-text {
-    font-family: var(--font-heading);
-    font-size: 1rem;
-    font-weight: 600;
-    color: var(--color-text);
-    letter-spacing: 0.5px;
-}
-
-.breath-timer-text {
-    font-size: 0.85rem;
-    color: var(--color-primary);
-    margin-top: 0.25rem;
-}
-
-.dhyana-controls-row {
-    display: flex;
-    gap: 0.75rem;
-    width: 100%;
-    max-width: 400px;
-}
-
-.dhyana-btn {
-    flex: 1;
-    padding: 0.75rem 1.25rem;
-    border-radius: var(--radius-sm);
-    font-family: var(--font-body);
-    font-size: 0.85rem;
-    font-weight: 600;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 0.5rem;
-    transition: all var(--transition-fast);
-}
-
-.dhyana-btn.primary {
-    background: var(--color-primary);
-    color: var(--color-primary-text);
-    border: none;
-}
-
-.dhyana-btn.primary:hover {
-    background: var(--color-primary-hover);
-}
-
-.dhyana-btn.secondary {
-    background: transparent;
-    border: 1px solid var(--color-card-border);
-    color: var(--color-text);
-}
-
-.dhyana-btn.secondary:hover {
-    border-color: rgba(255, 255, 255, 0.25);
-}
-
-.dhyana-icon {
-    display: none;
-}
-
-.dhyana-quote-card {
-    background: rgba(0, 0, 0, 0.2);
-    border: 1px solid var(--color-card-border);
-    border-radius: var(--radius-sm);
-    padding: 1.25rem;
-    text-align: center;
-    max-width: 520px;
-}
-
-.dhyana-quote-ref {
-    font-family: var(--font-body);
-    font-size: 0.75rem;
-    font-weight: 600;
-    color: var(--color-primary);
-    margin-bottom: 0.4rem;
-    text-transform: uppercase;
-    letter-spacing: 0.8px;
-}
-
-.dhyana-quote-sanskrit {
-    font-family: var(--font-sanskrit);
-    font-size: 1.05rem;
-    font-weight: 500;
-    color: var(--color-text);
-    margin-bottom: 0.4rem;
-    line-height: 1.7;
-}
-
-.dhyana-quote-trans {
-    font-size: 0.82rem;
-    color: var(--color-text-muted);
-    font-style: italic;
-    line-height: 1.5;
-}
-
-/* ==========================================================================
-   5. PARTHASARATHI AI CHAT & JOURNAL
-   ========================================================================== */
+/* --------------------------------------------------------------------------
+   3. AI COUNSEL MODAL (Parthasarathi)
+   -------------------------------------------------------------------------- */
 .ai-chat-history {
     display: flex;
     flex-direction: column;
-    gap: 0.85rem;
-    max-height: 380px;
+    gap: var(--sp-space-3);
+    min-height: 200px;
+    max-height: 400px;
     overflow-y: auto;
-    padding-right: 0.5rem;
 }
 
 .chat-bubble {
-    padding: 0.85rem 1.15rem;
-    border-radius: var(--radius-sm);
-    font-size: 0.88rem;
-    line-height: 1.6;
-}
-
-.chat-bubble.user {
-    background: rgba(255, 255, 255, 0.06);
-    border: 1px solid var(--color-card-border);
-    align-self: flex-end;
+    padding: var(--sp-space-3) var(--sp-space-4);
+    border-radius: var(--sp-radius-md);
+    font-size: 14px;
+    line-height: 1.65;
     max-width: 85%;
-    color: var(--color-text);
 }
 
 .chat-bubble.ai {
-    background: var(--color-surface);
-    border-left: 2px solid var(--color-primary);
+    background: var(--sp-bg-elevated);
+    color: var(--sp-text);
     align-self: flex-start;
-    max-width: 95%;
-    color: var(--color-text);
+    border: 1px solid var(--sp-border);
 }
 
-.cited-shloka-box {
-    margin-top: 0.65rem;
-    padding: 0.65rem 0.85rem;
-    border-radius: var(--radius-xs);
-    background: rgba(0, 0, 0, 0.25);
-    font-size: 0.8rem;
-    border-left: 2px solid var(--color-primary);
+.chat-bubble.user {
+    background: var(--sp-accent);
+    color: var(--sp-accent-on);
+    align-self: flex-end;
+}
+
+.chat-bubble strong {
+    font-size: 12px;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: var(--sp-accent);
+}
+
+.chat-bubble.user strong {
+    color: var(--sp-accent-on);
+    opacity: 0.8;
 }
 
 .ai-input-row {
     display: flex;
-    gap: 0.5rem;
-    padding: 0.85rem 1.25rem;
-    border-top: 1px solid var(--color-card-border);
-    background: var(--color-surface);
+    gap: var(--sp-space-2);
+    padding: var(--sp-space-3) var(--sp-space-5) var(--sp-space-5);
+    border-top: 1px solid var(--sp-border);
 }
 
 .ai-input-row input {
     flex: 1;
-    background: rgba(255, 255, 255, 0.04);
-    border: 1px solid var(--color-card-border);
-    border-radius: var(--radius-sm);
-    padding: 0.55rem 0.95rem;
-    color: var(--color-text);
-    font-size: 0.88rem;
-    outline: none;
-}
-
-.ai-input-row input:focus {
-    border-color: var(--color-primary);
 }
 
 .ai-input-row button {
-    background: var(--color-primary);
-    color: var(--color-primary-text);
-    border: none;
-    border-radius: var(--radius-sm);
     width: 38px;
     height: 38px;
-    cursor: pointer;
-    font-size: 0.95rem;
     display: flex;
     align-items: center;
     justify-content: center;
+    background: var(--sp-accent);
+    color: var(--sp-accent-on);
+    border-radius: var(--sp-radius-sm);
+    font-size: 16px;
     flex-shrink: 0;
+    transition: background var(--sp-duration-sm);
 }
 
-/* Journal Fields */
-.journal-field {
+.ai-input-row button:hover {
+    background: var(--sp-accent-hover);
+}
+
+/* AI typing indicator */
+.ai-typing {
     display: flex;
-    flex-direction: column;
-    gap: 0.4rem;
+    gap: 4px;
+    padding: var(--sp-space-3) var(--sp-space-4);
+    align-self: flex-start;
+}
+
+.ai-typing span {
+    width: 6px;
+    height: 6px;
+    background: var(--sp-text-tertiary);
+    border-radius: 50%;
+    animation: sp-typing 1s infinite;
+}
+
+.ai-typing span:nth-child(2) { animation-delay: 0.15s; }
+.ai-typing span:nth-child(3) { animation-delay: 0.3s; }
+
+@keyframes sp-typing {
+    0%, 100% { opacity: 0.3; }
+    50% { opacity: 1; }
+}
+
+.ai-intro-text {
+    font-size: 13px;
+    color: var(--sp-text-secondary);
+    margin-bottom: var(--sp-space-3);
+    line-height: 1.5;
+}
+
+.ai-guidance-title {
+    font-weight: 700;
+    color: var(--sp-accent);
+    margin-bottom: var(--sp-space-2);
+    font-size: 13px;
+}
+
+.ai-response-text {
+    font-size: 14px;
+    line-height: 1.65;
+    color: var(--sp-text);
+}
+
+.cited-shloka-box {
+    margin-top: var(--sp-space-3);
+    padding: var(--sp-space-2) var(--sp-space-3);
+    background: var(--sp-bg-card);
+    border: 1px solid var(--sp-border);
+    border-radius: var(--sp-radius-sm);
+    font-size: 13px;
+    line-height: 1.5;
+    color: var(--sp-text-secondary);
+}
+
+.cited-shloka-box strong {
+    color: var(--sp-accent);
+    font-size: 12px;
+}
+
+.ai-contemplative-action {
+    margin-top: var(--sp-space-3);
+    font-weight: 600;
+    color: var(--sp-accent);
+    font-size: 13px;
+    padding-top: var(--sp-space-2);
+    border-top: 1px solid var(--sp-border);
+}
+
+.ai-input-row button svg {
+    width: 16px;
+    height: 16px;
+}
+
+/* --------------------------------------------------------------------------
+   4. JOURNAL MODAL (Nishkama Karma)
+   -------------------------------------------------------------------------- */
+.journal-verse-summary {
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--sp-accent);
+    margin-bottom: var(--sp-space-4);
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+}
+
+.journal-field {
+    margin-bottom: var(--sp-space-4);
 }
 
 .journal-field label {
-    font-size: 0.82rem;
-    font-weight: 600;
-    color: var(--color-text-muted);
-}
-
-.journal-field textarea,
-.journal-field input {
-    width: 100%;
-    background: rgba(255, 255, 255, 0.04);
-    border: 1px solid var(--color-card-border);
-    border-radius: var(--radius-sm);
-    padding: 0.65rem 0.85rem;
-    color: var(--color-text);
-    font-family: var(--font-body);
-    font-size: 0.88rem;
-    outline: none;
-}
-
-.journal-field textarea:focus,
-.journal-field input:focus {
-    border-color: var(--color-primary);
-}
-
-/* Toast Notifications */
-.toast-container {
-    position: fixed;
-    bottom: 2rem;
-    right: 2rem;
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-    z-index: 9999;
-}
-
-.toast {
-    background: var(--color-surface);
-    border: 1px solid var(--color-card-border);
-    color: var(--color-text);
-    padding: 0.65rem 1rem;
-    border-radius: var(--radius-sm);
-    box-shadow: var(--shadow-md);
-    font-size: 0.82rem;
+    display: block;
+    font-size: 13px;
     font-weight: 500;
-    animation: toastIn 0.25s ease;
+    color: var(--sp-text-secondary);
+    margin-bottom: var(--sp-space-2);
 }
 
-@keyframes toastIn {
-    from { opacity: 0; transform: translateY(8px); }
-    to { opacity: 1; transform: translateY(0); }
+.journal-field textarea {
+    resize: vertical;
+    min-height: 100px;
 }
 
-/* Responsive adjustment for Canvas Modal */
-@media (max-width: 767px) {
-    .canvas-modal-body-grid {
-        grid-template-columns: 1fr;
-        gap: 1.25rem;
-        padding: 1rem;
-    }
+.journal-save-btn {
+    width: 100%;
+    justify-content: center;
+    margin-top: var(--sp-space-4);
+}
 
-    .card-sharing-actions {
-        grid-template-columns: 1fr;
-    }
-
-    .dhyana-controls-row {
-        flex-direction: column;
-    }
+/* --------------------------------------------------------------------------
+   5. AI SPARKLE (Disabled — Clean Icon Only)
+   -------------------------------------------------------------------------- */
+.ai-sparkle {
+    display: none;
 }

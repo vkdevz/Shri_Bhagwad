@@ -304,8 +304,12 @@ class GitaApp {
 
         // Commentary accordion toggle
         document.getElementById('commentary-toggle')?.addEventListener('click', () => {
+            const btn = document.getElementById('commentary-toggle');
             const exp = document.getElementById('current-explanation');
-            if (exp) exp.classList.toggle('hidden');
+            if (exp) {
+                const isHidden = exp.classList.toggle('hidden');
+                if (btn) btn.classList.toggle('expanded', !isHidden);
+            }
         });
 
         // Home screen actions
@@ -459,7 +463,7 @@ class GitaApp {
                 if (window.dhyanaAudio) {
                     const isPlaying = window.dhyanaAudio.toggleDrone();
                     droneBtn.innerHTML = isPlaying
-                        ? '<span>Tanpura Drone: <strong style="color: var(--color-primary)">Playing</strong></span>'
+                        ? '<span>Tanpura Drone: <strong class="text-accent">Playing</strong></span>'
                         : '<span>Tanpura Drone: Off</span>';
                     droneBtn.classList.toggle('primary', isPlaying);
                     droneBtn.classList.toggle('secondary', !isPlaying);
@@ -476,7 +480,7 @@ class GitaApp {
         if (!grid) return;
 
         if (this.dilemmas.length === 0 && window.gitaApi) {
-            grid.innerHTML = '<div style="padding: 20px; text-align: center;">Loading sacred remedies...</div>';
+            grid.innerHTML = '<div class="loading-placeholder">Loading sacred remedies...</div>';
             this.dilemmas = await window.gitaApi.getDilemmas();
         }
 
@@ -485,16 +489,16 @@ class GitaApp {
             const isHindi = this.settings.language === 'hindi';
             const card = document.createElement('div');
             card.className = 'dilemma-card';
+            const verseCount = d.verses ? d.verses.length : 0;
             card.innerHTML = `
                 <div class="dilemma-card-header">
-                    <div class="dilemma-title-block">
-                        <span class="dilemma-sanskrit-tag">Scriptural Remedy</span>
-                        <div class="dilemma-title">${isHindi ? (d.titleHindi || d.title) : d.title}</div>
-                    </div>
+                    <span class="dilemma-category-tag">Prashna-Marg</span>
+                    <h3 class="dilemma-title">${this.escapeHtml(isHindi ? (d.titleHindi || d.title) : d.title)}</h3>
                 </div>
-                <div class="dilemma-desc">${d.description || ''}</div>
+                <p class="dilemma-desc">${this.escapeHtml(d.description || '')}</p>
                 <div class="dilemma-card-footer">
-                    <span>Explore Scripture →</span>
+                    <span class="dilemma-verse-count">${verseCount} Prescribed Verses</span>
+                    <span class="dilemma-explore-link">Seek Counsel →</span>
                 </div>
             `;
             card.addEventListener('click', () => this.openDilemma(d.code));
@@ -506,7 +510,7 @@ class GitaApp {
         const container = document.getElementById('dilemma-detail-container');
         if (!container) return;
 
-        container.innerHTML = '<div style="padding: 20px; text-align: center;">Seeking Krishna\'s counsel...</div>';
+        container.innerHTML = '<div class="loading-placeholder">Seeking Krishna\'s counsel...</div>';
         this.navigateToScreen('dilemma-detail');
 
         let dilemma = this.dilemmas.find(d => d.code === code);
@@ -523,26 +527,30 @@ class GitaApp {
             versesHtml = dilemma.verses.map(v => `
                 <div class="prescribed-verse-card" onclick="window.app.openPrescribedVerse(${v.chapterNumber || v.ch}, ${v.verseNumber || v.v})">
                     <div class="prescribed-verse-ref">Chapter ${v.chapterNumber || v.ch} • Verse ${v.verseNumber || v.v}</div>
-                    <div class="prescribed-takeaway">"${v.takeaway || ''}"</div>
-                    <div style="font-size: 12px; color: var(--color-primary); font-weight: 500;">Read shloka & commentary →</div>
+                    <div class="prescribed-takeaway">"${this.escapeHtml(v.takeaway || '')}"</div>
+                    <div class="prescribed-verse-link">Read verse & commentary →</div>
                 </div>
             `).join('');
         }
 
         container.innerHTML = `
-            <button class="back-btn" onclick="window.app.navigateToScreen('dilemmas')" style="align-self: flex-start; display: flex; align-items: center; gap: 6px; background: none; border: none; color: var(--color-primary); cursor: pointer; font-size: 13px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px;">
-                ← Back to Dilemmas
+            <button class="dilemma-back-btn" onclick="window.app.navigateToScreen('dilemmas')">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="19" y1="12" x2="5" y2="12"></line>
+                    <polyline points="12 19 5 12 12 5"></polyline>
+                </svg>
+                <span>Back to Dilemmas</span>
             </button>
-            <div style="margin-top: 1rem;">
-                <span class="dilemma-sanskrit-tag" style="font-size: 12px; color: var(--color-primary); font-weight: 600; text-transform: uppercase; letter-spacing: 1px;">Scriptural Inquiry</span>
-                <h2 style="margin: 0.25rem 0 0; color: var(--color-text); font-family: var(--font-heading); font-size: 1.65rem;">${title}</h2>
+            <div class="dilemma-detail-header">
+                <span class="dilemma-category-tag">Scriptural Remedy</span>
+                <h2 class="dilemma-detail-title">${this.escapeHtml(title)}</h2>
             </div>
-            <div class="dilemma-remedy-box" style="margin-top: 1.25rem;">
+            <div class="dilemma-remedy-box">
                 <div class="dilemma-remedy-title">Krishna's Prescription</div>
-                <p style="margin: 0; line-height: 1.65; color: var(--color-text); font-size: 0.95rem;">${dilemma.prescription || ''}</p>
+                <p class="dilemma-remedy-text">${this.escapeHtml(dilemma.prescription || '')}</p>
             </div>
-            <h3 style="margin-top: 2rem; font-size: 13px; color: var(--color-text-dim); text-transform: uppercase; letter-spacing: 0.8px; font-weight: 600;">Prescribed Shlokas for this State</h3>
-            <div style="display: flex; flex-direction: column; gap: 0.85rem; margin-top: 0.75rem;">
+            <h3 class="prescribed-verses-heading">Prescribed Verses for this State</h3>
+            <div class="prescribed-verses-list">
                 ${versesHtml}
             </div>
         `;
@@ -842,10 +850,10 @@ class GitaApp {
             }
 
             loadingBubble.innerHTML = `
-                <div style="font-weight: 700; color: var(--color-primary); margin-bottom: 6px;">${counsel.guidanceTitle || 'Parthasarathi:'}</div>
-                <div>${counsel.response}</div>
+                <div class="ai-guidance-title">${this.escapeHtml(counsel.guidanceTitle || 'Parthasarathi:')}</div>
+                <div class="ai-response-text">${counsel.response}</div>
                 ${citedHtml}
-                <div style="margin-top: 8px; font-weight: 600; color: #FFD700; font-size: 13px;">Action: ${counsel.contemplativeAction}</div>
+                <div class="ai-contemplative-action">Action: ${this.escapeHtml(counsel.contemplativeAction || '')}</div>
             `;
             history.scrollTop = history.scrollHeight;
         }
@@ -1153,6 +1161,21 @@ class GitaApp {
         }
     }
 
+    toRoman(num) {
+        const romanMap = [
+            [10, 'X'], [9, 'IX'], [5, 'V'], [4, 'IV'], [1, 'I']
+        ];
+        let roman = '';
+        let n = num;
+        for (const [val, letter] of romanMap) {
+            while (n >= val) {
+                roman += letter;
+                n -= val;
+            }
+        }
+        return roman || 'I';
+    }
+
     renderChapters() {
         const chaptersGrid = document.getElementById('chapters-grid');
         const homeChaptersGrid = document.getElementById('home-chapters-grid');
@@ -1167,7 +1190,8 @@ class GitaApp {
 
         if (homeChaptersGrid) {
             homeChaptersGrid.innerHTML = '';
-            this.gitaData.chapters.forEach(chapter => {
+            // First 6 chapters preview grid on home screen
+            this.gitaData.chapters.slice(0, 6).forEach(chapter => {
                 homeChaptersGrid.appendChild(this.createChapterCard(chapter));
             });
         }
@@ -1215,22 +1239,14 @@ class GitaApp {
         card.addEventListener('click', () => this.openChapter(chapter.number));
 
         const totalVerses = chapter.verses && chapter.verses.length > 0 ? chapter.verses.length : (chapter.verseCount || 0);
-        const readVerses = this.getChapterProgress(chapter.number);
         const titleSanskrit = chapter.titleSanskrit || chapter.name_translation || chapter.title;
-        const themeSnippet = chapter.theme || chapter.subtitle || chapter.description || '';
+        const romanNumeral = this.toRoman(chapter.number);
 
         card.innerHTML = `
-            <div class="chapter-header">
-                <div class="chapter-number-circle">${chapter.number}</div>
-                <span class="chapter-verses-badge">${totalVerses} Verses</span>
-            </div>
-            <div class="chapter-sanskrit-title">${this.escapeHtml(titleSanskrit)}</div>
-            <div class="chapter-english-title">${this.escapeHtml(chapter.title || '')}</div>
-            <div class="chapter-theme-snippet">${this.escapeHtml(themeSnippet.slice(0, 115))}${themeSnippet.length > 115 ? '...' : ''}</div>
-            <div class="chapter-card-footer">
-                <span class="chapter-explore-text">Read Chapter →</span>
-                <span style="font-size: 0.75rem; color: var(--color-text-dim);">${readVerses}/${totalVerses} read</span>
-            </div>
+            <div class="chapter-number">${romanNumeral}</div>
+            <div class="chapter-name-sanskrit">${this.escapeHtml(titleSanskrit)}</div>
+            <div class="chapter-name-english">${this.escapeHtml(chapter.title || '')}</div>
+            <div class="chapter-verse-count">${totalVerses} Verses</div>
         `;
 
         return card;
@@ -1655,10 +1671,10 @@ class GitaApp {
         }
 
         const resultsHTML = results.map(result => `
-            <div class="search-result" onclick="app.openSearchResult(${result.chapterNumber}, ${result.verseNumber})">
-                <div class="result-reference">Chapter ${result.chapterNumber} • Verse ${result.verseNumber}</div>
-                <div class="result-sanskrit">${this.escapeHtml(result.sanskrit)}</div>
-                <div class="result-translation">${this.escapeHtml(result.translation)}</div>
+            <div class="search-result-item" onclick="app.openSearchResult(${result.chapterNumber}, ${result.verseNumber})">
+                <div class="search-result-ref">Chapter ${result.chapterNumber} • Verse ${result.verseNumber}</div>
+                <div class="search-result-sanskrit">${this.escapeHtml(result.sanskrit)}</div>
+                <div class="search-result-translation">${this.escapeHtml(result.translation)}</div>
             </div>
         `).join('');
 
@@ -1781,6 +1797,11 @@ class GitaApp {
                 ? `<svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 7c-2.76 0-5 2.24-5 5s2.24 5 5 5 5-2.24 5-5-2.24-5-5-5zM2 13h2c.55 0 1-.45 1-1s-.45-1-1-1H2c-.55 0-1 .45-1 1s.45 1 1 1zm18 0h2c.55 0 1-.45 1-1s-.45-1-1-1h-2c-.55 0-1 .45-1 1s.45 1 1 1zM11 2v2c0 .55.45 1 1 1s1-.45 1-1V2c0-.55-.45-1-1-1s-1 .45-1 1zm0 18v2c0 .55.45 1 1 1s1-.45 1-1v-2c0-.55-.45-1-1-1s-1 .45-1 1zM5.99 4.58c-.39-.39-1.03-.39-1.41 0s-.39 1.03 0 1.41l1.06 1.06c.39.39 1.03.39 1.41 0s.39-1.03 0-1.41L5.99 4.58zm12.37 12.37c-.39-.39-1.03-.39-1.41 0s-.39 1.03 0 1.41l1.06 1.06c.39.39 1.03.39 1.41 0s.39-1.03 0-1.41l-1.06-1.06zm1.06-10.96c.39-.39.39-1.03 0-1.41s-1.03-.39-1.41 0l-1.06 1.06c-.39.39-.39 1.03 0 1.41s1.03.39 1.41 0l1.06-1.06zM7.05 18.36c.39-.39.39-1.03 0-1.41s-1.03-.39-1.41 0l-1.06 1.06c-.39.39-.39 1.03 0 1.41s1.03.39 1.41 0l1.06-1.06z"/></svg>`
                 : `<svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 3c-4.97 0-9 4.03-9 9 0 2.12.74 4.07 1.97 5.61L4.35 19.4c-.39.39-.39 1.02 0 1.41.39.39 1.02.39 1.41 0l1.9-1.9C9.28 19.64 10.58 20 12 20c4.97 0 9-4.03 9-9s-4.03-9-9-9zm0 15c-3.31 0-6-2.69-6-6s2.69-6 6-6 6 2.69 6 6-2.69 6-6 6z"/></svg>`;
         }
+
+        // Update Theme buttons in Settings
+        document.querySelectorAll('.theme-option').forEach(btn => {
+            btn.classList.toggle('active', btn.dataset.theme === validTheme);
+        });
     }
 
     cycleTheme() {
@@ -1792,6 +1813,8 @@ class GitaApp {
     setFontSize(size) {
         this.settings.fontSize = size;
         document.documentElement.style.setProperty('--font-size-base', `${size}px`);
+        const display = document.getElementById('font-size-display');
+        if (display) display.textContent = `${size}px`;
         this.saveUserData();
     }
 
@@ -1807,6 +1830,9 @@ class GitaApp {
         
         const fontSlider = document.getElementById('font-size');
         if (fontSlider) fontSlider.value = this.settings.fontSize;
+
+        const display = document.getElementById('font-size-display');
+        if (display) display.textContent = `${this.settings.fontSize}px`;
     }
 
     // Placeholder methods for missing functionality
