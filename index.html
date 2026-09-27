@@ -51,8 +51,8 @@
         rel="stylesheet">
 
     <!-- Stylesheets with Cache Busting -->
-    <link rel="stylesheet" href="css/main.css?v=9.4">
-    <link rel="stylesheet" href="css/features.css?v=9.4">
+    <link rel="stylesheet" href="css/main.css?v=9.5">
+    <link rel="stylesheet" href="css/features.css?v=9.5">
 </head>
 
 <body>
@@ -70,7 +70,7 @@
         <div class="install-content">
             <div class="install-text">
                 <h3>Install ShlokPath</h3>
-                <p>Read all 701 verses & meditate with 432 Hz drone offline</p>
+                <p>Read all 701 verses & meditate in harmonic stillness offline</p>
             </div>
             <div class="install-actions">
                 <button id="install-button" class="install-btn">Install App</button>
@@ -172,347 +172,502 @@
         <!-- Main Content Viewport -->
         <main class="main-content">
 
-            <!-- 1. HOME SCREEN (Complete Editorial Vedic Experience) -->
+            <!-- 1. HOME SCREEN (Dedicated Desktop Editorial & Native Mobile App Views) -->
             <div id="home-screen" class="screen active">
 
-                <!-- Section 1: Grand Vedic Hero Section -->
-                <section class="hero-section">
-                    <div class="hero-container">
-                        <!-- Left Hero Column: Spiritual Greeting & Stats -->
-                        <div class="hero-left">
-                            <div class="hero-badge">Canonical Scripture • 18 Chapters • 701 Verses</div>
-                            <h1 class="hero-heading">The Eternal Song of Supreme Wisdom</h1>
-                            <p class="hero-subheading">
-                                Master your duty, overcome emotional distress, and awaken inner serenity through Lord Krishna's sacred dialogue with Arjuna.
-                            </p>
-                            
-                            <div class="hero-actions">
-                                <button class="action-btn primary" id="continue-reading">
-                                    <span class="btn-text">Begin Reading ↗</span>
-                                </button>
-                                <button class="action-btn secondary" id="home-explore-chapters">
-                                    <span class="btn-text">All 18 Chapters ↗</span>
-                                </button>
+                <!-- ==============================================================
+                     A. DESKTOP EDITORIAL VIEW (>= 768px: Full Vedic Publication)
+                     ============================================================== -->
+                <div class="desktop-editorial-only">
+                    <!-- Section 1: Grand Vedic Hero Section -->
+                    <section class="hero-section">
+                        <div class="hero-container">
+                            <!-- Left Hero Column: Spiritual Greeting & Stats -->
+                            <div class="hero-left">
+                                <div class="hero-badge">Canonical Scripture • 18 Chapters • 701 Verses</div>
+                                <h1 class="hero-heading">The Eternal Song of Supreme Wisdom</h1>
+                                <p class="hero-subheading">
+                                    Master your duty, overcome emotional distress, and awaken inner serenity through Lord Krishna's sacred dialogue with Arjuna.
+                                </p>
+                                
+                                <div class="hero-actions">
+                                    <button class="action-btn primary" id="continue-reading">
+                                        <span class="btn-text">Begin Reading ↗</span>
+                                    </button>
+                                    <button class="action-btn secondary" id="home-explore-chapters">
+                                        <span class="btn-text">All 18 Chapters ↗</span>
+                                    </button>
+                                </div>
+
+                                <!-- 4 Journey Stats Rail -->
+                                <div class="stats-grid">
+                                    <div class="stat-card">
+                                        <span class="stat-number" id="total-read">0</span>
+                                        <span class="stat-label">Verses Read</span>
+                                    </div>
+                                    <div class="stat-card">
+                                        <span class="stat-number" id="streak-count">1</span>
+                                        <span class="stat-label">Day Streak</span>
+                                    </div>
+                                    <div class="stat-card">
+                                        <span class="stat-number" id="bookmark-count">0</span>
+                                        <span class="stat-label">Bookmarked</span>
+                                    </div>
+                                    <div class="stat-card">
+                                        <span class="stat-number" id="progress-percentage">0%</span>
+                                        <span class="stat-label">Journey Done</span>
+                                    </div>
+                                </div>
                             </div>
 
-                            <!-- 4 Journey Stats Rail -->
-                            <div class="stats-grid">
-                                <div class="stat-card">
-                                    <span class="stat-number" id="total-read">0</span>
-                                    <span class="stat-label">Verses Read</span>
-                                </div>
-                                <div class="stat-card">
-                                    <span class="stat-number" id="streak-count">1</span>
-                                    <span class="stat-label">Day Streak</span>
-                                </div>
-                                <div class="stat-card">
-                                    <span class="stat-number" id="bookmark-count">0</span>
-                                    <span class="stat-label">Bookmarked</span>
-                                </div>
-                                <div class="stat-card">
-                                    <span class="stat-number" id="progress-percentage">0%</span>
-                                    <span class="stat-label">Journey Done</span>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Right Hero Column: Today's Divine Shlok Card (Pre-Rendered with Ch 2.47) -->
-                        <div class="hero-right">
-                            <div class="daily-verse-wrapper">
-                                <div class="daily-verse-badge">
-                                    <span>[01] Today's Contemplation</span>
-                                    <span class="daily-verse-ref" id="daily-reference">Chapter 2 • Verse 47</span>
-                                </div>
-                                <div id="daily-verse" class="daily-verse-card">
-                                    <div class="daily-shlok-calligraphy" id="daily-sanskrit">कर्मण्येवाधिकारस्ते मा फलेषु कदाचन।<br>मा कर्मफलहेतुर्भूर्मा ते सङ्गोऽस्त्वकर्मणि॥</div>
-                                    <div class="daily-divider"></div>
-                                    <div class="daily-translation-text" id="daily-translation">"तुम्हारा अधिकार केवल कर्म करने में है, उसके फलों में कभी नहीं। इसलिए तुम कर्मों के फल के हेतु मत बनो और तुम्हारी अकर्मण्यता में भी आसक्ति न हो।"</div>
-                                    
-                                    <div class="daily-card-actions">
-                                        <button id="daily-card-share-btn" class="daily-action-pill highlight" title="Create 3:4 Quote Card">
-                                            <span>Create Card ↗</span>
-                                        </button>
-                                        <button id="daily-card-listen-btn" class="daily-action-pill" title="Immerse in Meditative Soundscape">
-                                            <span>Stillness ↗</span>
-                                        </button>
-                                        <button id="daily-card-reflect-btn" class="daily-action-pill" title="Write Reflection in Journal">
-                                            <span>Reflect ↗</span>
-                                        </button>
+                            <!-- Right Hero Column: Today's Divine Shlok Card (Pre-Rendered with Ch 2.47) -->
+                            <div class="hero-right">
+                                <div class="daily-verse-wrapper">
+                                    <div class="daily-verse-badge">
+                                        <span>[01] Today's Contemplation</span>
+                                        <span class="daily-verse-ref" id="daily-reference">Chapter 2 • Verse 47</span>
+                                    </div>
+                                    <div id="daily-verse" class="daily-verse-card">
+                                        <div class="daily-shlok-calligraphy" id="daily-sanskrit">कर्मण्येवाधिकारस्ते मा फलेषु कदाचन।<br>मा कर्मफलहेतुर्भूर्मा ते सङ्गोऽस्त्वकर्मणि॥</div>
+                                        <div class="daily-divider"></div>
+                                        <div class="daily-translation-text" id="daily-translation">"तुम्हारा अधिकार केवल कर्म करने में है, उसके फलों में कभी नहीं। इसलिए तुम कर्मों के फल के हेतु मत बनो और तुम्हारी अकर्मण्यता में भी आसक्ति न हो।"</div>
+                                        
+                                        <div class="daily-card-actions">
+                                            <button id="daily-card-share-btn" class="daily-action-pill highlight" title="Create 3:4 Quote Card">
+                                                <span>Create Card ↗</span>
+                                            </button>
+                                            <button id="daily-card-listen-btn" class="daily-action-pill" title="Immerse in Meditative Soundscape">
+                                                <span>Stillness ↗</span>
+                                            </button>
+                                            <button id="daily-card-reflect-btn" class="daily-action-pill" title="Write Reflection in Journal">
+                                                <span>Reflect ↗</span>
+                                            </button>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </section>
+                    </section>
 
-                <!-- Section 2: The Four Sacred Yogas (चतुर्योग मार्ग) -->
-                <section class="section-container yogas-section">
-                    <div class="section-header">
-                        <div class="section-header-titles">
-                            <h2>चतुर्योग मार्ग • The Fourfold Path of Liberation</h2>
-                            <span class="section-subtitle">Lord Krishna synthesizes four distinct spiritual paths tailored for diverse human temperaments</span>
-                        </div>
-                    </div>
-                    <div class="yogas-grid">
-                        <div class="yoga-pathway-card" data-yoga="karma">
-                            <div class="yoga-card-top">
-                                <span class="yoga-sanskrit-tag">कर्म योग</span>
-                                <span class="yoga-scope-tag">Chapters 1–6</span>
+                    <!-- Section 2: The Four Sacred Yogas (चतुर्योग मार्ग) -->
+                    <section class="section-container yogas-section">
+                        <div class="section-header">
+                            <div class="section-header-titles">
+                                <h2>चतुर्योग मार्ग • The Fourfold Path of Liberation</h2>
+                                <span class="section-subtitle">Lord Krishna synthesizes four distinct spiritual paths tailored for diverse human temperaments</span>
                             </div>
-                            <h3 class="yoga-card-title">Karma Yoga</h3>
-                            <p class="yoga-card-desc">The path of selfless action. Perform every duty without anxiety for outcome, turning daily work into divine worship.</p>
-                            <div class="yoga-card-footer">
-                                <span>Explore Karma Yoga →</span>
+                        </div>
+                        <div class="yogas-grid">
+                            <div class="yoga-pathway-card" data-yoga="karma">
+                                <div class="yoga-card-top">
+                                    <span class="yoga-sanskrit-tag">कर्म योग</span>
+                                    <span class="yoga-scope-tag">Chapters 1–6</span>
+                                </div>
+                                <h3 class="yoga-card-title">Karma Yoga</h3>
+                                <p class="yoga-card-desc">The path of selfless action. Perform every duty without anxiety for outcome, turning daily work into divine worship.</p>
+                                <div class="yoga-card-footer">
+                                    <span>Explore Karma Yoga →</span>
+                                </div>
+                            </div>
+
+                            <div class="yoga-pathway-card" data-yoga="bhakti">
+                                <div class="yoga-card-top">
+                                    <span class="yoga-sanskrit-tag">भक्ति योग</span>
+                                    <span class="yoga-scope-tag">Chapters 7–12</span>
+                                </div>
+                                <h3 class="yoga-card-title">Bhakti Yoga</h3>
+                                <p class="yoga-card-desc">The path of loving surrender. Dissolve personal ego through pure devotion and total surrender to the Supreme Divine.</p>
+                                <div class="yoga-card-footer">
+                                    <span>Explore Bhakti Yoga →</span>
+                                </div>
+                            </div>
+
+                            <div class="yoga-pathway-card" data-yoga="jnana">
+                                <div class="yoga-card-top">
+                                    <span class="yoga-sanskrit-tag">ज्ञान योग</span>
+                                    <span class="yoga-scope-tag">Chapters 13–18</span>
+                                </div>
+                                <h3 class="yoga-card-title">Jnana Yoga</h3>
+                                <p class="yoga-card-desc">The path of eternal discernment. Awaken direct realization of the unchanging Self (Kshetrajna) beyond transient nature.</p>
+                                <div class="yoga-card-footer">
+                                    <span>Explore Jnana Yoga →</span>
+                                </div>
+                            </div>
+
+                            <div class="yoga-pathway-card" data-yoga="dhyana">
+                                <div class="yoga-card-top">
+                                    <span class="yoga-sanskrit-tag">ध्यान योग</span>
+                                    <span class="yoga-scope-tag">Chapter 6 & Contemplation</span>
+                                </div>
+                                <h3 class="yoga-card-title">Dhyana Yoga</h3>
+                                <p class="yoga-card-desc">The path of meditative stillness. Quiet restless thoughts like an unmoving flame in a windless sanctuary, awakening deep inward peace.</p>
+                                <div class="yoga-card-footer">
+                                    <span>Enter Dhyana Chamber →</span>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Section 3: Parthasarathi Socratic Counsel Feature Spotlight -->
+                    <section class="section-container counsel-showcase-section">
+                        <div class="counsel-showcase-card">
+                            <div class="counsel-card-badge">
+                                <span>पार्थसारथी • Scriptural Socratic Counsel</span>
+                            </div>
+                            <h2 class="counsel-heading">Bring Your Living Battles to Lord Krishna</h2>
+                            <p class="counsel-subheading">
+                                When Arjuna collapsed in moral confusion and emotional anguish on Kurukshetra, Krishna did not give generic consolation. Through incisive Socratic inquiry, He pierced Arjuna's illusions to awaken his innate truth. Bring your modern dilemmas — burnout, career crossroads, grief, or indecision — for direct verse-backed clarity.
+                            </p>
+                            
+                            <div class="counsel-prompt-chips">
+                                <button class="counsel-prompt-pill" data-query="How do I overcome constant anxiety about future outcomes?">
+                                    "How do I overcome constant anxiety about future outcomes?"
+                                </button>
+                                <button class="counsel-prompt-pill" data-query="I feel unmotivated, exhausted, and disconnected. How do I rediscover my Swadharma?">
+                                    "I feel exhausted and disconnected. How do I rediscover my Swadharma?"
+                                </button>
+                                <button class="counsel-prompt-pill" data-query="How to manage deep anger and resentment towards people who wronged me?">
+                                    "How do I maintain equanimity in the face of betrayal and anger?"
+                                </button>
+                            </div>
+
+                            <div class="counsel-action-row">
+                                <button id="home-counsel-cta" class="action-btn primary counsel-cta-btn">
+                                    <span>Seek Socratic Counsel ↗</span>
+                                </button>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Section 4: Prashna-Marg — Life Dilemma Navigator -->
+                    <section class="section-container home-dilemmas-section">
+                        <div class="section-header">
+                            <div class="section-header-titles">
+                                <h2>प्रश्न-मार्ग • Mental States & Scriptural Remedies</h2>
+                                <span class="section-subtitle">Direct canonical diagnoses and therapeutic verses for common psychological struggles</span>
+                            </div>
+                        </div>
+                        <div class="home-dilemmas-grid">
+                            <div class="home-dilemma-card" data-mood="ANXIETY_OVERWHELM">
+                                <div class="dilemma-chip-header">
+                                    <span class="dilemma-index">[01]</span>
+                                    <span class="dilemma-state-title">Anxious / Overwhelmed</span>
+                                </div>
+                                <p class="dilemma-remedy-text">Sthitaprajna — Finding immovable calm at the eye of the emotional storm.</p>
+                                <div class="dilemma-card-foot">
+                                    <span class="dilemma-verse-tag">Chapter 2 • Verse 56</span>
+                                    <span class="dilemma-arrow-link">Consult →</span>
+                                </div>
+                            </div>
+
+                            <div class="home-dilemma-card" data-mood="BURNOUT_PROCRASTINATION">
+                                <div class="dilemma-chip-header">
+                                    <span class="dilemma-index">[02]</span>
+                                    <span class="dilemma-state-title">Burnt Out / Unmotivated</span>
+                                </div>
+                                <p class="dilemma-remedy-text">Nishkama Karma — Dissolving the crushing psychic weight of future rewards.</p>
+                                <div class="dilemma-card-foot">
+                                    <span class="dilemma-verse-tag">Chapter 3 • Verse 8</span>
+                                    <span class="dilemma-arrow-link">Consult →</span>
+                                </div>
+                            </div>
+
+                            <div class="home-dilemma-card" data-mood="ANGER_RESENTMENT">
+                                <div class="dilemma-chip-header">
+                                    <span class="dilemma-index">[03]</span>
+                                    <span class="dilemma-state-title">Angry / Resentful</span>
+                                </div>
+                                <p class="dilemma-remedy-text">The Chain of Ruin — Severing attachment before desire morphs into self-destruction.</p>
+                                <div class="dilemma-card-foot">
+                                    <span class="dilemma-verse-tag">Chapter 2 • Verses 62-63</span>
+                                    <span class="dilemma-arrow-link">Consult →</span>
+                                </div>
+                            </div>
+
+                            <div class="home-dilemma-card" data-mood="DECISION_PARALYSIS">
+                                <div class="dilemma-chip-header">
+                                    <span class="dilemma-index">[04]</span>
+                                    <span class="dilemma-state-title">Confused / Indecisive</span>
+                                </div>
+                                <p class="dilemma-remedy-text">Sharanagati — Surrendering intellectual pride to awaken intuitive higher discernment.</p>
+                                <div class="dilemma-card-foot">
+                                    <span class="dilemma-verse-tag">Chapter 2 • Verse 7</span>
+                                    <span class="dilemma-arrow-link">Consult →</span>
+                                </div>
+                            </div>
+
+                            <div class="home-dilemma-card" data-mood="PURPOSE_SWADHARMA">
+                                <div class="dilemma-chip-header">
+                                    <span class="dilemma-index">[05]</span>
+                                    <span class="dilemma-state-title">Seeking Life Purpose</span>
+                                </div>
+                                <p class="dilemma-remedy-text">Swadharma — Living your own authentic calling over flawless imitation of another's.</p>
+                                <div class="dilemma-card-foot">
+                                    <span class="dilemma-verse-tag">Chapter 3 • Verse 35</span>
+                                    <span class="dilemma-arrow-link">Consult →</span>
+                                </div>
+                            </div>
+
+                            <div class="home-dilemma-card" data-mood="FEAR_OF_FAILURE">
+                                <div class="dilemma-chip-header">
+                                    <span class="dilemma-index">[06]</span>
+                                    <span class="dilemma-state-title">Fear of Failure</span>
+                                </div>
+                                <p class="dilemma-remedy-text">Karmanye Vadhikaraste — Absolute liberation from the outcome; mastery of effort.</p>
+                                <div class="dilemma-card-foot">
+                                    <span class="dilemma-verse-tag">Chapter 2 • Verse 47</span>
+                                    <span class="dilemma-arrow-link">Consult →</span>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Section 5: Sacred Meditative Stillness Sanctuary -->
+                    <section class="section-container home-soundscape-section">
+                        <div class="soundscape-card-inner">
+                            <div class="soundscape-badge">MEDITATIVE CONTEMPLATION • नादब्रह्म</div>
+                            <h2 class="soundscape-heading">Cultivate Deep Mental Quietude</h2>
+                            <p class="soundscape-desc">
+                                Immerse your awareness in continuous harmonic Tanpura resonance. Calibrated to release psychological tension, quiet persistent intrusive thoughts, and anchor the mind in serene contemplation.
+                            </p>
+                            <div class="soundscape-actions">
+                                <button id="home-dhyana-chamber-btn" class="action-btn primary">
+                                    <span>Enter Dhyana Chamber ↗</span>
+                                </button>
+                                <button id="home-dhyana-play-toggle" class="action-btn secondary">
+                                    <span>Harmonic Stillness</span>
+                                </button>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Section 6: All 18 Canonical Chapters Section -->
+                    <section class="section-container chapters-section">
+                        <div class="section-header">
+                            <div class="section-header-titles">
+                                <h2>सम्पूर्ण १८ अध्याय • All 18 Canonical Chapters</h2>
+                                <span class="section-subtitle">Browse all 701 canonical verses across the four yogas with bilingual commentary</span>
+                            </div>
+                            <button class="section-view-all-btn" id="home-view-all-chapters-btn">View All 18 Chapters →</button>
+                        </div>
+                        <div class="chapters-grid" id="home-chapters-grid">
+                            <!-- Populated dynamically by JavaScript without title duplication -->
+                        </div>
+                    </section>
+
+                    <!-- Section 7: Monastic Colophon & Editorial Footer -->
+                    <footer class="site-footer">
+                        <div class="footer-colophon">
+                            <div class="colophon-sanskrit">॥ ॐ तत्सदिति श्रीमद्भगवद्गीतासूपनिषत्सु ब्रह्मविद्यायां योगशास्त्रे श्रीकृष्णार्जुनसंवादे ॥</div>
+                            <p class="colophon-translation">"Om Tat Sat — In the Upanishad of the sacred Bhagavad Gita, the science of the Absolute, the scripture of Yoga, the dialogue between Sri Krishna and Arjuna."</p>
+                        </div>
+
+                        <div class="footer-grid">
+                            <div class="footer-col">
+                                <h4>Canonical Scripture</h4>
+                                <ul>
+                                    <li><a href="#" onclick="event.preventDefault(); window.app.filterChaptersByCategory('karma'); window.app.navigateToScreen('chapters');">Karma Yoga (Ch 1–6)</a></li>
+                                    <li><a href="#" onclick="event.preventDefault(); window.app.filterChaptersByCategory('bhakti'); window.app.navigateToScreen('chapters');">Bhakti Yoga (Ch 7–12)</a></li>
+                                    <li><a href="#" onclick="event.preventDefault(); window.app.filterChaptersByCategory('jnana'); window.app.navigateToScreen('chapters');">Jnana Yoga (Ch 13–18)</a></li>
+                                    <li><a href="#" onclick="event.preventDefault(); window.app.navigateToScreen('chapters');">All 701 Sacred Verses</a></li>
+                                </ul>
+                            </div>
+
+                            <div class="footer-col">
+                                <h4>Spiritual Practice</h4>
+                                <ul>
+                                    <li><a href="#" onclick="event.preventDefault(); window.app.navigateToScreen('dilemmas');">Prashna-Marg Remedies</a></li>
+                                    <li><a href="#" onclick="event.preventDefault(); window.app.navigateToScreen('dhyana');">Dhyana & Sacred Stillness</a></li>
+                                    <li><a href="#" onclick="event.preventDefault(); window.app.openDailyVerse();">Today's Contemplation</a></li>
+                                    <li><a href="#" onclick="event.preventDefault(); window.app.openCanvasModal(2, 47);">Divine Card Studio</a></li>
+                                </ul>
+                            </div>
+
+                            <div class="footer-col">
+                                <h4>Intelligent Counsel</h4>
+                                <ul>
+                                    <li><a href="#" onclick="event.preventDefault(); document.getElementById('open-ai-advisor').click();">Parthasarathi AI Counsel</a></li>
+                                    <li><a href="#" onclick="event.preventDefault(); window.app.navigateToScreen('search');">Semantic Verse Search</a></li>
+                                    <li><a href="#" onclick="event.preventDefault(); window.app.openJournalModal();">Nishkama Karma Journal</a></li>
+                                    <li><a href="#" onclick="event.preventDefault(); window.app.showBookmarksSearch();">Bookmarked Verses</a></li>
+                                </ul>
+                            </div>
+
+                            <div class="footer-col">
+                                <h4>Tradition & Foundation</h4>
+                                <ul>
+                                    <li><span>Ved Vyasa Canonical Tradition</span></li>
+                                    <li><span>Bilingual Hindi & English</span></li>
+                                    <li><span>Offline PWA Available</span></li>
+                                    <li><span>Free & Open Spiritual Wisdom</span></li>
+                                </ul>
                             </div>
                         </div>
 
-                        <div class="yoga-pathway-card" data-yoga="bhakti">
-                            <div class="yoga-card-top">
-                                <span class="yoga-sanskrit-tag">भक्ति योग</span>
-                                <span class="yoga-scope-tag">Chapters 7–12</span>
+                        <div class="footer-bottom">
+                            <div class="footer-brand">
+                                <span class="footer-brand-name">SHLOKPATH</span>
+                                <span class="footer-brand-tag">The Eternal Song of Supreme Wisdom</span>
                             </div>
-                            <h3 class="yoga-card-title">Bhakti Yoga</h3>
-                            <p class="yoga-card-desc">The path of loving surrender. Dissolve personal ego through pure devotion and total surrender to the Supreme Divine.</p>
-                            <div class="yoga-card-footer">
-                                <span>Explore Bhakti Yoga →</span>
+                            <div class="footer-craft-signature">
+                                <span>Crafted with reverence by <a href="https://github.com/vkdevz" target="_blank" rel="noopener">VK Devz</a></span>
                             </div>
-                        </div>
-
-                        <div class="yoga-pathway-card" data-yoga="jnana">
-                            <div class="yoga-card-top">
-                                <span class="yoga-sanskrit-tag">ज्ञान योग</span>
-                                <span class="yoga-scope-tag">Chapters 13–18</span>
-                            </div>
-                            <h3 class="yoga-card-title">Jnana Yoga</h3>
-                            <p class="yoga-card-desc">The path of eternal discernment. Awaken direct realization of the unchanging Self (Kshetrajna) beyond transient nature.</p>
-                            <div class="yoga-card-footer">
-                                <span>Explore Jnana Yoga →</span>
-                            </div>
-                        </div>
-
-                        <div class="yoga-pathway-card" data-yoga="dhyana">
-                            <div class="yoga-card-top">
-                                <span class="yoga-sanskrit-tag">ध्यान योग</span>
-                                <span class="yoga-scope-tag">Chapter 6 & Contemplation</span>
-                            </div>
-                            <h3 class="yoga-card-title">Dhyana Yoga</h3>
-                            <p class="yoga-card-desc">The path of meditative stillness. Quiet restless thoughts like an unmoving flame in a windless sanctuary, awakening deep inward peace.</p>
-                            <div class="yoga-card-footer">
-                                <span>Enter Dhyana Chamber →</span>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-
-                <!-- Section 3: Parthasarathi Socratic Counsel Feature Spotlight -->
-                <section class="section-container counsel-showcase-section">
-                    <div class="counsel-showcase-card">
-                        <div class="counsel-card-badge">
-                            <span>पार्थसारथी • Scriptural Socratic Counsel</span>
-                        </div>
-                        <h2 class="counsel-heading">Bring Your Living Battles to Lord Krishna</h2>
-                        <p class="counsel-subheading">
-                            When Arjuna collapsed in moral confusion and emotional anguish on Kurukshetra, Krishna did not give generic consolation. Through incisive Socratic inquiry, He pierced Arjuna's illusions to awaken his innate truth. Bring your modern dilemmas — burnout, career crossroads, grief, or indecision — for direct verse-backed clarity.
-                        </p>
-                        
-                        <div class="counsel-prompt-chips">
-                            <button class="counsel-prompt-pill" data-query="How do I overcome constant anxiety about future outcomes?">
-                                "How do I overcome constant anxiety about future outcomes?"
+                            <button id="footer-back-to-top" class="footer-back-to-top" title="Scroll to Top">
+                                Back to Top ↑
                             </button>
-                            <button class="counsel-prompt-pill" data-query="I feel unmotivated, exhausted, and disconnected. How do I rediscover my Swadharma?">
-                                "I feel exhausted and disconnected. How do I rediscover my Swadharma?"
-                            </button>
-                            <button class="counsel-prompt-pill" data-query="How to manage deep anger and resentment towards people who wronged me?">
-                                "How do I maintain equanimity in the face of betrayal and anger?"
-                            </button>
                         </div>
+                    </footer>
+                </div>
 
-                        <div class="counsel-action-row">
-                            <button id="home-counsel-cta" class="action-btn primary counsel-cta-btn">
-                                <span>Seek Socratic Counsel ↗</span>
-                            </button>
-                        </div>
-                    </div>
-                </section>
-
-                <!-- Section 4: Prashna-Marg — Life Dilemma Navigator -->
-                <section class="section-container home-dilemmas-section">
-                    <div class="section-header">
-                        <div class="section-header-titles">
-                            <h2>प्रश्न-मार्ग • Mental States & Scriptural Remedies</h2>
-                            <span class="section-subtitle">Direct canonical diagnoses and therapeutic verses for common psychological struggles</span>
-                        </div>
-                    </div>
-                    <div class="home-dilemmas-grid">
-                        <div class="home-dilemma-card" data-mood="ANXIETY_OVERWHELM">
-                            <div class="dilemma-chip-header">
-                                <span class="dilemma-index">[01]</span>
-                                <span class="dilemma-state-title">Anxious / Overwhelmed</span>
+                <!-- ==============================================================
+                     B. MOBILE APP VIEW (< 768px: Dedicated Native App Dashboard)
+                     ============================================================== -->
+                <div class="mobile-app-only">
+                    <!-- 1. Mobile App Invocatory Header & Swadhyaya Tracker -->
+                    <div class="mobile-app-bar">
+                        <div class="mobile-invocation-text">॥ ॐ श्रीपरमात्मने नमः ॥</div>
+                        <div class="mobile-app-subbar">
+                            <div class="mobile-app-greeting">
+                                <span class="mobile-greeting-title">Daily Swadhyaya</span>
+                                <span class="mobile-greeting-sub">दैनिक स्वाध्याय</span>
                             </div>
-                            <p class="dilemma-remedy-text">Sthitaprajna — Finding immovable calm at the eye of the emotional storm.</p>
-                            <div class="dilemma-card-foot">
-                                <span class="dilemma-verse-tag">Chapter 2 • Verse 56</span>
-                                <span class="dilemma-arrow-link">Consult →</span>
-                            </div>
-                        </div>
-
-                        <div class="home-dilemma-card" data-mood="BURNOUT_PROCRASTINATION">
-                            <div class="dilemma-chip-header">
-                                <span class="dilemma-index">[02]</span>
-                                <span class="dilemma-state-title">Burnt Out / Unmotivated</span>
-                            </div>
-                            <p class="dilemma-remedy-text">Nishkama Karma — Dissolving the crushing psychic weight of future rewards.</p>
-                            <div class="dilemma-card-foot">
-                                <span class="dilemma-verse-tag">Chapter 3 • Verse 8</span>
-                                <span class="dilemma-arrow-link">Consult →</span>
-                            </div>
-                        </div>
-
-                        <div class="home-dilemma-card" data-mood="ANGER_RESENTMENT">
-                            <div class="dilemma-chip-header">
-                                <span class="dilemma-index">[03]</span>
-                                <span class="dilemma-state-title">Angry / Resentful</span>
-                            </div>
-                            <p class="dilemma-remedy-text">The Chain of Ruin — Severing attachment before desire morphs into self-destruction.</p>
-                            <div class="dilemma-card-foot">
-                                <span class="dilemma-verse-tag">Chapter 2 • Verses 62-63</span>
-                                <span class="dilemma-arrow-link">Consult →</span>
-                            </div>
-                        </div>
-
-                        <div class="home-dilemma-card" data-mood="DECISION_PARALYSIS">
-                            <div class="dilemma-chip-header">
-                                <span class="dilemma-index">[04]</span>
-                                <span class="dilemma-state-title">Confused / Indecisive</span>
-                            </div>
-                            <p class="dilemma-remedy-text">Sharanagati — Surrendering intellectual pride to awaken intuitive higher discernment.</p>
-                            <div class="dilemma-card-foot">
-                                <span class="dilemma-verse-tag">Chapter 2 • Verse 7</span>
-                                <span class="dilemma-arrow-link">Consult →</span>
-                            </div>
-                        </div>
-
-                        <div class="home-dilemma-card" data-mood="PURPOSE_SWADHARMA">
-                            <div class="dilemma-chip-header">
-                                <span class="dilemma-index">[05]</span>
-                                <span class="dilemma-state-title">Seeking Life Purpose</span>
-                            </div>
-                            <p class="dilemma-remedy-text">Swadharma — Living your own authentic calling over flawless imitation of another's.</p>
-                            <div class="dilemma-card-foot">
-                                <span class="dilemma-verse-tag">Chapter 3 • Verse 35</span>
-                                <span class="dilemma-arrow-link">Consult →</span>
-                            </div>
-                        </div>
-
-                        <div class="home-dilemma-card" data-mood="FEAR_OF_FAILURE">
-                            <div class="dilemma-chip-header">
-                                <span class="dilemma-index">[06]</span>
-                                <span class="dilemma-state-title">Fear of Failure</span>
-                            </div>
-                            <p class="dilemma-remedy-text">Karmanye Vadhikaraste — Absolute liberation from the outcome; mastery of effort.</p>
-                            <div class="dilemma-card-foot">
-                                <span class="dilemma-verse-tag">Chapter 2 • Verse 47</span>
-                                <span class="dilemma-arrow-link">Consult →</span>
+                            <div class="mobile-streak-pill" id="mobile-streak-pill">
+                                <span class="streak-flame">✦</span>
+                                <span id="mobile-streak-label">1 Day Streak • 0 Verses</span>
                             </div>
                         </div>
                     </div>
-                </section>
 
-                <!-- Section 5: Sacred Meditative Stillness Sanctuary -->
-                <section class="section-container home-soundscape-section">
-                    <div class="soundscape-card-inner">
-                        <div class="soundscape-badge">MEDITATIVE CONTEMPLATION • नादब्रह्म</div>
-                        <h2 class="soundscape-heading">Cultivate Deep Mental Quietude</h2>
-                        <p class="soundscape-desc">
-                            Immerse your awareness in continuous harmonic Tanpura resonance. Calibrated to release psychological tension, quiet persistent intrusive thoughts, and anchor the mind in serene contemplation.
-                        </p>
-                        <div class="soundscape-actions">
-                            <button id="home-dhyana-chamber-btn" class="action-btn primary">
-                                <span>Enter Dhyana Chamber ↗</span>
-                            </button>
-                            <button id="home-dhyana-play-toggle" class="action-btn secondary">
-                                <span>Harmonic Stillness</span>
-                            </button>
+                    <!-- 2. Today's Contemplation (Primary Centerpiece) -->
+                    <div class="mobile-daily-container">
+                        <div class="mobile-daily-header">
+                            <span class="mobile-daily-tag">[01] TODAY'S CONTEMPLATION</span>
+                            <span class="mobile-daily-ref" id="mobile-daily-reference">Chapter 2 • Verse 47</span>
                         </div>
-                    </div>
-                </section>
-
-                <!-- Section 6: All 18 Canonical Chapters Section -->
-                <section class="section-container chapters-section">
-                    <div class="section-header">
-                        <div class="section-header-titles">
-                            <h2>सम्पूर्ण १८ अध्याय • All 18 Canonical Chapters</h2>
-                            <span class="section-subtitle">Browse all 701 canonical verses across the four yogas with bilingual commentary</span>
-                        </div>
-                        <button class="section-view-all-btn" id="home-view-all-chapters-btn">View All 18 Chapters →</button>
-                    </div>
-                    <div class="chapters-grid" id="home-chapters-grid">
-                        <!-- Populated dynamically by JavaScript without title duplication -->
-                    </div>
-                </section>
-
-                <!-- Section 7: Monastic Colophon & Editorial Footer -->
-                <footer class="site-footer">
-                    <div class="footer-colophon">
-                        <div class="colophon-sanskrit">॥ ॐ तत्सदिति श्रीमद्भगवद्गीतासूपनिषत्सु ब्रह्मविद्यायां योगशास्त्रे श्रीकृष्णार्जुनसंवादे ॥</div>
-                        <p class="colophon-translation">"Om Tat Sat — In the Upanishad of the sacred Bhagavad Gita, the science of the Absolute, the scripture of Yoga, the dialogue between Sri Krishna and Arjuna."</p>
-                    </div>
-
-                    <div class="footer-grid">
-                        <div class="footer-col">
-                            <h4>Canonical Scripture</h4>
-                            <ul>
-                                <li><a href="#" onclick="event.preventDefault(); window.app.filterChaptersByCategory('karma'); window.app.navigateToScreen('chapters');">Karma Yoga (Ch 1–6)</a></li>
-                                <li><a href="#" onclick="event.preventDefault(); window.app.filterChaptersByCategory('bhakti'); window.app.navigateToScreen('chapters');">Bhakti Yoga (Ch 7–12)</a></li>
-                                <li><a href="#" onclick="event.preventDefault(); window.app.filterChaptersByCategory('jnana'); window.app.navigateToScreen('chapters');">Jnana Yoga (Ch 13–18)</a></li>
-                                <li><a href="#" onclick="event.preventDefault(); window.app.navigateToScreen('chapters');">All 701 Sacred Verses</a></li>
-                            </ul>
-                        </div>
-
-                        <div class="footer-col">
-                            <h4>Spiritual Practice</h4>
-                            <ul>
-                                <li><a href="#" onclick="event.preventDefault(); window.app.navigateToScreen('dilemmas');">Prashna-Marg Remedies</a></li>
-                                <li><a href="#" onclick="event.preventDefault(); window.app.navigateToScreen('dhyana');">Dhyana & Sacred Stillness</a></li>
-                                <li><a href="#" onclick="event.preventDefault(); window.app.openDailyVerse();">Today's Contemplation</a></li>
-                                <li><a href="#" onclick="event.preventDefault(); window.app.openCanvasModal(2, 47);">Divine Card Studio</a></li>
-                            </ul>
-                        </div>
-
-                        <div class="footer-col">
-                            <h4>Intelligent Counsel</h4>
-                            <ul>
-                                <li><a href="#" onclick="event.preventDefault(); document.getElementById('open-ai-advisor').click();">Parthasarathi AI Counsel</a></li>
-                                <li><a href="#" onclick="event.preventDefault(); window.app.navigateToScreen('search');">Semantic Verse Search</a></li>
-                                <li><a href="#" onclick="event.preventDefault(); window.app.openJournalModal();">Nishkama Karma Journal</a></li>
-                                <li><a href="#" onclick="event.preventDefault(); window.app.showBookmarksSearch();">Bookmarked Verses</a></li>
-                            </ul>
-                        </div>
-
-                        <div class="footer-col">
-                            <h4>Tradition & Foundation</h4>
-                            <ul>
-                                <li><span>Ved Vyasa Canonical Tradition</span></li>
-                                <li><span>Bilingual Hindi & English</span></li>
-                                <li><span>Offline PWA Available</span></li>
-                                <li><span>Free & Open Spiritual Wisdom</span></li>
-                            </ul>
+                        <div class="mobile-daily-card" id="mobile-daily-verse-card">
+                            <div class="mobile-daily-sanskrit" id="mobile-daily-sanskrit">
+                                कर्मण्येवाधिकारस्ते मा फलेषु कदाचन।<br>मा कर्मफलहेतुर्भूर्मा ते सङ्गोऽस्त्वकर्मणि॥
+                            </div>
+                            <div class="mobile-card-divider"></div>
+                            <div class="mobile-daily-translation" id="mobile-daily-translation">
+                                "तुम्हारा अधिकार केवल कर्म करने में है, उसके फलों में कभी नहीं। इसलिए तुम कर्मों के फल के हेतु मत बनो और तुम्हारी अकर्मण्यता में भी आसक्ति न हो।"
+                            </div>
+                            <div class="mobile-daily-actions">
+                                <button id="mobile-daily-share-btn" class="mobile-pill-btn highlight" title="Create Card">
+                                    <span>Create Card ↗</span>
+                                </button>
+                                <button id="mobile-daily-listen-btn" class="mobile-pill-btn" title="Harmonic Stillness">
+                                    <span>Stillness ↗</span>
+                                </button>
+                                <button id="mobile-daily-reflect-btn" class="mobile-pill-btn" title="Reflect in Journal">
+                                    <span>Reflect ↗</span>
+                                </button>
+                            </div>
                         </div>
                     </div>
 
-                    <div class="footer-bottom">
-                        <div class="footer-brand">
-                            <span class="footer-brand-name">SHLOKPATH</span>
-                            <span class="footer-brand-tag">The Eternal Song of Supreme Wisdom</span>
+                    <!-- 3. Continue Swadhyaya (1-Tap Fast Resume) -->
+                    <div class="mobile-resume-card" id="mobile-continue-reading">
+                        <div class="mobile-resume-left">
+                            <span class="mobile-resume-kicker">Continue Swadhyaya • स्वाध्याय</span>
+                            <h4 class="mobile-resume-title" id="mobile-resume-title">Chapter 2: Sankhya Yoga — Verse 47</h4>
                         </div>
-                        <div class="footer-craft-signature">
-                            <span>Crafted with reverence by <a href="https://github.com/vkdevz" target="_blank" rel="noopener">VK Devz</a></span>
-                        </div>
-                        <button id="footer-back-to-top" class="footer-back-to-top" title="Scroll to Top">
-                            Back to Top ↑
+                        <button class="mobile-resume-btn" aria-label="Resume Reading">
+                            <span>Resume ➔</span>
                         </button>
                     </div>
-                </footer>
+
+                    <!-- 4. Core 4 App Mode Tiles (2x2 Tactile App Grid) -->
+                    <div class="mobile-modes-grid">
+                        <div class="mobile-mode-tile" data-screen-target="chapters">
+                            <div class="mobile-tile-badge">SCRIPTURE</div>
+                            <h4 class="mobile-tile-title">All 18 Chapters</h4>
+                            <p class="mobile-tile-desc">701 Sacred Verses & Bilingual Commentary</p>
+                            <span class="mobile-tile-link">Open Adhyayas →</span>
+                        </div>
+
+                        <div class="mobile-mode-tile" data-screen-target="dilemmas">
+                            <div class="mobile-tile-badge">REMEDIES</div>
+                            <h4 class="mobile-tile-title">Prashna-Marg</h4>
+                            <p class="mobile-tile-desc">Scriptural Answers for Emotional Struggles</p>
+                            <span class="mobile-tile-link">Explore Remedies →</span>
+                        </div>
+
+                        <div class="mobile-mode-tile" data-screen-target="dhyana">
+                            <div class="mobile-tile-badge">MEDITATION</div>
+                            <h4 class="mobile-tile-title">Dhyana Chamber</h4>
+                            <p class="mobile-tile-desc">Harmonic Stillness & Contemplative Timer</p>
+                            <span class="mobile-tile-link">Enter Stillness →</span>
+                        </div>
+
+                        <div class="mobile-mode-tile" data-counsel-trigger="true">
+                            <div class="mobile-tile-badge highlight">AI COUNSEL</div>
+                            <h4 class="mobile-tile-title">Parthasarathi</h4>
+                            <p class="mobile-tile-desc">Bring Moral Crossroads to Lord Krishna</p>
+                            <span class="mobile-tile-link highlight">Seek Counsel →</span>
+                        </div>
+                    </div>
+
+                    <!-- 5. "Where is your mind today?" (Immediate State of Mind Selector) -->
+                    <div class="mobile-mood-section">
+                        <div class="mobile-section-heading">
+                            <h3>मन की स्थिति • Where is your mind today?</h3>
+                            <span>Instant canonical remedies for common emotional struggles</span>
+                        </div>
+                        <div class="mobile-mood-carousel">
+                            <button class="mobile-mood-chip" data-mood="ANXIETY_OVERWHELM">
+                                <span class="mood-chip-dot"></span>
+                                <span>Anxious / Overwhelmed</span>
+                            </button>
+                            <button class="mobile-mood-chip" data-mood="BURNOUT_PROCRASTINATION">
+                                <span class="mood-chip-dot"></span>
+                                <span>Burnt Out / Fatigued</span>
+                            </button>
+                            <button class="mobile-mood-chip" data-mood="ANGER_RESENTMENT">
+                                <span class="mood-chip-dot"></span>
+                                <span>Angry / Resentful</span>
+                            </button>
+                            <button class="mobile-mood-chip" data-mood="DECISION_PARALYSIS">
+                                <span class="mood-chip-dot"></span>
+                                <span>Confused / Indecisive</span>
+                            </button>
+                            <button class="mobile-mood-chip" data-mood="PURPOSE_SWADHARMA">
+                                <span class="mood-chip-dot"></span>
+                                <span>Seeking Purpose</span>
+                            </button>
+                            <button class="mobile-mood-chip" data-mood="FEAR_OF_FAILURE">
+                                <span class="mood-chip-dot"></span>
+                                <span>Fear of Failure</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- 6. Compact Socratic AI Counsel Bar -->
+                    <div class="mobile-counsel-strip" id="mobile-counsel-bar">
+                        <div class="mobile-counsel-text">
+                            <span class="mobile-counsel-kicker">पार्थसारथी संवाद • SACRED SCRIPTURAL INQUIRY</span>
+                            <h4>"How do I quiet constant worry about future outcomes?"</h4>
+                        </div>
+                        <button class="mobile-counsel-btn" id="mobile-counsel-cta-btn">
+                            <span>Ask Krishna ↗</span>
+                        </button>
+                    </div>
+
+                    <!-- 7. Mobile App Monastic Colophon & Pure App Footer -->
+                    <div class="mobile-app-footer">
+                        <div class="mobile-colophon-box">
+                            <div class="mobile-colophon-sanskrit">॥ ॐ तत्सदिति श्रीमद्भगवद्गीतासूपनिषत्सु ब्रह्मविद्यायां योगशास्त्रे श्रीकृष्णार्जुनसंवादे ॥</div>
+                            <p class="mobile-colophon-trans">"Om Tat Sat — In the Upanishad of the sacred Bhagavad Gita, the science of the Absolute, the scripture of Yoga, the dialogue between Sri Krishna and Arjuna."</p>
+                        </div>
+                        <div class="mobile-footer-brand">
+                            <span class="mobile-brand-title">SHLOKPATH</span>
+                            <span class="mobile-brand-tagline">The Eternal Song of Supreme Wisdom</span>
+                        </div>
+                        <div class="mobile-craft-line">
+                            <span>Crafted with reverence by <a href="https://github.com/vkdevz" target="_blank" rel="noopener">VK Devz</a></span>
+                        </div>
+                    </div>
+                </div>
             </div>
 
             <!-- 2. CHAPTERS SCREEN (All 18 Chapters Grid with Filters) -->
@@ -993,10 +1148,10 @@
     <div id="toast-container" class="toast-container"></div>
 
     <!-- Scripts with Cache Busting -->
-    <script src="js/api-client.js?v=9.4"></script>
-    <script src="js/dhyana-audio.js?v=9.4"></script>
-    <script src="js/canvas-card.js?v=9.4"></script>
-    <script src="js/app.js?v=9.4"></script>
+    <script src="js/api-client.js?v=9.5"></script>
+    <script src="js/dhyana-audio.js?v=9.5"></script>
+    <script src="js/canvas-card.js?v=9.5"></script>
+    <script src="js/app.js?v=9.5"></script>
 </body>
 
 </html>

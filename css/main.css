@@ -2921,13 +2921,32 @@ label {
 }
 
 /* --------------------------------------------------------------------------
-   21. RESPONSIVE BREAKPOINTS
+   21. RESPONSIVE BREAKPOINTS & DUAL VIEW ROUTING
    -------------------------------------------------------------------------- */
 
-/* ---- Mobile (< 768px) Clean Zen UI ---- */
+/* Desktop Editorial publication is visible on desktop/laptops (>= 768px) */
+.desktop-editorial-only {
+    display: block;
+}
+
+/* Native Mobile App view is hidden on desktop/laptops (>= 768px) */
+.mobile-app-only {
+    display: none !important;
+}
+
+/* ---- Mobile (< 768px) Dedicated Native Mobile App View ---- */
 @media (max-width: 767px) {
     :root {
         --sp-header-h: 52px;
+    }
+
+    /* Dual-view routing */
+    .desktop-editorial-only {
+        display: none !important;
+    }
+
+    .mobile-app-only {
+        display: block !important;
     }
 
     /* Minimal Floating Island Header */
@@ -2972,361 +2991,490 @@ label {
         height: 32px;
     }
 
-    /* Container Spacing */
+    /* Container Spacing for Mobile App */
     .app-container {
         padding-top: 68px;
     }
 
     .main-content {
-        padding-bottom: calc(var(--sp-bottom-nav-h) + 40px);
-        padding-left: 16px;
-        padding-right: 16px;
+        padding-bottom: calc(var(--sp-bottom-nav-h) + 28px);
+        padding-left: 14px;
+        padding-right: 14px;
     }
 
     /* Show bottom nav, hide desktop nav */
     .bottom-nav { display: flex; }
     .desktop-nav { display: none; }
 
-    /* Hero Section — Calm, Focused Editorial Opening */
-    .hero-section {
-        padding: 16px 0 24px;
+    /* ======================================================================
+       DEDICATED NATIVE MOBILE APP DASHBOARD (< 768px)
+       ====================================================================== */
+
+    /* 1. Invocatory Top Header & Swadhyaya Bar */
+    .mobile-app-bar {
+        padding: 4px 0 14px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+        margin-bottom: 16px;
     }
 
-    .hero-container {
-        grid-template-columns: 1fr;
-        gap: 20px;
+    [data-theme="light"] .mobile-app-bar {
+        border-bottom-color: rgba(0, 0, 0, 0.08);
     }
 
-    .hero-badge {
-        font-size: 9.5px;
-        letter-spacing: 0.1em;
-        margin-bottom: 10px;
-    }
-
-    .hero-heading {
-        font-size: 22px;
-        line-height: 1.2;
-        letter-spacing: -0.4px;
-        margin-bottom: 10px;
-    }
-
-    .hero-subheading {
+    .mobile-invocation-text {
+        text-align: center;
+        font-family: var(--sp-font-sanskrit);
         font-size: 13.5px;
-        line-height: 1.55;
-        margin-bottom: 18px;
+        letter-spacing: 0.14em;
+        color: var(--sp-accent);
+        opacity: 0.92;
+        margin-bottom: 8px;
+    }
+
+    .mobile-app-subbar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .mobile-app-greeting {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .mobile-greeting-title {
+        font-family: var(--sp-font-heading);
+        font-size: 16px;
+        font-weight: 700;
+        letter-spacing: -0.3px;
+        color: var(--sp-text);
+        line-height: 1.2;
+    }
+
+    .mobile-greeting-sub {
+        font-family: var(--sp-font-sanskrit);
+        font-size: 11px;
+        color: var(--sp-text-tertiary);
+        margin-top: 2px;
+    }
+
+    .mobile-streak-pill {
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        padding: 5px 11px;
+        border-radius: 20px;
+        background: var(--sp-bg-elevated);
+        border: 1px solid var(--sp-border);
+        font-size: 11px;
+        font-weight: 600;
+        color: var(--sp-accent);
+    }
+
+    .mobile-streak-pill .streak-flame {
+        color: var(--sp-accent);
+        font-size: 10px;
+    }
+
+    /* 2. Today's Divine Contemplation Shlok Card (Primary Centerpiece) */
+    .mobile-daily-container {
+        margin-bottom: 16px;
+    }
+
+    .mobile-daily-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 8px;
+        padding: 0 2px;
+    }
+
+    .mobile-daily-tag {
+        font-size: 9.5px;
+        font-weight: 700;
+        letter-spacing: 0.1em;
+        color: var(--sp-accent);
+    }
+
+    .mobile-daily-ref {
+        font-size: 11.5px;
+        font-weight: 600;
         color: var(--sp-text-secondary);
     }
 
-    .hero-actions {
-        display: flex;
-        flex-direction: row;
-        gap: 8px;
-        margin-bottom: 18px;
+    .mobile-daily-card {
+        background: var(--sp-bg-card);
+        border: 1px solid var(--sp-border);
+        border-top: 2px solid var(--sp-accent);
+        border-radius: 16px;
+        padding: 20px 16px 16px;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.22);
+        cursor: pointer;
+        transition: transform var(--sp-duration-sm) var(--sp-ease), border-color var(--sp-duration-sm) var(--sp-ease);
     }
 
-    .hero-actions .action-btn {
-        flex: 1;
-        padding: 11px 12px;
-        font-size: 12.5px;
+    .mobile-daily-card:active {
+        transform: scale(0.99);
+    }
+
+    .mobile-daily-sanskrit {
+        font-family: var(--sp-font-sanskrit);
+        font-size: 17px;
+        line-height: 1.75;
+        text-align: center;
+        color: var(--sp-text);
         letter-spacing: 0.02em;
     }
 
-    /* Ultra-clean 4-metric milestone rail */
-    .stats-grid {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        gap: 4px;
-        padding: 12px 0;
-        margin-top: 10px;
-        border-top: 1px solid rgba(255, 255, 255, 0.06);
-        border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+    .mobile-card-divider {
+        height: 1px;
+        width: 48px;
+        margin: 14px auto;
+        background: var(--sp-accent);
+        opacity: 0.35;
     }
 
-    [data-theme="light"] .stats-grid {
-        border-color: rgba(0, 0, 0, 0.06);
-    }
-
-    .stat-number {
-        font-size: 17px;
-        font-weight: 700;
-    }
-
-    .stat-label {
-        font-size: 7.5px;
-        letter-spacing: 0.05em;
-    }
-
-    /* Today's Contemplation Shlok Folio */
-    .daily-verse-wrapper {
-        padding: 22px 18px;
-        border-radius: 14px;
-        margin-top: 4px;
-    }
-
-    .daily-verse-badge {
-        font-size: 10px;
-        margin-bottom: 14px;
-    }
-
-    .daily-verse-card {
-        padding: 0;
-    }
-
-    .daily-shlok-calligraphy {
-        font-size: 17px;
-        line-height: 1.75;
-        margin-bottom: 12px;
-    }
-
-    .daily-translation-text {
-        font-size: 13px;
+    .mobile-daily-translation {
+        font-family: var(--sp-font-body);
+        font-size: 12.5px;
         line-height: 1.6;
+        text-align: center;
+        color: var(--sp-text-secondary);
+        font-style: italic;
         margin-bottom: 18px;
     }
 
-    .daily-card-actions {
+    .mobile-daily-actions {
         display: flex;
         align-items: center;
         justify-content: center;
-        gap: 20px;
-    }
-
-    .daily-action-pill {
-        font-size: 11px;
-    }
-
-    /* Section Headers */
-    .section-container {
-        padding: 0;
-    }
-
-    .section-header {
-        display: flex;
-        flex-direction: row;
-        align-items: flex-end;
-        justify-content: space-between;
-        margin-bottom: 14px;
         gap: 8px;
     }
 
-    .section-header h2 {
-        font-size: 16px;
+    .mobile-pill-btn {
+        padding: 7px 13px;
+        font-size: 11px;
+        font-weight: 600;
+        border-radius: 20px;
+        border: 1px solid var(--sp-border);
+        background: var(--sp-bg-elevated);
+        color: var(--sp-text-secondary);
+        cursor: pointer;
+        transition: all var(--sp-duration-sm) var(--sp-ease);
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .mobile-pill-btn.highlight {
+        background: var(--sp-accent);
+        color: #0d0f12;
+        border-color: var(--sp-accent);
+    }
+
+    .mobile-pill-btn:active {
+        opacity: 0.85;
+    }
+
+    /* 3. Continue Swadhyaya Bar (1-Tap Fast Resume) */
+    .mobile-resume-card {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 12px;
+        padding: 13px 16px;
+        background: var(--sp-bg-card);
+        border: 1px solid var(--sp-border);
+        border-radius: 12px;
+        margin-bottom: 18px;
+        cursor: pointer;
+        transition: border-color var(--sp-duration-sm) var(--sp-ease);
+    }
+
+    .mobile-resume-card:active {
+        border-color: var(--sp-accent);
+    }
+
+    .mobile-resume-left {
+        flex: 1;
+        min-width: 0;
+    }
+
+    .mobile-resume-kicker {
+        display: block;
+        font-size: 9px;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        color: var(--sp-accent);
+        font-weight: 700;
         margin-bottom: 2px;
     }
 
-    .section-subtitle {
-        font-size: 12px;
-        display: block;
+    .mobile-resume-title {
+        font-family: var(--sp-font-heading);
+        font-size: 13.5px;
+        font-weight: 600;
+        color: var(--sp-text);
+        margin: 0;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
     }
 
-    .section-view-all-btn {
+    .mobile-resume-btn {
+        background: var(--sp-accent);
+        color: #0d0f12;
+        font-weight: 700;
         font-size: 11.5px;
+        padding: 7px 14px;
+        border-radius: 8px;
+        border: none;
+        cursor: pointer;
+        flex-shrink: 0;
     }
 
-    /* ----------------------------------------------------------------------
-       HORIZONTAL SWIPE CAROUSELS — ELIMINATE ENDLESS VERTICAL STACKING
-       ---------------------------------------------------------------------- */
-    
-    /* 1. Four Sacred Yogas Carousel */
-    .yogas-section {
-        padding: 28px 0;
+    /* 4. Core 4 App Mode Tiles (2x2 Tactile App Grid) */
+    .mobile-modes-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        margin-bottom: 24px;
     }
 
-    .yogas-grid {
-        display: flex !important;
-        overflow-x: auto !important;
-        scroll-snap-type: x mandatory;
-        gap: 12px;
-        padding: 4px 16px 14px 16px;
-        margin: 0 -16px;
-        -webkit-overflow-scrolling: touch;
-        scrollbar-width: none;
+    .mobile-mode-tile {
+        background: var(--sp-bg-card);
+        border: 1px solid var(--sp-border);
+        border-radius: 14px;
+        padding: 15px 14px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        min-height: 120px;
+        cursor: pointer;
+        transition: transform var(--sp-duration-sm) var(--sp-ease), border-color var(--sp-duration-sm) var(--sp-ease);
     }
 
-    .yogas-grid::-webkit-scrollbar { display: none; }
-
-    .yoga-pathway-card {
-        flex: 0 0 76vw;
-        max-width: 280px;
-        scroll-snap-align: start;
-        padding: 20px 18px;
-        border-radius: 12px;
+    .mobile-mode-tile:active {
+        transform: scale(0.98);
+        border-color: var(--sp-accent);
     }
 
-    .yoga-card-title {
-        font-size: 16px;
+    .mobile-tile-badge {
+        font-size: 8.5px;
+        font-weight: 700;
+        letter-spacing: 0.1em;
+        color: var(--sp-text-tertiary);
         margin-bottom: 6px;
     }
 
-    .yoga-card-desc {
-        font-size: 12.5px;
-        line-height: 1.5;
-        margin-bottom: 14px;
+    .mobile-tile-badge.highlight {
+        color: var(--sp-accent);
     }
 
-    .yoga-card-footer {
-        font-size: 11.5px;
-    }
-
-    /* 2. Parthasarathi Socratic Counsel Feature on Mobile */
-    .counsel-showcase-section {
-        padding: 28px 0;
-    }
-
-    .counsel-showcase-card {
-        padding: 22px 18px;
-        border-radius: 14px;
-    }
-
-    .counsel-card-badge {
-        font-size: 10px;
-        margin-bottom: 10px;
-    }
-
-    .counsel-heading {
-        font-size: 18px;
+    .mobile-tile-title {
+        font-family: var(--sp-font-heading);
+        font-size: 14px;
+        font-weight: 700;
+        color: var(--sp-text);
+        margin-bottom: 4px;
         line-height: 1.25;
-        margin-bottom: 8px;
     }
 
-    .counsel-subheading {
-        font-size: 13px;
-        line-height: 1.55;
-        margin-bottom: 16px;
+    .mobile-tile-desc {
+        font-size: 11px;
+        line-height: 1.35;
+        color: var(--sp-text-tertiary);
+        margin-bottom: 10px;
+        flex: 1;
     }
 
-    /* Horizontally Swipeable Counsel Prompt Chips */
-    .counsel-prompt-chips {
-        display: flex !important;
-        overflow-x: auto !important;
-        flex-wrap: nowrap !important;
+    .mobile-tile-link {
+        font-size: 11px;
+        font-weight: 600;
+        color: var(--sp-text-secondary);
+    }
+
+    .mobile-tile-link.highlight {
+        color: var(--sp-accent);
+    }
+
+    /* 5. "Where is your mind today?" (Immediate State of Mind Selector) */
+    .mobile-mood-section {
+        margin-bottom: 22px;
+    }
+
+    .mobile-section-heading h3 {
+        font-family: var(--sp-font-heading);
+        font-size: 14px;
+        font-weight: 700;
+        color: var(--sp-text);
+        margin-bottom: 2px;
+    }
+
+    .mobile-section-heading span {
+        font-size: 11px;
+        color: var(--sp-text-tertiary);
+        display: block;
+        margin-bottom: 12px;
+    }
+
+    .mobile-mood-carousel {
+        display: flex;
+        overflow-x: auto;
         gap: 8px;
-        padding: 2px 0 10px;
-        margin-bottom: 16px;
+        padding-bottom: 6px;
         -webkit-overflow-scrolling: touch;
         scrollbar-width: none;
     }
 
-    .counsel-prompt-chips::-webkit-scrollbar { display: none; }
+    .mobile-mood-carousel::-webkit-scrollbar {
+        display: none;
+    }
 
-    .counsel-prompt-pill {
+    .mobile-mood-chip {
+        display: flex;
+        align-items: center;
+        gap: 6px;
         flex: 0 0 auto;
         white-space: nowrap;
-        font-size: 12px;
-        padding: 8px 14px;
-        border-radius: 7px;
+        padding: 8px 13px;
+        font-size: 11.5px;
+        font-weight: 500;
+        border-radius: 8px;
+        background: var(--sp-bg-card);
+        border: 1px solid var(--sp-border);
+        color: var(--sp-text-secondary);
+        cursor: pointer;
+        transition: all var(--sp-duration-sm) var(--sp-ease);
     }
 
-    .counsel-cta-btn {
-        width: 100%;
-        padding: 12px 18px;
-        font-size: 13px;
+    .mobile-mood-chip:active {
+        background: var(--sp-bg-elevated);
+        border-color: var(--sp-accent);
+        color: var(--sp-text);
     }
 
-    /* 3. Prashna-Marg Dilemmas Carousel */
-    .home-dilemmas-section {
-        padding: 28px 0;
+    .mood-chip-dot {
+        width: 5px;
+        height: 5px;
+        border-radius: 50%;
+        background: var(--sp-accent);
     }
 
-    .home-dilemmas-grid {
-        display: flex !important;
-        overflow-x: auto !important;
-        scroll-snap-type: x mandatory;
-        gap: 12px;
-        padding: 4px 16px 14px 16px;
-        margin: 0 -16px;
-        -webkit-overflow-scrolling: touch;
-        scrollbar-width: none;
-    }
-
-    .home-dilemmas-grid::-webkit-scrollbar { display: none; }
-
-    .home-dilemma-card {
-        flex: 0 0 74vw;
-        max-width: 270px;
-        scroll-snap-align: start;
-        padding: 18px 16px;
-        border-radius: 12px;
-    }
-
-    .dilemma-state-title {
-        font-size: 14.5px;
-    }
-
-    .dilemma-remedy-text {
-        font-size: 12.5px;
-        line-height: 1.5;
-        margin-bottom: 14px;
-    }
-
-    .dilemma-verse-tag {
-        font-size: 10px;
-    }
-
-    /* 4. Meditative Stillness Soundscape Sanctuary */
-    .home-soundscape-section {
-        padding: 28px 0;
-    }
-
-    .soundscape-card-inner {
-        padding: 22px 18px;
-        border-radius: 14px;
-    }
-
-    .soundscape-badge {
-        font-size: 10px;
-        margin-bottom: 8px;
-    }
-
-    .soundscape-heading {
-        font-size: 18px;
-        line-height: 1.25;
-        margin-bottom: 8px;
-    }
-
-    .soundscape-desc {
-        font-size: 13px;
-        line-height: 1.55;
-        margin-bottom: 18px;
-    }
-
-    .soundscape-actions {
+    /* 6. Compact Socratic AI Counsel Bar */
+    .mobile-counsel-strip {
         display: flex;
-        flex-direction: row;
-        gap: 8px;
-    }
-
-    .soundscape-actions .action-btn {
-        flex: 1;
-        padding: 10px 12px;
-        font-size: 12px;
-        text-align: center;
-    }
-
-    /* 5. Chapters Preview Carousel on Home Screen */
-    .chapters-section {
-        padding: 28px 0 36px;
-    }
-
-    #home-chapters-grid {
-        display: flex !important;
-        overflow-x: auto !important;
-        scroll-snap-type: x mandatory;
+        align-items: center;
+        justify-content: space-between;
         gap: 12px;
-        padding: 4px 16px 14px 16px;
-        margin: 0 -16px;
-        -webkit-overflow-scrolling: touch;
-        scrollbar-width: none;
+        padding: 15px 16px;
+        border-radius: 12px;
+        background: var(--sp-bg-card);
+        border: 1px solid var(--sp-border);
+        border-left: 3px solid var(--sp-accent);
+        margin-bottom: 28px;
+        cursor: pointer;
     }
 
-    #home-chapters-grid::-webkit-scrollbar { display: none; }
+    .mobile-counsel-strip:active {
+        background: var(--sp-bg-elevated);
+    }
 
-    #home-chapters-grid .chapter-card {
-        flex: 0 0 74vw;
-        max-width: 265px;
-        scroll-snap-align: start;
-        padding: 18px 16px;
-        border-radius: 12px;
+    .mobile-counsel-kicker {
+        display: block;
+        font-size: 9px;
+        letter-spacing: 0.1em;
+        color: var(--sp-accent);
+        font-weight: 700;
+        margin-bottom: 4px;
+    }
+
+    .mobile-counsel-text h4 {
+        font-size: 12.5px;
+        font-weight: 500;
+        font-style: italic;
+        color: var(--sp-text-secondary);
+        line-height: 1.45;
+        margin: 0;
+    }
+
+    .mobile-counsel-btn {
+        background: var(--sp-accent);
+        color: #0d0f12;
+        font-weight: 700;
+        font-size: 11.5px;
+        padding: 8px 14px;
+        border-radius: 8px;
+        border: none;
+        flex-shrink: 0;
+        cursor: pointer;
+    }
+
+    /* 7. Mobile App Monastic Colophon & Pure App Footer */
+    .mobile-app-footer {
+        padding: 24px 0 16px;
+        text-align: center;
+        border-top: 1px solid rgba(255, 255, 255, 0.07);
+    }
+
+    [data-theme="light"] .mobile-app-footer {
+        border-top-color: rgba(0, 0, 0, 0.08);
+    }
+
+    .mobile-colophon-box {
+        padding: 14px 12px;
+        border-radius: 10px;
+        background: rgba(255, 255, 255, 0.02);
+        border: 1px solid var(--sp-border);
+        margin-bottom: 20px;
+    }
+
+    [data-theme="light"] .mobile-colophon-box {
+        background: rgba(0, 0, 0, 0.02);
+    }
+
+    .mobile-colophon-sanskrit {
+        font-family: var(--sp-font-sanskrit);
+        font-size: 13.5px;
+        line-height: 1.65;
+        color: var(--sp-accent);
+        margin-bottom: 6px;
+    }
+
+    .mobile-colophon-trans {
+        font-size: 11px;
+        line-height: 1.5;
+        color: var(--sp-text-tertiary);
+        font-style: italic;
+        margin: 0;
+    }
+
+    .mobile-brand-title {
+        display: block;
+        font-family: var(--sp-font-heading);
+        font-size: 13px;
+        font-weight: 800;
+        letter-spacing: 0.15em;
+        color: var(--sp-text);
+        margin-bottom: 2px;
+    }
+
+    .mobile-brand-tagline {
+        display: block;
+        font-size: 10.5px;
+        color: var(--sp-text-tertiary);
+        margin-bottom: 12px;
+    }
+
+    .mobile-craft-line {
+        font-size: 11px;
+        color: var(--sp-text-tertiary);
+    }
+
+    .mobile-craft-line a {
+        color: var(--sp-accent);
+        text-decoration: none;
+        font-weight: 600;
     }
 
     /* On dedicated chapters screen, use 1-column */
@@ -3334,59 +3482,6 @@ label {
         display: grid;
         grid-template-columns: 1fr;
         gap: 12px;
-    }
-
-    /* 6. Footer on Mobile — Calm & Grouped */
-    .site-footer {
-        margin-top: 40px;
-        padding: 36px 0 20px;
-    }
-
-    .footer-colophon {
-        padding: 16px 14px;
-        margin-bottom: 28px;
-    }
-
-    .colophon-sanskrit {
-        font-size: 14.5px;
-        line-height: 1.7;
-    }
-
-    .colophon-translation {
-        font-size: 12px;
-    }
-
-    .footer-grid {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 22px 14px;
-        margin-bottom: 28px;
-    }
-
-    .footer-col h4 {
-        font-size: 10px;
-        margin-bottom: 10px;
-    }
-
-    .footer-col li a,
-    .footer-col li span {
-        font-size: 12px;
-    }
-
-    .footer-bottom {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        gap: 10px;
-        padding-top: 20px;
-    }
-
-    .footer-brand {
-        flex-direction: column;
-        gap: 4px;
-    }
-
-    .footer-craft-signature {
-        font-size: 10.5px;
     }
 
     /* PWA Install Banner: Compact floating card above bottom nav */

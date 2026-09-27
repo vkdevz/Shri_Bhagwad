@@ -344,7 +344,7 @@ class GitaApp {
             dailyVerse.addEventListener('click', () => this.openDailyVerse());
         }
 
-        // Daily Verse Card Direct Actions
+        // Daily Verse Card Direct Actions (Desktop)
         document.getElementById('daily-card-share-btn')?.addEventListener('click', (e) => {
             e.stopPropagation();
             if (this.dailyVerse) {
@@ -371,6 +371,86 @@ class GitaApp {
                 this.currentVerse = this.dailyVerse.verse;
                 this.openJournalModal();
             }
+        });
+
+        // Native Mobile App View Listeners
+        const mobileDailyVerse = document.getElementById('mobile-daily-verse-card');
+        if (mobileDailyVerse) {
+            mobileDailyVerse.addEventListener('click', () => this.openDailyVerse());
+        }
+
+        document.getElementById('mobile-daily-share-btn')?.addEventListener('click', (e) => {
+            e.stopPropagation();
+            if (this.dailyVerse) {
+                this.openCanvasModal(this.dailyVerse.chapter, this.dailyVerse.verse);
+            }
+        });
+
+        document.getElementById('mobile-daily-listen-btn')?.addEventListener('click', (e) => {
+            e.stopPropagation();
+            if (window.dhyanaAudio) {
+                const isPlaying = window.dhyanaAudio.toggleDrone();
+                const btn = document.getElementById('mobile-daily-listen-btn');
+                if (btn) {
+                    btn.innerHTML = isPlaying
+                        ? '<span><strong>Stillness Active</strong></span>'
+                        : '<span>Stillness ↗</span>';
+                }
+                this.showToast(isPlaying ? 'Meditative Soundscape Started' : 'Soundscape Paused', 'info');
+            }
+        });
+
+        document.getElementById('mobile-daily-reflect-btn')?.addEventListener('click', (e) => {
+            e.stopPropagation();
+            if (this.dailyVerse) {
+                this.currentChapter = this.dailyVerse.chapter;
+                this.currentVerse = this.dailyVerse.verse;
+                this.openJournalModal();
+            }
+        });
+
+        // Mobile 1-Tap Resume Reading
+        document.getElementById('mobile-continue-reading')?.addEventListener('click', () => {
+            this.navigateToReader();
+        });
+
+        // Mobile App Mode Tiles
+        document.querySelectorAll('.mobile-mode-tile').forEach(tile => {
+            tile.addEventListener('click', () => {
+                const screen = tile.dataset.screenTarget;
+                const isCounsel = tile.dataset.counselTrigger;
+                if (screen) {
+                    this.navigateToScreen(screen);
+                } else if (isCounsel) {
+                    document.getElementById('open-ai-advisor')?.click();
+                }
+            });
+        });
+
+        // Mobile Mood Chips (Immediate Socratic / Scriptural Relief)
+        document.querySelectorAll('.mobile-mood-chip').forEach(chip => {
+            chip.addEventListener('click', () => {
+                const mood = chip.dataset.mood;
+                this.navigateToScreen('dilemmas');
+                if (mood) {
+                    setTimeout(() => {
+                        const targetCard = document.querySelector(`.home-dilemma-card[data-mood="${mood}"], .dilemma-card[data-mood="${mood}"]`);
+                        if (targetCard) {
+                            targetCard.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                            targetCard.click();
+                        }
+                    }, 180);
+                }
+            });
+        });
+
+        // Mobile Counsel Bar
+        document.getElementById('mobile-counsel-cta-btn')?.addEventListener('click', (e) => {
+            e.stopPropagation();
+            document.getElementById('open-ai-advisor')?.click();
+        });
+        document.getElementById('mobile-counsel-bar')?.addEventListener('click', () => {
+            document.getElementById('open-ai-advisor')?.click();
         });
 
         // Chapter Category Filters on Chapters Screen
@@ -1233,15 +1313,25 @@ class GitaApp {
     updateDailyVerseDisplay() {
         if (!this.dailyVerse) return;
 
+        const sanskritText = this.dailyVerse.sanskrit || '';
+        const translationText = this.getTranslation(this.dailyVerse);
+        const referenceText = `Chapter ${this.dailyVerse.chapter} • Verse ${this.dailyVerse.verse}`;
+
+        // Desktop Daily Verse
         const sanskritEl = document.getElementById('daily-sanskrit');
         const translationEl = document.getElementById('daily-translation');
         const referenceEl = document.getElementById('daily-reference');
+        if (sanskritEl) sanskritEl.textContent = sanskritText;
+        if (translationEl) translationEl.textContent = translationText;
+        if (referenceEl) referenceEl.textContent = referenceText;
 
-        if (sanskritEl) sanskritEl.textContent = this.dailyVerse.sanskrit || '';
-        if (translationEl) translationEl.textContent = this.getTranslation(this.dailyVerse);
-        if (referenceEl) {
-            referenceEl.textContent = `Chapter ${this.dailyVerse.chapter} • Verse ${this.dailyVerse.verse}`;
-        }
+        // Native Mobile App Daily Verse
+        const mSanskritEl = document.getElementById('mobile-daily-sanskrit');
+        const mTranslationEl = document.getElementById('mobile-daily-translation');
+        const mReferenceEl = document.getElementById('mobile-daily-reference');
+        if (mSanskritEl) mSanskritEl.textContent = sanskritText;
+        if (mTranslationEl) mTranslationEl.textContent = translationText;
+        if (mReferenceEl) mReferenceEl.textContent = referenceText;
     }
 
     updateHomeScreen() {
@@ -1256,6 +1346,17 @@ class GitaApp {
             this.updateElement('streak-count', streak.toString());
             this.updateElement('bookmark-count', bookmarkCount.toString());
             this.updateElement('progress-percentage', `${percentage}%`);
+
+            // Native Mobile App Streak & Resume Title
+            const mobileStreakLabel = document.getElementById('mobile-streak-label');
+            if (mobileStreakLabel) {
+                mobileStreakLabel.textContent = `${streak} Day Streak • ${readVerses} Verses`;
+            }
+
+            const mobileResumeTitle = document.getElementById('mobile-resume-title');
+            if (mobileResumeTitle && this.currentChapter) {
+                mobileResumeTitle.textContent = `Chapter ${this.currentChapter}: Verse ${this.currentVerse || 1}`;
+            }
 
             const progressFill = document.getElementById('overall-progress');
             if (progressFill) {
