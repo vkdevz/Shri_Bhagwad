@@ -8,8 +8,32 @@
     <meta name="description" content="Read all 18 chapters and 701 verses of the Bhagavad Gita, meditate with 432Hz Tanpura, create 3:4 Instagram/WhatsApp quote cards, and consult Parthasarathi AI.">
     <meta name="theme-color" content="#070B14">
 
+    <!-- Immediate Cache-Buster & Old Service Worker Purge Script -->
+    <script>
+        (function() {
+            // Unregister legacy service workers that cached stale HTML
+            if ('serviceWorker' in navigator) {
+                navigator.serviceWorker.getRegistrations().then(function(registrations) {
+                    for (var i = 0; i < registrations.length; i++) {
+                        registrations[i].unregister();
+                    }
+                });
+            }
+            // Clear legacy cache storage
+            if ('caches' in window) {
+                caches.keys().then(function(names) {
+                    for (var i = 0; i < names.length; i++) {
+                        if (!names[i].includes('v4-network-first')) {
+                            caches.delete(names[i]);
+                        }
+                    }
+                });
+            }
+        })();
+    </script>
+
     <!-- PWA Tags -->
-    <link rel="manifest" href="manifest.json">
+    <link rel="manifest" href="manifest.json?v=5.0">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="apple-mobile-web-app-title" content="Bhagavad Gita">
@@ -26,13 +50,13 @@
         href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&family=Noto+Sans+Devanagari:wght@400;500;600;700&family=Outfit:wght@300;400;500;600;700&family=Inter:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap"
         rel="stylesheet">
 
-    <!-- Stylesheets -->
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/features.css">
+    <!-- Stylesheets with Cache Busting -->
+    <link rel="stylesheet" href="css/main.css?v=5.0">
+    <link rel="stylesheet" href="css/features.css?v=5.0">
 </head>
 
 <body>
-    <!-- Loading Screen -->
+    <!-- Loading Screen (Subtle & Fast Fade) -->
     <div id="loading-screen" class="loading-screen">
         <div class="loading-content">
             <div class="om-symbol">ॐ</div>
@@ -83,7 +107,7 @@
                         <span>Home</span>
                     </button>
                     <button class="desktop-nav-link" data-screen="chapters">
-                        <span>Chapters</span>
+                        <span>All 18 Chapters</span>
                     </button>
                     <button class="desktop-nav-link" data-screen="dilemmas">
                         <span>Prashna-Marg</span>
@@ -157,9 +181,9 @@
                         <!-- Left Hero Column: Spiritual Greeting & Stats -->
                         <div class="hero-left">
                             <div class="hero-badge">🕉️ Canonical 18 Chapters & 701 Verses</div>
-                            <h1 class="hero-heading">The Timeless Song of the Divine</h1>
+                            <h1 class="hero-heading">The Eternal Song of Supreme Wisdom</h1>
                             <p class="hero-subheading">
-                                Discover serenity, master your duty, and conquer life's inner battles with canonical Sanskrit shloks, Socratic counsel, and 432 Hz Dhyana.
+                                Master your duty, overcome emotional distress, and awaken inner serenity through Krishna's sacred dialogue with Arjuna.
                             </p>
                             
                             <div class="hero-actions">
@@ -182,7 +206,7 @@
                                 </div>
                                 <div class="stat-card">
                                     <span class="stat-icon">🔥</span>
-                                    <span class="stat-number" id="streak-count">0</span>
+                                    <span class="stat-number" id="streak-count">1</span>
                                     <span class="stat-label">Day Streak</span>
                                 </div>
                                 <div class="stat-card">
@@ -198,17 +222,17 @@
                             </div>
                         </div>
 
-                        <!-- Right Hero Column: Today's Divine Shlok Card -->
+                        <!-- Right Hero Column: Today's Divine Shlok Card (Pre-Rendered with Ch 2.47) -->
                         <div class="hero-right">
                             <div class="daily-verse-wrapper">
                                 <div class="daily-verse-badge">
                                     <span>🌟 Today's Contemplation</span>
-                                    <span class="daily-verse-ref" id="daily-reference">Chapter • Verse</span>
+                                    <span class="daily-verse-ref" id="daily-reference">Chapter 2 • Verse 47</span>
                                 </div>
                                 <div id="daily-verse" class="daily-verse-card">
-                                    <div class="daily-shlok-calligraphy" id="daily-sanskrit">Loading sacred verses...</div>
+                                    <div class="daily-shlok-calligraphy" id="daily-sanskrit">कर्मण्येवाधिकारस्ते मा फलेषु कदाचन।<br>मा कर्मफलहेतुर्भूर्मा ते सङ्गोऽस्त्वकर्मणि॥</div>
                                     <div class="daily-divider"></div>
-                                    <div class="daily-translation-text" id="daily-translation">Loading meaning...</div>
+                                    <div class="daily-translation-text" id="daily-translation">"You have a right to perform your prescribed duties, but you are not entitled to the fruits of your actions. Never consider yourself the cause of results, nor be attached to inaction."</div>
                                     
                                     <div class="daily-card-actions">
                                         <button id="daily-card-share-btn" class="daily-action-pill highlight" title="Create 3:4 Instagram/WhatsApp Quote Card">
@@ -230,8 +254,10 @@
                 <!-- Quick Prashna-Marg Mood Chips -->
                 <section class="section-container mood-chips-section">
                     <div class="section-header">
-                        <h2>How is your mind feeling today?</h2>
-                        <span class="section-subtitle">Instant scriptural guidance for your present emotional state</span>
+                        <div>
+                            <h2>प्रश्न-मार्ग • How is your mind feeling today?</h2>
+                            <span class="section-subtitle">Select your present emotional state to receive Krishna's direct scriptural remedy</span>
+                        </div>
                     </div>
                     <div class="mood-chips-scroll">
                         <button class="mood-chip" data-mood="ANXIETY_OVERWHELM">
@@ -268,7 +294,7 @@
                             <h2>सम्पूर्ण १८ अध्याय • All 18 Chapters</h2>
                             <span class="section-subtitle">Browse all 701 canonical verses across the four yogas</span>
                         </div>
-                        <button class="section-view-all-btn" id="home-view-all-chapters-btn">View All →</button>
+                        <button class="section-view-all-btn" id="home-view-all-chapters-btn">View All 18 Chapters →</button>
                     </div>
                     <div class="chapters-grid" id="home-chapters-grid">
                         <!-- Populated by JavaScript -->
@@ -746,11 +772,11 @@
     <!-- Toast Notification Container -->
     <div id="toast-container" class="toast-container"></div>
 
-    <!-- Scripts -->
-    <script src="js/api-client.js"></script>
-    <script src="js/dhyana-audio.js"></script>
-    <script src="js/canvas-card.js"></script>
-    <script src="js/app.js"></script>
+    <!-- Scripts with Cache Busting -->
+    <script src="js/api-client.js?v=5.0"></script>
+    <script src="js/dhyana-audio.js?v=5.0"></script>
+    <script src="js/canvas-card.js?v=5.0"></script>
+    <script src="js/app.js?v=5.0"></script>
 </body>
 
 </html>

@@ -1075,31 +1075,34 @@ class GitaApp {
         }
     }
 
-    setDailyVerse() {
-        if (!this.gitaData || !this.gitaData.chapters) return;
+    async setDailyVerse() {
+        // Immediate default: Chapter 2, Verse 47 (The crown jewel of the Gita)
+        this.dailyVerse = {
+            chapter: 2,
+            verse: 47,
+            sanskrit: "कर्मण्येवाधिकारस्ते मा फलेषु कदाचन।\nमा कर्मफलहेतुर्भूर्मा ते सङ्गोऽस्त्वकर्मणि॥",
+            transliteration: "karmaṇy-evādhikāras te mā phaleṣhu kadāchana\nmā karma-phala-hetur bhūr mā te saṅgo 'stvakarmaṇi",
+            translation: {
+                english: "You have a right to perform your prescribed duties, but you are not entitled to the fruits of your actions. Never consider yourself to be the cause of results, nor be attached to inaction.",
+                hindi: "तुम्हारा अधिकार केवल कर्म करने में है, उसके फलों में कभी नहीं। इसलिए तुम कर्मों के फल के हेतु मत बनो और तुम्हारी अकर्मण्यता में भी आसक्ति न हो।"
+            }
+        };
+        this.updateDailyVerseDisplay();
 
-        const today = new Date();
-        const dayOfYear = Math.floor((today - new Date(today.getFullYear(), 0, 0)) / 86400000);
-        const totalVerses = this.getTotalVerses();
-        if (totalVerses === 0) return;
-
-        const verseIndex = dayOfYear % totalVerses;
-        let currentIndex = 0;
-
-        for (const chapter of this.gitaData.chapters) {
-            if (!chapter.verses) continue;
-            for (const verse of chapter.verses) {
-                if (currentIndex === verseIndex) {
+        try {
+            if (window.gitaApi) {
+                const apiDaily = await window.gitaApi.getDailyVerse();
+                if (apiDaily && apiDaily.verse) {
                     this.dailyVerse = {
-                        chapter: chapter.number,
-                        verse: verse.number,
-                        ...verse
+                        chapter: apiDaily.verse.chapterNumber || (apiDaily.verse.chapter ? apiDaily.verse.chapter.chapterNumber : 2),
+                        verse: apiDaily.verse.verseNumber || 47,
+                        ...apiDaily.verse
                     };
                     this.updateDailyVerseDisplay();
-                    return;
                 }
-                currentIndex++;
             }
+        } catch (e) {
+            console.log('Using canonical daily verse');
         }
     }
 

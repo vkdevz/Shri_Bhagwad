@@ -1,87 +1,57 @@
-const CACHE_NAME = 'bhagavad-gita-v3';
-const urlsToCache = [
-  './',
-  './index.html',
-  './css/main.css',
-  './css/features.css',
-  './js/api-client.js',
-  './js/dhyana-audio.js',
-  './js/canvas-card.js',
-  './js/app.js',
-  './data/chapters/chapters_summary.json',
-  './data/chapters/dilemmas.json',
-  './manifest.json',
-  './icons/icon-192x192.png',
-  './icons/icon-512x512.png',
-  './icons/apple-touch-icon.png',
-  './icons/favicon.png'
-];
+// Service Worker for Shrimad Bhagavad Gita Platform
+// Network-First strategy to ensure latest updates are ALWAYS served immediately
+const CACHE_NAME = 'bhagavad-gita-v4-network-first';
 
-// Install event
 self.addEventListener('install', (event) => {
-  console.log('Service Worker installing...');
-  event.waitUntil(
-    caches.open(CACHE_NAME)
-      .then((cache) => {
-        console.log('Opened cache');
-        return cache.addAll(urlsToCache);
-      })
-      .catch((error) => {
-        console.error('Failed to cache resources:', error);
-      })
-  );
+  // Immediately activate new service worker without waiting
+  self.skipWaiting();
 });
 
-// Fetch event
-self.addEventListener('fetch', (event) => {
-  event.respondWith(
-    caches.match(event.request)
-      .then((response) => {
-        // Return cached version or fetch from network
-        if (response) {
-          return response;
-        }
-        return fetch(event.request);
-      }
-    )
-  );
-});
-
-// Activate event
 self.addEventListener('activate', (event) => {
-  console.log('Service Worker activating...');
   event.waitUntil(
+    // Delete all older caches immediately
     caches.keys().then((cacheNames) => {
       return Promise.all(
-        cacheNames.map((cacheName) => {
-          if (cacheName !== CACHE_NAME) {
-            console.log('Deleting old cache:', cacheName);
-            return caches.delete(cacheName);
+        cacheNames.map((name) => {
+          if (name !== CACHE_NAME) {
+            console.log('Clearing stale cache:', name);
+            return caches.delete(name);
           }
         })
       );
-    })
+    }).then(() => self.clients.claim())
   );
 });
 
-// Background sync (optional)
-self.addEventListener('sync', (event) => {
-  if (event.tag === 'background-sync') {
-    console.log('Background sync triggered');
-  }
-});
+// Network-First Fetch Strategy
+// Tries the network first. If online, returns fresh content and updates cache.
+// If offline, falls back to cached assets.
+self.addEventListener('fetch', (event) => {
+  // Only handle GET requests
+  if (event.request.method !== 'GET') return;
 
-// Push notifications (optional)
-self.addEventListener('push', (event) => {
-  if (event.data) {
-    const data = event.data.json();
-    const options = {
-      body: data.body,
-      icon: '/icons/icon-192x192.png',
-      badge: '/icons/icon-72x72.png'
-    };
-    event.waitUntil(
-      self.registration.showNotification(data.title, options)
-    );
-  }
+  event.respondWith(
+    fetch(event.request)
+      .then((networkResponse) => {
+        // If valid response, update cache in background
+        if (networkResponse && networkResponse.status === 200 && networkResponse.type === 'basic') {
+          const responseToCache = networkResponse.clone();
+          caches.open(CACHE_NAME).then((cache) => {
+            cache.put(event.request, responseToCache);
+          });
+        }
+        return networkResponse;
+      })
+      .catch(() => {
+        // Network failed (offline), look in cache
+        return caches.match(event.request).then((cachedResponse) => {
+          if (cachedResponse) {
+            return cachedResponse;
+          }
+          if (event.request.mode === 'navigate') {
+            return caches.match('./index.html');
+          }
+        });
+      })
+  );
 });
