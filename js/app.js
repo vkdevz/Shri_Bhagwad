@@ -502,6 +502,87 @@ class GitaApp {
         if (breathBtn) {
             breathBtn.addEventListener('click', () => this.toggleBreathingExercise());
         }
+
+        // 1. Four Yogas Pathway Cards on Home
+        document.querySelectorAll('.yoga-pathway-card').forEach(card => {
+            card.addEventListener('click', () => {
+                const yoga = card.dataset.yoga;
+                if (yoga === 'dhyana') {
+                    this.navigateToScreen('dhyana');
+                } else {
+                    this.navigateToScreen('chapters');
+                    document.querySelectorAll('.cat-tab').forEach(tab => {
+                        tab.classList.toggle('active', tab.dataset.filter === yoga);
+                    });
+                    this.filterChaptersByCategory(yoga);
+                }
+            });
+        });
+
+        // 2. Parthasarathi Socratic Counsel Showcase on Home
+        const homeCounselCta = document.getElementById('home-counsel-cta');
+        if (homeCounselCta) {
+            homeCounselCta.addEventListener('click', () => {
+                const aiModal = document.getElementById('ai-modal');
+                if (aiModal) {
+                    aiModal.classList.remove('hidden');
+                    setTimeout(() => {
+                        document.getElementById('ai-query-input')?.focus();
+                    }, 80);
+                }
+            });
+        }
+
+        // 3. Parthasarathi Prompt Pills on Home
+        document.querySelectorAll('.counsel-prompt-pill').forEach(pill => {
+            pill.addEventListener('click', () => {
+                const query = pill.dataset.query || pill.textContent.trim().replace(/^"|"$/g, '');
+                const aiModal = document.getElementById('ai-modal');
+                const aiInput = document.getElementById('ai-query-input');
+                if (aiModal && aiInput) {
+                    aiInput.value = query;
+                    aiModal.classList.remove('hidden');
+                    this.submitAIQuery();
+                }
+            });
+        });
+
+        // 4. Prashna-Marg Dilemma Preview Cards on Home
+        document.querySelectorAll('.home-dilemma-card').forEach(card => {
+            card.addEventListener('click', () => {
+                const mood = card.dataset.mood;
+                if (mood) {
+                    this.openDilemma(mood);
+                }
+            });
+        });
+
+        // 5. Sacred Soundscape Banner CTAs on Home
+        const homeDhyanaBtn = document.getElementById('home-dhyana-chamber-btn');
+        if (homeDhyanaBtn) {
+            homeDhyanaBtn.addEventListener('click', () => this.navigateToScreen('dhyana'));
+        }
+
+        const homeDhyanaToggle = document.getElementById('home-dhyana-play-toggle');
+        if (homeDhyanaToggle) {
+            homeDhyanaToggle.addEventListener('click', () => {
+                if (window.dhyanaAudio) {
+                    const isPlaying = window.dhyanaAudio.toggleDrone();
+                    homeDhyanaToggle.innerHTML = isPlaying
+                        ? '<span>🔊 <strong>432 Hz Drone Active</strong></span>'
+                        : '<span>▶ Play 432 Hz Drone</span>';
+                    this.showToast(isPlaying ? '432 Hz Sacred Drone Started 🧘' : 'Drone Paused', 'info');
+                }
+            });
+        }
+
+        // 6. Footer Back to Top
+        const backToTopBtn = document.getElementById('footer-back-to-top');
+        if (backToTopBtn) {
+            backToTopBtn.addEventListener('click', () => {
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            });
+        }
     }
 
     async loadDilemmas() {
@@ -1270,13 +1351,16 @@ class GitaApp {
         card.addEventListener('click', () => this.openChapter(chapter.number));
 
         const totalVerses = chapter.verses && chapter.verses.length > 0 ? chapter.verses.length : (chapter.verseCount || 0);
-        const titleSanskrit = chapter.titleSanskrit || chapter.name_translation || chapter.title;
+        const sanskritName = chapter.sanskritName || chapter.titleSanskrit || '';
+        const englishTitle = chapter.title || '';
+        const subtitle = chapter.subtitle || '';
         const romanNumeral = this.toRoman(chapter.number);
 
         card.innerHTML = `
             <div class="chapter-number">${romanNumeral}</div>
-            <div class="chapter-name-sanskrit">${this.escapeHtml(titleSanskrit)}</div>
-            <div class="chapter-name-english">${this.escapeHtml(chapter.title || '')}</div>
+            ${sanskritName ? `<div class="chapter-name-sanskrit">${this.escapeHtml(sanskritName)}</div>` : ''}
+            <div class="chapter-name-english">${this.escapeHtml(englishTitle)}</div>
+            ${subtitle ? `<div class="chapter-theme-preview">${this.escapeHtml(subtitle)}</div>` : ''}
             <div class="chapter-verse-count">${totalVerses} Verses</div>
         `;
 

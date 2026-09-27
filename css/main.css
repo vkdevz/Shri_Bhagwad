@@ -1232,51 +1232,535 @@ label {
     border-bottom-color: var(--sp-accent);
 }
 
-/* Mood Chips Section */
-.mood-chips-section {
-    padding: var(--sp-space-6) 0 var(--sp-space-8);
+/* --------------------------------------------------------------------------
+   Four Sacred Yogas Section (चतुर्योग मार्ग)
+   -------------------------------------------------------------------------- */
+.yogas-section {
+    padding: 48px 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.06);
 }
 
-.mood-chips-scroll {
+[data-theme="light"] .yogas-section {
+    border-top: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.yogas-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+}
+
+@media (max-width: 1024px) {
+    .yogas-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 640px) {
+    .yogas-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.yoga-pathway-card {
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    border-top: 2px solid rgba(212, 175, 55, 0.4);
+    border-radius: 12px;
+    padding: 24px;
+    cursor: pointer;
     display: flex;
-    gap: var(--sp-space-2);
-    overflow-x: auto;
-    padding-bottom: var(--sp-space-2);
-    -webkit-overflow-scrolling: touch;
-    scrollbar-width: none;
+    flex-direction: column;
+    transition: all 220ms cubic-bezier(0.16, 1, 0.3, 1);
+    position: relative;
 }
 
-.mood-chips-scroll::-webkit-scrollbar { display: none; }
+.yoga-pathway-card:hover {
+    background: rgba(255, 255, 255, 0.045);
+    border-color: rgba(255, 255, 255, 0.16);
+    border-top-color: var(--sp-accent);
+    transform: translateY(-2px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4);
+}
 
-.mood-chip {
-    flex-shrink: 0;
-    padding: 8px 16px;
+[data-theme="light"] .yoga-pathway-card {
+    background: #ffffff;
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    border-top: 2px solid rgba(184, 134, 11, 0.5);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.03);
+}
+
+[data-theme="light"] .yoga-pathway-card:hover {
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+    border-color: rgba(0, 0, 0, 0.16);
+    border-top-color: var(--sp-accent);
+}
+
+.yoga-card-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 12px;
+}
+
+.yoga-sanskrit-tag {
+    font-family: var(--sp-font-sanskrit);
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--sp-accent);
+}
+
+.yoga-scope-tag {
+    font-family: var(--sp-font-mono, monospace);
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--sp-text-tertiary);
+}
+
+.yoga-card-title {
+    font-family: var(--sp-font-heading);
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--sp-text);
+    margin-bottom: 10px;
+}
+
+.yoga-card-desc {
+    font-size: 13.5px;
+    line-height: 1.55;
+    color: var(--sp-text-secondary);
+    margin-bottom: 20px;
+    flex: 1;
+}
+
+.yoga-card-footer {
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.03em;
+    color: var(--sp-accent);
+    transition: transform var(--sp-duration-sm) var(--sp-ease);
+}
+
+.yoga-pathway-card:hover .yoga-card-footer {
+    transform: translateX(3px);
+}
+
+/* --------------------------------------------------------------------------
+   Parthasarathi Socratic Counsel Feature Spotlight
+   -------------------------------------------------------------------------- */
+.counsel-showcase-section {
+    padding: 48px 0;
+}
+
+.counsel-showcase-card {
+    background: radial-gradient(ellipse at 85% 20%, rgba(212, 175, 55, 0.08) 0%, rgba(255, 255, 255, 0.015) 70%);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-top: 1px solid rgba(212, 175, 55, 0.4);
+    border-radius: 16px;
+    padding: 44px 48px;
+    position: relative;
+    overflow: hidden;
+}
+
+[data-theme="light"] .counsel-showcase-card {
+    background: radial-gradient(ellipse at 85% 20%, rgba(212, 175, 55, 0.12) 0%, #FFFFFF 70%);
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    border-top: 2px solid rgba(184, 134, 11, 0.6);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
+}
+
+.counsel-card-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-family: var(--sp-font-mono, monospace);
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--sp-accent);
+    margin-bottom: 16px;
+}
+
+.counsel-heading {
+    font-family: var(--sp-font-heading);
+    font-size: clamp(1.8rem, 3.2vw, 2.4rem);
+    font-weight: 700;
+    line-height: 1.2;
+    color: var(--sp-text);
+    margin-bottom: 14px;
+    letter-spacing: -0.5px;
+}
+
+.counsel-subheading {
+    font-size: 15px;
+    line-height: 1.7;
+    color: var(--sp-text-secondary);
+    max-width: 780px;
+    margin-bottom: 28px;
+}
+
+.counsel-prompt-chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 28px;
+}
+
+.counsel-prompt-pill {
+    padding: 10px 18px;
+    background: rgba(255, 255, 255, 0.035);
+    border: 1px solid rgba(255, 255, 255, 0.09);
+    border-radius: 8px;
     font-size: 13px;
     font-weight: 500;
     color: var(--sp-text-secondary);
-    background: rgba(255, 255, 255, 0.025);
-    border: 1px solid rgba(255, 255, 255, 0.07);
-    border-radius: var(--sp-radius-sm);
-    white-space: nowrap;
     cursor: pointer;
     transition: all var(--sp-duration-sm) var(--sp-ease);
+    text-align: left;
 }
 
-.mood-chip:hover {
-    border-color: rgba(255, 255, 255, 0.18);
+.counsel-prompt-pill:hover {
+    background: rgba(255, 255, 255, 0.07);
+    border-color: rgba(212, 175, 55, 0.4);
     color: var(--sp-text);
-    background: rgba(255, 255, 255, 0.06);
     transform: translateY(-1px);
 }
 
-[data-theme="light"] .mood-chip {
+[data-theme="light"] .counsel-prompt-pill {
     background: rgba(0, 0, 0, 0.03);
     border-color: rgba(0, 0, 0, 0.08);
 }
 
-[data-theme="light"] .mood-chip:hover {
+[data-theme="light"] .counsel-prompt-pill:hover {
     background: rgba(0, 0, 0, 0.06);
+    border-color: var(--sp-accent);
     color: #000000;
+}
+
+.counsel-cta-btn {
+    padding: 12px 28px;
+    font-size: 14px;
+}
+
+/* --------------------------------------------------------------------------
+   Prashna-Marg Dilemma Showcase Grid on Home
+   -------------------------------------------------------------------------- */
+.home-dilemmas-section {
+    padding: 48px 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+[data-theme="light"] .home-dilemmas-section {
+    border-top: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.home-dilemmas-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+}
+
+@media (max-width: 1024px) {
+    .home-dilemmas-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 640px) {
+    .home-dilemmas-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.home-dilemma-card {
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    border-top: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 12px;
+    padding: 22px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    transition: all 220ms cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.home-dilemma-card:hover {
+    background: rgba(255, 255, 255, 0.04);
+    border-color: rgba(255, 255, 255, 0.18);
+    transform: translateY(-2px);
+    box-shadow: 0 10px 28px rgba(0, 0, 0, 0.4);
+}
+
+[data-theme="light"] .home-dilemma-card {
+    background: #ffffff;
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
+}
+
+[data-theme="light"] .home-dilemma-card:hover {
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.07);
+    border-color: rgba(0, 0, 0, 0.18);
+}
+
+.dilemma-chip-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.dilemma-icon {
+    font-size: 20px;
+}
+
+.dilemma-state-title {
+    font-family: var(--sp-font-heading);
+    font-size: 15.5px;
+    font-weight: 600;
+    color: var(--sp-text);
+}
+
+.dilemma-remedy-text {
+    font-size: 13.5px;
+    line-height: 1.55;
+    color: var(--sp-text-secondary);
+    margin-bottom: 18px;
+    flex: 1;
+}
+
+.dilemma-card-foot {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 12px;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+[data-theme="light"] .dilemma-card-foot {
+    border-top-color: rgba(0, 0, 0, 0.05);
+}
+
+.dilemma-verse-tag {
+    font-family: var(--sp-font-mono, monospace);
+    font-size: 10.5px;
+    font-weight: 600;
+    color: var(--sp-accent);
+}
+
+.dilemma-arrow-link {
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--sp-text-secondary);
+    transition: color var(--sp-duration-sm) var(--sp-ease);
+}
+
+.home-dilemma-card:hover .dilemma-arrow-link {
+    color: var(--sp-accent);
+}
+
+/* --------------------------------------------------------------------------
+   Sacred 432 Hz Soundscape Banner on Home
+   -------------------------------------------------------------------------- */
+.home-soundscape-section {
+    padding: 48px 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+[data-theme="light"] .home-soundscape-section {
+    border-top: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.soundscape-card-inner {
+    background: radial-gradient(ellipse at 15% 50%, rgba(212, 175, 55, 0.06) 0%, rgba(255, 255, 255, 0.015) 75%);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-left: 3px solid var(--sp-accent);
+    border-radius: 14px;
+    padding: 38px 42px;
+}
+
+[data-theme="light"] .soundscape-card-inner {
+    background: #ffffff;
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    border-left: 4px solid var(--sp-accent);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.04);
+}
+
+.soundscape-badge {
+    font-family: var(--sp-font-mono, monospace);
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--sp-accent);
+    margin-bottom: 12px;
+}
+
+.soundscape-heading {
+    font-family: var(--sp-font-heading);
+    font-size: clamp(1.6rem, 2.8vw, 2.1rem);
+    font-weight: 700;
+    color: var(--sp-text);
+    margin-bottom: 12px;
+    letter-spacing: -0.4px;
+}
+
+.soundscape-desc {
+    font-size: 15px;
+    line-height: 1.65;
+    color: var(--sp-text-secondary);
+    max-width: 720px;
+    margin-bottom: 24px;
+}
+
+.soundscape-actions {
+    display: flex;
+    gap: 14px;
+    flex-wrap: wrap;
+}
+
+/* --------------------------------------------------------------------------
+   Site Footer (Vedic Colophon & Comprehensive Directory)
+   -------------------------------------------------------------------------- */
+.site-footer {
+    margin-top: 64px;
+    padding: 56px 0 36px;
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+[data-theme="light"] .site-footer {
+    border-top: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.footer-colophon {
+    text-align: center;
+    max-width: 820px;
+    margin: 0 auto 52px;
+    padding: 24px 28px;
+    background: rgba(255, 255, 255, 0.015);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 12px;
+}
+
+[data-theme="light"] .footer-colophon {
+    background: rgba(0, 0, 0, 0.02);
+    border-color: rgba(0, 0, 0, 0.06);
+}
+
+.colophon-sanskrit {
+    font-family: var(--sp-font-sanskrit);
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 1.8;
+    color: var(--sp-accent);
+    margin-bottom: 10px;
+}
+
+.colophon-translation {
+    font-size: 13px;
+    line-height: 1.6;
+    color: var(--sp-text-secondary);
+    font-style: italic;
+    margin: 0;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 32px;
+    margin-bottom: 48px;
+}
+
+@media (max-width: 880px) {
+    .footer-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 24px;
+    }
+}
+
+@media (max-width: 480px) {
+    .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+}
+
+.footer-col h4 {
+    font-family: var(--sp-font-mono, monospace);
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--sp-text);
+    margin-bottom: 14px;
+}
+
+.footer-col ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+}
+
+.footer-col li a,
+.footer-col li span {
+    font-size: 13px;
+    color: var(--sp-text-secondary);
+    transition: color var(--sp-duration-sm) var(--sp-ease);
+    text-decoration: none;
+}
+
+.footer-col li a:hover {
+    color: var(--sp-accent);
+}
+
+.footer-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 24px;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+[data-theme="light"] .footer-bottom {
+    border-top-color: rgba(0, 0, 0, 0.06);
+}
+
+.footer-brand-name {
+    font-family: var(--sp-font-mono, monospace);
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    color: var(--sp-text);
+    margin-right: 12px;
+}
+
+.footer-brand-tag {
+    font-size: 12px;
+    color: var(--sp-text-tertiary);
+}
+
+.footer-back-to-top {
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.03em;
+    color: var(--sp-text-secondary);
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    transition: color var(--sp-duration-sm) var(--sp-ease);
+}
+
+.footer-back-to-top:hover {
+    color: var(--sp-accent);
 }
 
 /* Chapters Section on Home */
@@ -1361,6 +1845,13 @@ label {
     font-size: 15px;
     font-weight: 600;
     color: var(--sp-text);
+    margin-bottom: var(--sp-space-2);
+}
+
+.chapter-card .chapter-theme-preview {
+    font-size: 13px;
+    line-height: 1.45;
+    color: var(--sp-text-secondary);
     margin-bottom: var(--sp-space-3);
 }
 
@@ -2410,9 +2901,9 @@ label {
     }
 
     .main-content {
-        padding-bottom: calc(var(--sp-bottom-nav-h) + var(--sp-space-4));
-        padding-left: var(--sp-space-4);
-        padding-right: var(--sp-space-4);
+        padding-bottom: calc(var(--sp-bottom-nav-h) + 64px);
+        padding-left: var(--sp-space-3);
+        padding-right: var(--sp-space-3);
     }
 
     /* Show bottom nav, hide desktop nav */
@@ -2421,34 +2912,72 @@ label {
     .desktop-search-wrapper { display: none; }
     .floating-language-btn { display: flex; }
 
-    /* Hero stacks vertically */
-    .hero-section { padding: var(--sp-space-4) 0 var(--sp-space-5); }
+    /* Hero stacks cleanly without excess vertical bulk */
+    .hero-section { padding: var(--sp-space-3) 0 var(--sp-space-4); }
 
     .hero-container {
         grid-template-columns: 1fr;
-        gap: var(--sp-space-6);
+        gap: var(--sp-space-5);
     }
 
-    .hero-heading { font-size: 26px; }
-    .hero-subheading { font-size: 14px; }
+    .hero-badge { margin-bottom: 12px; font-size: 10px; }
+    .hero-heading { font-size: 24px; line-height: 1.18; margin-bottom: 10px; letter-spacing: -0.5px; }
+    .hero-subheading { font-size: 13.5px; line-height: 1.5; margin-bottom: 18px; }
 
     .hero-actions {
-        flex-direction: column;
-        margin-bottom: var(--sp-space-5);
+        display: flex;
+        flex-direction: row;
+        gap: 8px;
+        margin-bottom: 16px;
     }
 
+    .hero-actions .action-btn {
+        flex: 1;
+        padding: 11px 12px;
+        font-size: 12.5px;
+    }
+
+    /* Ultra-clean 4-column inline metric rail on mobile */
     .stats-grid {
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: var(--sp-space-4);
-        padding: 16px 0;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 6px;
+        padding: 12px 0;
+        margin-top: 14px;
     }
 
-    .stat-number { font-size: 20px; }
+    .stat-number { font-size: 18px; }
+    .stat-label { font-size: 8px; letter-spacing: 0.04em; }
 
     /* Daily verse */
-    .daily-verse-card { padding: var(--sp-space-4); }
-    .daily-shlok-calligraphy { font-size: 18px; }
+    .daily-verse-wrapper { padding: 20px 16px; border-radius: 12px; }
+    .daily-verse-card { padding: 0; }
+    .daily-shlok-calligraphy { font-size: 17px; line-height: 1.7; }
+    .daily-translation-text { font-size: 13px; line-height: 1.6; margin-bottom: 16px; }
+    .daily-card-actions { gap: 14px; flex-wrap: wrap; }
+    .daily-action-pill { font-size: 11px; }
+
+    /* Section Spacing & Highlights on Mobile */
+    .yogas-section { padding: 32px 0; }
+    .counsel-showcase-section { padding: 32px 0; }
+    .counsel-showcase-card { padding: 24px 18px; border-radius: 12px; }
+    .counsel-prompt-chips { flex-direction: column; gap: 8px; }
+    .counsel-prompt-pill { width: 100%; font-size: 12.5px; }
+
+    .home-dilemmas-section { padding: 32px 0; }
+    .home-soundscape-section { padding: 32px 0; }
+    .soundscape-card-inner { padding: 24px 18px; }
+
+    /* PWA Install Banner: Float above bottom nav on mobile */
+    .install-banner {
+        bottom: var(--sp-bottom-nav-h);
+        z-index: 490;
+        padding: 10px 14px;
+    }
+
+    .install-text h3 { font-size: 13px; }
+    .install-text p { font-size: 11px; }
+    .install-btn { padding: 6px 14px; font-size: 12px; }
 
     /* Reader */
     .reader-section { padding-top: var(--sp-space-2); }
