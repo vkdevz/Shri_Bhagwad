@@ -1293,20 +1293,9 @@ class GitaApp {
     }
 
     updateHeader(screenName) {
-        const titles = {
-            home: 'ShlokPath',
-            chapters: 'Chapters (1 to 18)',
-            dilemmas: 'प्रश्न-मार्ग (Dilemma Navigator)',
-            'dilemma-detail': 'Krishna\'s Guidance',
-            dhyana: 'ध्यान (Meditation)',
-            search: 'Search Verses',
-            settings: 'Settings',
-            reader: this.getChapterTitle()
-        };
-
         const headerTitle = document.getElementById('header-title');
         if (headerTitle) {
-            headerTitle.textContent = titles[screenName] || titles.home;
+            headerTitle.textContent = 'ShlokPath';
         }
 
         const backBtn = document.getElementById('back-btn');
