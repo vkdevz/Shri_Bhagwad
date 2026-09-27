@@ -427,8 +427,8 @@ class GitaApp {
             });
         });
 
-        // Mobile Mood Chips (Immediate Socratic / Scriptural Relief)
-        document.querySelectorAll('.mobile-mood-chip').forEach(chip => {
+        // Mobile Mood Capsules (Immediate Socratic / Scriptural Relief)
+        document.querySelectorAll('.apple-mood-capsule, .mobile-mood-chip').forEach(chip => {
             chip.addEventListener('click', () => {
                 const mood = chip.dataset.mood;
                 this.navigateToScreen('dilemmas');
@@ -1350,12 +1350,17 @@ class GitaApp {
             // Native Mobile App Streak & Resume Title
             const mobileStreakLabel = document.getElementById('mobile-streak-label');
             if (mobileStreakLabel) {
-                mobileStreakLabel.textContent = `${streak} Day Streak • ${readVerses} Verses`;
+                mobileStreakLabel.textContent = `${streak} Day Streak`;
             }
 
             const mobileResumeTitle = document.getElementById('mobile-resume-title');
             if (mobileResumeTitle && this.currentChapter) {
                 mobileResumeTitle.textContent = `Chapter ${this.currentChapter}: Verse ${this.currentVerse || 1}`;
+            }
+
+            const mobileReadingProgress = document.getElementById('mobile-reading-progress');
+            if (mobileReadingProgress) {
+                mobileReadingProgress.style.width = `${Math.max(8, percentage)}%`;
             }
 
             const progressFill = document.getElementById('overall-progress');

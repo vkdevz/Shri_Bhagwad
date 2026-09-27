@@ -1,6 +1,6 @@
 // Service Worker for ShlokPath (श्लोकपथ)
 // Network-First strategy to ensure latest updates are ALWAYS served immediately
-const CACHE_NAME = 'shlokpath-v9.5-app';
+const CACHE_NAME = 'shlokpath-v9.6-apple';
 
 self.addEventListener('install', (event) => {
   // Immediately activate new service worker without waiting
