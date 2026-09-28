@@ -78,7 +78,7 @@ class DivineCanvasGenerator {
         const language = options.language || 'english'; // 'english', 'hindi', 'dual'
         const showWatermark = options.showWatermark !== false;
         const showCommentary = options.showCommentary !== false;
-        const watermarkOpacity = options.watermarkOpacity || 0.06;
+        const watermarkOpacity = themeKey === 'midnight' ? 0.08 : 0.065;
         const theme = DivineCanvasGenerator.THEMES[themeKey] || DivineCanvasGenerator.THEMES.midnight;
 
         const canvas = document.createElement('canvas');
@@ -93,25 +93,23 @@ class DivineCanvasGenerator {
         ctx.fillStyle = grad;
         ctx.fillRect(0, 0, 1200, 1600);
 
-        // 2. Low-Opacity Background Logo & Sacred Chakra Watermark
-        if (showWatermark) {
-            ctx.save();
-            ctx.globalAlpha = watermarkOpacity;
+        // 2. Permanent Low-Opacity Background Logo & Sacred Chakra Watermark
+        ctx.save();
+        ctx.globalAlpha = watermarkOpacity;
 
-            if (DivineCanvasGenerator.logoImage && DivineCanvasGenerator.logoImage.complete && DivineCanvasGenerator.logoImage.naturalWidth > 0) {
-                const logoSize = 640;
-                ctx.drawImage(
-                    DivineCanvasGenerator.logoImage,
-                    (1200 - logoSize) / 2,
-                    (1600 - logoSize) / 2 - 40,
-                    logoSize,
-                    logoSize
-                );
-            }
-
-            DivineCanvasGenerator.drawSacredMandalaWatermark(ctx, 600, 760, 420, theme.borderGold);
-            ctx.restore();
+        if (DivineCanvasGenerator.logoImage && DivineCanvasGenerator.logoImage.complete && DivineCanvasGenerator.logoImage.naturalWidth > 0) {
+            const logoSize = 640;
+            ctx.drawImage(
+                DivineCanvasGenerator.logoImage,
+                (1200 - logoSize) / 2,
+                (1600 - logoSize) / 2 - 40,
+                logoSize,
+                logoSize
+            );
         }
+
+        DivineCanvasGenerator.drawSacredMandalaWatermark(ctx, 600, 760, 420, theme.borderGold);
+        ctx.restore();
 
         // 3. Clean Hairline Architectural Framing
         ctx.strokeStyle = theme.borderGold;
@@ -158,24 +156,44 @@ class DivineCanvasGenerator {
         // Top Divider with Diamond Crest
         DivineCanvasGenerator.drawDividerWithDiamond(ctx, 600, 318, 300, theme.innerBorder);
 
-        // 5. Sanskrit Shlok (Devanagari) — Enhanced Prominent Font
+        // 5. Sanskrit Shlok (Devanagari) — Enhanced Prominent Calligraphy
         ctx.save();
         ctx.fillStyle = theme.textSanskrit;
 
-        const rawSanskrit = (verse.sanskrit || '')
-            .replace(/[।|॥]\s*[\d\.\s\u0966-\u096F]+[।|॥]/g, '')
-            .replace(/\s*[\d\.\u0966-\u096F]+\s*[।|॥]/g, '')
-            .replace(/\s*[\d\.\u0966-\u096F]+$/g, '')
+        // Clean any verse markers such as ।।2.47।।, ||2.47||, ॥२.४७॥, (2.47), trailing numbers
+        let rawSanskrit = (verse.sanskrit || '')
+            .replace(/[।॥|\(\[\{]+\s*[\d\.\s\u0966-\u096F\-\:]+\s*[।॥|\)\]\}]*/g, '')
+            .replace(/\s*[\d\.\s\u0966-\u096F\-\:]+\s*[।॥|]+$/g, '')
+            .replace(/[।॥|]+\s*[\d\.\s\u0966-\u096F\-\:]+$/g, '')
             .trim();
+
+        // Split into lines & normalize poetic verse dandas (Line 1 ends with ।, Line 2 ends with ॥)
+        let sLines = rawSanskrit.split(/\r?\n+/).map(l => l.trim()).filter(Boolean);
+        if (sLines.length === 1 && sLines[0].includes('।')) {
+            const idx = sLines[0].indexOf('।');
+            if (idx > -1 && idx < sLines[0].length - 1) {
+                sLines = [
+                    sLines[0].substring(0, idx + 1).trim(),
+                    sLines[0].substring(idx + 1).trim()
+                ];
+            }
+        }
+        if (sLines.length >= 2) {
+            sLines[0] = sLines[0].replace(/[।॥|]+$/g, '').trim() + '।';
+            sLines[sLines.length - 1] = sLines[sLines.length - 1].replace(/[।॥|]+$/g, '').trim() + '॥';
+        } else if (sLines.length === 1) {
+            sLines[0] = sLines[0].replace(/[।॥|]+$/g, '').trim() + '॥';
+        }
+        const cleanedSanskrit = sLines.join('\n');
 
         // Dynamically scale Sanskrit font: 44px for standard verses, 38px for longer verses
         ctx.font = '600 44px "Noto Sans Devanagari", serif';
-        let sanskritLines = DivineCanvasGenerator.wrapText(ctx, rawSanskrit, 940);
+        let sanskritLines = DivineCanvasGenerator.wrapText(ctx, cleanedSanskrit, 940);
         let sanskritLineHeight = 68;
 
         if (sanskritLines.length > 3) {
             ctx.font = '600 38px "Noto Sans Devanagari", serif';
-            sanskritLines = DivineCanvasGenerator.wrapText(ctx, rawSanskrit, 940);
+            sanskritLines = DivineCanvasGenerator.wrapText(ctx, cleanedSanskrit, 940);
             sanskritLineHeight = 60;
         }
 
@@ -191,7 +209,7 @@ class DivineCanvasGenerator {
         DivineCanvasGenerator.drawDividerWithDiamond(ctx, 600, currentY, 200, theme.innerBorder);
         currentY += 35;
 
-        // 6. Translations (English / Hindi / Dual) — Larger, High-Legibility Font
+        // 6. Translations (English / Hindi / Dual) — High-Legibility Editorial Typography
         const englishText = DivineCanvasGenerator.getTranslationText(verse, 'english');
         const hindiText = DivineCanvasGenerator.getTranslationText(verse, 'hindi');
 
@@ -265,7 +283,7 @@ class DivineCanvasGenerator {
             const expLines = DivineCanvasGenerator.wrapText(ctx, explanationText, 940);
             const expLineHeight = 36;
             expLines.forEach(line => {
-                if (currentY < 1420) {
+                if (currentY < 1400) {
                     ctx.fillText(line, 600, currentY);
                     currentY += expLineHeight;
                 }
@@ -273,22 +291,72 @@ class DivineCanvasGenerator {
             ctx.restore();
         }
 
-        // 8. Bottom Footer: Sacred Attribution & Archival Mark
-        DivineCanvasGenerator.drawDividerWithDiamond(ctx, 600, 1435, 260, theme.innerBorder);
+        // 8. Bottom Footer: Highlighted Brand Name & Sacred Imprint
+        DivineCanvasGenerator.drawDividerWithDiamond(ctx, 600, 1428, 260, theme.innerBorder);
 
         ctx.fillStyle = theme.borderGold;
-        ctx.font = '600 18px "Cinzel", serif';
-        ctx.letterSpacing = '4px';
-        ctx.fillText('SHRIMAD BHAGAVAD GITA', 600, 1475);
+        ctx.font = '600 15px "Cinzel", serif';
+        ctx.letterSpacing = '5px';
+        ctx.fillText('SHRIMAD BHAGAVAD GITA', 600, 1456);
 
-        ctx.fillStyle = theme.textGold;
-        ctx.globalAlpha = 0.6;
-        ctx.font = '500 13px "Cinzel", serif';
-        ctx.letterSpacing = '2px';
-        ctx.fillText('SHLOKPATH • SACRED ARCHIVE', 600, 1505);
-        ctx.globalAlpha = 1.0;
+        // Highlighted Brand Capsule Badge ("SHLOKPATH — By VK DEVZ")
+        const badgeW = 490;
+        const badgeH = 40;
+        const badgeX = 600 - (badgeW / 2);
+        const badgeY = 1478;
+        const badgeRadius = 20;
+
+        ctx.save();
+        // Glowing gold shadow
+        ctx.shadowColor = themeKey === 'midnight' ? 'rgba(212, 175, 55, 0.45)' : 'rgba(140, 95, 62, 0.3)';
+        ctx.shadowBlur = 12;
+
+        // Pill background
+        const badgeGrad = ctx.createLinearGradient(badgeX, badgeY, badgeX + badgeW, badgeY + badgeH);
+        if (themeKey === 'midnight') {
+            badgeGrad.addColorStop(0, 'rgba(212, 175, 55, 0.22)');
+            badgeGrad.addColorStop(0.5, 'rgba(22, 23, 28, 0.92)');
+            badgeGrad.addColorStop(1, 'rgba(212, 175, 55, 0.22)');
+        } else {
+            badgeGrad.addColorStop(0, 'rgba(140, 95, 62, 0.16)');
+            badgeGrad.addColorStop(0.5, 'rgba(248, 246, 240, 0.92)');
+            badgeGrad.addColorStop(1, 'rgba(140, 95, 62, 0.16)');
+        }
+        ctx.fillStyle = badgeGrad;
+        ctx.strokeStyle = theme.borderGold;
+        ctx.lineWidth = 1.5;
+
+        DivineCanvasGenerator.drawRoundedRect(ctx, badgeX, badgeY, badgeW, badgeH, badgeRadius, true, true);
+        ctx.restore();
+
+        // Highlighted Brand Text
+        ctx.save();
+        ctx.fillStyle = themeKey === 'midnight' ? '#fdeca6' : '#5a361c';
+        ctx.font = '700 16px "Cinzel", serif';
+        ctx.letterSpacing = '3px';
+        ctx.fillText('✦  SHLOKPATH — By VK DEVZ  ✦', 600, badgeY + 25);
+        ctx.restore();
 
         return canvas;
+    }
+
+    /**
+     * Draw rounded rectangle path
+     */
+    static drawRoundedRect(ctx, x, y, width, height, radius, fill = false, stroke = false) {
+        ctx.beginPath();
+        ctx.moveTo(x + radius, y);
+        ctx.lineTo(x + width - radius, y);
+        ctx.arcTo(x + width, y, x + width, y + radius, radius);
+        ctx.lineTo(x + width, y + height - radius);
+        ctx.arcTo(x + width, y + height, x + width - radius, y + height, radius);
+        ctx.lineTo(x + radius, y + height);
+        ctx.arcTo(x, y + height, x, y + height - radius, radius);
+        ctx.lineTo(x, y + radius);
+        ctx.arcTo(x, y, x + radius, y, radius);
+        ctx.closePath();
+        if (fill) ctx.fill();
+        if (stroke) ctx.stroke();
     }
 
     /**

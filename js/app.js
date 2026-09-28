@@ -834,18 +834,44 @@ class GitaApp {
         this.breathTimer = setInterval(runCycle, 19000); // 4 + 7 + 8 = 19 seconds per cycle
     }
 
-    openCanvasModal(ch = null, v = null) {
+    async openCanvasModal(ch = null, v = null) {
         const targetChapter = ch || this.currentChapter;
         const targetVerse = v || this.currentVerse;
-        const verse = this.getVerse(targetChapter, targetVerse);
-        const chapter = this.getChapter(targetChapter);
-        if (!verse || !chapter || !window.DivineCanvasGenerator) return;
 
-        this.canvasTarget = { verse, chapter, ch: targetChapter, v: targetVerse };
+        let chapter = this.getChapter(targetChapter);
+        if (!chapter || !chapter.verses || chapter.verses.length === 0) {
+            await this.loadChapter(targetChapter);
+            chapter = this.getChapter(targetChapter);
+        }
+
+        let verse = this.getVerse(targetChapter, targetVerse);
+        if (!verse && this.dailyVerse && this.dailyVerse.chapter === targetChapter && this.dailyVerse.verse === targetVerse) {
+            verse = { ...this.dailyVerse };
+        }
+        if (!verse && this.dailyVerse) {
+            verse = { ...this.dailyVerse };
+        }
+        if (!verse || !window.DivineCanvasGenerator) return;
+
+        // Ensure explanation is attached if available in chapter
+        if (!verse.explanation && chapter && chapter.verses) {
+            const found = chapter.verses.find(v => (v.number === targetVerse || v.verseNumber === targetVerse));
+            if (found && found.explanation) {
+                verse.explanation = found.explanation;
+            }
+        }
+        if (!verse.explanation && targetChapter === 2 && targetVerse === 47) {
+            verse.explanation = {
+                english: "This is one of the most famous verses in the Gita, establishing the principle of Karma Yoga. We have the right and responsibility to act, but not to control results. Neither should we claim to be the cause of outcomes, nor should we be attached to inaction.",
+                hindi: "यह गीता के सबसे प्रसिद्ध श्लोकों में से एक है, जो कर्मयोग का सिद्धांत स्थापित करता है। हमारा अधिकार और जिम्मेदारी कर्म करने में है, परिणामों को नियंत्रित करने में नहीं। न हमें परिणामों का कारण होने का दावा करना चाहिए, न निष्क्रियता में आसक्त होना चाहिए।"
+            };
+        }
+
+        this.canvasTarget = { verse, chapter: chapter || { title: 'Bhagavad Gita' }, ch: targetChapter, v: targetVerse };
         this.canvasOptions = {
             theme: this.canvasOptions?.theme || 'midnight',
             language: this.canvasOptions?.language || this.settings.language || 'english',
-            showWatermark: this.canvasOptions?.showWatermark !== false,
+            showWatermark: true,
             showCommentary: this.canvasOptions?.showCommentary !== false
         };
 
@@ -864,7 +890,7 @@ class GitaApp {
             previewImg.style.opacity = '0.4';
             const dataUrl = await window.DivineCanvasGenerator.generateCardDataUrl(
                 verse,
-                chapter.title,
+                chapter ? chapter.title : 'Bhagavad Gita',
                 this.canvasOptions
             );
             previewImg.src = dataUrl;
@@ -899,15 +925,6 @@ class GitaApp {
                 this.updateCanvasCardPreview();
             });
         });
-
-        // Watermark logo toggle
-        const watermarkToggle = document.getElementById('canvas-watermark-toggle');
-        if (watermarkToggle) {
-            watermarkToggle.addEventListener('change', (e) => {
-                this.canvasOptions.showWatermark = e.target.checked;
-                this.updateCanvasCardPreview();
-            });
-        }
 
         // Commentary toggle
         const commentaryToggle = document.getElementById('canvas-commentary-toggle');
@@ -1315,6 +1332,10 @@ class GitaApp {
             translation: {
                 english: "You have a right to perform your prescribed duties, but you are not entitled to the fruits of your actions. Never consider yourself to be the cause of results, nor be attached to inaction.",
                 hindi: "तुम्हारा अधिकार केवल कर्म करने में है, उसके फलों में कभी नहीं। इसलिए तुम कर्मों के फल के हेतु मत बनो और तुम्हारी अकर्मण्यता में भी आसक्ति न हो।"
+            },
+            explanation: {
+                english: "This sacred verse expounds the foundational doctrine of Karma Yoga: perform action purely as self-offering, free from the thirst for reward. True inner mastery arises when one remains unperturbed by triumph or defeat, focusing entirely on righteous duty without succumbing to the paralysis of inaction.",
+                hindi: "यह श्लोक निष्काम कर्मयोग का सार समझाता है: कर्तव्य का पालन निस्वार्थ भाव से करें और फल की तृष्णा से मुक्त रहें। सफलता या असफलता में समभाव रखना ही योग है।"
             }
         };
         this.updateDailyVerseDisplay();
@@ -1340,9 +1361,9 @@ class GitaApp {
         if (!raw) return '';
         // 1. Remove trailing numbers like ।।2.56।। or ||2.56|| or ॥५६॥ or 2.56
         let clean = raw
-            .replace(/[।|॥]\s*[\d\.\s\u0966-\u096F]+[।|॥]/g, '')
-            .replace(/\s*[\d\.\u0966-\u096F]+\s*[।|॥]/g, '')
-            .replace(/\s*[\d\.\u0966-\u096F]+$/g, '')
+            .replace(/[।॥|\(\[\{]+\s*[\d\.\s\u0966-\u096F\-\:]+\s*[।॥|\)\]\}]*/g, '')
+            .replace(/\s*[\d\.\s\u0966-\u096F\-\:]+\s*[।॥|]+$/g, '')
+            .replace(/[।॥|]+\s*[\d\.\s\u0966-\u096F\-\:]+$/g, '')
             .trim();
 
         // 2. Normalize double dandas
