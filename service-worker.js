@@ -1,6 +1,4 @@
-// Service Worker for ShlokPath (श्लोकपथ)
-// Network-First strategy to ensure latest updates are ALWAYS served immediately
-const CACHE_NAME = 'shlokpath-v11.1-navfix';
+const CACHE_NAME = 'shlokpath-v11.2-nobg';
 
 self.addEventListener('install', (event) => {
   self.skipWaiting();
