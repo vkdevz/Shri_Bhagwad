@@ -51,11 +51,14 @@
         rel="stylesheet">
 
     <!-- Stylesheets with Cache Busting -->
-    <link rel="stylesheet" href="css/main.css?v=11.2">
-    <link rel="stylesheet" href="css/features.css?v=11.2">
+    <link rel="stylesheet" href="css/main.css?v=11.3">
+    <link rel="stylesheet" href="css/features.css?v=11.3">
 </head>
 
 <body>
+    <!-- Sacred Full-Screen Background Watermark (Low-Opacity Transparent Logo) -->
+    <div class="sacred-bg-watermark" aria-hidden="true"></div>
+
     <!-- Loading Screen (Subtle & Fast Fade) -->
     <div id="loading-screen" class="loading-screen">
         <div class="loading-content">
@@ -224,14 +227,32 @@
                             <!-- Right Hero Column: Today's Divine Shlok Card (Pre-Rendered with Ch 2.47) -->
                             <div class="hero-right">
                                 <div class="daily-verse-wrapper">
+                                    <div class="card-ambient-emblem" aria-hidden="true"></div>
                                     <div class="daily-verse-badge">
                                         <span>[01] Today's Contemplation</span>
                                         <span class="daily-verse-ref" id="daily-reference">Chapter 2 • Verse 47</span>
                                     </div>
                                     <div id="daily-verse" class="daily-verse-card">
+                                        <!-- 1. Sanskrit Shloka -->
                                         <div class="daily-shlok-calligraphy" id="daily-sanskrit"><span class="shlok-line">कर्मण्येवाधिकारस्ते मा फलेषु कदाचन।</span><span class="shlok-line">मा कर्मफलहेतुर्भूर्मा ते सङ्गोऽस्त्वकर्मणि॥</span></div>
-                                        <div class="daily-divider"></div>
-                                        <div class="daily-translation-text" id="daily-translation">"तुम्हारा अधिकार केवल कर्म करने में है, उसके फलों में कभी नहीं। इसलिए तुम कर्मों के फल के हेतु मत बनो और तुम्हारी अकर्मण्यता में भी आसक्ति न हो।"</div>
+                                        
+                                        <div class="sacred-verse-divider">
+                                            <span class="divider-line"></span>
+                                            <span class="divider-symbol">☸</span>
+                                            <span class="divider-line"></span>
+                                        </div>
+
+                                        <!-- 2. Meaning (भावार्थ) -->
+                                        <div class="daily-meaning-block">
+                                            <span class="card-section-label">भावार्थ • MEANING</span>
+                                            <div class="daily-translation-text" id="daily-translation">"तुम्हारा अधिकार केवल कर्म करने में है, उसके फलों में कभी नहीं। इसलिए तुम कर्मों के फल के हेतु मत बनो और तुम्हारी अकर्मण्यता में भी आसक्ति न हो।"</div>
+                                        </div>
+
+                                        <!-- 3. In-Depth Explanation (तात्पर्य) -->
+                                        <div class="daily-explanation-block">
+                                            <span class="card-section-label accent">तात्पर्य • PHILOSOPHICAL EXPLANATION</span>
+                                            <div class="daily-explanation-text" id="daily-explanation">यह गीता के सबसे प्रसिद्ध श्लोकों में से एक है, जो कर्मयोग का सिद्धांत स्थापित करता है। हमारा अधिकार और जिम्मेदारी कर्म करने में है, परिणामों को नियंत्रित करने में नहीं। न हमें परिणामों का कारण होने का दावा करना चाहिए, न निष्क्रियता में आसक्त होना चाहिए।</div>
+                                        </div>
                                         
                                         <div class="daily-card-actions">
                                             <button id="daily-card-share-btn" class="daily-action-pill highlight" title="Create 3:4 Quote Card">
@@ -538,19 +559,39 @@
 
                     <!-- 2. Apple "Card of the Day" — Exquisite Daily Shlok Talisman -->
                     <section class="apple-hero-card" id="mobile-daily-verse-card">
+                        <div class="card-ambient-emblem" aria-hidden="true"></div>
                         <div class="apple-card-top">
                             <span class="apple-card-kicker">VERSE OF THE DAY</span>
                             <span class="apple-card-ref" id="mobile-daily-reference">Chapter 2 • Verse 56</span>
                         </div>
 
+                        <!-- 1. Sanskrit Shloka -->
                         <div class="apple-shlok-text" id="mobile-daily-sanskrit">
                             <span class="shlok-line">दुःखेष्वनुद्विग्नमनाः सुखेषु विगतस्पृहः।</span>
                             <span class="shlok-line">वीतरागभयक्रोधः स्थितधीर्मुनिरुच्यते॥</span>
                         </div>
 
-                        <p class="apple-translation-text" id="mobile-daily-translation">
-                            "दुखों में जिसका मन उद्विग्न नहीं होता, सुखों में जिसकी स्पृहा नहीं, जो राग-भय-क्रोध से मुक्त है—ऐसा स्थितधी मुनि कहलाता है।"
-                        </p>
+                        <div class="sacred-verse-divider">
+                            <span class="divider-line"></span>
+                            <span class="divider-symbol">☸</span>
+                            <span class="divider-line"></span>
+                        </div>
+
+                        <!-- 2. Meaning (भावार्थ) -->
+                        <div class="apple-meaning-wrapper">
+                            <span class="card-section-label">भावार्थ • MEANING</span>
+                            <p class="apple-translation-text" id="mobile-daily-translation">
+                                "दुखों में जिसका मन उद्विग्न नहीं होता, सुखों में जिसकी स्पृहा नहीं, जो राग-भय-क्रोध से मुक्त है—ऐसा स्थितधी मुनि कहलाता है।"
+                            </p>
+                        </div>
+
+                        <!-- 3. In-Depth Explanation (तात्पर्य) -->
+                        <div class="apple-explanation-wrapper">
+                            <span class="card-section-label accent">तात्पर्य • PHILOSOPHICAL EXPLANATION</span>
+                            <p class="apple-explanation-text" id="mobile-daily-explanation">
+                                मन की समता ही सर्वोच्च योग है। परिस्थितियाँ सुखद हों या प्रतिकूल, जो व्यक्ति आंतरिक शांति और ज्ञान में अटल रहता है, वही सच्चा ज्ञानी है।
+                            </p>
+                        </div>
 
                         <!-- Apple-style Micro Actions Strip -->
                         <div class="apple-card-actions">
@@ -760,6 +801,10 @@
                         </button>
 
                         <div class="verse-card" id="verse-card-element">
+                            <!-- Sacred Ambient Inner Emblem Watermark -->
+                            <div class="card-ambient-emblem" aria-hidden="true"></div>
+
+                            <!-- Verse Header: Sacred Reference & Action Icons -->
                             <div class="verse-header-row">
                                 <div class="verse-ref-badge" id="current-verse-badge">
                                     <span>CHAPTER 1 • VERSE 1</span>
@@ -791,50 +836,49 @@
                                 </div>
                             </div>
 
-                            <!-- Sanskrit Calligraphy -->
+                            <!-- 1. SANSKRIT SHLOKA (Prominent Sacred Calligraphy) -->
                             <div class="verse-sanskrit-block" id="current-sanskrit">
                                 Loading Sanskrit text...
                             </div>
 
-                            <!-- Transliteration (Collapsible) -->
+                            <!-- Transliteration (Accessible Romanized Script) -->
                             <div class="verse-transliteration hidden" id="current-transliteration"></div>
 
-                            <!-- Translation Tabs (English / Hindi) -->
-                            <div class="translation-tabs-row">
-                                <button class="trans-tab active" id="trans-tab-primary">English Translation</button>
-                                <button class="trans-tab" id="trans-tab-secondary">हिंदी अनुवाद</button>
+                            <!-- Sacred Divider -->
+                            <div class="sacred-verse-divider">
+                                <span class="divider-line"></span>
+                                <span class="divider-symbol">☸</span>
+                                <span class="divider-line"></span>
                             </div>
 
-                            <!-- Translation Text -->
-                            <div class="verse-translation" id="current-translation">
-                                Loading translation...
-                            </div>
-
-                            <!-- Commentary Accordion -->
-                            <div class="commentary-box">
-                                <button class="commentary-toggle-btn" id="commentary-toggle">
-                                    <span class="commentary-btn-label">
-                                        <svg class="commentary-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-                                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
-                                            <polyline points="14 2 14 8 20 8"></polyline>
-                                            <line x1="16" y1="13" x2="8" y2="13"></line>
-                                            <line x1="16" y1="17" x2="8" y2="17"></line>
-                                            <polyline points="10 9 9 9 8 9"></polyline>
-                                        </svg>
-                                        <span>Commentary & Explanation (Swami Sivananda & Ramsukhdas)</span>
-                                    </span>
-                                    <span class="chevron">▼</span>
-                                </button>
-                                <div class="verse-explanation hidden" id="current-explanation">
-                                    Loading commentary...
+                            <!-- 2. MEANING (भावार्थ) -->
+                            <div class="verse-meaning-section">
+                                <div class="verse-section-bar">
+                                    <span class="verse-section-tag">भावार्थ • MEANING</span>
+                                    <div class="translation-tabs-row">
+                                        <button class="trans-tab active" id="trans-tab-primary">English</button>
+                                        <button class="trans-tab" id="trans-tab-secondary">हिंदी</button>
+                                    </div>
+                                </div>
+                                <div class="verse-translation" id="current-translation">
+                                    Loading translation...
                                 </div>
                             </div>
 
-                            <!-- Mobile Navigation Hints -->
+                            <!-- 3. IN-DEPTH PHILOSOPHICAL EXPLANATION (तात्पर्य) -->
+                            <div class="verse-explanation-section">
+                                <div class="verse-section-bar">
+                                    <span class="verse-section-tag accent">तात्पर्य • IN-DEPTH EXPLANATION & COMMENTARY</span>
+                                </div>
+                                <div class="verse-explanation" id="current-explanation">
+                                    Loading philosophical explanation...
+                                </div>
+                            </div>
+
+                            <!-- Navigation Steppers -->
                             <div class="mobile-nav-steppers">
-                                <button id="prev-verse-mobile" class="stepper-btn">← Previous</button>
-                                <button id="reveal-btn" class="reveal-btn">Tap to reveal</button>
-                                <button id="next-verse-mobile" class="stepper-btn">Next →</button>
+                                <button id="prev-verse-mobile" class="stepper-btn">← Previous Verse</button>
+                                <button id="next-verse-mobile" class="stepper-btn primary">Next Verse →</button>
                             </div>
                         </div>
 

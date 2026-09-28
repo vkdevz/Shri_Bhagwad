@@ -1,4 +1,4 @@
-const CACHE_NAME = 'shlokpath-v11.2-nobg';
+const CACHE_NAME = 'shlokpath-v11.3-cards';
 
 self.addEventListener('install', (event) => {
   self.skipWaiting();
