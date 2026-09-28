@@ -845,7 +845,8 @@ class GitaApp {
         this.canvasOptions = {
             theme: this.canvasOptions?.theme || 'midnight',
             language: this.canvasOptions?.language || this.settings.language || 'english',
-            showWatermark: this.canvasOptions?.showWatermark !== false
+            showWatermark: this.canvasOptions?.showWatermark !== false,
+            showCommentary: this.canvasOptions?.showCommentary !== false
         };
 
         this.setupCanvasModalListeners();
@@ -904,6 +905,15 @@ class GitaApp {
         if (watermarkToggle) {
             watermarkToggle.addEventListener('change', (e) => {
                 this.canvasOptions.showWatermark = e.target.checked;
+                this.updateCanvasCardPreview();
+            });
+        }
+
+        // Commentary toggle
+        const commentaryToggle = document.getElementById('canvas-commentary-toggle');
+        if (commentaryToggle) {
+            commentaryToggle.addEventListener('change', (e) => {
+                this.canvasOptions.showCommentary = e.target.checked;
                 this.updateCanvasCardPreview();
             });
         }

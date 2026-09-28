@@ -54,13 +54,30 @@ class DivineCanvasGenerator {
         }
     }
 
+    static getTranslationText(verse, lang) {
+        if (!verse || !verse.translation) return '';
+        if (typeof verse.translation === 'string') return verse.translation;
+        if (lang === 'hindi') return verse.translation.hindi || verse.translation.english || '';
+        return verse.translation.english || verse.translation.hindi || '';
+    }
+
+    static getExplanationText(verse, lang) {
+        if (!verse) return '';
+        const exp = verse.explanation || verse.commentary;
+        if (!exp) return '';
+        if (typeof exp === 'string') return exp;
+        if (lang === 'hindi') return exp.hindi || exp.english || '';
+        return exp.english || exp.hindi || '';
+    }
+
     /**
      * Generate high-res 1200x1600 canvas
      */
     static async generateCardCanvas(verse, chapterTitle, options = {}) {
         const themeKey = options.theme || 'midnight';
-        const language = options.language || 'hindi'; // 'hindi', 'english', 'dual'
+        const language = options.language || 'english'; // 'english', 'hindi', 'dual'
         const showWatermark = options.showWatermark !== false;
+        const showCommentary = options.showCommentary !== false;
         const watermarkOpacity = options.watermarkOpacity || 0.06;
         const theme = DivineCanvasGenerator.THEMES[themeKey] || DivineCanvasGenerator.THEMES.midnight;
 
@@ -76,12 +93,11 @@ class DivineCanvasGenerator {
         ctx.fillStyle = grad;
         ctx.fillRect(0, 0, 1200, 1600);
 
-        // 2. Low-Opacity Background Logo & Sacred Chakra Watermark (Subtle blind watermark)
+        // 2. Low-Opacity Background Logo & Sacred Chakra Watermark
         if (showWatermark) {
             ctx.save();
             ctx.globalAlpha = watermarkOpacity;
 
-            // Render center sacred logo from icons/icon-512x512.png if loaded
             if (DivineCanvasGenerator.logoImage && DivineCanvasGenerator.logoImage.complete && DivineCanvasGenerator.logoImage.naturalWidth > 0) {
                 const logoSize = 640;
                 ctx.drawImage(
@@ -93,99 +109,104 @@ class DivineCanvasGenerator {
                 );
             }
 
-            // Draw sacred geometric Sudarshana Chakra Mandala rays in low opacity
             DivineCanvasGenerator.drawSacredMandalaWatermark(ctx, 600, 760, 420, theme.borderGold);
             ctx.restore();
         }
 
         // 3. Clean Hairline Architectural Framing
-        // Outer border
         ctx.strokeStyle = theme.borderGold;
         ctx.lineWidth = 2;
         ctx.strokeRect(60, 60, 1080, 1480);
 
-        // Inner border with soft opacity
         ctx.strokeStyle = theme.innerBorder;
         ctx.lineWidth = 1;
         ctx.strokeRect(76, 76, 1048, 1448);
 
-        // Subtle corner embellishments
         DivineCanvasGenerator.drawOrnateCorner(ctx, 76, 76, 1, 1, theme.borderGold);
         DivineCanvasGenerator.drawOrnateCorner(ctx, 1124, 76, -1, 1, theme.borderGold);
         DivineCanvasGenerator.drawOrnateCorner(ctx, 76, 1524, 1, -1, theme.borderGold);
         DivineCanvasGenerator.drawOrnateCorner(ctx, 1124, 1524, -1, -1, theme.borderGold);
 
-        // 4. Header: Sacred Symbol (ॐ) & Typography
+        // 4. Header: Sacred Symbol (ॐ) & Chapter Reference
         ctx.textAlign = 'center';
         
-        // Sacred Om in crisp calligraphy
+        // Sacred Om
         ctx.fillStyle = theme.textGold;
-        ctx.font = '500 58px "Noto Sans Devanagari", serif';
-        ctx.fillText('ॐ', 600, 195);
+        ctx.font = '500 64px "Noto Sans Devanagari", serif';
+        ctx.fillText('ॐ', 600, 175);
 
         // Main Header Title
         ctx.fillStyle = theme.borderGold;
         ctx.font = '600 22px "Cinzel", serif';
         ctx.letterSpacing = '5px';
-        ctx.fillText('SHRIMAD BHAGAVAD GITA', 600, 245);
+        ctx.fillText('SHRIMAD BHAGAVAD GITA', 600, 222);
 
         // Chapter & Verse Reference
         const chNum = verse.chapterNumber || (verse.chapter ? verse.chapter.chapterNumber : '1');
         const vNum = verse.verseNumber || '1';
         ctx.fillStyle = theme.textGold;
-        ctx.font = '600 20px "Inter", sans-serif';
+        ctx.font = '600 22px "Inter", sans-serif';
         ctx.letterSpacing = '2px';
-        ctx.fillText(`CHAPTER ${chNum} • VERSE ${vNum}`, 600, 288);
+        ctx.fillText(`CHAPTER ${chNum} • VERSE ${vNum}`, 600, 260);
 
         if (chapterTitle) {
             ctx.fillStyle = theme.innerBorder;
-            ctx.font = 'italic 17px "Inter", sans-serif';
-            ctx.fillText(chapterTitle.toUpperCase(), 600, 318);
+            ctx.font = 'italic 16px "Inter", sans-serif';
+            ctx.fillText(chapterTitle.toUpperCase(), 600, 290);
         }
 
-        // Decorative Divider with Diamond Crest
-        DivineCanvasGenerator.drawDividerWithDiamond(ctx, 600, 355, 300, theme.innerBorder);
+        // Top Divider with Diamond Crest
+        DivineCanvasGenerator.drawDividerWithDiamond(ctx, 600, 318, 300, theme.innerBorder);
 
-        // 5. Sanskrit Shlok (Devanagari) - The Heart of the Card
+        // 5. Sanskrit Shlok (Devanagari) — Enhanced Prominent Font
         ctx.save();
         ctx.fillStyle = theme.textSanskrit;
-        ctx.font = '500 36px "Noto Sans Devanagari", serif';
-        
-        const rawSanskrit = verse.sanskrit || '';
-        const sanskritLines = DivineCanvasGenerator.wrapText(ctx, rawSanskrit, 920);
-        
-        // Center Sanskrit block vertically between 440 and ~820
-        let currentY = 450;
-        const sanskritLineHeight = 62;
+
+        const rawSanskrit = (verse.sanskrit || '')
+            .replace(/[।|॥]\s*[\d\.\s\u0966-\u096F]+[।|॥]/g, '')
+            .replace(/\s*[\d\.\u0966-\u096F]+\s*[।|॥]/g, '')
+            .replace(/\s*[\d\.\u0966-\u096F]+$/g, '')
+            .trim();
+
+        // Dynamically scale Sanskrit font: 44px for standard verses, 38px for longer verses
+        ctx.font = '600 44px "Noto Sans Devanagari", serif';
+        let sanskritLines = DivineCanvasGenerator.wrapText(ctx, rawSanskrit, 940);
+        let sanskritLineHeight = 68;
+
+        if (sanskritLines.length > 3) {
+            ctx.font = '600 38px "Noto Sans Devanagari", serif';
+            sanskritLines = DivineCanvasGenerator.wrapText(ctx, rawSanskrit, 940);
+            sanskritLineHeight = 60;
+        }
+
+        let currentY = 385;
         sanskritLines.forEach(line => {
             ctx.fillText(line, 600, currentY);
             currentY += sanskritLineHeight;
         });
         ctx.restore();
 
-        // Subtle Mid-Section Divider
-        currentY += 25;
-        DivineCanvasGenerator.drawDividerWithDiamond(ctx, 600, currentY, 180, theme.innerBorder);
-        currentY += 45;
+        // Divider after Sanskrit
+        currentY += 15;
+        DivineCanvasGenerator.drawDividerWithDiamond(ctx, 600, currentY, 200, theme.innerBorder);
+        currentY += 35;
 
-        // 6. Translations (English / Hindi / Dual)
-        let englishText = '';
-        let hindiText = '';
-
-        if (verse.translation) {
-            if (typeof verse.translation === 'string') {
-                englishText = verse.translation;
-            } else {
-                englishText = verse.translation.english || '';
-                hindiText = verse.translation.hindi || '';
-            }
-        }
+        // 6. Translations (English / Hindi / Dual) — Larger, High-Legibility Font
+        const englishText = DivineCanvasGenerator.getTranslationText(verse, 'english');
+        const hindiText = DivineCanvasGenerator.getTranslationText(verse, 'hindi');
 
         if (language === 'english' || (language === 'dual' && englishText)) {
+            // Label
+            ctx.fillStyle = theme.borderGold;
+            ctx.font = '600 14px "Cinzel", serif';
+            ctx.letterSpacing = '3px';
+            ctx.fillText('SACRED MEANING', 600, currentY);
+            currentY += 30;
+
             ctx.fillStyle = theme.textTranslation;
-            ctx.font = 'italic 400 28px "Inter", sans-serif';
+            ctx.font = 'italic 400 32px "Inter", sans-serif';
             const engLines = DivineCanvasGenerator.wrapText(ctx, `"${englishText}"`, 940);
-            const engLineHeight = 44;
+            const engLineHeight = 48;
             engLines.forEach(line => {
                 if (currentY < 1400) {
                     ctx.fillText(line, 600, currentY);
@@ -195,20 +216,66 @@ class DivineCanvasGenerator {
         }
 
         if (language === 'hindi' || (language === 'dual' && hindiText)) {
-            if (language === 'dual') currentY += 20;
+            if (language === 'dual') {
+                currentY += 15;
+            } else {
+                ctx.fillStyle = theme.borderGold;
+                ctx.font = '600 14px "Cinzel", serif';
+                ctx.letterSpacing = '3px';
+                ctx.fillText('भावार्थ • MEANING', 600, currentY);
+                currentY += 30;
+            }
+
             ctx.fillStyle = theme.textGold;
-            ctx.font = '500 27px "Noto Sans Devanagari", serif';
+            ctx.font = '500 32px "Noto Sans Devanagari", serif';
             const hindiLines = DivineCanvasGenerator.wrapText(ctx, hindiText, 940);
-            const hindiLineHeight = 42;
+            const hindiLineHeight = 48;
             hindiLines.forEach(line => {
-                if (currentY < 1420) {
+                if (currentY < 1400) {
                     ctx.fillText(line, 600, currentY);
                     currentY += hindiLineHeight;
                 }
             });
         }
 
-        // 7. Footer: Sacred Attribution & Archival Mark
+        // 7. Philosophical Commentary / Explanation Section
+        const explanationText = DivineCanvasGenerator.getExplanationText(verse, language);
+        if (showCommentary && explanationText && currentY < 1280) {
+            currentY += 20;
+            DivineCanvasGenerator.drawDividerWithDiamond(ctx, 600, currentY, 180, theme.innerBorder);
+            currentY += 32;
+
+            // Section Label
+            ctx.fillStyle = theme.accent;
+            ctx.font = '600 14px "Cinzel", serif';
+            ctx.letterSpacing = '3px';
+            const expLabel = language === 'hindi' ? 'तात्पर्य • COMMENTARY' : 'PHILOSOPHICAL COMMENTARY';
+            ctx.fillText(expLabel, 600, currentY);
+            currentY += 30;
+
+            // Commentary Text
+            ctx.save();
+            ctx.fillStyle = theme.textTranslation;
+            ctx.globalAlpha = 0.92;
+            const expFont = language === 'hindi'
+                ? '400 23px "Noto Sans Devanagari", serif'
+                : '400 23px "Inter", sans-serif';
+            ctx.font = expFont;
+
+            const expLines = DivineCanvasGenerator.wrapText(ctx, explanationText, 940);
+            const expLineHeight = 36;
+            expLines.forEach(line => {
+                if (currentY < 1420) {
+                    ctx.fillText(line, 600, currentY);
+                    currentY += expLineHeight;
+                }
+            });
+            ctx.restore();
+        }
+
+        // 8. Bottom Footer: Sacred Attribution & Archival Mark
+        DivineCanvasGenerator.drawDividerWithDiamond(ctx, 600, 1435, 260, theme.innerBorder);
+
         ctx.fillStyle = theme.borderGold;
         ctx.font = '600 18px "Cinzel", serif';
         ctx.letterSpacing = '4px';
