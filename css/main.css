@@ -572,32 +572,6 @@ label {
 }
 
 /* --------------------------------------------------------------------------
-   8b. SACRED AMBIENT BACKGROUND WATERMARK (Full-Screen Low-Opacity Logo)
-   -------------------------------------------------------------------------- */
-.sacred-bg-watermark {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: min(85vw, 85vh);
-    height: min(85vw, 85vh);
-    background-image: url('../assets/logo.png');
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: contain;
-    opacity: 0.055;
-    pointer-events: none;
-    z-index: 0;
-    transition: opacity var(--sp-duration-md) ease;
-    filter: drop-shadow(0 0 60px rgba(229, 193, 120, 0.35));
-}
-
-[data-theme="light"] .sacred-bg-watermark {
-    opacity: 0.038;
-    filter: drop-shadow(0 0 40px rgba(140, 95, 62, 0.22));
-}
-
-/* --------------------------------------------------------------------------
    9. APP HEADER (VeloCura Floating Island Navbar)
    -------------------------------------------------------------------------- */
 .app-header {
@@ -1182,62 +1156,36 @@ label {
     margin-top: 2px;
 }
 
-/* Daily Verse Folio — Expansive Glass Manuscript */
+/* Daily Verse Folio — Un-Boxed Glass Manuscript */
 .daily-verse-wrapper {
     position: relative;
     height: 100%;
     display: flex;
     flex-direction: column;
-    background: rgba(14, 15, 18, 0.85);
-    border: 1px solid rgba(255, 255, 255, 0.08);
-    border-top: 2px solid var(--sp-accent);
-    border-radius: 18px;
-    padding: clamp(28px, 3.2vw, 42px);
-    box-shadow: 0 25px 60px -10px rgba(0, 0, 0, 0.65), 0 0 1px 1px rgba(229, 193, 120, 0.12);
-    backdrop-filter: blur(20px);
-    -webkit-backdrop-filter: blur(20px);
-    overflow: hidden;
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(255, 255, 255, 0.07);
+    border-top: 1px solid rgba(255, 255, 255, 0.16);
+    border-radius: 14px;
+    padding: 32px;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
 }
 
 [data-theme="light"] .daily-verse-wrapper {
-    background: rgba(255, 255, 255, 0.95);
+    background: #ffffff;
     border: 1px solid rgba(0, 0, 0, 0.08);
-    border-top: 2px solid #8c5f3e;
-    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.07);
-}
-
-/* Ambient Logo Watermark inside Cards */
-.card-ambient-emblem {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: min(75%, 480px);
-    height: min(75%, 480px);
-    background-image: url('../assets/logo.png');
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: contain;
-    opacity: 0.045;
-    pointer-events: none;
-    z-index: 0;
-    transition: opacity var(--sp-duration-md) ease;
-}
-
-[data-theme="light"] .card-ambient-emblem {
-    opacity: 0.03;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
 }
 
 .daily-verse-badge {
-    position: relative;
-    z-index: 1;
     display: flex;
     align-items: center;
     justify-content: space-between;
     font-family: var(--sp-font-mono, monospace);
     font-size: 11px;
-    font-weight: 700;
-    letter-spacing: 0.1em;
+    font-weight: 600;
+    letter-spacing: 0.08em;
     text-transform: uppercase;
     color: var(--sp-text-tertiary);
     margin-bottom: var(--sp-space-4);
@@ -1249,7 +1197,6 @@ label {
 
 .daily-verse-card {
     position: relative;
-    z-index: 1;
     background: transparent;
     border: none;
     padding: 0;
@@ -1257,7 +1204,7 @@ label {
     flex: 1;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 [data-theme="light"] .daily-verse-card {
@@ -1266,114 +1213,32 @@ label {
 }
 
 .daily-shlok-calligraphy {
-    position: relative;
-    z-index: 1;
     font-family: var(--sp-font-sanskrit);
-    font-size: clamp(20px, 2.2vw, 27px);
-    font-weight: 600;
-    line-height: 1.95;
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 1.9;
     color: var(--sp-text);
     text-align: center;
-    letter-spacing: 0.015em;
-    margin-bottom: var(--sp-space-3);
-    text-shadow: 0 2px 18px rgba(229, 193, 120, 0.15);
-}
-
-[data-theme="light"] .daily-shlok-calligraphy {
-    color: #1a1815;
-    text-shadow: none;
-}
-
-/* Sacred Verse Divider */
-.sacred-verse-divider {
-    position: relative;
-    z-index: 1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 14px;
-    margin: clamp(12px, 1.8vw, 22px) 0;
-}
-
-.sacred-verse-divider .divider-line {
-    flex: 1;
-    height: 1px;
-    background: linear-gradient(90deg, transparent, rgba(229, 193, 120, 0.35), transparent);
-}
-
-[data-theme="light"] .sacred-verse-divider .divider-line {
-    background: linear-gradient(90deg, transparent, rgba(140, 95, 62, 0.25), transparent);
-}
-
-.sacred-verse-divider .divider-symbol {
-    font-size: 13px;
-    color: var(--sp-accent);
-    opacity: 0.85;
-}
-
-/* Card Section Labels */
-.card-section-label {
-    display: block;
-    font-family: var(--sp-font-mono, monospace);
-    font-size: 10.5px;
-    font-weight: 700;
-    letter-spacing: 0.12em;
-    text-transform: uppercase;
-    color: var(--sp-accent);
-    margin-bottom: 6px;
-}
-
-.card-section-label.accent {
-    color: #e5c178;
-}
-
-[data-theme="light"] .card-section-label.accent {
-    color: #8c5f3e;
-}
-
-/* Daily Meaning & Explanation Blocks */
-.daily-meaning-block {
-    position: relative;
-    z-index: 1;
     margin-bottom: var(--sp-space-4);
-    padding: 14px 18px;
-    background: rgba(255, 255, 255, 0.02);
-    border-left: 3px solid var(--sp-accent);
-    border-radius: var(--sp-radius-xs);
 }
 
-[data-theme="light"] .daily-meaning-block {
-    background: rgba(140, 95, 62, 0.03);
-    border-left-color: #8c5f3e;
+.daily-divider {
+    height: 1px;
+    background: rgba(255, 255, 255, 0.06);
+    margin: var(--sp-space-4) 0;
+}
+
+[data-theme="light"] .daily-divider {
+    background: rgba(0, 0, 0, 0.06);
 }
 
 .daily-translation-text {
-    font-size: clamp(14.5px, 1.4vw, 17px);
-    line-height: 1.8;
-    color: var(--sp-text);
-    margin: 0;
-}
-
-.daily-explanation-block {
-    position: relative;
-    z-index: 1;
-    margin-bottom: var(--sp-space-5);
-    padding: 14px 18px;
-    background: rgba(229, 193, 120, 0.02);
-    border-radius: var(--sp-radius-xs);
-    border: 1px solid rgba(229, 193, 120, 0.08);
-}
-
-[data-theme="light"] .daily-explanation-block {
-    background: rgba(0, 0, 0, 0.02);
-    border-color: rgba(0, 0, 0, 0.06);
-}
-
-.daily-explanation-text {
-    font-size: clamp(13.5px, 1.25vw, 15.5px);
+    font-size: 15px;
     line-height: 1.75;
     color: var(--sp-text-secondary);
-    margin: 0;
+    font-style: italic;
+    text-align: center;
+    margin-bottom: var(--sp-space-6);
 }
 
 .daily-card-actions {
@@ -2568,24 +2433,20 @@ label {
     border: 1px solid rgba(197, 160, 89, 0.25);
 }
 
-/* Verse Display Container — Full Expansive Reader */
+/* Verse Display Container */
 .verse-display-container {
     position: relative;
     display: flex;
-    align-items: stretch;
-    justify-content: center;
+    align-items: flex-start;
     gap: var(--sp-space-4);
-    max-width: 1040px;
-    margin: 0 auto;
-    width: 100%;
 }
 
-/* Desktop Navigation Arrows */
+/* Desktop Arrows */
 .desktop-verse-arrow {
     position: sticky;
     top: calc(var(--sp-header-h) + var(--sp-space-8));
-    width: 44px;
-    height: 44px;
+    width: 40px;
+    height: 40px;
     flex-shrink: 0;
     display: flex;
     align-items: center;
@@ -2596,8 +2457,6 @@ label {
     background: var(--sp-bg-card);
     box-shadow: var(--sp-shadow-xs);
     transition: all var(--sp-duration-sm) var(--sp-ease);
-    cursor: pointer;
-    z-index: 2;
 }
 
 .desktop-verse-arrow:hover {
@@ -2607,54 +2466,37 @@ label {
     box-shadow: var(--sp-shadow-sm);
 }
 
-.desktop-verse-arrow svg { width: 22px; height: 22px; }
+.desktop-verse-arrow svg { width: 20px; height: 20px; }
 
-/* Master Verse Card — Sacred Manuscript Page */
+/* Verse Card */
 .verse-card {
-    position: relative;
     flex: 1;
     min-width: 0;
-    min-height: calc(100vh - 190px);
-    background: rgba(14, 15, 18, 0.88);
-    border: 1px solid rgba(255, 255, 255, 0.08);
+    background: var(--sp-bg-card);
+    border: 1px solid var(--sp-border);
     border-top: 2px solid var(--sp-accent);
-    border-radius: 20px;
-    padding: clamp(32px, 4vw, 56px) clamp(24px, 3.5vw, 48px);
-    box-shadow: 0 25px 60px -10px rgba(0, 0, 0, 0.65), 0 0 1px 1px rgba(229, 193, 120, 0.12);
-    backdrop-filter: blur(20px);
-    -webkit-backdrop-filter: blur(20px);
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-[data-theme="light"] .verse-card {
-    background: rgba(255, 255, 255, 0.95);
-    border: 1px solid rgba(0, 0, 0, 0.08);
-    border-top: 2px solid #8c5f3e;
-    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.08);
+    border-radius: var(--sp-radius-md);
+    padding: var(--sp-space-8);
+    box-shadow: var(--sp-shadow-md);
 }
 
 .verse-header-row {
-    position: relative;
-    z-index: 1;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: clamp(16px, 2.5vw, 28px);
+    margin-bottom: var(--sp-space-5);
 }
 
 .verse-ref-badge {
     display: inline-flex;
     align-items: center;
-    padding: 4px 12px;
+    padding: 3px 10px;
     border-radius: var(--sp-radius-xs);
     background: rgba(197, 160, 89, 0.1);
-    border: 1px solid rgba(197, 160, 89, 0.28);
-    font-size: 11.5px;
+    border: 1px solid rgba(197, 160, 89, 0.25);
+    font-size: 11px;
     font-weight: 700;
-    letter-spacing: 0.1em;
+    letter-spacing: 0.08em;
     text-transform: uppercase;
     color: var(--sp-accent);
 }
@@ -2665,8 +2507,8 @@ label {
 }
 
 .card-action-icon-btn {
-    width: 36px;
-    height: 36px;
+    width: 34px;
+    height: 34px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -2676,7 +2518,6 @@ label {
     color: var(--sp-text-tertiary);
     font-size: 16px;
     transition: all var(--sp-duration-sm) var(--sp-ease);
-    cursor: pointer;
 }
 
 [data-theme="light"] .card-action-icon-btn {
@@ -2711,201 +2552,126 @@ label {
     transform: scale(1.2);
 }
 
-/* 1. Sanskrit Shloka Block (Grand Sacred Typography) */
+/* Sanskrit Block */
 .verse-sanskrit-block {
-    position: relative;
-    z-index: 1;
     font-family: var(--sp-font-sanskrit);
-    font-size: clamp(23px, 2.8vw, 34px);
-    font-weight: 600;
-    line-height: 2.0;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 1.9;
     color: var(--sp-text);
     text-align: center;
-    letter-spacing: 0.015em;
-    padding: clamp(14px, 2.2vw, 28px) 0 clamp(8px, 1.5vw, 16px);
-    margin-bottom: 0;
-    border-bottom: none;
-    text-shadow: 0 2px 22px rgba(229, 193, 120, 0.18);
-    word-break: break-word;
-}
-
-[data-theme="light"] .verse-sanskrit-block {
-    color: #1a1815;
-    text-shadow: none;
+    padding: var(--sp-space-5) 0;
+    margin-bottom: var(--sp-space-4);
+    border-bottom: 1px solid var(--sp-border);
 }
 
 /* Transliteration */
 .verse-transliteration {
-    position: relative;
-    z-index: 1;
-    font-size: 14.5px;
+    font-size: 15px;
     font-style: italic;
-    line-height: 1.75;
+    line-height: 1.7;
     color: var(--sp-text-tertiary);
     text-align: center;
-    padding: 0 0 var(--sp-space-2);
+    padding: var(--sp-space-3) 0;
+    margin-bottom: var(--sp-space-4);
+    border-bottom: 1px solid var(--sp-border);
 }
 
-/* 2. Meaning Section (भावार्थ) */
-.verse-meaning-section {
-    position: relative;
-    z-index: 1;
-    margin-bottom: clamp(18px, 2.5vw, 28px);
-    padding: clamp(16px, 2vw, 24px) clamp(16px, 2.5vw, 28px);
-    background: rgba(255, 255, 255, 0.02);
-    border: 1px solid rgba(255, 255, 255, 0.05);
-    border-left: 3px solid var(--sp-accent);
-    border-radius: var(--sp-radius-sm);
-}
-
-[data-theme="light"] .verse-meaning-section {
-    background: rgba(140, 95, 62, 0.03);
-    border-color: rgba(140, 95, 62, 0.1);
-    border-left: 3px solid #8c5f3e;
-}
-
-.verse-section-bar {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 12px;
-}
-
-.verse-section-tag {
-    font-family: var(--sp-font-mono, monospace);
-    font-size: 11px;
-    font-weight: 700;
-    letter-spacing: 0.12em;
-    text-transform: uppercase;
-    color: var(--sp-accent);
-}
-
-.verse-section-tag.accent {
-    color: #e5c178;
-}
-
-[data-theme="light"] .verse-section-tag.accent {
-    color: #8c5f3e;
-}
-
+/* Translation Tabs */
 .translation-tabs-row {
     display: flex;
-    gap: 4px;
-    margin: 0;
-    padding: 0;
-    border: none;
+    gap: var(--sp-space-2);
+    border-bottom: 1px solid var(--sp-border);
+    padding-bottom: var(--sp-space-3);
+    margin-bottom: var(--sp-space-4);
+    overflow-x: auto;
+    scrollbar-width: none;
 }
 
+.translation-tabs-row::-webkit-scrollbar { display: none; }
+
 .trans-tab {
-    padding: 4px 10px;
-    font-size: 11px;
-    font-weight: 600;
+    padding: 6px 14px;
+    font-size: 13px;
+    font-weight: 500;
     color: var(--sp-text-tertiary);
     border-radius: var(--sp-radius-xs);
     border: 1px solid transparent;
-    cursor: pointer;
     transition: all var(--sp-duration-sm) var(--sp-ease);
 }
 
 .trans-tab:hover {
     color: var(--sp-text-secondary);
-    background: rgba(255, 255, 255, 0.04);
+    background: rgba(255, 255, 255, 0.03);
+}
+
+[data-theme="light"] .trans-tab:hover {
+    background: rgba(0, 0, 0, 0.03);
 }
 
 .trans-tab.active {
     color: var(--sp-accent);
-    background: rgba(197, 160, 89, 0.12);
-    border-color: rgba(197, 160, 89, 0.3);
+    background: var(--sp-bg-card);
+    border-color: var(--sp-border);
+    border-top-color: var(--sp-accent);
+    font-weight: 600;
+    box-shadow: var(--sp-shadow-xs);
 }
 
-[data-theme="light"] .trans-tab.active {
-    color: #8c5f3e;
-    background: rgba(140, 95, 62, 0.1);
-    border-color: rgba(140, 95, 62, 0.25);
-}
-
-/* Translation Text — Expansive & Elegant */
+/* Translation Text */
 .verse-translation {
-    font-size: clamp(16px, 1.7vw, 20px);
-    line-height: 1.85;
-    color: var(--sp-text);
-    margin: 0;
-    font-style: normal;
-}
-
-/* 3. In-Depth Explanation Section (तात्पर्य) */
-.verse-explanation-section {
-    position: relative;
-    z-index: 1;
-    margin-bottom: clamp(20px, 2.8vw, 36px);
-    padding: clamp(18px, 2.2vw, 28px) clamp(16px, 2.5vw, 28px);
-    background: rgba(229, 193, 120, 0.025);
-    border: 1px solid rgba(229, 193, 120, 0.1);
-    border-radius: var(--sp-radius-sm);
-}
-
-[data-theme="light"] .verse-explanation-section {
-    background: rgba(0, 0, 0, 0.02);
-    border-color: rgba(0, 0, 0, 0.06);
-}
-
-.verse-explanation {
-    font-size: clamp(14.5px, 1.4vw, 17px);
-    line-height: 1.85;
+    font-size: 16px;
+    line-height: 1.8;
     color: var(--sp-text-secondary);
-    padding: 0;
-    margin: 0;
+    margin-bottom: var(--sp-space-5);
 }
 
-[data-theme="light"] .verse-explanation {
-    color: #2e2b27;
+/* Commentary Accordion */
+.commentary-box {
+    border-top: 1px solid var(--sp-border);
+    padding-top: var(--sp-space-3);
 }
 
-/* Navigation Steppers */
-.mobile-nav-steppers {
-    position: relative;
-    z-index: 1;
+.commentary-toggle-btn {
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: var(--sp-space-3);
-    margin-top: auto;
-    padding-top: 18px;
-    border-top: 1px solid rgba(255, 255, 255, 0.06);
-}
-
-[data-theme="light"] .mobile-nav-steppers {
-    border-top-color: rgba(0, 0, 0, 0.06);
-}
-
-.stepper-btn {
-    padding: 10px 20px;
+    padding: var(--sp-space-3) 0;
     font-size: 13px;
-    font-weight: 600;
+    font-weight: 500;
     color: var(--sp-text-secondary);
-    border: 1px solid var(--sp-border);
-    border-radius: var(--sp-radius-sm);
-    background: rgba(255, 255, 255, 0.02);
-    box-shadow: var(--sp-shadow-xs);
-    transition: all var(--sp-duration-sm) var(--sp-ease);
-    cursor: pointer;
+    transition: color var(--sp-duration-sm);
 }
 
-.stepper-btn:hover {
-    border-color: var(--sp-accent);
-    color: var(--sp-text);
-    background: var(--sp-bg-elevated);
+.commentary-toggle-btn:hover { color: var(--sp-text); }
+
+.commentary-btn-label {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--sp-space-2);
 }
 
-.stepper-btn.primary {
-    background: var(--sp-accent);
-    color: var(--sp-accent-on);
-    border-color: var(--sp-accent);
+.commentary-icon {
+    width: 16px;
+    height: 16px;
+    color: var(--sp-accent);
 }
 
-.stepper-btn.primary:hover {
-    background: var(--sp-accent-hover);
-    border-color: var(--sp-accent-hover);
+.chevron {
+    font-size: 12px;
+    transition: transform var(--sp-duration-md) var(--sp-ease);
+}
+
+.commentary-toggle-btn.expanded .chevron {
+    transform: rotate(180deg);
+}
+
+.verse-explanation {
+    font-size: 14px;
+    line-height: 1.75;
+    color: var(--sp-text-secondary);
+    padding: var(--sp-space-3) 0;
 }
 
 /* Mobile Steppers */
@@ -3484,56 +3250,15 @@ label {
         white-space: normal;
     }
 
-    .apple-meaning-wrapper {
-        position: relative;
-        z-index: 1;
-        margin-bottom: 12px;
-        padding: 12px 14px;
-        background: rgba(255, 255, 255, 0.02);
-        border-left: 3px solid var(--sp-accent);
-        border-radius: 6px;
-        text-align: left;
-    }
-
-    [data-theme="light"] .apple-meaning-wrapper {
-        background: rgba(140, 95, 62, 0.03);
-        border-left-color: #8c5f3e;
-    }
-
     .apple-translation-text {
         font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", var(--sp-font-body);
-        font-size: 14px;
-        line-height: 1.7;
-        color: var(--sp-text);
-        text-align: left;
-        margin: 0;
-        padding: 0;
-    }
-
-    .apple-explanation-wrapper {
-        position: relative;
-        z-index: 1;
-        margin-bottom: 20px;
-        padding: 12px 14px;
-        background: rgba(229, 193, 120, 0.025);
-        border: 1px solid rgba(229, 193, 120, 0.08);
-        border-radius: 6px;
-        text-align: left;
-    }
-
-    [data-theme="light"] .apple-explanation-wrapper {
-        background: rgba(0, 0, 0, 0.02);
-        border-color: rgba(0, 0, 0, 0.06);
-    }
-
-    .apple-explanation-text {
-        font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", var(--sp-font-body);
-        font-size: 13px;
-        line-height: 1.7;
+        font-size: 13.5px;
+        line-height: 1.6;
         color: var(--sp-text-secondary);
-        text-align: left;
-        margin: 0;
-        padding: 0;
+        font-style: italic;
+        text-align: center;
+        margin-bottom: 22px;
+        padding: 0 4px;
     }
 
     .apple-card-actions {
@@ -3894,44 +3619,13 @@ label {
         letter-spacing: -0.02em;
     }
 
-    /* Reader Screen Mobile Polish — Full-Screen Page Filling Manuscript */
-    .reader-section {
-        padding-top: var(--sp-space-2);
-        padding-left: 4px;
-        padding-right: 4px;
-    }
-    .verse-display-container {
-        width: 100%;
-    }
-    .verse-card {
-        padding: 24px 18px 24px;
-        min-height: calc(100vh - 150px);
-        border-radius: 18px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-    }
+    /* Reader Screen Mobile Polish */
+    .reader-section { padding-top: var(--sp-space-2); }
+    .verse-card { padding: var(--sp-space-4); }
     .verse-sanskrit-block {
-        font-size: clamp(18px, 4.8vw, 24px);
-        line-height: 1.95;
+        font-size: clamp(14.5px, 4.2vw, 18px);
+        line-height: 1.85;
         white-space: normal;
-        padding: 12px 0 6px;
-    }
-    .verse-meaning-section {
-        padding: 14px 14px;
-        margin-bottom: 14px;
-    }
-    .verse-translation {
-        font-size: 15px;
-        line-height: 1.75;
-    }
-    .verse-explanation-section {
-        padding: 14px 14px;
-        margin-bottom: 20px;
-    }
-    .verse-explanation {
-        font-size: 13.5px;
-        line-height: 1.75;
     }
     .desktop-verse-arrow { display: none; }
 }

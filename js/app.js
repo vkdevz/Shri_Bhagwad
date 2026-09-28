@@ -1370,28 +1370,23 @@ class GitaApp {
 
         const sanskritText = this.dailyVerse.sanskrit || '';
         const translationText = this.getTranslation(this.dailyVerse);
-        const explanationText = this.getExplanation(this.dailyVerse);
         const referenceText = `Chapter ${this.dailyVerse.chapter} • Verse ${this.dailyVerse.verse}`;
         const formattedSanskritHtml = this.formatSanskritHtml(sanskritText);
 
         // Desktop Daily Verse
         const sanskritEl = document.getElementById('daily-sanskrit');
         const translationEl = document.getElementById('daily-translation');
-        const explanationEl = document.getElementById('daily-explanation');
         const referenceEl = document.getElementById('daily-reference');
         if (sanskritEl) sanskritEl.innerHTML = formattedSanskritHtml;
         if (translationEl) translationEl.textContent = translationText;
-        if (explanationEl) explanationEl.textContent = explanationText;
         if (referenceEl) referenceEl.textContent = referenceText;
 
         // Native Mobile App Daily Verse
         const mSanskritEl = document.getElementById('mobile-daily-sanskrit');
         const mTranslationEl = document.getElementById('mobile-daily-translation');
-        const mExplanationEl = document.getElementById('mobile-daily-explanation');
         const mReferenceEl = document.getElementById('mobile-daily-reference');
         if (mSanskritEl) mSanskritEl.innerHTML = formattedSanskritHtml;
         if (mTranslationEl) mTranslationEl.textContent = translationText;
-        if (mExplanationEl) mExplanationEl.textContent = explanationText;
         if (mReferenceEl) mReferenceEl.textContent = referenceText;
     }
 
@@ -1677,7 +1672,7 @@ class GitaApp {
             this.updateReaderTranslationDisplay();
             this.updateElement('current-explanation', this.getExplanation(verse));
 
-            this.isRevealed = true;
+            this.isRevealed = this.settings.autoReveal;
             this.updateRevealState();
             this.updateBookmarkButton();
             this.markAsRead(this.currentChapter, this.currentVerse);
@@ -1693,10 +1688,9 @@ class GitaApp {
         const verse = this.getVerse(this.currentChapter, this.currentVerse);
         if (!verse) return;
         const transEl = document.getElementById('current-translation');
-        const expEl = document.getElementById('current-explanation');
+        if (!transEl) return;
 
         let text = '';
-        let expText = '';
         const lang = this.activeReaderLang || this.settings.language || 'english';
         if (verse.translation) {
             if (typeof verse.translation === 'string') {
@@ -1705,15 +1699,7 @@ class GitaApp {
                 text = verse.translation[lang] || verse.translation.english || verse.translation.hindi || '';
             }
         }
-        if (verse.explanation) {
-            if (typeof verse.explanation === 'string') {
-                expText = verse.explanation;
-            } else {
-                expText = verse.explanation[lang] || verse.explanation.english || verse.explanation.hindi || '';
-            }
-        }
-        if (transEl) transEl.textContent = text || 'Loading translation...';
-        if (expEl) expEl.textContent = expText || 'Commentary and philosophical explanation for this verse.';
+        transEl.textContent = text || 'Loading translation...';
     }
 
     updateRevealState() {
