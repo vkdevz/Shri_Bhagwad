@@ -1,15 +1,13 @@
 // Service Worker for ShlokPath (श्लोकपथ)
 // Network-First strategy to ensure latest updates are ALWAYS served immediately
-const CACHE_NAME = 'shlokpath-v11.0-emblem';
+const CACHE_NAME = 'shlokpath-v11.1-navfix';
 
 self.addEventListener('install', (event) => {
-  // Immediately activate new service worker without waiting
   self.skipWaiting();
 });
 
 self.addEventListener('activate', (event) => {
   event.waitUntil(
-    // Delete all older caches immediately
     caches.keys().then((cacheNames) => {
       return Promise.all(
         cacheNames.map((name) => {
@@ -23,17 +21,14 @@ self.addEventListener('activate', (event) => {
   );
 });
 
-// Network-First Fetch Strategy
-// Tries the network first. If online, returns fresh content and updates cache.
-// If offline, falls back to cached assets.
+// Network-First Fetch Strategy with URL scheme validation
 self.addEventListener('fetch', (event) => {
-  // Only handle GET requests
   if (event.request.method !== 'GET') return;
+  if (!event.request.url.startsWith('http')) return;
 
   event.respondWith(
     fetch(event.request)
       .then((networkResponse) => {
-        // If valid response, update cache in background
         if (networkResponse && networkResponse.status === 200 && networkResponse.type === 'basic') {
           const responseToCache = networkResponse.clone();
           caches.open(CACHE_NAME).then((cache) => {
@@ -43,7 +38,6 @@ self.addEventListener('fetch', (event) => {
         return networkResponse;
       })
       .catch(() => {
-        // Network failed (offline), look in cache
         return caches.match(event.request).then((cachedResponse) => {
           if (cachedResponse) {
             return cachedResponse;
