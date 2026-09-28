@@ -869,7 +869,7 @@ class GitaApp {
             previewImg.src = dataUrl;
             previewImg.style.opacity = '1';
         } catch (err) {
-            console.error('Error generating 3:4 card preview:', err);
+            console.error('Error generating card preview:', err);
         }
     }
 
@@ -908,7 +908,7 @@ class GitaApp {
             });
         }
 
-        // 1. Download 3:4 High-Res PNG Button
+        // 1. Save Wisdom Card Button
         const downloadBtn = document.getElementById('download-canvas-btn');
         if (downloadBtn) {
             downloadBtn.addEventListener('click', async () => {
@@ -918,7 +918,7 @@ class GitaApp {
                     this.canvasTarget.chapter.title,
                     this.canvasOptions
                 );
-                this.showToast('📥 3:4 High-Resolution Card Downloaded!', 'success');
+                this.showToast('📥 Sacred Wisdom Card Saved!', 'success');
             });
         }
 
@@ -947,7 +947,7 @@ class GitaApp {
                     this.canvasOptions
                 );
                 if (result.mode === 'download_and_copy') {
-                    this.showToast('📸 3:4 Image downloaded & Instagram caption copied to clipboard!', 'success');
+                    this.showToast('📸 Wisdom card saved & caption copied to clipboard!', 'success');
                 } else if (result.success) {
                     this.showToast('Sharing to Instagram... 📸', 'success');
                 }
@@ -965,7 +965,7 @@ class GitaApp {
                 const text = this.getTranslation(verse);
                 const caption = `Bhagavad Gita • Chapter ${ch}, Verse ${v}\n\n${verse.sanskrit || ''}\n\n"${text}"\n\n#ShlokPath #BhagavadGita #Philosophy #Sanskrit #AncientWisdom #DailyGita`;
                 await navigator.clipboard.writeText(caption);
-                this.showToast('Caption copied to clipboard', 'success');
+                this.showToast('Contemplation verse & translation copied', 'success');
             });
         }
 

@@ -1,12 +1,12 @@
 /**
- * Divine Canvas 3:4 Quote Card Generator
- * Creates ultra-high-resolution 1200x1600 (3:4 ratio) cards optimized for:
- * - Instagram Feed (3:4 portrait)
- * - Instagram Stories & Reels cover
- * - WhatsApp Status & Chats
+ * Divine Canvas Sacred Wisdom Folio Generator
+ * Creates ultra-high-resolution vertical editorial cards optimized for:
+ * - Contemplation and reflection
+ * - Instagram Stories, Feed & Reels
+ * - WhatsApp Status & Community sharing
  * Features:
  * - Low-opacity background logo watermark
- * - 4 Sacred Color Themes (Cosmic Midnight, Sacred Saffron, Temple Sandalwood, Vrindavan Emerald)
+ * - Sacred Color Themes (Manuscript Obsidian, Imperial Linen)
  * - Bilingual support (Sanskrit + English / Hindi / Dual)
  * - Native Web Share API integration (Direct Instagram & WhatsApp sharing)
  */
@@ -55,7 +55,7 @@ class DivineCanvasGenerator {
     }
 
     /**
-     * Generate high-res 1200x1600 (3:4 ratio) canvas
+     * Generate high-res 1200x1600 canvas
      */
     static async generateCardCanvas(verse, chapterTitle, options = {}) {
         const themeKey = options.theme || 'midnight';
@@ -66,7 +66,7 @@ class DivineCanvasGenerator {
 
         const canvas = document.createElement('canvas');
         canvas.width = 1200;
-        canvas.height = 1600; // Exactly 3:4 Aspect Ratio (300px * 4 = 1200, 400px * 4 = 1600)
+        canvas.height = 1600;
         const ctx = canvas.getContext('2d');
 
         // 1. Background Gradient
@@ -208,16 +208,18 @@ class DivineCanvasGenerator {
             });
         }
 
-        // 7. Footer: Sacred Attribution & Social Watermark
+        // 7. Footer: Sacred Attribution & Archival Mark
         ctx.fillStyle = theme.borderGold;
         ctx.font = '600 18px "Cinzel", serif';
         ctx.letterSpacing = '4px';
         ctx.fillText('SHRIMAD BHAGAVAD GITA', 600, 1475);
 
-        ctx.fillStyle = 'rgba(255, 255, 255, 0.4)';
-        ctx.font = '400 14px "Inter", sans-serif';
-        ctx.letterSpacing = '1px';
-        ctx.fillText('Editorial 3:4 Edition', 600, 1505);
+        ctx.fillStyle = theme.textGold;
+        ctx.globalAlpha = 0.6;
+        ctx.font = '500 13px "Cinzel", serif';
+        ctx.letterSpacing = '2px';
+        ctx.fillText('SHLOKPATH • SACRED ARCHIVE', 600, 1505);
+        ctx.globalAlpha = 1.0;
 
         return canvas;
     }
@@ -370,13 +372,13 @@ class DivineCanvasGenerator {
     }
 
     /**
-     * Trigger instant file download of the 3:4 PNG image
+     * Trigger instant file download of the high-resolution PNG image
      */
     static async downloadCard(verse, chapterTitle, options = {}) {
         const dataUrl = await DivineCanvasGenerator.generateCardDataUrl(verse, chapterTitle, options);
         const chNum = verse.chapterNumber || (verse.chapter ? verse.chapter.chapterNumber : '1');
         const vNum = verse.verseNumber || '1';
-        const filename = `Bhagavad-Gita-Ch${chNum}-V${vNum}-3x4.png`;
+        const filename = `ShlokPath-Gita-Ch${chNum}-V${vNum}.png`;
 
         const a = document.createElement('a');
         a.href = dataUrl;
@@ -459,7 +461,7 @@ class DivineCanvasGenerator {
             }
         }
 
-        // Desktop/Browser Fallback: Copy Instagram Caption & Download 3:4 image
+        // Desktop/Browser Fallback: Copy Instagram Caption & Save high-res card image
         try {
             await navigator.clipboard.writeText(igCaption);
         } catch (e) {
