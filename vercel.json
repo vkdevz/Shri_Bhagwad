@@ -1,9 +1,6 @@
 {
-  "version": 2,
-  "cleanUrls": true,
-  "trailingSlash": false,
   "rewrites": [
-    { "source": "/chapter/:match*", "destination": "/index.html" },
+    { "source": "/chapter/(.*)", "destination": "/index.html" },
     { "source": "/chapters", "destination": "/index.html" },
     { "source": "/dilemmas", "destination": "/index.html" },
     { "source": "/dhyana", "destination": "/index.html" },
