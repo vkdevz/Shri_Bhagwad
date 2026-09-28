@@ -649,16 +649,22 @@ label {
 }
 
 .brand-container:hover {
-    opacity: 0.9;
+    opacity: 0.95;
 }
 
 .brand-logo-img {
-    width: 26px;
-    height: 26px;
+    width: 28px;
+    height: 28px;
     border-radius: 7px;
     object-fit: cover;
-    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.35);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.45), 0 0 0 1px rgba(229, 193, 120, 0.2);
     flex-shrink: 0;
+    transition: transform 0.2s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.2s ease;
+}
+
+.brand-container:hover .brand-logo-img {
+    transform: scale(1.05);
+    box-shadow: 0 3px 12px rgba(229, 193, 120, 0.25), 0 0 0 1px rgba(229, 193, 120, 0.4);
 }
 
 .brand-english {

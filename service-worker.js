@@ -1,6 +1,6 @@
 // Service Worker for ShlokPath (श्लोकपथ)
 // Network-First strategy to ensure latest updates are ALWAYS served immediately
-const CACHE_NAME = 'shlokpath-v10.0-iconic';
+const CACHE_NAME = 'shlokpath-v11.0-emblem';
 
 self.addEventListener('install', (event) => {
   // Immediately activate new service worker without waiting
