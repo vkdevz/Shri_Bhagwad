@@ -7,12 +7,21 @@
    0. CSS RESET
    -------------------------------------------------------------------------- */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-html { -webkit-text-size-adjust: 100%; -webkit-tap-highlight-color: transparent; scroll-behavior: smooth; }
-body { margin: 0; overflow-x: hidden; }
+html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; -webkit-tap-highlight-color: transparent; scroll-behavior: smooth; touch-action: pan-x pan-y; }
+body { margin: 0; overflow-x: hidden; touch-action: pan-x pan-y; overscroll-behavior-y: contain; }
 img, svg { display: block; max-width: 100%; }
-button { cursor: pointer; font: inherit; border: none; background: none; color: inherit; }
-input, textarea, select { font: inherit; color: inherit; }
-a { color: inherit; text-decoration: none; }
+button { cursor: pointer; font: inherit; border: none; background: none; color: inherit; touch-action: manipulation; }
+input, textarea, select { font: inherit; color: inherit; touch-action: manipulation; }
+a { color: inherit; text-decoration: none; touch-action: manipulation; }
+
+/* Single-Line Shlok Line Clamp Helper */
+.shlok-line {
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 1.85;
+}
 ul, ol { list-style: none; }
 h1, h2, h3, h4, h5, h6 { font-weight: 600; line-height: 1.3; }
 :focus-visible { outline: 2px solid var(--sp-accent); outline-offset: 2px; }
@@ -1967,6 +1976,11 @@ label {
 }
 
 .page-title-banner h1 {
+    font-size: clamp(16px, 4.4vw, 26px);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    letter-spacing: -0.01em;
     margin-bottom: var(--sp-space-2);
 }
 
@@ -3113,12 +3127,13 @@ label {
 
     .apple-shlok-text {
         font-family: var(--sp-font-sanskrit);
-        font-size: 19px;
-        line-height: 1.8;
+        font-size: clamp(13px, 4vw, 17px);
+        line-height: 1.85;
         color: var(--sp-text);
         text-align: center;
         letter-spacing: 0.01em;
         margin-bottom: 14px;
+        white-space: normal;
     }
 
     .apple-translation-text {
@@ -3474,13 +3489,31 @@ label {
     .install-text p { font-size: 10.5px; }
     .install-btn { padding: 5px 12px; font-size: 11.5px; }
 
+    /* Mobile Zoom & Single Line Protection */
+    input, select, textarea {
+        font-size: 16px !important; /* Prevents iOS auto-zoom on input focus */
+    }
+
+    .page-title-banner {
+        padding: var(--sp-space-5) var(--sp-space-2) var(--sp-space-3);
+    }
+
+    .page-title-banner h1 {
+        font-size: clamp(14px, 4.2vw, 18px);
+        white-space: nowrap;
+        text-align: center;
+        letter-spacing: -0.02em;
+    }
+
     /* Reader Screen Mobile Polish */
     .reader-section { padding-top: var(--sp-space-2); }
     .verse-card { padding: var(--sp-space-4); }
-    .verse-sanskrit-block { font-size: 18px; line-height: 1.8; }
+    .verse-sanskrit-block {
+        font-size: clamp(14.5px, 4.2vw, 18px);
+        line-height: 1.85;
+        white-space: normal;
+    }
     .desktop-verse-arrow { display: none; }
-
-    h1 { font-size: 21px; }
 }
 
 /* ---- Tablet (768px - 1023px) ---- */

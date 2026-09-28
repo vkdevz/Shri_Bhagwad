@@ -1179,6 +1179,22 @@ class GitaApp {
     }
 
     setupTouchGestures() {
+        // Disable mobile pinch zoom, iOS gesture zoom, and accidental double-tap zoom
+        document.addEventListener('gesturestart', (e) => e.preventDefault(), { passive: false });
+        document.addEventListener('gesturechange', (e) => e.preventDefault(), { passive: false });
+        document.addEventListener('gestureend', (e) => e.preventDefault(), { passive: false });
+
+        let lastTouchEndTime = 0;
+        document.addEventListener('touchend', (e) => {
+            const now = Date.now();
+            if (now - lastTouchEndTime <= 300) {
+                if (!e.target.closest('input, textarea, select')) {
+                    e.preventDefault();
+                }
+            }
+            lastTouchEndTime = now;
+        }, { passive: false });
+
         const readerScreen = document.getElementById('reader-screen');
         if (!readerScreen) return;
 
@@ -1310,18 +1326,58 @@ class GitaApp {
         }
     }
 
+    formatSanskritHtml(raw) {
+        if (!raw) return '';
+        // 1. Remove trailing numbers like ।।2.56।। or ||2.56|| or ॥५६॥ or 2.56
+        let clean = raw
+            .replace(/[।|॥]\s*[\d\.\s\u0966-\u096F]+[।|॥]/g, '')
+            .replace(/\s*[\d\.\u0966-\u096F]+\s*[।|॥]/g, '')
+            .replace(/\s*[\d\.\u0966-\u096F]+$/g, '')
+            .trim();
+
+        // 2. Normalize double dandas
+        clean = clean.replace(/।।|\|\|/g, '॥').replace(/\|/g, '।');
+
+        // 3. Split into lines
+        let lines = clean.split(/\r?\n+/).map(l => l.trim()).filter(Boolean);
+        if (lines.length === 1 && lines[0].includes('।')) {
+            const idx = lines[0].indexOf('।');
+            if (idx > -1 && idx < lines[0].length - 1) {
+                lines = [
+                    lines[0].substring(0, idx + 1).trim(),
+                    lines[0].substring(idx + 1).trim()
+                ];
+            }
+        }
+
+        // Format line 1 (ends with single danda)
+        if (lines[0]) {
+            lines[0] = lines[0].replace(/[।॥]+$/g, '').trim() + '।';
+        }
+
+        // Format line 2 (ends with double danda)
+        if (lines[1]) {
+            lines[1] = lines[1].replace(/[।॥]+$/g, '').trim() + '॥';
+        } else if (lines[0]) {
+            lines[0] = lines[0].replace(/[।॥]+$/g, '').trim() + '॥';
+        }
+
+        return lines.map(line => `<span class="shlok-line">${this.escapeHtml(line)}</span>`).join('');
+    }
+
     updateDailyVerseDisplay() {
         if (!this.dailyVerse) return;
 
         const sanskritText = this.dailyVerse.sanskrit || '';
         const translationText = this.getTranslation(this.dailyVerse);
         const referenceText = `Chapter ${this.dailyVerse.chapter} • Verse ${this.dailyVerse.verse}`;
+        const formattedSanskritHtml = this.formatSanskritHtml(sanskritText);
 
         // Desktop Daily Verse
         const sanskritEl = document.getElementById('daily-sanskrit');
         const translationEl = document.getElementById('daily-translation');
         const referenceEl = document.getElementById('daily-reference');
-        if (sanskritEl) sanskritEl.textContent = sanskritText;
+        if (sanskritEl) sanskritEl.innerHTML = formattedSanskritHtml;
         if (translationEl) translationEl.textContent = translationText;
         if (referenceEl) referenceEl.textContent = referenceText;
 
@@ -1329,7 +1385,7 @@ class GitaApp {
         const mSanskritEl = document.getElementById('mobile-daily-sanskrit');
         const mTranslationEl = document.getElementById('mobile-daily-translation');
         const mReferenceEl = document.getElementById('mobile-daily-reference');
-        if (mSanskritEl) mSanskritEl.textContent = sanskritText;
+        if (mSanskritEl) mSanskritEl.innerHTML = formattedSanskritHtml;
         if (mTranslationEl) mTranslationEl.textContent = translationText;
         if (mReferenceEl) mReferenceEl.textContent = referenceText;
     }
@@ -1600,7 +1656,11 @@ class GitaApp {
             const total = chapter.verses ? chapter.verses.length : (chapter.verseCount || 0);
             this.updateElement('reader-verse-count', `Verse ${this.currentVerse} of ${total}`);
             this.updateElement('current-verse-number', this.currentVerse.toString());
-            this.updateElement('current-sanskrit', verse.sanskrit || '');
+            
+            const currentSanskritEl = document.getElementById('current-sanskrit');
+            if (currentSanskritEl) {
+                currentSanskritEl.innerHTML = this.formatSanskritHtml(verse.sanskrit || '');
+            }
             this.updateElement('current-transliteration', verse.transliteration || '');
 
             const badge = document.getElementById('current-verse-badge');
