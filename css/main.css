@@ -465,12 +465,13 @@ label {
     text-align: center;
 }
 
-.om-symbol {
-    font-family: var(--sp-font-sanskrit);
-    font-size: 48px;
-    color: var(--sp-accent);
-    margin-bottom: var(--sp-space-3);
-    opacity: 0.85;
+.loading-logo-emblem {
+    width: 68px;
+    height: 68px;
+    border-radius: 18px;
+    margin: 0 auto var(--sp-space-3);
+    box-shadow: 0 8px 24px rgba(197, 160, 89, 0.25);
+    display: block;
 }
 
 .loading-text {
@@ -640,6 +641,7 @@ label {
 .brand-container {
     display: flex;
     align-items: center;
+    gap: 8px;
     cursor: pointer;
     user-select: none;
     padding: 2px 0;
@@ -648,6 +650,15 @@ label {
 
 .brand-container:hover {
     opacity: 0.9;
+}
+
+.brand-logo-img {
+    width: 26px;
+    height: 26px;
+    border-radius: 7px;
+    object-fit: cover;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.35);
+    flex-shrink: 0;
 }
 
 .brand-english {
