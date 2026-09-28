@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <title>404 — Page Not Found | ShlokPath</title>
+    <meta name="robots" content="noindex, follow">
+    <meta name="theme-color" content="#0e0f12">
+
+    <!-- Icons -->
+    <link rel="icon" type="image/png" href="icons/favicon.png">
+    <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Noto+Sans+Devanagari:wght@400;500;600&family=Outfit:wght@400;500;600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+
+    <!-- Base stylesheet -->
+    <link rel="stylesheet" href="css/main.css">
+
+    <style>
+        body {
+            background-color: #0e0f12;
+            color: #f0ede6;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Inter', system-ui, sans-serif;
+            padding: 24px;
+        }
+        .error-card {
+            max-width: 600px;
+            width: 100%;
+            background: #161720;
+            border: 1px solid rgba(197, 160, 89, 0.25);
+            border-radius: 16px;
+            padding: 48px 36px;
+            text-align: center;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
+            position: relative;
+            overflow: hidden;
+        }
+        .error-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: linear-gradient(90deg, transparent, #c5a059, transparent);
+        }
+        .error-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            font-family: 'Cinzel', serif;
+            font-size: 14px;
+            letter-spacing: 2px;
+            color: #c5a059;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+        }
+        .error-title {
+            font-family: 'Cinzel', Georgia, serif;
+            font-size: 32px;
+            font-weight: 700;
+            color: #f0ede6;
+            margin-bottom: 16px;
+            line-height: 1.25;
+        }
+        .sanskrit-verse-block {
+            margin: 24px 0;
+            padding: 20px;
+            background: rgba(28, 30, 40, 0.7);
+            border-left: 3px solid #c5a059;
+            border-radius: 8px;
+            text-align: left;
+        }
+        .sanskrit-shloka {
+            font-family: 'Noto Sans Devanagari', sans-serif;
+            font-size: 18px;
+            color: #c5a059;
+            line-height: 1.7;
+            margin-bottom: 8px;
+        }
+        .shloka-trans {
+            font-size: 14px;
+            color: #9b978f;
+            line-height: 1.5;
+            font-style: italic;
+        }
+        .shloka-ref {
+            display: block;
+            margin-top: 6px;
+            font-size: 12px;
+            color: #6b6862;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        .error-desc {
+            color: #9b978f;
+            font-size: 15px;
+            line-height: 1.6;
+            margin-bottom: 32px;
+        }
+        .error-actions {
+            display: flex;
+            gap: 16px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .btn-primary {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: #c5a059;
+            color: #111215;
+            font-weight: 600;
+            padding: 12px 24px;
+            border-radius: 8px;
+            text-decoration: none;
+            transition: background 0.2s ease, transform 0.15s ease;
+        }
+        .btn-primary:hover {
+            background: #ad874e;
+            transform: translateY(-1px);
+        }
+        .btn-secondary {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: rgba(255, 255, 255, 0.05);
+            color: #f0ede6;
+            border: 1px solid rgba(255, 255, 255, 0.12);
+            font-weight: 500;
+            padding: 12px 24px;
+            border-radius: 8px;
+            text-decoration: none;
+            transition: all 0.2s ease;
+        }
+        .btn-secondary:hover {
+            border-color: #c5a059;
+            color: #c5a059;
+        }
+    </style>
+</head>
+<body>
+    <div class="error-card">
+        <div class="error-badge">404 • Path Beyond Stillness</div>
+        <h1 class="error-title">The Path You Seek Is Elsewhere</h1>
+
+        <div class="sanskrit-verse-block">
+            <div class="sanskrit-shloka">नासतो विद्यते भावो नाभावो विद्यते सतः ।<br>उभयोरपि दृष्टोऽन्तस्त्वनयोस्तत्त्वदर्शिभिः ॥</div>
+            <div class="shloka-trans">"The unreal has no being; the real has no nonexistence. The truth of both has been perceived by seers of essence."</div>
+            <span class="shloka-ref">— Shrimad Bhagavad Gita, Chapter 2, Verse 16</span>
+        </div>
+
+        <p class="error-desc">
+            The page or verse coordinate you requested does not exist in this realm. Return to the sacred home or immerse yourself in the 18 chapters.
+        </p>
+
+        <div class="error-actions">
+            <a href="/" class="btn-primary">Return to Sanctuary</a>
+            <a href="/chapters" class="btn-secondary">Explore 18 Chapters</a>
+        </div>
+    </div>
+</body>
+</html>

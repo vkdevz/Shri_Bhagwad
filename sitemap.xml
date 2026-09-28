@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+    <!-- Homepage -->
+    <url>
+        <loc>https://shlokpath.vercel.app/</loc>
+        <lastmod>2026-09-28</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>1.0</priority>
+        <image:image>
+            <image:loc>https://shlokpath.vercel.app/assets/images/og-share.png</image:loc>
+            <image:title>ShlokPath — Complete Bhagavad Gita Online</image:title>
+            <image:caption>All 18 Chapters and 701 Verses of the Shrimad Bhagavad Gita</image:caption>
+        </image:image>
+    </url>
+
+    <!-- Main Screens & Experiences -->
+    <url>
+        <loc>https://shlokpath.vercel.app/chapters</loc>
+        <lastmod>2026-09-28</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    <url>
+        <loc>https://shlokpath.vercel.app/dilemmas</loc>
+        <lastmod>2026-09-28</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://shlokpath.vercel.app/dhyana</loc>
+        <lastmod>2026-09-28</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://shlokpath.vercel.app/search</loc>
+        <lastmod>2026-09-28</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://shlokpath.vercel.app/settings</loc>
+        <lastmod>2026-09-28</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+    </url>
+    <!-- Chapter 1: Arjuna Vishada Yoga (अर्जुनविषादयोग) -->
+    <url>
+        <loc>https://shlokpath.vercel.app/chapter/1</loc>
+        <lastmod>2026-09-28</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    <!-- Chapter 2: Sankhya Yoga (सांख्ययोग) -->
+    <url>
+        <loc>https://shlokpath.vercel.app/chapter/2</loc>
+        <lastmod>2026-09-28</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    <!-- Chapter 3: Karma Yoga (कर्मयोग) -->
+    <url>
+        <loc>https://shlokpath.vercel.app/chapter/3</loc>
+        <lastmod>2026-09-28</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    <!-- Chapter 4: Jñāna Karma Saṃnyāsa Yoga (ज्ञानकर्मसंन्यासयोग) -->
+    <url>
+        <loc>https://shlokpath.vercel.app/chapter/4</loc>
+        <lastmod>2026-09-28</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    <!-- Chapter 5: Karma-Sannyāsa Yoga (कर्मसंन्यासयोग) -->
+    <url>
+        <loc>https://shlokpath.vercel.app/chapter/5</loc>
+        <lastmod>2026-09-28</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    <!-- Chapter 6: Dhyana Yoga (ध्यानयोग) -->
+    <url>
+        <loc>https://shlokpath.vercel.app/chapter/6</loc>
+        <lastmod>2026-09-28</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    <!-- Chapter 7: Gyaan Vigyana Yoga (ज्ञानविज्ञानयोग) -->
+    <url>
+        <loc>https://shlokpath.vercel.app/chapter/7</loc>
+        <lastmod>2026-09-28</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    <!-- Chapter 8: Akshara Brahma Yoga (अक्षरब्रह्मयोग) -->
+    <url>
+        <loc>https://shlokpath.vercel.app/chapter/8</loc>
+        <lastmod>2026-09-28</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    <!-- Chapter 9: Raja Vidya Yoga (राजविद्याराजगुह्ययोग) -->
+    <url>
+        <loc>https://shlokpath.vercel.app/chapter/9</loc>
+        <lastmod>2026-09-28</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    <!-- Chapter 10: Vibhooti Yoga (विभूतियोग) -->
+    <url>
+        <loc>https://shlokpath.vercel.app/chapter/10</loc>
+        <lastmod>2026-09-28</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    <!-- Chapter 11: Vishwaroopa Darshana Yoga (विश्वरूपदर्शनयोग) -->
+    <url>
+        <loc>https://shlokpath.vercel.app/chapter/11</loc>
+        <lastmod>2026-09-28</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    <!-- Chapter 12: Bhakti Yoga (भक्तियोग) -->
+    <url>
+        <loc>https://shlokpath.vercel.app/chapter/12</loc>
+        <lastmod>2026-09-28</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    <!-- Chapter 13: Ksetra Ksetrajna Vibhaaga Yoga (क्षेत्र-क्षेत्रज्ञविभागयोग) -->
+    <url>
+        <loc>https://shlokpath.vercel.app/chapter/13</loc>
+        <lastmod>2026-09-28</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    <!-- Chapter 14: Gunatraya Vibhaga Yoga (गुणत्रयविभागयोग) -->
+    <url>
+        <loc>https://shlokpath.vercel.app/chapter/14</loc>
+        <lastmod>2026-09-28</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    <!-- Chapter 15: Purushottama Yoga (पुरुषोत्तमयोग) -->
+    <url>
+        <loc>https://shlokpath.vercel.app/chapter/15</loc>
+        <lastmod>2026-09-28</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    <!-- Chapter 16: Daivasura Sampad Vibhaga Yoga (दैवासुरसम्पद्विभागयोग) -->
+    <url>
+        <loc>https://shlokpath.vercel.app/chapter/16</loc>
+        <lastmod>2026-09-28</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    <!-- Chapter 17: Sraddhatraya Vibhaga Yoga (श्रद्धात्रयविभागयोग) -->
+    <url>
+        <loc>https://shlokpath.vercel.app/chapter/17</loc>
+        <lastmod>2026-09-28</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    <!-- Chapter 18: Moksha Sanyaas Yoga (मोक्षसंन्यासयोग) -->
+    <url>
+        <loc>https://shlokpath.vercel.app/chapter/18</loc>
+        <lastmod>2026-09-28</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    <!-- Bhagavad Gita Verse 2.47 - Karmanye Vadhikaraste -->
+    <url>
+        <loc>https://shlokpath.vercel.app/chapter/2/verse/47</loc>
+        <lastmod>2026-09-28</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <!-- Bhagavad Gita Verse 2.14 - Matra-sparshas tu kaunteya -->
+    <url>
+        <loc>https://shlokpath.vercel.app/chapter/2/verse/14</loc>
+        <lastmod>2026-09-28</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <!-- Bhagavad Gita Verse 2.20 - Na jayate mriyate va kadacin -->
+    <url>
+        <loc>https://shlokpath.vercel.app/chapter/2/verse/20</loc>
+        <lastmod>2026-09-28</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <!-- Bhagavad Gita Verse 2.22 - Vasamsi jirnani yatha vihaya -->
+    <url>
+        <loc>https://shlokpath.vercel.app/chapter/2/verse/22</loc>
+        <lastmod>2026-09-28</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <!-- Bhagavad Gita Verse 4.7 - Yada yada hi dharmasya -->
+    <url>
+        <loc>https://shlokpath.vercel.app/chapter/4/verse/7</loc>
+        <lastmod>2026-09-28</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <!-- Bhagavad Gita Verse 4.8 - Paritranaya sadhunam -->
+    <url>
+        <loc>https://shlokpath.vercel.app/chapter/4/verse/8</loc>
+        <lastmod>2026-09-28</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <!-- Bhagavad Gita Verse 6.5 - Uddhared atmanatmanam -->
+    <url>
+        <loc>https://shlokpath.vercel.app/chapter/6/verse/5</loc>
+        <lastmod>2026-09-28</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <!-- Bhagavad Gita Verse 9.22 - Ananyas cintayanto mam -->
+    <url>
+        <loc>https://shlokpath.vercel.app/chapter/9/verse/22</loc>
+        <lastmod>2026-09-28</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <!-- Bhagavad Gita Verse 9.26 - Patram puspam phalam toyam -->
+    <url>
+        <loc>https://shlokpath.vercel.app/chapter/9/verse/26</loc>
+        <lastmod>2026-09-28</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <!-- Bhagavad Gita Verse 11.32 - Kalo smi loka-ksaya-krt pravrddho -->
+    <url>
+        <loc>https://shlokpath.vercel.app/chapter/11/verse/32</loc>
+        <lastmod>2026-09-28</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <!-- Bhagavad Gita Verse 12.15 - Yasman nodvijate loko -->
+    <url>
+        <loc>https://shlokpath.vercel.app/chapter/12/verse/15</loc>
+        <lastmod>2026-09-28</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <!-- Bhagavad Gita Verse 18.65 - Man-mana bhava mad-bhakto -->
+    <url>
+        <loc>https://shlokpath.vercel.app/chapter/18/verse/65</loc>
+        <lastmod>2026-09-28</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <!-- Bhagavad Gita Verse 18.66 - Sarva-dharman parityajya -->
+    <url>
+        <loc>https://shlokpath.vercel.app/chapter/18/verse/66</loc>
+        <lastmod>2026-09-28</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <!-- Bhagavad Gita Verse 18.78 - Yatra yogesvarah krsno -->
+    <url>
+        <loc>https://shlokpath.vercel.app/chapter/18/verse/78</loc>
+        <lastmod>2026-09-28</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+</urlset>

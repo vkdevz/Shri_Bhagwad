@@ -1733,7 +1733,8 @@ label {
     }
 }
 
-.footer-col h4 {
+.footer-col h4,
+.footer-col h3 {
     font-family: var(--sp-font-mono, monospace);
     font-size: 11px;
     font-weight: 700;
@@ -2002,7 +2003,8 @@ label {
     padding: var(--sp-space-8) 0 var(--sp-space-6);
 }
 
-.page-title-banner h1 {
+.page-title-banner h1,
+.page-title-banner h2 {
     font-size: clamp(16px, 4.4vw, 26px);
     white-space: nowrap;
     overflow: hidden;
@@ -3612,7 +3614,8 @@ label {
         padding: var(--sp-space-5) var(--sp-space-2) var(--sp-space-3);
     }
 
-    .page-title-banner h1 {
+    .page-title-banner h1,
+    .page-title-banner h2 {
         font-size: clamp(14px, 4.2vw, 18px);
         white-space: nowrap;
         text-align: center;

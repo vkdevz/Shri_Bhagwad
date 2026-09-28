@@ -1,0 +1,26 @@
+# robots.txt for ShlokPath (https://shlokpath.vercel.app)
+# All 18 Chapters and 701 Verses of the Shrimad Bhagavad Gita
+
+User-agent: *
+Allow: /
+Disallow: /backend/
+Disallow: /api/
+
+# Explicit search crawler directives
+User-agent: Googlebot
+Allow: /
+
+User-agent: Googlebot-Image
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Twitterbot
+Allow: /
+
+User-agent: facebookexternalhit
+Allow: /
+
+# Canonical XML Sitemap
+Sitemap: https://shlokpath.vercel.app/sitemap.xml

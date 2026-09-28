@@ -49,6 +49,9 @@ class GitaApp {
             this.setupPWA();
             this.setupTouchGestures();
             this.initializeApp();
+            if (window.seoRouter) {
+                window.seoRouter.parseInitialRoute();
+            }
             this.hideLoadingScreen();
         } catch (error) {
             console.error('Failed to initialize app:', error);
@@ -1587,6 +1590,10 @@ class GitaApp {
             this.updateHeader(screenName);
             this.currentScreen = screenName;
 
+            if (window.seoRouter && screenName !== 'reader') {
+                window.seoRouter.updateRoute(screenName);
+            }
+
             // Scroll to top of content
             window.scrollTo({ top: 0, behavior: 'smooth' });
 
@@ -1709,6 +1716,14 @@ class GitaApp {
             this.markAsRead(this.currentChapter, this.currentVerse);
             this.saveUserData();
             this.updateHomeScreen();
+
+            if (this.currentScreen === 'reader' && window.seoRouter) {
+                window.seoRouter.updateRoute('reader', {
+                    chapter: this.currentChapter,
+                    verse: this.currentVerse,
+                    chapterTitle: chapter.title
+                });
+            }
         } catch (error) {
             console.error('Error loading reader verse:', error);
             this.showToast('Error loading verse', 'error');
