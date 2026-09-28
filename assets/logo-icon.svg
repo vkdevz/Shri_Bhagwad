@@ -1,53 +1,6 @@
 <svg viewBox="0 0 512 512" width="512" height="512" xmlns="http://www.w3.org/2000/svg">
-  <defs>
-    <linearGradient id="goldLinear" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#fae8be"/>
-      <stop offset="35%" stop-color="#e5c178"/>
-      <stop offset="70%" stop-color="#c5a059"/>
-      <stop offset="100%" stop-color="#9a7232"/>
-    </linearGradient>
-    <linearGradient id="goldSubtle" x1="0%" y1="100%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#c5a059" stop-opacity="0.3"/>
-      <stop offset="50%" stop-color="#e5c178" stop-opacity="0.7"/>
-      <stop offset="100%" stop-color="#fae8be" stop-opacity="0.9"/>
-    </linearGradient>
-    <radialGradient id="binduGlow" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="#fff4d4"/>
-      <stop offset="40%" stop-color="#e5c178"/>
-      <stop offset="100%" stop-color="#c5a059" stop-opacity="0"/>
-    </radialGradient>
-  </defs>
-
-  <!-- Apple Squircle Dark Canvas -->
   <rect width="512" height="512" rx="112" fill="#0e0f12"/>
-
-  <!-- Subtle Ambient Glow -->
-  <circle cx="256" cy="256" r="140" fill="url(#binduGlow)" opacity="0.12"/>
-
-  <!-- Celestial Outer Orbit -->
-  <circle cx="256" cy="256" r="200" fill="none" stroke="#c5a059" stroke-width="2" stroke-opacity="0.2"/>
-  <circle cx="256" cy="256" r="182" fill="none" stroke="#c5a059" stroke-width="1.5" stroke-dasharray="4 8" stroke-opacity="0.35"/>
-
-  <!-- Dharma Stillness Circle -->
-  <circle cx="256" cy="256" r="148" fill="none" stroke="url(#goldLinear)" stroke-width="4.5"/>
-
-  <!-- Left Serene Lotus Petal Arc -->
-  <path d="M 256 108 C 256 190, 160 256, 160 256 C 160 256, 256 322, 256 404" 
-        fill="none" stroke="url(#goldSubtle)" stroke-width="3" stroke-linecap="round"/>
-
-  <!-- Right Serene Lotus Petal Arc -->
-  <path d="M 256 108 C 256 190, 352 256, 352 256 C 352 256, 256 322, 256 404" 
-        fill="none" stroke="url(#goldSubtle)" stroke-width="3" stroke-linecap="round"/>
-
-  <!-- Central Mor-Pankh Feather Ribbon ('S' Flow) -->
-  <path d="M 256 128 C 304 168, 318 220, 280 260 C 242 300, 206 320, 222 360 C 234 388, 268 392, 288 376" 
-        fill="none" stroke="url(#goldLinear)" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
-
-  <!-- Inner Feather Eye / Lotus Calyx -->
-  <path d="M 256 170 C 278 198, 278 232, 256 256 C 234 232, 234 198, 256 170 Z" 
-        fill="none" stroke="url(#goldLinear)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-
-  <!-- The Golden Bindu (Point of Pure Consciousness) -->
-  <circle cx="256" cy="216" r="14" fill="url(#binduGlow)"/>
-  <circle cx="256" cy="216" r="7" fill="#fff4d4"/>
+  <path d="M 316 182 A 64 64 0 0 0 188 182 C 188 238, 300 274, 300 330 A 64 64 0 0 1 172 330" 
+        fill="none" stroke="#e5c178" stroke-width="38" stroke-linecap="round"/>
+  <circle cx="316" cy="256" r="26" fill="#e5c178"/>
 </svg>
