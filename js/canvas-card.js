@@ -291,51 +291,19 @@ class DivineCanvasGenerator {
             ctx.restore();
         }
 
-        // 8. Bottom Footer: Highlighted Brand Name & Sacred Imprint
-        DivineCanvasGenerator.drawDividerWithDiamond(ctx, 600, 1428, 260, theme.innerBorder);
+        // 8. Bottom Footer: Sacred Attribution & Brand Signature
+        DivineCanvasGenerator.drawDividerWithDiamond(ctx, 600, 1435, 260, theme.innerBorder);
 
         ctx.fillStyle = theme.borderGold;
-        ctx.font = '600 15px "Cinzel", serif';
-        ctx.letterSpacing = '5px';
-        ctx.fillText('SHRIMAD BHAGAVAD GITA', 600, 1456);
+        ctx.font = '600 17px "Cinzel", serif';
+        ctx.letterSpacing = '4px';
+        ctx.fillText('SHRIMAD BHAGAVAD GITA', 600, 1472);
 
-        // Highlighted Brand Capsule Badge ("SHLOKPATH — By VK DEVZ")
-        const badgeW = 490;
-        const badgeH = 40;
-        const badgeX = 600 - (badgeW / 2);
-        const badgeY = 1478;
-        const badgeRadius = 20;
-
-        ctx.save();
-        // Glowing gold shadow
-        ctx.shadowColor = themeKey === 'midnight' ? 'rgba(212, 175, 55, 0.45)' : 'rgba(140, 95, 62, 0.3)';
-        ctx.shadowBlur = 12;
-
-        // Pill background
-        const badgeGrad = ctx.createLinearGradient(badgeX, badgeY, badgeX + badgeW, badgeY + badgeH);
-        if (themeKey === 'midnight') {
-            badgeGrad.addColorStop(0, 'rgba(212, 175, 55, 0.22)');
-            badgeGrad.addColorStop(0.5, 'rgba(22, 23, 28, 0.92)');
-            badgeGrad.addColorStop(1, 'rgba(212, 175, 55, 0.22)');
-        } else {
-            badgeGrad.addColorStop(0, 'rgba(140, 95, 62, 0.16)');
-            badgeGrad.addColorStop(0.5, 'rgba(248, 246, 240, 0.92)');
-            badgeGrad.addColorStop(1, 'rgba(140, 95, 62, 0.16)');
-        }
-        ctx.fillStyle = badgeGrad;
-        ctx.strokeStyle = theme.borderGold;
-        ctx.lineWidth = 1.5;
-
-        DivineCanvasGenerator.drawRoundedRect(ctx, badgeX, badgeY, badgeW, badgeH, badgeRadius, true, true);
-        ctx.restore();
-
-        // Highlighted Brand Text
-        ctx.save();
-        ctx.fillStyle = themeKey === 'midnight' ? '#fdeca6' : '#5a361c';
-        ctx.font = '700 16px "Cinzel", serif';
+        // Highlighted Brand Signature (Clean editorial text, full opacity, no pill/border/bg)
+        ctx.fillStyle = themeKey === 'midnight' ? '#f0d28d' : '#7a4b27';
+        ctx.font = '700 15px "Cinzel", serif';
         ctx.letterSpacing = '3px';
-        ctx.fillText('✦  SHLOKPATH — By VK DEVZ  ✦', 600, badgeY + 25);
-        ctx.restore();
+        ctx.fillText('SHLOKPATH — BY VK DEVZ', 600, 1504);
 
         return canvas;
     }

@@ -1,4 +1,4 @@
-const CACHE_NAME = 'shlokpath-v11.7-branding';
+const CACHE_NAME = 'shlokpath-v11.8-branding-clean';
 
 self.addEventListener('install', (event) => {
   self.skipWaiting();
