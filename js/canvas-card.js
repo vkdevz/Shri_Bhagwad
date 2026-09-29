@@ -41,17 +41,52 @@ class DivineCanvasGenerator {
 
     // Cached logo image
     static logoImage = null;
+    static logoPromise = null;
 
     static async init() {
-        if (!DivineCanvasGenerator.logoImage) {
-            DivineCanvasGenerator.logoImage = new Image();
-            DivineCanvasGenerator.logoImage.crossOrigin = 'anonymous';
-            DivineCanvasGenerator.logoImage.src = 'icons/icon-512x512.png';
-            await new Promise(resolve => {
-                DivineCanvasGenerator.logoImage.onload = () => resolve(true);
-                DivineCanvasGenerator.logoImage.onerror = () => resolve(false);
-            });
+        if (DivineCanvasGenerator.logoImage && DivineCanvasGenerator.logoImage.complete && DivineCanvasGenerator.logoImage.naturalWidth > 0) {
+            return true;
         }
+        if (DivineCanvasGenerator.logoPromise) {
+            return DivineCanvasGenerator.logoPromise;
+        }
+
+        DivineCanvasGenerator.logoPromise = new Promise((resolve) => {
+            const candidates = [
+                '/icons/icon-512x512.png',
+                '/assets/logo.png',
+                '/icons/icon-192x192.png',
+                '/icons/icon-96x96.png'
+            ];
+            let idx = 0;
+
+            const tryNext = () => {
+                if (idx >= candidates.length) {
+                    resolve(false);
+                    return;
+                }
+                const img = new Image();
+                img.crossOrigin = 'anonymous';
+                img.onload = () => {
+                    if (img.naturalWidth > 0) {
+                        DivineCanvasGenerator.logoImage = img;
+                        resolve(true);
+                    } else {
+                        idx++;
+                        tryNext();
+                    }
+                };
+                img.onerror = () => {
+                    idx++;
+                    tryNext();
+                };
+                img.src = candidates[idx];
+            };
+
+            tryNext();
+        });
+
+        return DivineCanvasGenerator.logoPromise;
     }
 
     static getTranslationText(verse, lang) {
@@ -74,11 +109,13 @@ class DivineCanvasGenerator {
      * Generate high-res 1200x1600 canvas
      */
     static async generateCardCanvas(verse, chapterTitle, options = {}) {
+        await DivineCanvasGenerator.init();
+
         const themeKey = options.theme || 'midnight';
         const language = options.language || 'english'; // 'english', 'hindi', 'dual'
         const showWatermark = options.showWatermark !== false;
         const showCommentary = options.showCommentary !== false;
-        const watermarkOpacity = themeKey === 'midnight' ? 0.08 : 0.065;
+        const watermarkOpacity = themeKey === 'midnight' ? 0.12 : 0.085;
         const theme = DivineCanvasGenerator.THEMES[themeKey] || DivineCanvasGenerator.THEMES.midnight;
 
         const canvas = document.createElement('canvas');
@@ -93,7 +130,7 @@ class DivineCanvasGenerator {
         ctx.fillStyle = grad;
         ctx.fillRect(0, 0, 1200, 1600);
 
-        // 2. Permanent Low-Opacity Background Logo & Sacred Chakra Watermark
+        // 2. Permanent Background Logo & Sacred Chakra Watermark
         ctx.save();
         ctx.globalAlpha = watermarkOpacity;
 
@@ -291,21 +328,80 @@ class DivineCanvasGenerator {
             ctx.restore();
         }
 
-        // 8. Bottom Footer: Sacred Attribution & Brand Signature
-        DivineCanvasGenerator.drawDividerWithDiamond(ctx, 600, 1435, 260, theme.innerBorder);
+        // 8. Bottom Footer: Sacred Attribution, Brand Logo Emblem & Signature
+        DivineCanvasGenerator.drawDividerWithDiamond(ctx, 600, 1420, 260, theme.innerBorder);
+
+        // Official ShlokPath Brand Logo Emblem Badge
+        DivineCanvasGenerator.drawLogoEmblem(ctx, 600, 1455, 46, theme);
 
         ctx.fillStyle = theme.borderGold;
-        ctx.font = '600 17px "Cinzel", serif';
+        ctx.font = '600 15px "Cinzel", serif';
         ctx.letterSpacing = '4px';
-        ctx.fillText('SHRIMAD BHAGAVAD GITA', 600, 1472);
+        ctx.fillText('SHRIMAD BHAGAVAD GITA', 600, 1494);
 
         // Highlighted Brand Signature (Clean editorial text, full opacity, no pill/border/bg)
         ctx.fillStyle = themeKey === 'midnight' ? '#f0d28d' : '#7a4b27';
-        ctx.font = '700 15px "Cinzel", serif';
+        ctx.font = '700 14px "Cinzel", serif';
         ctx.letterSpacing = '3px';
-        ctx.fillText('SHLOKPATH — BY VK DEVZ', 600, 1504);
+        ctx.fillText('SHLOKPATH — BY VK DEVZ', 600, 1518);
 
         return canvas;
+    }
+
+    /**
+     * Draw circular ShlokPath logo emblem with metallic gold ring
+     */
+    static drawLogoEmblem(ctx, centerX, centerY, size, theme) {
+        ctx.save();
+        const radius = size / 2;
+
+        // 1. Base dark disc background
+        ctx.beginPath();
+        ctx.arc(centerX, centerY, radius, 0, Math.PI * 2);
+        ctx.fillStyle = '#0e0f12';
+        ctx.fill();
+
+        // 2. Draw official ShlokPath logo image clipped into circle
+        let drawn = false;
+        if (DivineCanvasGenerator.logoImage && DivineCanvasGenerator.logoImage.complete && DivineCanvasGenerator.logoImage.naturalWidth > 0) {
+            ctx.save();
+            ctx.beginPath();
+            ctx.arc(centerX, centerY, radius - 1.5, 0, Math.PI * 2);
+            ctx.clip();
+            ctx.drawImage(
+                DivineCanvasGenerator.logoImage,
+                centerX - radius,
+                centerY - radius,
+                size,
+                size
+            );
+            ctx.restore();
+            drawn = true;
+        }
+
+        // 3. Fallback vector Krishna crest if image not ready
+        if (!drawn) {
+            ctx.save();
+            ctx.strokeStyle = '#e5c178';
+            ctx.fillStyle = '#e5c178';
+            ctx.lineWidth = 1.8;
+            ctx.beginPath();
+            ctx.ellipse(centerX, centerY - 2, radius * 0.42, radius * 0.58, 0, 0, Math.PI * 2);
+            ctx.stroke();
+            ctx.beginPath();
+            ctx.arc(centerX, centerY - 2, radius * 0.18, 0, Math.PI * 2);
+            ctx.fill();
+            ctx.restore();
+        }
+
+        // 4. Fine Metallic Gold Framing Ring
+        ctx.beginPath();
+        ctx.arc(centerX, centerY, radius, 0, Math.PI * 2);
+        ctx.strokeStyle = theme.borderGold;
+        ctx.lineWidth = 1.5;
+        ctx.stroke();
+
+        ctx.restore();
     }
 
     /**

@@ -39,7 +39,7 @@ class GitaApiClient {
             }
         }
         // Fallback to local lightweight summary file
-        const res = await fetch('data/chapters/chapters_summary.json');
+        const res = await fetch('/data/chapters/chapters_summary.json');
         return await res.json();
     }
 
@@ -62,9 +62,9 @@ class GitaApiClient {
             }
         }
 
-        // Fallback to partitioned JSON chapter file (e.g. data/chapters/chapter_02.json)
+        // Fallback to partitioned JSON chapter file (e.g. /data/chapters/chapter_02.json)
         const paddedNum = String(chapterNumber).padStart(2, '0');
-        const res = await fetch(`data/chapters/chapter_${paddedNum}.json`);
+        const res = await fetch(`/data/chapters/chapter_${paddedNum}.json`);
         const data = await res.json();
         this.chaptersCache.set(chapterNumber, data);
         return data;
@@ -145,7 +145,7 @@ class GitaApiClient {
                 console.warn('API dilemmas failed, falling back to local file');
             }
         }
-        const res = await fetch('data/chapters/dilemmas.json');
+        const res = await fetch('/data/chapters/dilemmas.json');
         return await res.json();
     }
 

@@ -100,7 +100,7 @@ class SeoRouter {
             if (ch >= 1 && ch <= 18 && window.app) {
                 window.app.currentChapter = ch;
                 window.app.currentVerse = v;
-                setTimeout(() => window.app.navigateToReader(), 100);
+                window.app.navigateToReader();
                 return;
             }
         }
@@ -110,12 +110,13 @@ class SeoRouter {
             'dilemmas': 'dilemmas',
             'dhyana': 'dhyana',
             'search': 'search',
-            'settings': 'settings'
+            'settings': 'settings',
+            'reader': 'reader'
         };
 
         const cleanKey = target.replace(/^\//, '');
         if (screenMap[cleanKey] && window.app) {
-            setTimeout(() => window.app.navigateToScreen(screenMap[cleanKey]), 100);
+            window.app.navigateToScreen(screenMap[cleanKey]);
         }
     }
 

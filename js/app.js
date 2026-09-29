@@ -83,7 +83,7 @@ class GitaApp {
             if (window.gitaApi) {
                 chapters = await window.gitaApi.getChapters();
             } else {
-                const res = await fetch('data/chapters/chapters_summary.json');
+                const res = await fetch('/data/chapters/chapters_summary.json');
                 chapters = await res.json();
             }
 
@@ -105,7 +105,7 @@ class GitaApp {
         } catch (error) {
             console.warn('API/summary load failed, trying fallback gita-data.json:', error);
             try {
-                const response = await fetch('data/gita-data.json');
+                const response = await fetch('/data/gita-data.json');
                 this.gitaData = await response.json();
                 this.buildSearchIndex();
             } catch (e) {
@@ -879,6 +879,9 @@ class GitaApp {
         };
 
         this.setupCanvasModalListeners();
+        if (window.DivineCanvasGenerator) {
+            await window.DivineCanvasGenerator.init();
+        }
         this.updateCanvasCardPreview();
         document.getElementById('canvas-modal')?.classList.remove('hidden');
     }
@@ -1288,7 +1291,7 @@ class GitaApp {
 
     setupPWA() {
         if ('serviceWorker' in navigator) {
-            navigator.serviceWorker.register('service-worker.js')
+            navigator.serviceWorker.register('/service-worker.js')
                 .then(registration => {
                     console.log('Service Worker registered successfully:', registration);
                 })
@@ -1643,13 +1646,7 @@ class GitaApp {
         if (this.isValidChapter(chapterNumber)) {
             this.currentChapter = chapterNumber;
             this.currentVerse = 1;
-            const chapter = this.getChapter(chapterNumber);
-            if (!chapter.verses || chapter.verses.length === 0) {
-                if (window.gitaApi) {
-                    const fullChapter = await window.gitaApi.getChapter(chapterNumber);
-                    chapter.verses = fullChapter.verses;
-                }
-            }
+            await this.loadChapter(chapterNumber);
             this.navigateToReader();
         }
     }
@@ -1658,30 +1655,22 @@ class GitaApp {
         if (this.dailyVerse) {
             this.currentChapter = this.dailyVerse.chapter;
             this.currentVerse = this.dailyVerse.verse;
-            const chapter = this.getChapter(this.currentChapter);
-            if (chapter && (!chapter.verses || chapter.verses.length === 0)) {
-                if (window.gitaApi) {
-                    const fullChapter = await window.gitaApi.getChapter(this.currentChapter);
-                    chapter.verses = fullChapter.verses;
-                }
-            }
+            await this.loadChapter(this.currentChapter);
             this.navigateToReader();
         }
     }
 
     async loadReaderVerse() {
         try {
-            const chapter = this.getChapter(this.currentChapter);
+            let chapter = this.getChapter(this.currentChapter);
             if (!chapter) {
                 console.error('Chapter not found:', this.currentChapter);
                 return;
             }
 
             if (!chapter.verses || chapter.verses.length === 0) {
-                if (window.gitaApi) {
-                    const fullChapter = await window.gitaApi.getChapter(this.currentChapter);
-                    chapter.verses = fullChapter.verses;
-                }
+                await this.loadChapter(this.currentChapter);
+                chapter = this.getChapter(this.currentChapter);
             }
 
             const verse = this.getVerse(this.currentChapter, this.currentVerse);
@@ -2033,6 +2022,41 @@ class GitaApp {
     getChapter(chapterNumber) {
         if (!this.gitaData || !this.gitaData.chapters) return null;
         return this.gitaData.chapters.find(chapter => chapter.number === chapterNumber);
+    }
+
+    async loadChapter(chapterNumber) {
+        if (!this.gitaData || !this.gitaData.chapters) return null;
+        let chapter = this.getChapter(chapterNumber);
+        if (!chapter) return null;
+        if (chapter.verses && chapter.verses.length > 0) return chapter;
+
+        if (window.gitaApi) {
+            try {
+                const fullChapter = await window.gitaApi.getChapter(chapterNumber);
+                if (fullChapter && fullChapter.verses) {
+                    chapter.verses = fullChapter.verses;
+                    return chapter;
+                }
+            } catch (err) {
+                console.warn(`Failed to fetch chapter ${chapterNumber} via gitaApi:`, err);
+            }
+        }
+
+        try {
+            const paddedNum = String(chapterNumber).padStart(2, '0');
+            const res = await fetch(`/data/chapters/chapter_${paddedNum}.json`);
+            if (res.ok) {
+                const fullChapter = await res.json();
+                if (fullChapter && fullChapter.verses) {
+                    chapter.verses = fullChapter.verses;
+                    return chapter;
+                }
+            }
+        } catch (err) {
+            console.error(`Error loading chapter ${chapterNumber}:`, err);
+        }
+
+        return chapter;
     }
 
     getVerse(chapterNumber, verseNumber) {
